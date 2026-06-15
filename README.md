@@ -29,8 +29,9 @@ We are targeting a lightweight and accessible web platform that allows students 
 
 ## Technology Possibility
 - Web application interface
+- Dashboard
 - Cloud-based system for user data and review storage
-- 
+   
 ## Repository Structure
 - `docs/`: Project profiles, idea logs, weekly logbooks, and problem notes.
 - `prototype/`: Interface mockups, wireframes, and screen designs.
