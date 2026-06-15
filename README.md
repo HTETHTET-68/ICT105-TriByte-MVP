@@ -1,5 +1,4 @@
-# HallPass
-IT startup MVP project for ICT105 Fundamental Technology Entrepreneurship.
+# IT startup MVP project for ICT105 Fundamental Technology Entrepreneurship
 
 ## Project Venture Workspace
 
