@@ -12,7 +12,7 @@
 
 | No. | Observed Problem | Target User | Current Alternative | Possible IT Solution | Feasible Technology |
 |---|---|---|---|---|---|
-| 1 | Int'l students don't know which dorms/cafeterias are good — no honest, student-written reviews | New international students choosing dorm/meal options | Asking friends and in facebook groups | A platform where students rate and write reviews on dorms & cafeterias | Web app + cloud-based storage for reviews |
+| 1 | International students don't know which dorms/cafeterias are good — no honest, student-written reviews | New international students choosing dorm/meal options | Asking friends and in facebook groups | A platform where students rate and write reviews on dorms & cafeterias | Web app + cloud-based storage for reviews |
 | 2 | New students don't know basic things like where to eat, what to bring, or how to get around campus | First-time international students | Google searches, university websites that are often outdated, not student-verified, or incomplete | Built-in settling-in guides on the same platform | Web app + cloud-based content storage |
 | 3 | Students want affordable second-hand items (textbooks, laptops, furniture) but have no student-only option | New / budget-conscious students | Facebook Marketplace, Carousell | A web marketplace exclusive to listing/buying among students | Web app + cloud-based storage for listings |
 | 4 | No way to verify sellers/buyers are real students, making transactions feel unsafe | All university students buying/selling | Facebook Marketplace, Carousell, open to the public with no verification | University email sign-up to verify and trust users | Web app + cloud-based authentication & accounts |
