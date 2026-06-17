@@ -60,7 +60,7 @@ A web-based platform that helps students settle into campus life by providing:
 ## Weekly Progress Log
 | Lab | Main Activity | Output | Status |
 |---|---|---|---|
-| Lab 1 | Lab setup and idea log | Repository setup, team profile, initial three-idea logbook | In progress |
+| Lab 1 | Lab setup and idea log | Repository setup, team profile, initial three-idea logbook | Completed |
 | Lab 2 | Opportunity scanning and NUF scoring | Six-idea opportunity discovery table, technology feasibility mapping, NUF scoring, selected project opportunity (HallPass) | Completed |
 
 ## Current Status
