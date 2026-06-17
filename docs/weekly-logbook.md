@@ -1,3 +1,4 @@
+<img width="1265" height="714" alt="Screenshot 2026-06-17 at 1 59 26 PM" src="https://github.com/user-attachments/assets/85a94369-0f3a-4998-8fa2-1e0ed17cbe36" />
 # Weekly Venture Logbook
 
 ## Lab 1: Lab Setup and IT Venture Repository
@@ -68,7 +69,9 @@ This idea was rejected because it would require more complex features such as tr
 * Opportunity scan file: `/docs/opportunity-scan.md`
 * NUF scoring file: `/data/opportunity-scoring.xlsx`
 * Selected opportunity file: `/docs/selected-opportunity.md`
-* GitHub issue screenshot: *(Insert screenshot here)*
+* GitHub issue screenshot:
+* <img width="1265" height="714" alt="Screenshot 2026-06-17 at 1 59 26 PM" src="https://github.com/user-attachments/assets/01bee27d-04b2-40a0-bf75-ced526f8fd40" />
+
 * Commit link: *(Insert GitHub commit URL here)*
 
 ### Plan for Lab 03
