@@ -23,9 +23,9 @@
 
 | Idea | Prototype Type | Tools Needed | Data Needed | Difficulty | Feasible? |
 |---|---|---|---|---|---|
-| HallPass (reviews) | Web app with rating and review pages | HTML/CSS/JavaScript or a low-code builder, Figma for UI design | Sample list of dorms/cafeterias, sample student reviews and ratings | Low | Yes |
-| HallPass (settling-in guides) | Web app with static guide pages | HTML/CSS, simple content management or markdown pages | Campus info such as food places, transport options, dorm essentials list | Low | Yes |
-| CampusMarket (listings) | Web app with listing and search pages | Web framework such as React, database like Firebase or Google Sheets, image upload support | Sample item listings with title, price, photos, category | Medium | Yes |
-| CampusMarket (email verification) | Web app with sign up and login flow | Authentication service such as Firebase Auth, email domain validation logic | List of valid university email domains, user account data | Medium | Yes |
-| StudyMatch (profiles) | Web app with profile creation form | Web framework, database to store profiles | Course names, student availability and schedule data | Low | Yes |
-| StudyMatch (auto matching) | Web app with matching algorithm and results page | Backend matching logic such as a Python or JavaScript function, database | Student profiles with course and schedule info, matching rules | High | Yes |
+| HallPass (reviews) | HTML/CSS/JS webpage with an embedded review form | Google Form for review submission, Google Sheets to store and display the responses | List of dorms/cafeterias to review, sample reviews and star ratings | Low | Yes |
+| HallPass (settling-in guides) | HTML/CSS/JS landing page with static guide content | HTML/CSS/JS page listing guides, Google Form for students to suggest new tips | Campus info such as food spots, transport routes, dorm essentials checklist | Low | Yes |
+| CampusMarket (listings) | Airtable database with a filtered item list embedded on a webpage | Airtable for listings, Airtable's built-in filter/grid view, simple HTML page to host the embed | Sample item listings with title, price, photo link, category | Low | Yes |
+| CampusMarket (email verification) | Google Form sign-up with email format validation | Google Form set to validate the email pattern against the university domain, Google Sheets to log approved accounts | List of valid university email domain(s), sample sign-up responses | Low | Yes |
+| StudyMatch (profiles) | Google Form for profile creation | Google Form collecting course code and available study times, Google Sheets to store profiles | Course codes, sample student availability data | Low | Yes |
+| StudyMatch (auto matching) | Google Sheets QUERY/FILTER formula showing matches, with a Figma clickable prototype for the results screen | Google Sheets FILTER or QUERY formula to match students by course code and overlapping time slots | Student profile sheet with course and schedule columns | Medium | Yes |
