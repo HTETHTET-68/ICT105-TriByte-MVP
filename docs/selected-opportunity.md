@@ -38,14 +38,14 @@ The platform will serve as a centralized source of student-generated information
 
 HallPass received the highest overall score in the team's NUF evaluation.
 
-| Idea                      | New | Useful | Feasible | Total |
-| ------------------------- | --- | ------ | -------- | ----- |
-| HallPass                  | 8   | 9      | 9        | 26    |
-| SmartStudy Planner        | 7   | 9      | 8        | 24    |
-| StudyMatch                | 8   | 8      | 7        | 23    |
-| CampusMarket              | 6   | 8      | 8        | 22    |
-| Campus Events Hub         | 6   | 7      | 9        | 22    |
-| ClassBuddy Notes Exchange | 5   | 8      | 8        | 21    |
+| Idea | New | Useful | Feasible | Total |
+|------|------|------|------|------|
+| HallPass | 4 | 5 | 5 | 14 |
+| SmartStudy Planner | 4 | 5 | 4 | 13 |
+| StudyMatch | 5 | 4 | 3 | 12 |
+| CampusMarket | 3 | 4 | 4 | 11 |
+| Campus Events Hub | 2 | 4 | 5 | 11 |
+| ClassBuddy Notes Exchange | 2 | 4 | 4 | 10 |
 
 HallPass was selected because it addresses a clear and specific problem experienced by international students. It is highly useful, technically achievable within the semester timeline, and can be validated through interviews and surveys. Compared to other ideas, it requires fewer complex features while still providing meaningful value to users.
 
