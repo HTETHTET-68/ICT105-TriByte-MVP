@@ -94,38 +94,37 @@ The key question we want to answer is:
 ## Lab 03: Customer Problem Discovery
 
 ### What We Completed
-1.Defined target respondents and prepared customer discovery questions, then collected user evidence through interviews/surveys and recorded it in /docs/problem-notes.md, /docs/customer-questions.md, and /data/raw-responses.xlsx.
-2.Separated assumptions from evidence by comparing team beliefs with real user feedback and documented the analysis in /docs/assumption-evidence-table.md.
-3.Documented problem findings and updated all GitHub materials, including repeated pain points, validation signals, README, and /docs/weekly-logbook.md.
+1. Designed a 10-question customer discovery survey and distributed it to international, exchange, and first-year students via Google Forms.
+2. Collected 20 survey responses and recorded them in a structured raw response file covering workarounds, time spent, difficulty rating, main pain, and willingness to use HallPass.
+3. Built an assumption-evidence table comparing 8 team assumptions against real survey data and determined which to keep, revise, or reject.
 
 ### What We Learned About the Problem
-1. Users consistently face **difficulty accessing reliable and up-to-date information**, as details are often scattered across multiple sources, leading to confusion, repeated searching, and time loss.
-
-2. New and international students are the **most vulnerable group**, depending heavily on informal networks like friends, social media, and group chats instead of official university channels.
-
-3. These issues lead to **real negative outcomes such as poor accommodation or food decisions, repeated dependency on others for information, and ongoing stress**, highlighting the need for a centralized and trustworthy information platform.
+1. The problem is real and confirmed — international, exchange, and first-year students consistently rated difficulty finding campus information as 4 or 5 out of 5, and 13 out of 20 spent more than 30 minutes searching.
+2. Students trust peer experiences more than official university websites, which means a student-written review platform is more valuable than a university information page.
+3. The first-week guide is equally as important as dorm and cafeteria reviews — we originally treated it as a secondary feature but the evidence shows it should be a core feature.
 
 ### What Evidence We Collected
-- Number of respondents/interviews: 15 students
-- Evidence file: data/raw-reponses.xlsx
-- Key repeated pattern: Students repeatedly reported difficulty finding accurate and updated campus information.
+- Number of respondents: 20 survey responses
+- Evidence file: `data/raw-responses.xlsx`
+- Key repeated pattern: Students rely on friends, LINE group chats, and social media because there is no single trusted place for campus information — leading to scattered searches, wasted time, and stress
+
 ### What We Changed Based on Evidence
-We shifted our focus from building a feature-heavy system to prioritizing a simple, centralized platform for reliable and up-to-date student information, since users mainly struggle with scattered and inconsistent sources.
-We revised our target users to emphasize first-year, international, and exchange students, as evidence showed they experience the highest confusion, dependency on informal channels, and decision stress.
+- Elevated the first-week guide to a core feature alongside dorm and cafeteria reviews, not a secondary one
+- Updated the target user group to include exchange students explicitly, not just international and first-year students
+- Revised the problem statement to reflect that consequences include both stress and wasted time, not stress alone
+- Updated the updated problem statement in README.md to reflect all changes from Lab 03 findings
+
 ### Problems or Difficulties
-1.Creating effective customer discovery questions that were non-leading and focused on understanding the problem rather than promoting our solution.
-2.Collecting and organizing survey/interview data efficiently while ensuring that the responses could be used as valid evidence for problem validation.
+1. Some survey responses were from second or third-year students who had already adapted to campus life, which made their answers less useful for validating our core problem.
+2. The survey did not ask whether students would write reviews or only read them, which left a gap in understanding how content would be contributed to HallPass.
+
 ### Evidence of Work
-- GitHub repository link: https://github.com/HTETHTET-68/ICT105-TriByte-MVP.git
-- Customer questions file: docs/customer-question.md
-- Raw responses file: data/raw-reponses.xlsx
-- Assumption-evidence table: docs/assumption-evidence-table.md
-- Commit link: https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/ 
+- GitHub repository link: https://github.com/HTETHTET-68/ICT105-TeamTriByte-MVP
+- Customer questions file: `docs/customer-questions.md`
+- Raw responses file: `data/raw-responses.xlsx`
+- Assumption-evidence table: `docs/assumption-evidence-table.md`
+- Commit link: (https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/) 
 
 ### Plan for Lab 04
-Define the primary customer segment (new university students).
-Create a detailed user persona based on survey findings.
-Develop user stories that describe how students will use the proposed solution to solve their information-search problems.
-Prioritize user needs and convert them into MVP requirements.
-
+In Lab 04, the team will use the validated evidence from Lab 03 to define a clear customer segment and build a user persona representing our primary target user. We will identify the persona's goals, frustrations, and behaviors based on the survey patterns. We will then write user stories in the format "As a [user], I want to [action] so that [benefit]" to describe what HallPass must do from the user's perspective. These outputs will guide the feature prioritization and prototype planning in the following labs.
 
