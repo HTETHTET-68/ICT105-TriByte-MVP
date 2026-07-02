@@ -1,5 +1,4 @@
 
-## User Stories
 # Lab 04 - User Stories and Acceptance Criteria
  
 ## User Story Format
