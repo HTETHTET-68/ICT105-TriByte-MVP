@@ -1,7 +1,7 @@
 # Lab 04 - User Persona
 
 ## 1. Persona Name
-May, Year 1 University Student
+May, First Year University Student
 
 ## 2. User Type
 First-year student navigating dormitory, cafeteria, and campus life decisions for the first time
@@ -38,5 +38,5 @@ First-year student navigating dormitory, cafeteria, and campus life decisions fo
 
 ## 7. Design Implications
 - **What HallPass should support:** A first-week guide and dorm reviews should be prioritized first as they're the two most-requested features among first-year respondents (4 and 2 mentions respectively, alongside cafeteria reviews at 3). Content must be written by real, current students to solve the "not written by real students" complaint (R004, R009).
-- **What the team should avoid:** Don't rely on static, official-style content (mirrors the outdated university website problem) or on scattered, unmoderated formats (mirrors the social media/group chat problem). Avoid trying to serve all student types equally in the MVP — second- and third-year students showed low difficulty (avg. 2.0/5) and mostly "Maybe" interest, so they are not the priority.
-- **Most important need for MVP:** A trustworthy, searchable "first week" starting point combined with real student-written dorm and cafeteria reviews — this directly targets the highest-severity, highest-frequency pain point (information scattered / no clear starting point) reported by first-year students.
+- **What the team should avoid:** We should not rely on static, official-style content (mirrors the outdated university website problem) or on scattered, unmoderated formats (mirrors the social media/group chat problem) and also avoid trying to serve all student types equally in the MVP — second- and third-year students showed low difficulty (avg. 2.0/5) and mostly "Maybe" interest, so they are not the priority.
+- **Most important need for MVP:** A trustworthy, searchable "first week" starting point combined with real student-written dorm and cafeteria reviews ,this directly targets the highest-severity, highest-frequency pain point (information scattered / no clear starting point) reported by first-year students.
