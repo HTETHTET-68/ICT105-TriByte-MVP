@@ -1,7 +1,3 @@
-# Lab 04 - User Stories and Acceptance Criteria
-
-## User Story Format
-As a [user role], I want to [goal/action], so that [benefit/value].
 
 ## User Stories
 # Lab 04 - User Stories and Acceptance Criteria
