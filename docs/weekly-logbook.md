@@ -202,14 +202,10 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 
 ## **4. Problems Encountered**
 
-- **Technical problem:**
-  One early challenge was the absence of a clear visual representation of user interactions. This was resolved through the successful creation of the user flow and use case diagrams.
+- **Technical problem:** Organizing and linking the user stories, system requirements, and diagrams so they remained consistent throughout the documentation.
+- **Team coordination problem:** Coordinating document updates across team members and ensuring everyone's contributions aligned before merging.
+- **Evidence/requirement problem:** Some user needs overlapped, requiring revisions to the user persona, requirements, and user stories before the final versions were agreed upon.
 
-- **Team coordination problem:**
-  The team had to make real-time adjustments to ensure workloads remained evenly distributed throughout this week's lab tasks.
-
-- **Evidence/requirement problem:**
-  Lab 03's survey did not confirm students would write reviews (US-03/US-04 assumed this). A follow-up with six respondents found that five were willing to submit reviews if the form took less than two minutes and protected their privacy. This resulted in rewriting US-03's acceptance criteria and updating `docs/user-stories.md`.
 
 
 
