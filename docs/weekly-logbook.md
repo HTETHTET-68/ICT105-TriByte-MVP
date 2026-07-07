@@ -139,7 +139,7 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 - **Repository Link:** `https://github.com/HTETHTET-68/ICT105-TriByte-MVP`
 - **Date:** June 24, 2026
 
----
+
 
 ## **1. Work Completed Today**
 
@@ -149,7 +149,7 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 | **Htet Htet Myint Zaw** | Worked on system requirements and MVP feature list. | `https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/?author=HTETHTET-68` |
 | **Khaing Zin Thet** | Developed user flow and use case diagrams based on the system requirements. | `https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/?author=khaingzinthet-6921` |
 
----
+
 
 ## **2. Main Decisions**
 
@@ -186,7 +186,7 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
   - AI Recommendation System (F11)
   - Real-time Chat (F12)
 
----
+
 
 ## **3. Requirement Changes / Clarifications**
 
@@ -198,7 +198,7 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
   - HallPass will collect only essential information.
   - Reviews will be displayed using a display name or initials instead of the user's full identity.
 
----
+
 
 ## **4. Problems Encountered**
 
@@ -211,7 +211,7 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 - **Evidence/requirement problem:**
   Lab 03's survey did not confirm students would write reviews (US-03/US-04 assumed this). A follow-up with six respondents found that five were willing to submit reviews if the form took less than two minutes and protected their privacy. This resulted in rewriting US-03's acceptance criteria and updating `docs/user-stories.md`.
 
----
+
 
 ## **5. Next Actions Before Lab 05**
 
