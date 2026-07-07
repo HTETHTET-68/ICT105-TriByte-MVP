@@ -26,7 +26,7 @@ New international students and first-year university students often struggle to 
 - International students
 - First-year university students
 - Exchange students
-- New students unfamiliar with campus life
+
 
 ## Selected IT Venture Direction
 **HallPass – Student Reviews & Campus Survival Guide**
@@ -59,12 +59,13 @@ A web-based platform that helps students settle into campus life by providing:
 - `pitch/`: Final presentation slides and pitch materials.
 
 ## Weekly Progress Log
+
 | Lab | Main Activity | Output | Status |
 |---|---|---|---|
 | Lab 1 | Lab setup and idea log | Repository setup, team profile, initial three-idea logbook | Completed |
 | Lab 2 | Opportunity scanning and NUF scoring | Six-idea opportunity discovery table, technology feasibility mapping, NUF scoring, selected project HallPass | Completed |
 | Lab 3 | Customer discovery and problem validation | Target respondents defined, survey distributed, 20 responses collected, assumption vs evidence analysis completed | Completed |
-| Lab 4 | | | |
+| Lab 4 | User persona, system requirements, MVP feature prioritization, user stories, user flow, and use case diagrams | Completed user persona, functional requirements, MVP feature list (MoSCoW), user stories, user flow diagram, use case diagram| Completed |
 | Lab 5 | | | |
 | Lab 6 | | | |
 | Lab 7 | | | |
@@ -99,3 +100,49 @@ University students, especially first-year, international, and exchange students
 
 ## Decision for Next Step
 In Lab 04, we will refine the problem definition and user needs based on validated evidence. We will prioritize key pain points, identify the most critical user segments, and begin shaping the MVP solution features for HallPass.
+## Lab 04: User Persona, Requirements, and User Stories
+
+### Primary Target User
+The primary target user is a first-year university student who is looking for reliable information about campus dormitories, cafeterias, and student life. The platform helps students make informed decisions by providing trusted reviews and campus resources in one place.
+
+### Persona Summary
+- **Persona name:** May
+- **User type:** First-year university student
+- **Main goal:** Find trustworthy information about campus accommodation and food options before making decisions.
+- **Main pain point:** Campus information is scattered across social media, friends, and unofficial sources, making it difficult to verify.
+- **Current workaround:** Asking seniors, checking Facebook groups, and browsing multiple websites.
+
+### Key Requirements
+
+| Req ID | Requirement | Priority | Related Evidence |
+| --- | --- | --- | --- |
+| FR-01 | Display a homepage introducing HallPass and its purpose. | Must | User Story US-01 |
+| FR-02 | Allow users to browse dormitory and cafeteria reviews. | Must | User Story US-02 |
+| FR-03 | Allow users to submit ratings and reviews. | Must | User Story US-03 |
+| FR-04 | Store and display submitted reviews. | Must | User Story US-04 |
+| NFR-01 | The system should be responsive on desktop and mobile devices. | Must | System Requirements |
+
+### MVP Feature Scope
+
+| Feature | Priority | Included in Final Prototype? |
+| --- | --- | --- |
+| Search Dormitories | Must | Yes |
+| Browse Cafeteria Reviews | Must | Yes |
+| Submit Reviews | Must | Yes |
+| View Ratings and Comments | Must | Yes |
+| Search & Filter Reviews | Must | Yes |
+| Campus Survival Guide | Should | Yes |
+| Admin Review Moderation | Should | Yes |
+| User Rating System | Should | Yes |
+| Save Favourite Reviews | Could | No |
+| Interactive Campus Map | Could | No |
+| AI Recommendation System | Won't | No |
+| Real-time Student Chat | Won't | No |
+
+### Diagram Links
+- User flow diagram: `diagram/hallpass_user_flow_diagram.jpeg`
+- Use case diagram: `diagram/hallpass_use_case_diagram.jpeg`
+
+
+### GitHub Contribution Evidence
+All team members contributed to the repository through commits, pull requests, and collaborative development activities. 
