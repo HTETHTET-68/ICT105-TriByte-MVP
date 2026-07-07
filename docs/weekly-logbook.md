@@ -126,5 +126,99 @@ The key question we want to answer is:
 - Commit link: (https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/) 
 
 ### Plan for Lab 04
-In Lab 04, the team will use the validated evidence from Lab 03 to define a clear customer segment and build a user persona representing our primary target user. We will identify the persona's goals, frustrations, and behaviors based on the survey patterns. We will then write user stories in the format "As a [user], I want to [action] so that [benefit]" to describe what HallPass must do from the user's perspective. These outputs will guide the feature prioritization and prototype planning in the following labs.
+In Lab 04, the team will use the validated evidence from Lab 03 to define a clear customer segment and build a user persona representing our primary target user. We will identify the persona's goals, frustrations, and behaviors based on the survey patterns. We will then write user stories in the format "As a [user], I want to [action] so that [benefit]" to describe what HallPass must do from the user's perspective. These outputs will guide the feature prioritization and prototype planning in the following labs.                                    
+
+
+# Lab 04 – User Persona, Requirements, and User Stories
+
+## **Group Information**
+
+- **Course:** ICT105 Fundamental Technology Entrepreneurship
+- **Lab:** Lab 04 – User Persona, Requirements, and User Stories
+- **Group Name:** TriByte-MVP
+- **Repository Link:** `https://github.com/HTETHTET-68/ICT105-TriByte-MVP`
+- **Date:** June 24, 2026
+
+---
+
+## **1. Work Completed Today**
+
+| **Member Name** | **Contribution** | **GitHub Evidence (Commit/Issue/PR Link)** |
+|---|---|---|
+| **Yousel Zangmo** | Created the user persona, wrote the user stories, updated the weekly logbook, and updated the README. | `https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/?author=youselz68-oss` |
+| **Htet Htet Myint Zaw** | Worked on system requirements and MVP feature list. | `https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/?author=HTETHTET-68` |
+| **Khaing Zin Thet** | Developed user flow and use case diagrams based on the system requirements. | `https://github.com/HTETHTET-68/ICT105-TriByte-MVP/commits/main/?author=khaingzinthet-6921` |
+
+---
+
+## **2. Main Decisions**
+
+- **Primary target user:** First-year, international, and exchange students who are navigating dorm, cafeteria, and campus-life decisions for the first time.
+
+- **Main persona:** **"May"** — a first-year university student in her first 1–3 months on campus, currently relying on friends, social media, group chats, and the university website (all scattered/unreliable) to find dorm and food information.
+
+- **Most important problem:** Students spend excessive time (often 30–60+ minutes per search) hunting for trustworthy, up-to-date campus information because it is scattered across multiple informal sources and not written by real students.
+
+- **Must-have requirements:**
+  - Landing page explaining HallPass's purpose (FR-01)
+  - Clear navigation path from homepage → search → reviews → submit (FR-02)
+  - Review submission with ratings/comments (FR-03)
+  - Persistent storage of reviews (FR-04)
+  - Browsable review listings (FR-05)
+  - Search/filter by keyword or category (FR-06)
+  - Full review detail pages (FR-07)
+
+- **Features included in MVP:**
+  - Search Dormitories (F01)
+  - Browse Cafeteria Reviews (F02)
+  - View Detailed Reviews (F03)
+  - Submit Reviews (F04)
+  - Search & Filter Reviews (F05)
+
+  **Should Have**
+  - Campus Survival Guide (F06)
+  - Admin Review Moderation (F07)
+  - 1–5 Star Rating System (F08)
+
+- **Features postponed:**
+  - Favorite/Save Reviews (F09)
+  - Interactive Campus Map (F10)
+  - AI Recommendation System (F11)
+  - Real-time Chat (F12)
+
+---
+
+## **3. Requirement Changes / Clarifications**
+
+- Admin-facing requirements were formalized this week:
+  - Review status labels (Pending / Approved / Published — FR-08)
+  - Admin moderation capability (FR-09)
+
+- Privacy was clarified as a requirement (FR-15):
+  - HallPass will collect only essential information.
+  - Reviews will be displayed using a display name or initials instead of the user's full identity.
+
+---
+
+## **4. Problems Encountered**
+
+- **Technical problem:**
+  One early challenge was the absence of a clear visual representation of user interactions. This was resolved through the successful creation of the user flow and use case diagrams.
+
+- **Team coordination problem:**
+  The team had to make real-time adjustments to ensure workloads remained evenly distributed throughout this week's lab tasks.
+
+- **Evidence/requirement problem:**
+  Lab 03's survey did not confirm students would write reviews (US-03/US-04 assumed this). A follow-up with six respondents found that five were willing to submit reviews if the form took less than two minutes and protected their privacy. This resulted in rewriting US-03's acceptance criteria and updating `docs/user-stories.md`.
+
+---
+
+## **5. Next Actions Before Lab 05**
+
+| **Task** | **Owner** | **Deadline** | **GitHub Issue** |
+|---|---|---|---|
+| Finish MVP feature list and review system requirements | **Htet Htet Myint Zaw** | 07/07/2026 | https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues |
+| Finish user stories and user persona | **Yousel Zangmo** | 07/07/2026 | https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues|
+| Finish use case diagram and flowchart | **Khaing Zin Thet** | 07/07/2026 | https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues |
+| Finish weekly logbook and README | **Yousel Zangmo** | 07/07/2026 | https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues |
 
