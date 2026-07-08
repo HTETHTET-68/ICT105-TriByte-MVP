@@ -66,7 +66,7 @@ A web-based platform that helps students settle into campus life by providing:
 | Lab 2 | Opportunity scanning and NUF scoring | Six-idea opportunity discovery table, technology feasibility mapping, NUF scoring, selected project HallPass | Completed |
 | Lab 3 | Customer discovery and problem validation | Target respondents defined, survey distributed, 20 responses collected, assumption vs evidence analysis completed | Completed |
 | Lab 4 | User persona, system requirements, MVP feature prioritization, user stories, user flow, and use case diagrams | Completed user persona, functional requirements, MVP feature list (MoSCoW), user stories, user flow diagram, use case diagram| Completed |
-| Lab 5 | | | |
+| Lab 5 | Product concept and UI/UX wireframes | Product concept, feature-requirement mapping, six required wireframes, user flow diagram, usability checklist, and clickable HTML/CSS wireframe draft | Completed |
 | Lab 6 | | | |
 | Lab 7 | | | |
 | Lab 8 | | | |
@@ -146,3 +146,36 @@ The primary target user is a first-year university student who is looking for re
 
 ### GitHub Contribution Evidence
 All team members contributed to the repository through commits, pull requests, and collaborative development activities. 
+
+
+## Lab 05: Product Concept and UI/UX Wireframe
+
+Lab 05 converts the Lab 04 requirements, user stories, and MVP feature list into the first visual baseline for the final HallPass prototype.
+
+### Lab 05 Outputs
+
+| Required Output | Repository Location | Status |
+|---|---|---|
+| Product concept | `docs/product-concept.md` | Completed |
+| Feature-requirement mapping | `docs/feature-requirement-mapping.md` | Completed |
+| Wireframe specification | `docs/wireframe-specification.md` | Completed |
+| Usability checklist | `docs/wireframe-usability-checklist.md` | Completed |
+| User flow diagram | `diagrams/user-flow.mmd` and `diagrams/user-flow.png` | Completed |
+| Homepage wireframe | `wireframes/homepage.png` | Completed |
+| Input/submission form wireframe | `wireframes/input-form.png` | Completed |
+| Records/list view wireframe | `wireframes/record-list.png` | Completed |
+| Detail view wireframe | `wireframes/detail-view.png` | Completed |
+| Dashboard/summary wireframe | `wireframes/dashboard.png` | Completed |
+| Admin/manager view wireframe | `wireframes/admin-view.png` | Completed |
+| Clickable wireframe draft | `prototype/wireframe-html/index.html` | Completed |
+
+### Lab 05 Prototype Navigation
+
+Homepage → Browse Reviews → Review Detail  
+Homepage → Submit Review → Confirmation → Review List  
+Homepage → Dashboard → Admin Moderation  
+Homepage → Survival Guide → Guide Topics
+
+### Lab 05 Traceability
+
+The wireframes are not random screens. Each screen is connected to `docs/system-requirements.md`, `docs/user-stories.md`, and `docs/mvp-feature-list.md`. The feature-requirement mapping file explains which requirement ID, user story ID, MVP feature, wireframe, and prototype module belongs to each screen.
