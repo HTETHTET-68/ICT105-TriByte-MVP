@@ -285,3 +285,118 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 | Add simple local storage or JSON sample data for submitted reviews | Htet Htet Myint Zaw | Before Lab 06 | Supports FR-04 record management. |
 | Review mobile responsiveness and capture screenshots | Yousel Zangmo | Before Lab 06 | Supports FR-14. |
 | Create GitHub issues for unfinished prototype improvements | All members | Before Lab 06 | Evidence for teamwork and project continuity. |
+
+# Lab 06 – Clickable Prototype Development and Documentation Synchronization
+
+## Group Information
+
+- **Course:** ICT105 Fundamental Technology Entrepreneurship
+- **Lab:** Lab 06 – Clickable Prototype Development and Documentation Synchronization
+- **Group Name:** TriByte-MVP
+- **Project:** HallPass – Student Reviews & Campus Survival Guide
+- **Repository Link:** `https://github.com/HTETHTET-68/ICT105-TriByte-MVP`
+- **Date:** July 8, 2026
+
+---
+
+## 1. Work Completed Today
+
+| Member Name | Contribution | GitHub Evidence |
+|---|---|---|
+| **Htet Htet Myint Zaw** | Updated the clickable prototype, synchronized all project documentation with the implemented prototype, revised the system requirements, MVP feature list, product concept, feature mappings, and weekly logbook. | Commit / issue evidence to be added after upload. |
+| **Yousel Zangmo** | Reviewed user stories, user persona, prototype navigation, and documentation consistency with the final prototype. | Commit / issue evidence to be added after upload. |
+| **Khaing Zin Thet** | Improved HTML prototype pages, verified navigation flow between pages, and reviewed UI consistency across the prototype. | Commit / issue evidence to be added after upload. |
+
+---
+
+## 2. Main Decisions
+
+- Completed the first fully clickable HallPass prototype.
+- Standardized the project structure by using the `prototype/` folder instead of the previous `prototype/wireframe-html/` directory.
+- Finalized the prototype pages to accurately represent the MVP:
+  - Homepage
+  - Login
+  - Signup
+  - Dormitory Reviews
+  - Cafeteria Reviews
+  - Review Details
+  - Write Review
+  - Campus Survival Guide
+  - Admin Dashboard
+- Updated all project documentation so that every requirement, feature, user story, and prototype page is fully synchronized.
+- Removed outdated template references and replaced them with the actual prototype implementation.
+
+---
+
+## 3. Files Added or Updated
+
+| File / Folder | Purpose |
+|---|---|
+| `prototype/index.html` | Homepage |
+| `prototype/login.html` | User login page |
+| `prototype/signup.html` | User registration page |
+| `prototype/dorms.html` | Dormitory review listing |
+| `prototype/cafeteria.html` | Cafeteria review listing |
+| `prototype/review-details.html` | Detailed review page |
+| `prototype/write-review.html` | Review submission page |
+| `prototype/guide.html` | Campus survival guide |
+| `prototype/dashboard.html` | Admin dashboard |
+| `docs/product-concept.md` | Updated to match the implemented prototype |
+| `docs/system-requirements.md` | Revised functional and non-functional requirements |
+| `docs/mvp-feature-list.md` | Updated MVP scope and MoSCoW prioritization |
+| `docs/feature-requirement-mapping.md` | Synchronized features, requirements, user stories, and prototype pages |
+| `docs/feature-value-mapping.md` | Added user value and business value mapping |
+| `docs/wireframe-specification.md` | Updated to reflect the implemented prototype screens |
+| `docs/weekly-logbook.md` | Added Lab 06 progress |
+
+---
+
+## 4. Requirement Coverage
+
+During Lab 06, the team verified that every implemented prototype page corresponds to the documented system requirements.
+
+- **FR-01** – Homepage implemented (`index.html`)
+- **FR-02** – Navigation verified across all pages
+- **FR-03** – Login and Signup pages implemented
+- **FR-04** – Dormitory review listing implemented
+- **FR-05** – Cafeteria review listing implemented
+- **FR-06** – Search and filtering included in review pages
+- **FR-07** – Review details page implemented
+- **FR-08** – Review submission page implemented
+- **FR-09** – Campus Survival Guide implemented
+- **FR-10** – Required fields included in the review submission form
+- **FR-11** – Dashboard implemented with review summary information
+- **FR-12** – Consistent navigation, typography, layout, and colour palette maintained throughout the prototype
+- **FR-13** – Responsive layout considered across prototype pages
+- **FR-14** – Limited personal information collected in the review form
+- **FR-15** – Documentation fully synchronized with prototype implementation
+
+---
+
+## 5. Problems Encountered
+
+- Several documentation files still contained outdated template page names such as `reviews.html`, `detail.html`, `submit.html`, and `admin.html`.
+- Some documents referenced the obsolete folder `prototype/wireframe-html/`, while the implemented prototype uses the `prototype/` directory.
+- Ensuring consistency across all documentation files required multiple reviews because every requirement, feature, user story, and prototype page had to reference the same implementation.
+- Navigation links between pages were tested and adjusted to provide a smoother user experience.
+
+---
+
+## 6. Lessons Learned
+
+- Keeping documentation synchronized with implementation is essential to avoid inconsistencies during project assessment.
+- Traceability between requirements, user stories, MVP features, and prototype screens makes the project easier to understand and maintain.
+- Building the prototype and updating the documentation together reduces future rework and improves overall project quality.
+- A consistent design language across all pages provides a more professional user experience.
+
+---
+
+## 7. Next Actions Before Final Submission
+
+| Task | Owner | Deadline | Notes |
+|---|---|---|---|
+| Final testing of all prototype navigation | All Members | Before final submission | Verify every button and page link |
+| Review responsive layout on different screen sizes | Khaing Zin Thet | Before final submission | Improve usability |
+| Final proofreading of documentation | Htet Htet Myint Zaw | Before final submission | Ensure complete consistency |
+| Capture final prototype screenshots | Yousel Zangmo | Before final submission | Evidence for final report |
+| Final GitHub review and repository cleanup | All Members | Before final submission | Ensure repository is organized and submission-ready |
