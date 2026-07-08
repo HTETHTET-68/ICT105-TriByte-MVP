@@ -1,0 +1,36 @@
+flowchart TD
+    A[Student opens HallPass homepage] --> B[Choose main action]
+
+    B --> C[Browse dormitory and cafeteria reviews]
+    B --> D[Open campus survival guide]
+    B --> E[Submit new review]
+    B --> F[Open dashboard summary]
+
+    C --> G[Review list]
+    G --> H[Search / Filter by keyword or category]
+    H --> I[Filtered review results]
+    I --> J[Review detail view]
+    J --> K[Student reads rating, category, status, and full review]
+
+    D --> L[Guide topics and first-week tips]
+    L --> M[Student reads campus survival information]
+
+    E --> N{Input validation}
+    N -->|Valid| O[Save review as pending record]
+    N -->|Invalid| P[Show error message]
+    O --> Q[Display submission confirmation]
+    O --> R[Admin moderation queue]
+
+    R --> S[Admin reviews submitted content]
+    S --> T{Moderation decision}
+    T -->|Approve| U[Publish review]
+    T -->|Flag| V[Mark review as flagged]
+    T -->|Delete| W[Remove inappropriate review]
+
+    U --> X[Updated review list]
+    V --> X
+    W --> X
+    X --> Y[Dashboard / Summary updated]
+    F --> Y
+
+    Y --> Z[Show total reviews, pending reviews, top dormitory, and top cafeteria]
