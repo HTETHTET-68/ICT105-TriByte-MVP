@@ -1,4 +1,4 @@
-<img width="468" height="22" alt="image" src="https://github.com/user-attachments/assets/4c745537-99b0-409e-a597-26443f6dee3f" /># Feature-Requirement Mapping
+# Feature-Requirement Mapping
 
 Use this file to prove that your wireframe and final prototype are not random screens. Every planned screen and feature must connect to `system-requirements.md`.
 
