@@ -1,0 +1,4 @@
+﻿segment_id,segment_name,need,value_expected,possible_channel
+CS01,"Students looking for dormitory reviews, cafeteria reviews, or campus guidance",Find reliable campus information quickly,Trusted student reviews and guides to make better decisions,Website
+CS02,Senior students who want to share their campus experiences,"Share reviews, recommendations, and survival tips",Easy way to help junior students and contribute to the campus community,Web form
+CS03,Admin or university moderator,"Monitor reviews, verify submissions, and manage content","Well-organized, reliable, and safe platform for students",Admin panel
