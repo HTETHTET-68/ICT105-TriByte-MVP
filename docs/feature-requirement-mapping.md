@@ -4,14 +4,14 @@ Use this file to prove that your wireframe and final prototype are not random sc
 
 | Feature ID | Feature / Screen | Requirement ID | User Story ID | Purpose | Wireframe File | Final Prototype Module |
 |------------|------------------|----------------|---------------|---------|----------------|------------------------|
-| F-01 | Homepage / Landing Screen | FR-01, FR-02 | US-01 | Introduce HallPass, highlight key services, and provide navigation to main features. | `/wireframes/homepage.png` | `/prototype/index.html` |
-| F-02 | Search Dormitories | FR-03, FR-04 | US-01 | Allow students to search and browse dormitories with essential accommodation details. | `/wireframes/search-dormitories.png` | `/prototype/dormitories.html` |
-| F-03 | Browse Cafeteria Reviews | FR-05, FR-06 | US-02 | Enable students to browse cafeteria ratings and reviews before choosing where to eat. | `/wireframes/cafeteria-reviews.png` | `/prototype/cafeteria.html` |
-| F-04 | View Detailed Reviews | FR-07 | US-03 | Display complete review information including ratings, comments, and recommendations. | `/wireframes/review-details.png` | `/prototype/review-detail.html` |
-| F-05 | Submit Reviews | FR-08, FR-09 | US-04 | Allow students to submit reviews with ratings and comments through a validated form. | `/wireframes/submit-review.png` | `/prototype/submit-review.html` |
-| F-06 | Search & Filter Reviews | FR-10 | US-05 | Help students quickly find reviews by cafeteria, dormitory, rating, or keywords. | `/wireframes/search-filter.png` | `/prototype/search.html` |
-| F-07 | Campus Survival Guide | FR-11 | US-06 | Provide essential campus information, tips, maps, and student resources in one place. | `/wireframes/survival-guide.png` | `/prototype/guide.html` |
-| F-08 | Admin Review Moderation | FR-12 | US-07 | Allow administrators to approve, edit, or remove inappropriate reviews to maintain quality. | `/wireframes/admin-panel.png` | `/prototype/admin.html` |
+| F-01 | Homepage / Landing Screen | FR-01, FR-02 | US-01, US-02 | Introduce HallPass, explain its purpose, and provide navigation to the main features. | `/wireframes/homepage.png` | `/prototype/index.html` |
+| F-02 | Search Dormitories | FR-05, FR-06 | US-05, US-06 | Allow students to browse and search dormitory reviews and accommodation information. | `/wireframes/search-dormitories.png` | `/prototype/dormitories.html` |
+| F-03 | Browse Cafeteria Reviews | FR-05, FR-06 | US-05, US-06 | Allow students to browse cafeteria reviews and search/filter them efficiently. | `/wireframes/cafeteria-reviews.png` | `/prototype/cafeteria.html` |
+| F-04 | View Detailed Reviews | FR-07 | US-07 | Display complete review information including ratings, comments, recommendations, and posting date. | `/wireframes/review-details.png` | `/prototype/review-detail.html` |
+| F-05 | Submit Reviews | FR-03, FR-04, FR-08, FR-10, FR-11 | US-03, US-04, US-08, US-10, US-11 | Allow students to submit validated reviews, save them, show verification status, and display confirmation messages. | `/wireframes/submit-review.png` | `/prototype/submit-review.html` |
+| F-06 | Search & Filter Reviews | FR-06 | US-06 | Help students quickly find dormitory or cafeteria reviews using search and filtering. | `/wireframes/search-filter.png` | `/prototype/search.html` |
+| F-07 | Campus Survival Guide | FR-05, FR-07 | US-17 | Provide a structured Survival Week Guide with campus tips, move-in information, dining, orientation, and student resources. | `/wireframes/survival-guide.png` | `/prototype/guide.html` |
+| F-08 | Admin Review Moderation | FR-09 | US-09 | Allow administrators to approve, edit, flag, or remove submitted reviews before publication. | `/wireframes/admin-panel.png` | `/prototype/admin.html` |
 
 
 ## Group Case Mapping
