@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | HallPass</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">
+            <i class="fa-solid fa-school"></i>
+        </div>
+        HallPass
+      </a>
+
+      <button class="menu">☰</button>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dorms.html">Dorm Reviews</a>
+        <a href="cafeteria.html">Cafeteria Reviews</a>
+        <a href="guide.html">Survival Guide</a>
+        <a href="write-review.html">Write Review</a>
+        <a href="login.html" class="btn-nav">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">For Rangsit University Students</span>
+
+        <h1>Find trusted dorm, food, and campus advice in one place.</h1>
+
+        <p>
+          HallPass helps first-year, international, and exchange students settle
+          into campus life with student-written reviews, practical guides, and
+          reliable recommendations.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="dorms.html">Explore Dorms</a>
+          <a class="btn white" href="guide.html">Read Survival Guide</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="stat-grid">
+          <div class="stat">
+            <b>20+</b>
+            <p>survey responses</p>
+          </div>
+
+          <div class="stat">
+            <b>16/20</b>
+            <p>would use HallPass</p>
+          </div>
+
+          <div class="stat">
+            <b>6</b>
+            <p>MVP pages</p>
+          </div>
+
+          <div class="stat">
+            <b>100%</b>
+            <p>HTML CSS JS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="container section-head">
+        <div>
+          <span class="badge">Featured</span>
+          <h2>Latest student reviews</h2>
+          <p class="muted">
+            Quick highlights for dorms and cafeteria options around RSU.
+          </p>
+        </div>
+
+        <a class="btn outline" href="write-review.html">Write Review</a>
+      </div>
+
+      <div class="container grid" id="homeCards"></div>
+    </section>
+
+    <section class="section">
+      <div class="container grid">
+
+        <div class="card">
+          <h3>🏢 Dorm Reviews</h3>
+          <p class="muted">
+            Compare price, distance, safety, Wi-Fi, and student ratings.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🍜 Cafeteria Reviews</h3>
+          <p class="muted">
+            Find affordable food, popular dishes, and opening hours.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📘 Survival Guide</h3>
+          <p class="muted">
+            Learn transport, visa, bank, emergency, and daily campus tips.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast"></div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>HallPass</h3>
+        <p>
+          Student reviews and campus survival guide for Rangsit University students.
+        </p>
+      </div>
+
+      <div>
+        <h4>Features</h4>
+        <p>
+          Dorms<br>
+          Cafeterias<br>
+          Guides
+        </p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>
+          Email:hello@hallpass.com<br>
+          Phone: +66 123 456 789<br>
+          Address: Rangsit University, Thailand
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/dashboard.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const el = document.getElementById("homeCards");
+
+      el.innerHTML = getReviews()
+        .slice(0, 6)
+        .map(r => `
+          <article class="card review-card">
+            <div class="review-img">${r.emoji}</div>
+
+            <div class="review-body">
+              <span class="badge">${r.type}</span>
+              <h3>${r.title}</h3>
+              <p class="stars">★★★★★ ${r.rating}</p>
+              <p class="muted">${r.text}</p>
+              <a class="btn outline" href="review-details.html?id=${r.id}">
+                View Details
+              </a>
+            </div>
+          </article>
+        `)
+        .join("");
+    });
+  </script>
+
+</body>
+</html>
