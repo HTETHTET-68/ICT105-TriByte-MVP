@@ -191,8 +191,8 @@ In Lab 06, our group connected the HallPass product concept, system requirements
 - [Feature-Value Mapping](docs/feature-value-mapping.md)
 - [Technical Architecture](docs/technical-architecture.md)
 - [Data Structure](docs/data-structure.md)
-- [System Architecture Diagram](diagrams/system-architecture.mdd)
-- [Data Flow Diagram](diagrams/data-flow.mdd)
+- [System Architecture Diagram](diagrams/system-architecture.mmd)
+- [Data Flow Diagram](diagrams/data-flow.mmd)
 - [Weekly Logbook](docs/weekly-logbook.md)
 
 ## Technical Direction
