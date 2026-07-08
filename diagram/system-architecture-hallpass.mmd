@@ -1,0 +1,18 @@
+flowchart LR
+    U[Student User] --> UI[HallPass Web Interface]
+    UI --> SEARCH[Search / Filter Campus Information]
+    UI --> REVIEW[Review / Rating Submission Form]
+    UI --> GUIDE[Campus Survival Guide Page]
+
+    SEARCH --> STORE[(HallPass Data Storage)]
+    REVIEW --> STORE
+    GUIDE --> STORE
+
+    STORE --> LIST[Review and Guide List]
+    LIST --> DETAIL[Campus Place / Guide Detail View]
+    STORE --> DASH[Review Summary / Admin Dashboard]
+
+    ADMIN[Campus Administrator] --> ADMINP[Admin Panel]
+    ADMINP --> STORE
+    ADMINP --> MOD[Review Moderation / Content Update]
+    MOD --> STORE
