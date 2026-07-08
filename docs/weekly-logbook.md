@@ -286,117 +286,71 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 | Review mobile responsiveness and capture screenshots | Yousel Zangmo | Before Lab 06 | Supports FR-14. |
 | Create GitHub issues for unfinished prototype improvements | All members | Before Lab 06 | Evidence for teamwork and project continuity. |
 
-# Lab 06 – Clickable Prototype Development and Documentation Synchronization
+# Weekly Logbook - Lab 06
 
-## Group Information
+## Group Name
+TriByte-MVP
 
-- **Course:** ICT105 Fundamental Technology Entrepreneurship
-- **Lab:** Lab 06 – Clickable Prototype Development and Documentation Synchronization
-- **Group Name:** TriByte-MVP
-- **Project:** HallPass – Student Reviews & Campus Survival Guide
-- **Repository Link:** `https://github.com/HTETHTET-68/ICT105-TriByte-MVP`
-- **Date:** July 8, 2026
+## Project Title
+HallPass – Student Reviews & Campus Survival Guide
 
----
+## Date
+July 8, 2026
 
-## 1. Work Completed Today
+## Members Present
 
-| Member Name | Contribution | GitHub Evidence |
+| Member Name | Contribution Today | GitHub Evidence / Commit / File Updated |
 |---|---|---|
-| **Htet Htet Myint Zaw** | Updated the clickable prototype, synchronized all project documentation with the implemented prototype, revised the system requirements, MVP feature list, product concept, feature mappings, and weekly logbook. | Commit / issue evidence to be added after upload. |
-| **Yousel Zangmo** | Reviewed user stories, user persona, prototype navigation, and documentation consistency with the final prototype. | Commit / issue evidence to be added after upload. |
-| **Khaing Zin Thet** | Improved HTML prototype pages, verified navigation flow between pages, and reviewed UI consistency across the prototype. | Commit / issue evidence to be added after upload. |
+| Htet Htet Myint Zaw | Developed and refined the clickable HTML prototype, synchronized all documentation with the implemented prototype, updated the Product Concept, System Requirements, MVP Feature List, Feature-Requirement Mapping, Feature-Value Mapping, Wireframe Specification, and Weekly Logbook. | `prototype/`, `docs/product-concept.md`, `docs/system-requirements.md`, `docs/mvp-feature-list.md`, `docs/feature-requirement-mapping.md`, `docs/feature-value-mapping.md`, `docs/wireframe-specification.md`, `docs/weekly-logbook.md` |
+| Yousel Zangmo | Reviewed the user persona, user stories, documentation consistency, and verified prototype navigation and screen alignment. | `docs/user-persona.md`, `docs/user-stories.md`, documentation review |
+| Khaing Zin Thet | Improved prototype navigation, UI consistency, HTML page structure, and verified page connections across the clickable prototype. | `prototype/index.html`, `login.html`, `signup.html`, `guide.html`, `dorms.html`, `cafeteria.html`, `review-details.html`, `write-review.html`, `dashboard.html` |
 
 ---
 
-## 2. Main Decisions
+## Decisions Made Today
 
-- Completed the first fully clickable HallPass prototype.
-- Standardized the project structure by using the `prototype/` folder instead of the previous `prototype/wireframe-html/` directory.
-- Finalized the prototype pages to accurately represent the MVP:
-  - Homepage
-  - Login
-  - Signup
-  - Dormitory Reviews
-  - Cafeteria Reviews
-  - Review Details
-  - Write Review
-  - Campus Survival Guide
-  - Admin Dashboard
-- Updated all project documentation so that every requirement, feature, user story, and prototype page is fully synchronized.
-- Removed outdated template references and replaced them with the actual prototype implementation.
+### 1. Business Model Decision
+The team confirmed that HallPass will remain a student-driven campus survival guide focused on helping first-year, international, and exchange students access trustworthy dormitory reviews, cafeteria reviews, and campus survival information. Advanced services such as AI recommendations, booking, and payment systems remain outside the MVP scope.
 
----
+### 2. Technical Architecture Decision
+The final prototype will be implemented as a front-end web application using HTML, CSS, and JavaScript. The project will use a static prototype structure with sample data and a consistent navigation flow across all pages.
 
-## 3. Files Added or Updated
+### 3. Data Structure Decision
+The prototype data structure was finalized to include the following core entities:
 
-| File / Folder | Purpose |
-|---|---|
-| `prototype/index.html` | Homepage |
-| `prototype/login.html` | User login page |
-| `prototype/signup.html` | User registration page |
-| `prototype/dorms.html` | Dormitory review listing |
-| `prototype/cafeteria.html` | Cafeteria review listing |
-| `prototype/review-details.html` | Detailed review page |
-| `prototype/write-review.html` | Review submission page |
-| `prototype/guide.html` | Campus survival guide |
-| `prototype/dashboard.html` | Admin dashboard |
-| `docs/product-concept.md` | Updated to match the implemented prototype |
-| `docs/system-requirements.md` | Revised functional and non-functional requirements |
-| `docs/mvp-feature-list.md` | Updated MVP scope and MoSCoW prioritization |
-| `docs/feature-requirement-mapping.md` | Synchronized features, requirements, user stories, and prototype pages |
-| `docs/feature-value-mapping.md` | Added user value and business value mapping |
-| `docs/wireframe-specification.md` | Updated to reflect the implemented prototype screens |
-| `docs/weekly-logbook.md` | Added Lab 06 progress |
+- User
+- Dormitory Review
+- Cafeteria Review
+- Campus Survival Guide
+- Dashboard Summary
+
+These entities are sufficient to support the current MVP without requiring a production database.
+
+### 4. Diagram Decision
+The team finalized the navigation flow and confirmed that every implemented prototype page corresponds directly to the documented user stories, system requirements, and MVP features. Documentation diagrams and mappings were updated to reflect the actual prototype instead of the previous template.
 
 ---
 
-## 4. Requirement Coverage
+## Problems or Risks Found
 
-During Lab 06, the team verified that every implemented prototype page corresponds to the documented system requirements.
-
-- **FR-01** – Homepage implemented (`index.html`)
-- **FR-02** – Navigation verified across all pages
-- **FR-03** – Login and Signup pages implemented
-- **FR-04** – Dormitory review listing implemented
-- **FR-05** – Cafeteria review listing implemented
-- **FR-06** – Search and filtering included in review pages
-- **FR-07** – Review details page implemented
-- **FR-08** – Review submission page implemented
-- **FR-09** – Campus Survival Guide implemented
-- **FR-10** – Required fields included in the review submission form
-- **FR-11** – Dashboard implemented with review summary information
-- **FR-12** – Consistent navigation, typography, layout, and colour palette maintained throughout the prototype
-- **FR-13** – Responsive layout considered across prototype pages
-- **FR-14** – Limited personal information collected in the review form
-- **FR-15** – Documentation fully synchronized with prototype implementation
+- Several documentation files still contained outdated template page names and prototype paths that required synchronization.
+- Maintaining consistency between requirements, user stories, feature mappings, and prototype pages required multiple rounds of review.
+- Since the current prototype is front-end only, all review data and dashboard information remain simulated rather than connected to a real database.
+- Time management was important because both prototype refinement and documentation updates had to be completed together.
 
 ---
 
-## 5. Problems Encountered
+## Next Actions Before Lab 07
 
-- Several documentation files still contained outdated template page names such as `reviews.html`, `detail.html`, `submit.html`, and `admin.html`.
-- Some documents referenced the obsolete folder `prototype/wireframe-html/`, while the implemented prototype uses the `prototype/` directory.
-- Ensuring consistency across all documentation files required multiple reviews because every requirement, feature, user story, and prototype page had to reference the same implementation.
-- Navigation links between pages were tested and adjusted to provide a smoother user experience.
-
----
-
-## 6. Lessons Learned
-
-- Keeping documentation synchronized with implementation is essential to avoid inconsistencies during project assessment.
-- Traceability between requirements, user stories, MVP features, and prototype screens makes the project easier to understand and maintain.
-- Building the prototype and updating the documentation together reduces future rework and improves overall project quality.
-- A consistent design language across all pages provides a more professional user experience.
+- Conduct final testing of all prototype navigation and page links.
+- Verify responsive layouts on different screen sizes.
+- Review and polish the visual design for consistency across all pages.
+- Capture final prototype screenshots for documentation.
+- Review the GitHub repository to ensure all files are complete, synchronized, and ready for submission.
+- Fix any remaining UI or documentation inconsistencies identified during testing.
 
 ---
 
-## 7. Next Actions Before Final Submission
+## Lecturer / TA Notes
 
-| Task | Owner | Deadline | Notes |
-|---|---|---|---|
-| Final testing of all prototype navigation | All Members | Before final submission | Verify every button and page link |
-| Review responsive layout on different screen sizes | Khaing Zin Thet | Before final submission | Improve usability |
-| Final proofreading of documentation | Htet Htet Myint Zaw | Before final submission | Ensure complete consistency |
-| Capture final prototype screenshots | Yousel Zangmo | Before final submission | Evidence for final report |
-| Final GitHub review and repository cleanup | All Members | Before final submission | Ensure repository is organized and submission-ready |
+*To be completed during the laboratory session after feedback from the lecturer or teaching assistant.*
