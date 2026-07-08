@@ -67,7 +67,7 @@ A web-based platform that helps students settle into campus life by providing:
 | Lab 3 | Customer discovery and problem validation | Target respondents defined, survey distributed, 20 responses collected, assumption vs evidence analysis completed | Completed |
 | Lab 4 | User persona, system requirements, MVP feature prioritization, user stories, user flow, and use case diagrams | Completed user persona, functional requirements, MVP feature list (MoSCoW), user stories, user flow diagram, use case diagram| Completed |
 | Lab 5 | Product concept and UI/UX wireframes | Product concept, feature-requirement mapping, six required wireframes, user flow diagram, usability checklist, and clickable HTML/CSS wireframe draft | Completed |
-| Lab 6 | | | |
+| Lab 6 | Business model development, feature-value mapping, technical architecture design, data structure definition, and system/data flow planning | Business Model Canvas, Feature-Value Mapping, Technical Architecture, Data Structure, System Architecture Diagram, Data Flow Diagram, sample dataset, README update, and weekly logbook | Completed |
 | Lab 7 | | | |
 | Lab 8 | | | |
 | Lab 9 | | | |
@@ -179,3 +179,28 @@ Homepage → Survival Guide → Guide Topics
 ### Lab 05 Traceability
 
 The wireframes are not random screens. Each screen is connected to `docs/system-requirements.md`, `docs/user-stories.md`, and `docs/mvp-feature-list.md`. The feature-requirement mapping file explains which requirement ID, user story ID, MVP feature, wireframe, and prototype module belongs to each screen.
+
+# Lab 06 Update - Business Model Canvas and Technical Architecture
+
+## Lab 06 Summary
+In Lab 06, our group connected the HallPass product concept, system requirements, user stories, MVP features, and wireframes into a clear business model and technical architecture. This lab explains how HallPass creates value for students and how the final prototype will be built and tested.
+
+## Files Added or Updated
+
+- [Business Model Canvas](docs/business-model-canvas.md)
+- [Feature-Value Mapping](docs/feature-value-mapping.md)
+- [Technical Architecture](docs/technical-architecture.md)
+- [Data Structure](docs/data-structure.md)
+- [System Architecture Diagram](diagrams/system-architecture.png)
+- [Data Flow Diagram](diagrams/data-flow.png)
+- [Weekly Logbook](docs/weekly-logbook.md)
+
+## Technical Direction
+The HallPass prototype will use a **frontend-only architecture with HTML, CSS, JavaScript, and sample JSON/localStorage simulation**.
+
+This approach is suitable for the MVP because the prototype focuses on demonstrating user pathways, review browsing, search and filtering, review submission, dashboard summary, and admin moderation. Data storage will be simulated using sample records and/or browser localStorage instead of a full backend database.
+
+## Final Prototype Connection
+This Lab 06 work will guide the final prototype by clearly showing how each MVP feature connects to user value, system requirements, user stories, and prototype screens. The Business Model Canvas explains why HallPass is useful for first-year, international, and exchange students, while the technical architecture and data structure explain how reviews, guides, status updates, dashboard summaries, and admin moderation will work in the final prototype.
+
+These files will help our group stay aligned when building the final version of HallPass and ensure the prototype shows interaction, data flow, user pathways, and visible system behavior.
