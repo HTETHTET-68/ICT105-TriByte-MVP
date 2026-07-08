@@ -218,3 +218,70 @@ In Lab 04, the team will use the validated evidence from Lab 03 to define a clea
 | Finish use case diagram and flowchart | **Khaing Zin Thet** | 07/07/2026 | https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues |
 | Finish weekly logbook and README | **Yousel Zangmo** | 07/07/2026 | https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues |
 
+
+
+# Lab 05 – Product Concept and UI/UX Wireframe
+
+## Group Information
+
+- **Course:** ICT105 Fundamental Technology Entrepreneurship
+- **Lab:** Lab 05 – Product Concept and UI/UX Wireframe
+- **Group Name:** TriByte-MVP
+- **Project:** HallPass – Student Reviews & Campus Survival Guide
+- **Repository Link:** `https://github.com/HTETHTET-68/ICT105-TriByte-MVP`
+- **Date:** July 8, 2026
+
+## 1. Work Completed Today
+
+| Member Name | Contribution | GitHub Evidence |
+|---|---|---|
+| Htet Htet Myint Zaw | Updated product concept, feature-requirement mapping, README Lab 05 section, and weekly logbook. | Commit / issue evidence to be added after upload. |
+| Yousel Zangmo | Prepared UI/UX wireframe direction, screen content, and usability checklist review. | Commit / issue evidence to be added after upload. |
+| Khaing Zin Thet | Prepared user flow diagram and clickable HTML/CSS wireframe draft structure. | Commit / issue evidence to be added after upload. |
+
+## 2. Main Lab 05 Decisions
+
+- HallPass will continue as a student review and campus survival guide platform for first-year, international, and exchange students.
+- The Lab 05 wireframes will be used as the visual baseline for the final prototype.
+- The required screens are homepage, input/submission form, record list, detail view, dashboard/summary, and admin/manager view.
+- The prototype will focus on student review browsing, review submission, search/filter, review details, admin moderation, and simple dashboard summaries.
+- Out-of-scope features such as AI recommendations, real-time chat, mobile app development, and campus maps remain excluded from the current semester MVP.
+
+## 3. Files Added or Updated
+
+| File / Folder | Purpose |
+|---|---|
+| `docs/product-concept.md` | Defines target users, problem, solution, value proposition, MVP scope, and out-of-scope items. |
+| `docs/feature-requirement-mapping.md` | Maps every screen to requirement IDs, user stories, MVP features, and final prototype modules. |
+| `docs/wireframe-specification.md` | Describes each required wireframe screen and expected content. |
+| `docs/wireframe-usability-checklist.md` | Checks usability, consistency, requirement coverage, and final prototype alignment. |
+| `diagrams/user-flow.mmd` | Mermaid source for the user flow. |
+| `diagrams/user-flow.png` | Exported user flow image. |
+| `wireframes/` | Contains all six required wireframe screenshots. |
+| `prototype/wireframe-html/` | Clickable HTML/CSS wireframe draft for Lab 05 navigation. |
+| `README.md` | Updated with Lab 05 summary and output links. |
+
+## 4. Requirement Coverage
+
+- FR-01 and FR-02 are covered by the homepage and user flow.
+- FR-03, FR-10, FR-11, and FR-15 are covered by the review submission form.
+- FR-04, FR-05, FR-06, and FR-08 are covered by the review list.
+- FR-07 is covered by the detail view.
+- FR-09 is covered by the admin/moderator view.
+- FR-12 is covered by the dashboard/summary view.
+- FR-13, FR-14, and FR-16 are considered across all screens through consistent UI, responsive layout planning, and traceability documentation.
+
+## 5. Problems Encountered
+
+- The team needed to make sure the wireframes were not just attractive screens but also traceable to the Lab 04 requirements and user stories.
+- Some features overlapped across screens, so the mapping file was used to clarify which screen demonstrates each requirement.
+- The clickable draft is not a full backend system yet, so data storage is currently simulated using sample content.
+
+## 6. Next Actions Before Lab 06
+
+| Task | Owner | Deadline | Notes |
+|---|---|---|---|
+| Turn clickable wireframe into more complete HTML/CSS/JavaScript prototype | Khaing Zin Thet | Before Lab 06 | Add working search/filter and better page transitions. |
+| Add simple local storage or JSON sample data for submitted reviews | Htet Htet Myint Zaw | Before Lab 06 | Supports FR-04 record management. |
+| Review mobile responsiveness and capture screenshots | Yousel Zangmo | Before Lab 06 | Supports FR-14. |
+| Create GitHub issues for unfinished prototype improvements | All members | Before Lab 06 | Evidence for teamwork and project continuity. |
