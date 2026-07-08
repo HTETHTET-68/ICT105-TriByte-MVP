@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | HallPass</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html">
+        <div class="logo">
+            <i class="fa-solid fa-school"></i>
+        </div>
+        HallPass
+      </a>
+
+      <button class="menu">☰</button>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dorms.html">Dorm Reviews</a>
+        <a href="cafeteria.html">Cafeteria Reviews</a>
+        <a href="guide.html">Survival Guide</a>
+        <a href="write-review.html">Write Review</a>
+        <a href="login.html" class="btn-nav">Login</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Admin Layout -->
+  <main class="admin-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>HallPass Admin</h2>
+
+      <a class="active">Dashboard</a>
+      <a>Pending Reviews</a>
+      <a>Approved Reviews</a>
+      <a>Users</a>
+      <a href="index.html">Logout</a>
+    </aside>
+
+    <!-- Main Admin Content -->
+    <section class="admin-main">
+
+      <span class="badge">Admin Panel</span>
+
+      <h1>Review Moderation Dashboard</h1>
+
+      <!-- Summary Cards -->
+      <div class="grid grid-4">
+
+        <div class="card">
+          <h3>Total Reviews</h3>
+          <h1 id="totalReviews">0</h1>
+        </div>
+
+        <div class="card">
+          <h3>Dorm Reviews</h3>
+          <h1 id="dormCount">0</h1>
+        </div>
+
+        <div class="card">
+          <h3>Food Reviews</h3>
+          <h1 id="foodCount">0</h1>
+        </div>
+
+        <div class="card">
+          <h3>Pending</h3>
+          <h1>4</h1>
+        </div>
+
+      </div>
+
+      <br>
+
+      <!-- Pending Reviews Table -->
+      <div class="card">
+        <h2>Pending Reviews</h2>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Rating</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="pendingBody"></tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>HallPass</h3>
+        <p>
+          Student reviews and campus survival guide for
+          Rangsit University students.
+        </p>
+      </div>
+
+      <div>
+        <h4>Features</h4>
+        <p>
+          Dorms<br>
+          Cafeterias<br>
+          Guides
+        </p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+          <p>
+            Email:hello@hallpass.com<br>
+            Phone: +66 123 456 789<br>
+            Address: Rangsit University, Thailand
+          </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
