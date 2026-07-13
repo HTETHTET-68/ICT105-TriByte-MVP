@@ -1,6 +1,0 @@
-tester_code,tester_type,campus_role,experience_with_hallpass,reason_selected
-T01,Student,First-year Undergraduate,Never used HallPass before,"Looking for reliable dormitory reviews, cafeteria reviews, and campus guidance."
-T02,Student,Senior Undergraduate,Experienced campus student,Can evaluate the review submission feature and share campus experiences.
-T03,Student,International Student,New to the university,Can evaluate campus guidance and the ease of navigating the platform.
-T04,Student,Dormitory Resident,Regular dormitory user,Can evaluate the accuracy and usefulness of dormitory reviews.
-T05,Administrator,Content Moderator,Responsible for managing student reviews,"Can evaluate review moderation, content management, and overall system functionality."
