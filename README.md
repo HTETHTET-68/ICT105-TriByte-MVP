@@ -204,3 +204,24 @@ This approach is suitable for the MVP because the prototype focuses on demonstra
 This Lab 06 work will guide the final prototype by clearly showing how each MVP feature connects to user value, system requirements, user stories, and prototype screens. The Business Model Canvas explains why HallPass is useful for first-year, international, and exchange students, while the technical architecture and data structure explain how reviews, guides, status updates, dashboard summaries, and admin moderation will work in the final prototype.
 
 These files will help our group stay aligned when building the final version of HallPass and ensure the prototype shows interaction, data flow, user pathways, and visible system behavior.
+
+| Lab 7 | MVP experiment design and validation planning | MVP Experiment Plan, Critical Assumptions, Experiment Script, Success Metrics, Feedback Form, README update, and Weekly Logbook | Completed |
+
+# Lab 07 Update - MVP Experiment Design
+
+## Lab 07 Summary
+
+In Lab 07, our team prepared the MVP experiment to validate the HallPass prototype before full implementation. We identified critical assumptions, selected representative test users, defined measurable success metrics, designed the experiment procedure, and prepared feedback forms to collect usability evidence.
+
+## Files Added or Updated
+
+- [MVP Experiment Plan](docs/mvp-experiment-plan.md)
+- [Critical Assumptions](docs/critical-assumptions.md)
+- [Experiment Script](docs/experiment-script.md)
+- [Success Metrics](docs/success-metrics.md)
+- [Feedback Form](docs/feedback-form.md)
+- [Weekly Logbook](docs/weekly-logbook.md)
+
+## Experiment Focus
+
+The MVP experiment evaluates whether students can successfully navigate HallPass, browse dormitory and cafeteria reviews, access the Campus Survival Guide, and submit reviews using the HTML, CSS, and JavaScript prototype before further development.
