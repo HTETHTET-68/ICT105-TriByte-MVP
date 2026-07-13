@@ -1,81 +1,73 @@
-
 # Data Structure
 
 ## Project Title
+
 **HallPass – Student Reviews & Campus Survival Guide**
+
+---
 
 ## 1. Main Data Entities / Tables
 
 | Entity / Table | Purpose | Example Records |
 |---|---|---|
-| Users | Stores basic user account information for students and admins | U001, U002, U003 |
-| Campus Places | Stores information about dormitories, cafeterias, and campus facilities | P001, P002, P003 |
-| Reviews | Stores student reviews, ratings, and recommendations | R001, R002, R003 |
-| Survival Guides | Stores campus tips and guide content for new students | G001, G002, G003 |
-| Moderation Reports | Stores reports or admin checks for inappropriate or incorrect content | M001, M002, M003 |
+| Campus Review Records | Store student reviews and ratings for dormitories and cafeterias around campus. | HP-001, HP-002, HP-003 |
+
+---
 
 ## 2. Field Definition
 
-| Entity | Field Name | Data Type | Required? | Example Value | Validation Rule | Used For Search/Filter? |
-|---|---|---|---|---|---|---|
-| Users | user_id | Text/ID | Yes | U001 | Unique value | Yes |
-| Users | name | Text | Yes | Tashi Dorji | 2–50 characters | No |
-| Users | email | Text | Yes | student@example.com | Must contain @ | No |
-| Users | role | Text/List | Yes | Student | Student/Admin | Yes |
-| Users | created_date | Date | Yes | 2026-07-08 | Valid date format | No |
-| Campus Places | place_id | Text/ID | Yes | P001 | Unique value | Yes |
-| Campus Places | place_name | Text | Yes | Main Cafeteria | 2–100 characters | Yes |
-| Campus Places | category | Text/List | Yes | Cafeteria | Dormitory/Cafeteria/Facility | Yes |
-| Campus Places | location | Text | Yes | Building A, Ground Floor | 2–100 characters | Yes |
-| Campus Places | description | Text | No | Affordable food near classrooms | Maximum 300 characters | No |
-| Campus Places | status | Text/List | Yes | Active | Active/Inactive/Under Review | Yes |
-| Reviews | review_id | Text/ID | Yes | R001 | Unique value | Yes |
-| Reviews | user_id | Text/ID | Yes | U001 | Must match existing user_id | No |
-| Reviews | place_id | Text/ID | Yes | P001 | Must match existing place_id | Yes |
-| Reviews | rating | Number | Yes | 4 | 1–5 only | Yes |
-| Reviews | review_text | Text | Yes | Food is affordable and clean. | 10–500 characters | No |
-| Reviews | review_date | Date | Yes | 2026-07-08 | Valid date format | Yes |
-| Reviews | status | Text/List | Yes | Pending | Pending/In Review/Approved/Rejected | Yes |
-| Reviews | admin_note | Text | No | Approved after checking content | Maximum 200 characters | No |
-| Survival Guides | guide_id | Text/ID | Yes | G001 | Unique value | Yes |
-| Survival Guides | title | Text | Yes | How to Choose a Dormitory | 5–100 characters | Yes |
-| Survival Guides | category | Text/List | Yes | Dormitory | Dormitory/Cafeteria/Campus Life | Yes |
-| Survival Guides | content | Text | Yes | Compare distance, price, and facilities before choosing. | 20–1000 characters | No |
-| Survival Guides | created_by | Text/ID | Yes | U002 | Must match existing user_id | No |
-| Survival Guides | status | Text/List | Yes | Published | Draft/Published/Archived | Yes |
-| Moderation Reports | report_id | Text/ID | Yes | M001 | Unique value | Yes |
-| Moderation Reports | review_id | Text/ID | Yes | R001 | Must match existing review_id | No |
-| Moderation Reports | report_reason | Text/List | Yes | Inappropriate content | Spam/Inaccurate/Inappropriate/Other | Yes |
-| Moderation Reports | reported_date | Date | Yes | 2026-07-08 | Valid date format | No |
-| Moderation Reports | status | Text/List | Yes | In Progress | Pending/In Progress/Completed/Closed | Yes |
-| Moderation Reports | updated_by | Text/ID | Yes | U003 | Must match admin user_id | No |
+| Field Name | Data Type | Required? | Example Value | Validation Rule | Used For Search/Filter? |
+|---|---|---|---|---|---|
+| ReviewID | Text | Yes | HP-001 | Unique value | Yes |
+| ReviewType | List | Yes | Dormitory | Dormitory / Cafeteria | Yes |
+| PlaceName | Text | Yes | Green Residence Hall | Cannot be empty | Yes |
+| Location | Text | Yes | Near Main Gate | Cannot be empty | Yes |
+| Rating | Number | Yes | 4 | Whole number from 1 to 5 | Yes |
+| DateSubmitted | Date | Yes | 2026-07-01 | Valid date in YYYY-MM-DD format | Yes |
+| ReviewerRole | List | Yes | Student | Student / Senior Student | Yes |
+| Status | List | Yes | Approved | Pending / In Review / Approved / Rejected / Archived | Yes |
+| ReviewTitle | Text | Yes | Quiet and affordable dorm | Maximum 100 characters | Yes |
+| ReviewText | Text | Yes | The rooms are clean and the dorm is close to campus. | 10–500 characters | Yes |
+
+---
 
 ## 3. Status Values
 
 | Status | Meaning | Who Can Update? |
 |---|---|---|
-| Pending | Content has been submitted but not yet checked | System/Admin |
-| In Progress | Admin is currently reviewing or handling the content | Admin |
-| Completed | Review or moderation action has been finished | Admin |
-| Closed | The issue is resolved and no further action is needed | Admin |
-| Approved | Review is accepted and visible to users | Admin |
-| Rejected | Review is not accepted because it breaks rules or is not useful | Admin |
-| Active | Campus place is currently available and visible | Admin |
-| Inactive | Campus place is hidden or no longer used | Admin |
-| Published | Survival guide is visible to users | Admin |
-| Draft | Survival guide is still being prepared | Admin |
-| Archived | Old guide is stored but not shown as current information | Admin |
+| Pending | A review has been submitted and is waiting for moderation. | Student, Senior Student |
+| In Review | An administrator is checking the review content. | Administrator |
+| Approved | The review has been accepted and is visible to users. | Administrator |
+| Rejected | The review was not accepted because it is inappropriate, inaccurate, or incomplete. | Administrator |
+| Archived | The review is kept in the system but is no longer shown as current content. | Administrator |
+
+---
 
 ## 4. Sample Records
 
-The sample dataset should be saved in:
+Dataset location:
 
-`/data/sample-records.csv`
+```text
+data/sample-records.csv
+```
 
-Example sample records may include users, campus places, reviews, survival guides, and moderation reports used to test the HallPass prototype.
+Example records:
+
+| ReviewID | ReviewType | PlaceName | Location | Rating | Status |
+|---|---|---|---|---|---|
+| HP-001 | Dormitory | Green Residence Hall | Near Main Gate | 4 | Approved |
+| HP-002 | Cafeteria | Central Campus Cafeteria | Student Center | 5 | Approved |
+| HP-003 | Dormitory | Riverside Student Dorm | East Campus | 3 | In Review |
+| HP-004 | Cafeteria | Library Food Corner | Ground Floor, Library | 4 | Approved |
+| HP-005 | Dormitory | Sunrise Apartment | Behind Building 6 | 2 | Pending |
+| HP-006 | Cafeteria | International Food Court | Building A | 5 | Approved |
+| HP-007 | Dormitory | Lotus Residence | West Campus | 4 | Archived |
+| HP-008 | Cafeteria | Sports Complex Café | Sports Area | 3 | Rejected |
+
+---
 
 ## 5. Data Privacy Note
 
-HallPass will not collect sensitive personal data such as student ID numbers, phone numbers, home addresses, passport details, payment information, or private academic records.
+This HallPass prototype stores only the information needed to submit, display, search, filter, and moderate campus reviews. It does not collect passwords in the sample dataset, student identification numbers, passport details, home addresses, payment information, private academic records, or other sensitive personal data.
 
-For the prototype, all sample data will be anonymized. Student names and emails will use fake examples, such as `student@example.com`. Reviews and guide content will be sample text created for testing only. The system will only store basic user roles, campus review content, ratings, status values, and admin update notes needed to demonstrate the MVP workflow.
+All sample records are fictional and are used only for demonstration and prototype testing. Reviewer names and personal contact information are not included in the dataset.
