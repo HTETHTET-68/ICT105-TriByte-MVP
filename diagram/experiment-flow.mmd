@@ -1,0 +1,13 @@
+flowchart TD
+    A[Review HallPass Requirements, User Stories, and MVP Features] --> B[Identify Critical Assumptions]
+    B --> C[Select MVP Experiment Type]
+    C --> D[Define Target Test Users]
+    D --> E[Prepare Five-Task Experiment Script]
+    E --> F[Run HallPass MVP Test]
+    F --> G[Record Experiment Results]
+    G --> H[Collect Tester Feedback]
+    H --> I[Measure Results Against Success Metrics]
+    I --> J{Do Results Meet the Targets?}
+    J -->|Yes| K[Continue to Implementation Sprint]
+    J -->|Some Metrics Fail| L[Revise Interface, Navigation, Labels, or Feature Priority]
+    J -->|Most Metrics Fail| M[Revisit Requirements, User Stories, Critical Assumptions, and Problem Evidence]
