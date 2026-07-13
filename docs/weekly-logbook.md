@@ -363,7 +363,7 @@ HallPass – Student Reviews & Campus Survival Guide
 
 ## Date
 
-July 15, 2026
+July 13, 2026
 
 ---
 
