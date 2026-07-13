@@ -1,19 +1,16 @@
-# Lab 06 Practice Case Brief
+# Case Study Brief: HallPass – Dormitory and Cafeteria Reviews
 
-## Case: Smart Campus Lost-and-Found System
+## Problem Context
+New university students, international students, and exchange students often struggle to find reliable information about campus dormitories, cafeterias, and university life. They usually rely on word-of-mouth recommendations, social media posts, or informal chats, which may be outdated, incomplete, or inconsistent.
 
-Students often lose items on campus and do not know where to report, search, or claim them. Current alternatives include asking friends, posting in chat groups, visiting the security office, or waiting for someone to return the item.
+## Practice Purpose
+This case is used only for guided practice in Lab 07. Students must later apply the same process to their own group case.
 
-## Target Users
+## Example MVP Experiment Direction
+The team wants to test whether students can easily browse dormitory and cafeteria reviews, access campus guidance, view review details, and successfully submit their own reviews using the HallPass prototype without assistance.
 
-- Student who lost an item
-- Student or staff who found an item
-- Admin/security staff who verifies and updates item status
+## Example Critical Assumption
+Students will use HallPass as a trusted source of campus information if it provides easy access to authentic student reviews, helpful campus guidance, and a simple review submission process.
 
-## Product Direction
-
-A web-based system or prototype that allows users to report lost/found items, search existing records, view item details, track status, and allow admin to update item status.
-
-## Lab 06 Focus
-
-Use this case only for practice. Students must apply the same method to their own group case.
+## Example Experiment Type
+Simple HTML/CSS/JavaScript web prototype, clickable prototype, or form-based simulation.
