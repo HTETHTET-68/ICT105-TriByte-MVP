@@ -68,11 +68,15 @@ HallPass has been developed as an interactive website using HTML, CSS, and JavaS
 
 ## 5. Test Users
 
-| Test User Group | Number of Testers | Why They Are Relevant |
-|-----------------|------------------:|------------------------|
-| First-Year University Students | 3 | Primary target users looking for campus information. |
-| International Students | 1 | Need guidance about dormitories, cafeterias, and university life. |
-| Exchange Students | 1 | Represent new students unfamiliar with the campus. |
+The MVP experiment will involve five participants who represent the primary target users of HallPass. These participants were selected because they closely match the intended users identified during the product planning stage.
+
+| Tester Code | Tester Type | Campus Role | Experience with HallPass | Reason for Selection |
+|--------------|-------------|-------------|--------------------------|----------------------|
+| T01 | Student | First-Year Undergraduate | Never used HallPass before | Represents new students seeking reliable dormitory reviews, cafeteria reviews, and campus guidance before making campus decisions. |
+| T02 | Student | First-Year Undergraduate | New university student | Represents another first-year student to validate whether new users can easily navigate the platform and understand its features. |
+| T03 | Student | First-Year Undergraduate | Limited campus experience | Represents first-year students who rely on peer reviews and campus guidance to make informed decisions. |
+| T04 | Student | International Student | New to the university | Represents international students who need trusted campus information and guidance to adapt quickly to a new environment. |
+| T05 | Student | Exchange Student | First semester on campus | Represents short-term students who need quick access to dormitory, cafeteria, and campus information during their exchange period. |
 
 **Total Testers:** **5**
 
