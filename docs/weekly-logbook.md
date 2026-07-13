@@ -373,7 +373,7 @@ July 15, 2026
 |---|---|---|
 | Htet Htet Myint Zaw | Prepared the Experiment Script, selected representative test users, and reviewed experiment materials. | `docs/experiment-script.md`,  `docs/success-metrics.md`,  |
 | Yousel Zangmo | Prepared the MVP Experiment Plan, Critical Assumptions, Success Metrics,  | `docs/mvp-experiment-plan.md`, `docs/critical-assumptions.md`, |
-| Khaing Zin Thet | designed the Feedback Form, updated the README, and revised the Weekly Logbook. README.md, `docs/weekly-logbook.md`, `docs/feedback-form.md`|
+| Khaing Zin Thet | designed the Feedback Form, updated the README, and revised the Weekly Logbook. README.md | `docs/weekly-logbook.md`, `docs/feedback-form.md`|
 
 ---
 
