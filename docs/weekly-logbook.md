@@ -371,9 +371,9 @@ July 15, 2026
 
 | Member Name | Contribution Today | GitHub Evidence / Commit / File Updated |
 |---|---|---|
-| Htet Htet Myint Zaw | Prepared the MVP Experiment Plan, Critical Assumptions, Success Metrics, updated the README, and revised the Weekly Logbook. | `docs/mvp-experiment-plan.md`, `docs/critical-assumptions.md`, `docs/success-metrics.md`, `README.md`, `docs/weekly-logbook.md` |
-| Yousel Zangmo | Prepared the Experiment Script, designed the Feedback Form, selected representative test users, and reviewed experiment materials. | `docs/experiment-script.md`, `docs/feedback-form.md` |
-| Khaing Zin Thet | Improved the interactive HTML/CSS/JavaScript prototype, implemented login protection for review submission, verified responsive layouts, and prepared the prototype for usability testing. | `prototype/`, `js/auth.js`, `js/main.js`, `js/dashboard.js`, HTML prototype pages |
+| Htet Htet Myint Zaw | Prepared the Experiment Script, selected representative test users, and reviewed experiment materials. | `docs/experiment-script.md`,  `docs/success-metrics.md`,  |
+| Yousel Zangmo | Prepared the MVP Experiment Plan, Critical Assumptions, Success Metrics,  | `docs/mvp-experiment-plan.md`, `docs/critical-assumptions.md`, |
+| Khaing Zin Thet | designed the Feedback Form, updated the README, and revised the Weekly Logbook. README.md, `docs/weekly-logbook.md`, `docs/feedback-form.md`|
 
 ---
 
