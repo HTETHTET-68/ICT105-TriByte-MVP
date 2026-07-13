@@ -1,0 +1,6 @@
+tester_code,tester_type,campus_role,experience_with_hallpass,reason_selected
+T01,Student,First-year Undergraduate,Never used HallPass before,"Represents new students seeking reliable dormitory reviews, cafeteria reviews, and campus guidance before making campus decisions."
+T02,Student,International Student,New to the university,Represents international students who need trusted campus information and guidance to adapt quickly to a new environment.
+T03,Student,Exchange Student,First semester on campus,"Represents short-term students who need quick access to dormitory, cafeteria, and campus information during their exchange period."
+T04,Student,Senior Undergraduate,Experienced campus student,"Represents experienced students who contribute reviews, ratings, and campus survival tips while evaluating the review submission process."
+T05,Administrator,Content Moderator,Responsible for reviewing submitted reviews,"Represents campus administrators who evaluate the content moderation workflow, ensuring reviews remain accurate, appropriate, and useful for students."
