@@ -66,17 +66,18 @@ HallPass has been developed as an interactive website using HTML, CSS, and JavaS
 
 ---
 
+
 ## 5. Test Users
 
-The MVP experiment will involve five participants who represent the primary target users of HallPass. These participants were selected because they closely match the intended users identified during the product planning stage.
+The MVP experiment will involve five participants selected to represent the primary user groups of HallPass. These participants match the project's identified target users and key stakeholder responsible for content moderation.
 
 | Tester Code | Tester Type | Campus Role | Experience with HallPass | Reason for Selection |
 |--------------|-------------|-------------|--------------------------|----------------------|
-| T01 | Student | First-Year Undergraduate | Never used HallPass before | Represents new students seeking reliable dormitory reviews, cafeteria reviews, and campus guidance before making campus decisions. |
-| T02 | Student | First-Year Undergraduate | New university student | Represents another first-year student to validate whether new users can easily navigate the platform and understand its features. |
-| T03 | Student | First-Year Undergraduate | Limited campus experience | Represents first-year students who rely on peer reviews and campus guidance to make informed decisions. |
-| T04 | Student | International Student | New to the university | Represents international students who need trusted campus information and guidance to adapt quickly to a new environment. |
-| T05 | Student | Exchange Student | First semester on campus | Represents short-term students who need quick access to dormitory, cafeteria, and campus information during their exchange period. |
+| T01 | Student | First-year Undergraduate | Never used HallPass before | Represents new students seeking reliable dormitory reviews, cafeteria reviews, and campus guidance before making campus decisions. |
+| T02 | Student | International Student | New to the university | Represents international students who need trusted campus information and guidance to adapt quickly to a new environment. |
+| T03 | Student | Exchange Student | First semester on campus | Represents short-term students who need quick access to dormitory, cafeteria, and campus information during their exchange period. |
+| T04 | Student | Senior Undergraduate | Experienced campus student | Represents experienced students who contribute reviews, ratings, and campus survival tips while evaluating the review submission process. |
+| T05 | Administrator | Content Moderator | Responsible for reviewing submitted reviews | Represents campus administrators who evaluate the content moderation workflow, ensuring reviews remain accurate, appropriate, and useful for students. |
 
 **Total Testers:** **5**
 
