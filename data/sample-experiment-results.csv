@@ -1,0 +1,26 @@
+﻿tester_code,task_id,task_description,completed_yes_no,time_seconds,help_needed_yes_no,error_or_confusion,rating_1_5,improvement_note
+P01,T1,Open the homepage and explain what HallPass is for.,Yes,31,No,None,5,Homepage purpose and main actions were clear.
+P01,T2,Browse the available student reviews and find a dormitory review that may be useful to a new student.,Yes,44,No,None,5,Dormitory category and review cards were easy to identify.
+P01,T3,Use the search or filter function to find relevant campus information.,Yes,52,No,Briefly checked the wrong filter option,4,Make the active filter state more noticeable.
+P01,T4,Open one review and examine its detailed information.,Yes,35,No,None,5,"Review rating, category, and description were easy to understand."
+P01,T5,Submit a review about a campus experience.,Yes,76,No,Hesitated before selecting a review category,4,Add a short example beside the category field.
+P02,T1,Open the homepage and explain what HallPass is for.,Yes,40,No,Needed extra time to read the homepage subtitle,4,Use slightly simpler wording for international students.
+P02,T2,Browse the available student reviews and find a dormitory review that may be useful to a new student.,Yes,57,No,Opened a cafeteria review before finding dormitory reviews,4,Make category labels more visually distinct.
+P02,T3,Use the search or filter function to find relevant campus information.,Yes,69,Yes,Did not immediately notice the search and filter controls,3,Move search and filter controls closer to the review heading.
+P02,T4,Open one review and examine its detailed information.,Yes,43,No,Was unsure what the status label represented,4,Add clearer wording or a tooltip for status labels.
+P02,T5,Submit a review about a campus experience.,Yes,88,No,Paused at the required fields,4,Mark all required fields consistently.
+P03,T1,Open the homepage and explain what HallPass is for.,Yes,37,No,None,5,The purpose of HallPass was clear to an exchange student.
+P03,T2,Browse the available student reviews and find a dormitory review that may be useful to a new student.,Yes,49,No,None,4,Add more recent dormitory reviews in the final version.
+P03,T3,Use the search or filter function to find relevant campus information.,No,96,Yes,Search term did not produce the expected result and filter controls were confusing,2,Improve search matching and use clearer filter labels.
+P03,T4,Open one review and examine its detailed information.,Yes,46,No,Scrolled past part of the detailed information,4,Keep the most important review details above the fold.
+P03,T5,Submit a review about a campus experience.,Yes,82,No,Briefly unsure whether the review was submitted,4,Make the confirmation message larger and more visible.
+P04,T1,Open the homepage and explain what HallPass is for.,Yes,28,No,None,5,Understood the system immediately.
+P04,T2,Browse the available student reviews and find a dormitory review that may be useful to a new student.,Yes,39,No,None,5,Found a dormitory review quickly.
+P04,T3,Use the search or filter function to find relevant campus information.,Yes,47,No,None,5,Search and filters worked as expected.
+P04,T4,Open one review and examine its detailed information.,Yes,33,No,None,5,Review details were clear and well organized.
+P04,T5,Submit a review about a campus experience.,No,105,Yes,A required field was missed and the error message was not noticeable,3,Show validation messages directly below the incomplete field.
+P05,T1,Open the homepage and explain what HallPass is for.,Yes,42,No,The term campus survival guide needed a moment to understand,4,Include one short example of the information available on HallPass.
+P05,T2,Browse the available student reviews and find a dormitory review that may be useful to a new student.,Yes,51,No,None,4,Add sorting by rating or most recent review.
+P05,T3,Use the search or filter function to find relevant campus information.,Yes,61,No,The clear-filter action was not immediately visible,4,Add a clearly labelled reset or clear-filter button.
+P05,T4,Open one review and examine its detailed information.,Yes,40,No,None,5,The review content was easy to understand.
+P05,T5,Submit a review about a campus experience.,Yes,79,No,Hesitated before pressing submit,4,Use a stronger submit button label such as Submit Review.
