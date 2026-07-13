@@ -351,6 +351,115 @@ The team finalized the navigation flow and confirmed that every implemented prot
 
 ---
 
+# Weekly Logbook - Lab 07
+
+## Group Name
+
+TriByte-MVP
+
+## Project Title
+
+HallPass – Student Reviews & Campus Survival Guide
+
+## Date
+
+July 15, 2026
+
+---
+
+## Members Present
+
+| Member Name | Contribution Today | GitHub Evidence / Commit / File Updated |
+|---|---|---|
+| Htet Htet Myint Zaw | Prepared the MVP Experiment Plan, Critical Assumptions, Success Metrics, updated the README, and revised the Weekly Logbook. | `docs/mvp-experiment-plan.md`, `docs/critical-assumptions.md`, `docs/success-metrics.md`, `README.md`, `docs/weekly-logbook.md` |
+| Yousel Zangmo | Prepared the Experiment Script, designed the Feedback Form, selected representative test users, and reviewed experiment materials. | `docs/experiment-script.md`, `docs/feedback-form.md` |
+| Khaing Zin Thet | Improved the interactive HTML/CSS/JavaScript prototype, implemented login protection for review submission, verified responsive layouts, and prepared the prototype for usability testing. | `prototype/`, `js/auth.js`, `js/main.js`, `js/dashboard.js`, HTML prototype pages |
+
+---
+
+## Decisions Made Today
+
+### 1. MVP Experiment Type
+
+The team selected a combination of **Simple Web Prototype**, **Clickable Prototype**, and **Form-Based Simulation** to evaluate HallPass. The prototype allows users to browse dormitory and cafeteria reviews, search information, view review details, register or log in, submit reviews, and explore the Campus Survival Guide.
+
+### 2. Experiment Objective
+
+The objective of the MVP experiment is to determine whether first-year, international, and exchange students can successfully complete the main HallPass tasks without assistance while validating that the prototype solves the campus information problems identified in previous labs.
+
+### 3. Critical Assumptions
+
+The team identified and ranked assumptions related to:
+
+- User problems
+- Value proposition
+- Usability
+- Technical feasibility
+- Business logic
+
+Each assumption was linked to system requirements, user stories, and planned testing activities.
+
+### 4. Success Metrics
+
+The team defined measurable success criteria including:
+
+- Homepage understanding rate
+- Dormitory review browsing success
+- Search and filter success
+- Review detail understanding
+- Review submission completion
+- Overall usability rating
+- Feature usefulness rating
+
+These metrics will determine whether the prototype is ready for further implementation.
+
+### 5. Experiment Preparation
+
+Five representative testers were selected:
+
+- First-year Undergraduate Student
+- International Student
+- Exchange Student
+- Senior Undergraduate Student
+- Administrator (Content Moderator)
+
+The team prepared a structured experiment script and neutral feedback form to collect both quantitative ratings and qualitative comments.
+
+---
+
+## Problems or Risks Found
+
+- Authentication and review storage are currently simulated using Local Storage instead of a production database.
+- Review moderation is demonstrated through the prototype but does not include real backend approval functionality.
+- Additional usability testing is required to validate navigation, search functionality, and review submission before implementation.
+- Different user backgrounds may influence feedback, requiring careful interpretation of experiment results.
+
+---
+
+## Files Added or Updated
+
+| File | Purpose |
+|---|---|
+| `docs/mvp-experiment-plan.md` | Documents the MVP experiment scope, objectives, and testing approach. |
+| `docs/critical-assumptions.md` | Identifies project assumptions, associated risks, and validation methods. |
+| `docs/experiment-script.md` | Provides the usability testing procedure for participants. |
+| `docs/success-metrics.md` | Defines measurable indicators and decision rules for evaluating the experiment. |
+| `docs/feedback-form.md` | Contains structured feedback questions for experiment participants. |
+| `docs/weekly-logbook.md` | Updated with Lab 07 activities. |
+| `README.md` | Updated with the Lab 07 summary and experiment direction. |
+
+---
+
+## Next Actions Before Lab 08
+
+- Conduct usability testing with the five selected participants.
+- Record observations, task completion rates, completion times, and user feedback.
+- Compare experiment results against the predefined success metrics.
+- Prioritize interface improvements based on tester feedback.
+- Revise the prototype and documentation before beginning the next development phase.
+
+---
+
 ## Lecturer / TA Notes
 
 *To be completed during the laboratory session after feedback from the lecturer or teaching assistant.*
