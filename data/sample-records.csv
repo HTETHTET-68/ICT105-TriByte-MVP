@@ -1,0 +1,9 @@
+﻿ReviewID,ReviewType,PlaceName,Location,Rating,DateSubmitted,ReviewerRole,Status,ReviewTitle,ReviewText
+HP-001,Dormitory,Green Residence Hall,Near Main Gate,4,2026-07-01,Student,Approved,Quiet and affordable dorm,"The rooms are clean, the area is quiet, and the dorm is within walking distance of campus."
+HP-002,Cafeteria,Central Campus Cafeteria,Student Center,5,2026-07-02,Senior Student,Approved,Best low-cost lunch option,"There are many affordable meals, friendly staff, and enough seating during most lunch hours."
+HP-003,Dormitory,Riverside Student Dorm,East Campus,3,2026-07-03,Student,In Review,Good location but limited facilities,"The dorm is close to classes, but the shared kitchen and laundry area can become crowded."
+HP-004,Cafeteria,Library Food Corner,"Ground Floor, Library",4,2026-07-04,Student,Approved,Convenient place for quick meals,"It is a convenient option between classes and offers snacks, drinks, and simple rice meals."
+HP-005,Dormitory,Sunrise Apartment,Behind Building 6,2,2026-07-05,Student,Pending,Affordable but needs maintenance,"The rent is affordable, but some rooms need repairs and the internet connection is unreliable."
+HP-006,Cafeteria,International Food Court,Building A,5,2026-07-06,Senior Student,Approved,Great variety for international students,"The food court has Thai, Indian, Chinese, and vegetarian choices with clear menu labels."
+HP-007,Dormitory,Lotus Residence,West Campus,4,2026-07-07,Senior Student,Archived,Comfortable rooms and helpful staff,"The residence has comfortable rooms and helpful staff, but this review is archived because details may be outdated."
+HP-008,Cafeteria,Sports Complex Café,Sports Area,3,2026-07-08,Student,Rejected,Small café near the gym,"The café is close to the gym, but the original submission did not include enough useful detail for publication."
