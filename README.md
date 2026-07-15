@@ -68,8 +68,8 @@ A web-based platform that helps students settle into campus life by providing:
 | Lab 4 | User persona, system requirements, MVP feature prioritization, user stories, user flow, and use case diagrams | Completed user persona, functional requirements, MVP feature list (MoSCoW), user stories, user flow diagram, use case diagram| Completed |
 | Lab 5 | Product concept and UI/UX wireframes | Product concept, feature-requirement mapping, six required wireframes, user flow diagram, usability checklist, and clickable HTML/CSS wireframe draft | Completed |
 | Lab 6 | Business model development, feature-value mapping, technical architecture design, data structure definition, and system/data flow planning | Business Model Canvas, Feature-Value Mapping, Technical Architecture, Data Structure, System Architecture Diagram, Data Flow Diagram, sample dataset, README update, and weekly logbook | Completed |
-| Lab 7 | | | |
-| Lab 8 | | | |
+| Lab 7 | MVP experiment planning, critical assumption analysis, test user definition, success metrics design, experiment script preparation, and GitHub documentation | MVP Experiment Plan, Critical Assumptions, Experiment Script, Success Metrics, Feedback Form, Sample Test Users, README update, GitHub Issues, and Weekly Logbook | Completed |
+| Lab 8 |Customer validation, MVP experiment, analytics reporting, and product evaluation | Validation Results, Customer Validation Summary, Analytics Insights, Feedback Forms, MVP Decision, Validation Screenshots, README Update, and Weekly Logbook | Completed |
 | Lab 9 | | | |
 | Lab 10 | | | |
 | Lab 11 | | | |
