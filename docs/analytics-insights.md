@@ -78,6 +78,6 @@ Priority improvements include:
 
 ### MVP Decision
 
-**✅ Validated**
+**Validated**
 
 The HallPass MVP achieved an **85% task success rate**, a **4.30/5 usefulness score**, and a **4.34/5 interest level**, demonstrating that the prototype successfully meets the needs of its target users. The remaining issues are primarily usability refinements rather than fundamental problems with the product concept.
