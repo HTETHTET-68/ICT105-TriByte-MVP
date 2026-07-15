@@ -1,0 +1,6 @@
+tester_code,understood_purpose_1_5,completed_task_1_5,form_clear_1_5,search_useful_1_5,status_clear_1_5,would_use_1_5,most_useful_feature,confusing_part,suggested_improvement
+T01,5,5,5,5,5,5,Dormitory Reviews,None,Add more dormitory photos.
+T02,5,4,5,4,5,5,Campus Survival Guide,Finding review filters,Add filter by budget and location.
+T03,4,4,4,5,4,5,Cafeteria Reviews,Navigation between guide and reviews,Add breadcrumbs and quick links.
+T04,5,5,5,5,5,5,Write Review,None,Allow photo uploads with reviews.
+T05,5,5,4,4,5,5,Admin Dashboard,Review moderation page,Add bulk approve/reject actions.
