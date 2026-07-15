@@ -1,55 +1,13 @@
 flowchart TD
-
-A([Start]) --> B[Review Lab 07 Plan]
-B --> C[Prepare HallPass MVP]
-C --> D[Select Test Users]
-D --> E[Assign Validation Tasks]
-
-E --> F[Browse Dorm Reviews]
-E --> G[Browse Cafeteria Reviews]
-E --> H[Read Campus Guide]
-E --> I[View Review Details]
-E --> J[Submit Review]
-E --> K[Moderate Reviews]
-
-F --> L[Observe User Actions]
-G --> L
-H --> L
-I --> L
-J --> L
-K --> L
-
-L --> M[Collect Feedback]
-M --> N[Record Validation Results]
-N --> O[Validate Data Quality]
-
-O --> P{Data Complete?}
-P -->|No| Q[Correct Missing Data]
-Q --> O
-P -->|Yes| R[Calculate Metrics]
-
-R --> S[Task Success Rate]
-R --> T[Feedback Score]
-R --> U[Interest Level]
-R --> V[Confusion Points]
-
-S --> W[Evaluate Success Criteria]
-T --> W
-U --> W
-V --> W
-
-W --> X{Criteria Met?}
-
-X -->|Yes| Y[Continue with Minor Improvements]
-X -->|Partly| Z[Revise Key Features]
-X -->|No| AA[Collect More Evidence]
-
-Y --> AB[Write Validation Summary]
-Z --> AB
-AA --> AB
-
-AB --> AC[Write Analytics Insights]
-AC --> AD[Prepare MVP Decision]
-AD --> AE[Create GitHub Issues]
-AE --> AF[Update README & Weekly Logbook]
-AF --> AG([Next Prototype Iteration])
+    A[Review HallPass MVP Experiment Plan] --> B[Run HallPass Validation Test]
+    B --> C[Browse Dorms, Cafeterias, Campus Guide, Submit Reviews]
+    C --> D[Collect User Feedback]
+    D --> E[Record Results in validation-results.csv/XLSX]
+    E --> F[Calculate Success Rate, Feedback Score, and Interest Level]
+    F --> G[Identify Usability Problems]
+    G --> H[Write Customer Validation Summary]
+    H --> I[Write Analytics Insights]
+    I --> J[Decide: Continue, Revise, or Collect More Evidence]
+    J --> K[Create GitHub Issues]
+    K --> L[Update README and Weekly Logbook]
+    L --> M[Proceed to the Next HallPass Prototype]
