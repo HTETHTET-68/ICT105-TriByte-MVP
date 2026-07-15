@@ -225,3 +225,50 @@ In Lab 07, our team prepared the MVP experiment to validate the HallPass prototy
 ## Experiment Focus
 
 The MVP experiment evaluates whether students can successfully navigate HallPass, browse dormitory and cafeteria reviews, access the Campus Survival Guide, and submit reviews using the HTML, CSS, and JavaScript prototype before further development.
+
+
+## Lab 08: Customer Validation and Analytics Sheet
+
+### Validation Objective
+
+The objective of this validation was to evaluate whether first-year, international, and exchange students could successfully use the HallPass prototype to find reliable dormitory reviews, cafeteria reviews, and campus guidance, as well as submit their own reviews without assistance. The experiment also measured usability, task completion, user satisfaction, and interest in using HallPass as a campus information platform.
+
+---
+
+### Prototype Version Tested
+
+- **Version:** HallPass MVP v1.0
+- **Link:** https://github.com/HTETHTET-68/ICT105-TriByte-MVP
+- **Screenshots:** `/screenshots/validation-test-screens.png`
+
+---
+
+### Analytics Summary
+
+| Metric | Result |
+|---|---:|
+| Total test users | 200 |
+| Task success rate | 85% |
+| Average feedback score | 3.99 / 5 |
+| Average interest level | 75% / 5 |
+| Main confusion point | Some users initially found the review submission process and category navigation slightly confusing. |
+
+---
+
+### MVP Decision
+
+**Decision: Continue with Minor Revisions**
+
+The validation results indicate that users successfully completed most tasks and found the prototype useful for discovering campus information. Feedback highlighted several opportunities for improvement, including simplifying navigation, improving the review submission workflow, enhancing search and filtering, and adding richer review content such as images. Since the core assumptions were validated, the team will continue development while implementing these usability improvements before the next iteration.
+
+---
+
+### Files Added
+
+- `/data/validation-results.xlsx`
+- `/data/validation-results.csv`
+- `/docs/customer-validation-summary.md`
+- `/docs/analytics-insights.md`
+- `/docs/mvp-decision.md`
+- `/screenshots/validation-test-screens.png`
+- `/docs/weekly-logbook.md`
