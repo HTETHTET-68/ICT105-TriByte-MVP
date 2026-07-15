@@ -2,7 +2,7 @@
 
 ## 1. MVP Decision
 
-**Decision:** ✅ **Continue with Minor Revisions**
+**Decision:** **Continue with Minor Revisions**
 
 Based on the customer validation results, the team decided to continue developing the HallPass MVP with minor usability improvements. The prototype successfully met the predefined success metrics and demonstrated that it addresses the needs of first-year, international, and exchange students. The identified issues mainly involve interface usability rather than the overall product concept.
 
