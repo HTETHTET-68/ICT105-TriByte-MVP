@@ -460,6 +460,92 @@ The team prepared a structured experiment script and neutral feedback form to co
 
 ---
 
+# Weekly Logbook - Lab 08
+
+## Group Name
+
+TriByte-MVP
+
+## Project Title
+
+HallPass – Student Reviews & Campus Survival Guide
+
+## Date
+
+July 16, 2026
+
+---
+
+## Members Present
+
+| Member Name | Contribution Today | GitHub Evidence / Commit / File Updated |
+|---|---|---|
+| Htet Htet Myint Zaw | Created the customer validation dataset, prepared the validation-results Excel workbook and CSV file, and developed the Power BI validation dashboard to visualize customer validation metrics and analytics. | `data/validation-results.xlsx`, `data/validation-results.csv`, Power BI Validation Dashboard |
+| Yousel Zangmo | Prepared the customer validation summary, analyzed the validation results, documented the analytics insights, and updated the project README with the Lab 08 summary. | `docs/customer-validation-summary.md`, `docs/analytics-insights.md`, `README.md` |
+| Khaing Zin Thet | Updated the weekly logbook, documented the MVP decision based on customer validation evidence, and prepared the validation dashboard screenshots for project documentation. | `docs/weekly-logbook.md`, `docs/mvp-decision.md`, `screenshots/validation-dashboard.png` |
+
+---
+
+## Decisions Made Today
+
+### 1. Customer Validation
+
+The team conducted customer validation using the HallPass MVP prototype with representative users. Validation focused on whether users could successfully browse dormitory and cafeteria reviews, access the Campus Survival Guide, log in, and submit reviews. User feedback and task performance were collected as evidence for evaluating the prototype.
+
+### 2. Validation Analytics
+
+The validation data was organized into Excel and CSV datasets and analyzed using a Power BI dashboard. Key metrics included task success rate, average ease-of-use score, average usefulness score, average interest level, and the most common confusion points. These analytics helped the team identify the strengths and weaknesses of the MVP.
+
+### 3. MVP Decision
+
+Based on the customer validation results, the team decided to **continue with minor revisions**. The prototype achieved the predefined success metrics and demonstrated that HallPass effectively addresses student needs. However, usability improvements are required for the login and signup workflow, navigation, search functionality, and review presentation.
+
+### 4. Prototype Improvements
+
+The validation results identified the following improvements for the next prototype iteration:
+
+- Simplify the login and signup workflow.
+- Improve navigation labels and menu visibility.
+- Enhance the search and filter interface.
+- Improve the visibility of ratings and review summaries.
+- Expand dormitory, cafeteria, and campus guide content.
+
+---
+
+## Problems or Risks Found
+
+- Login and signup navigation remained the most common confusion point during validation.
+- Some users had difficulty locating search and filter controls.
+- The current prototype stores data using Local Storage rather than a backend database.
+- Additional review content and campus information will improve the usefulness of the system.
+
+---
+
+## Files Added or Updated
+
+| File | Purpose |
+|---|---|
+| `data/validation-results.xlsx` | Stores customer validation records and calculated analytics. |
+| `data/validation-results.csv` | CSV version of the validation dataset. |
+| `docs/customer-validation-summary.md` | Summarizes validation participants, testing activities, and key findings. |
+| `docs/analytics-insights.md` | Interprets validation metrics and usability evidence. |
+| `docs/mvp-decision.md` | Documents the evidence-based MVP decision and improvement plan. |
+| `screenshots/validation-dashboard.png` | Screenshot of the Power BI validation dashboard. |
+| `docs/weekly-logbook.md` | Updated with Lab 08 activities and member contributions. |
+| `README.md` | Updated with the Lab 08 project summary and progress. |
+
+---
+
+## Next Actions Before Lab 09
+
+- Implement the usability improvements identified during customer validation.
+- Improve the authentication workflow and navigation.
+- Enhance search, filtering, and review presentation.
+- Expand review categories and campus guidance content.
+- Continue prototype development while maintaining alignment with `system-requirements.md`.
+
+---
+
 ## Lecturer / TA Notes
 
 *To be completed during the laboratory session after feedback from the lecturer or teaching assistant.*
