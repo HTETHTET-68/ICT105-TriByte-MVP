@@ -1,58 +1,55 @@
 flowchart TD
-    A([Start: Review Lab 07 Experiment Plan]) --> B[Prepare HallPass MVP v1.0]
-    B --> C[Select Test Users<br/>First-year, International, Exchange,<br/>Senior Student, Administrator]
-    C --> D[Explain Test Purpose and Give Neutral Instructions]
-    D --> E[Assign HallPass Validation Tasks]
 
-    E --> E1[Browse Dormitory Reviews]
-    E --> E2[Browse Cafeteria Reviews]
-    E --> E3[Read Campus Guide]
-    E --> E4[View Review Details]
-    E --> E5[Submit a Review]
-    E --> E6[Admin Reviews or Moderates Content]
+A([Start]) --> B[Review Lab 07 Plan]
+B --> C[Prepare HallPass MVP]
+C --> D[Select Test Users]
+D --> E[Assign Validation Tasks]
 
-    E1 --> F[Observe User Actions]
-    E2 --> F
-    E3 --> F
-    E4 --> F
-    E5 --> F
-    E6 --> F
+E --> F[Browse Dorm Reviews]
+E --> G[Browse Cafeteria Reviews]
+E --> H[Read Campus Guide]
+E --> I[View Review Details]
+E --> J[Submit Review]
+E --> K[Moderate Reviews]
 
-    F --> G[Collect Structured Feedback<br/>Task Completion, Ease of Use,<br/>Usefulness, Interest, Confusion Points]
-    G --> H[Record Results in<br/>validation-results.csv and .xlsx]
-    H --> I[Check Data Quality<br/>Tester ID, Task, Score, Requirement ID]
+F --> L[Observe User Actions]
+G --> L
+H --> L
+I --> L
+J --> L
+K --> L
 
-    I --> J{Are Records Complete<br/>and Consistent?}
+L --> M[Collect Feedback]
+M --> N[Record Validation Results]
+N --> O[Validate Data Quality]
 
-    J -- No --> K[Correct Missing or Inconsistent Data]
-    K --> I
+O --> P{Data Complete?}
+P -->|No| Q[Correct Missing Data]
+Q --> O
+P -->|Yes| R[Calculate Metrics]
 
-    J -- Yes --> L[Calculate Analytics Metrics]
+R --> S[Task Success Rate]
+R --> T[Feedback Score]
+R --> U[Interest Level]
+R --> V[Confusion Points]
 
-    L --> L1[Total Test Users]
-    L --> L2[Task Success Rate]
-    L --> L3[Average Feedback Score]
-    L --> L4[Average Interest Level]
-    L --> L5[Most Common Confusion Point]
+S --> W[Evaluate Success Criteria]
+T --> W
+U --> W
+V --> W
 
-    L1 --> M[Compare Results with Success Criteria]
-    L2 --> M
-    L3 --> M
-    L4 --> M
-    L5 --> M
+W --> X{Criteria Met?}
 
-    M --> N{Did HallPass Meet<br/>the Success Criteria?}
+X -->|Yes| Y[Continue with Minor Improvements]
+X -->|Partly| Z[Revise Key Features]
+X -->|No| AA[Collect More Evidence]
 
-    N -- Yes --> O[Decision: Continue with Minor Revisions]
-    N -- Partly --> P[Decision: Revise Key Features]
-    N -- No --> Q[Decision: Collect More Evidence<br/>or Redesign the MVP]
+Y --> AB[Write Validation Summary]
+Z --> AB
+AA --> AB
 
-    O --> R[Document Customer Validation Summary]
-    P --> R
-    Q --> R
-
-    R --> S[Write Analytics Insights]
-    S --> T[Write MVP Decision Document]
-    T --> U[Create GitHub Issues for Improvements]
-    U --> V[Update README and Weekly Logbook]
-    V --> W([Proceed to the Next Prototype Iteration])
+AB --> AC[Write Analytics Insights]
+AC --> AD[Prepare MVP Decision]
+AD --> AE[Create GitHub Issues]
+AE --> AF[Update README & Weekly Logbook]
+AF --> AG([Next Prototype Iteration])
