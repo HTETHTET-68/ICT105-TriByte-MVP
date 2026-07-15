@@ -265,10 +265,9 @@ The validation results indicate that users successfully completed most tasks and
 
 ### Files Added
 
-- `/data/validation-results.xlsx`
 - `/data/validation-results.csv`
 - `/docs/customer-validation-summary.md`
 - `/docs/analytics-insights.md`
 - `/docs/mvp-decision.md`
-- `/screenshots/validation-test-screens.png`
-- `/docs/weekly-logbook.md`
+- '/data/Lab08_GroupName_Validation_Analytics.pbix'
+-  `/screenshots/lab08-powerbi-dashboard.png`
