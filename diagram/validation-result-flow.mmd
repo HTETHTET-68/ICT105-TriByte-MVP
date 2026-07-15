@@ -1,0 +1,109 @@
+flowchart TD
+
+    A([Start: Review Lab 07 Experiment Plan]) --> B[Prepare HallPass MVP v1.0]
+
+    B --> C[Select Test Users<br/>First-year, International, Exchange,<br/>Senior Student, Administrator]
+
+    C --> D[Explain Test Purpose and Give Neutral Instructions]
+
+    D --> E[Assign HallPass Validation Tasks]
+
+
+
+    E --> E1[Browse Dormitory Reviews]
+
+    E --> E2[Browse Cafeteria Reviews]
+
+    E --> E3[Read Campus Guide]
+
+    E --> E4[View Review Details]
+
+    E --> E5[Submit a Review]
+
+    E --> E6[Admin Reviews or Moderates Content]
+
+
+
+    E1 --> F[Observe User Actions]
+
+    E2 --> F
+
+    E3 --> F
+
+    E4 --> F
+
+    E5 --> F
+
+    E6 --> F
+
+
+
+    F --> G[Collect Structured Feedback<br/>Task Completion, Ease of Use,<br/>Usefulness, Interest, Confusion Points]
+
+    G --> H[Record Results in<br/>validation-results.csv and .xlsx]
+
+    H --> I[Check Data Quality<br/>Tester ID, Task, Score, Requirement ID]
+
+
+
+    I --> J{Are Records Complete<br/>and Consistent?}
+
+    J -- No --> K[Correct Missing or Inconsistent Data]
+
+    K --> I
+
+    J -- Yes --> L[Calculate Analytics Metrics]
+
+
+
+    L --> L1[Total Test Users]
+
+    L --> L2[Task Success Rate]
+
+    L --> L3[Average Feedback Score]
+
+    L --> L4[Average Interest Level]
+
+    L --> L5[Most Common Confusion Point]
+
+
+
+    L1 --> M[Compare Results with Success Criteria]
+
+    L2 --> M
+
+    L3 --> M
+
+    L4 --> M
+
+    L5 --> M
+
+
+
+    M --> N{Did HallPass Meet<br/>the Success Criteria?}
+
+    N -- Yes --> O[Decision: Continue with Minor Revisions]
+
+    N -- Partly --> P[Decision: Revise Key Features]
+
+    N -- No --> Q[Decision: Collect More Evidence<br/>or Redesign the MVP]
+
+
+
+    O --> R[Document Customer Validation Summary]
+
+    P --> R
+
+    Q --> R
+
+
+
+    R --> S[Write Analytics Insights]
+
+    S --> T[Write MVP Decision Document]
+
+    T --> U[Create GitHub Issues for Improvements]
+
+    U --> V[Update README and Weekly Logbook]
+
+    V --> W([Proceed to the Next Prototype Iteration])
