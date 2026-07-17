@@ -1,0 +1,47 @@
+flowchart TD
+    A([Start: Review HallPass MVP]) --> B[Identify Data Collected]
+
+    B --> B1[Username]
+    B --> B2[Email Address]
+    B --> B3[User Role]
+    B --> B4[Dormitory Reviews]
+    B --> B5[Cafeteria Reviews]
+    B --> B6[Ratings]
+    B --> B7[Validation Feedback]
+
+    B1 --> C[Review Privacy & Data Protection]
+    B2 --> C
+    B3 --> C
+    B4 --> C
+    B5 --> C
+    B6 --> C
+    B7 --> C
+
+    C --> D[Review User Consent]
+    D --> D1[Voluntary Participation]
+    D --> D2[Inform Users of Data Collection]
+    D --> D3[Avoid Sensitive Personal Data]
+
+    D --> E[Review Legal & Ethical Compliance]
+    E --> E1[Respect User Privacy]
+    E --> E2[Moderate User Content]
+    E --> E3[Avoid Misleading Information]
+
+    E --> F[Review Intellectual Property]
+    F --> F1[Verify Images]
+    F --> F2[Verify Icons]
+    F --> F3[Credit Third-Party Assets]
+
+    F --> G[Review Security Risks]
+    G --> G1[Role-Based Access Control]
+    G --> G2[Protect User Accounts]
+    G --> G3[Prevent Unauthorized Changes]
+
+    G --> H[Prepare Documentation]
+    H --> H1[legal-ethical-checklist.md]
+    H --> H2[privacy-data-protection.md]
+    H --> H3[user-consent-statement.md]
+    H --> H4[risk-register.md]
+    H --> H5[ip-review.md]
+
+    H --> I([End: HallPass Ready for Lab 09 Submission])
