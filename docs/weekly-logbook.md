@@ -546,6 +546,93 @@ The validation results identified the following improvements for the next protot
 
 ---
 
+# Weekly Logbook - Lab 09
+
+## Group Name
+
+TriByte-MVP
+
+## Project Title
+
+HallPass – Student Reviews & Campus Survival Guide
+
+## Date
+
+July 19, 2026
+
+---
+
+## Members Present
+
+| Member Name | Contribution Today | GitHub Evidence / Commit / File Updated |
+|---|---|---|
+| Htet Htet Myint Zaw | Conducted the security review, prepared the risk register, documented the data handling policy, and created the data inventory and risk register datasets. | `docs/security-risk-check.md`, `docs/risk-register.md`, `docs/data-handling-policy.md`, `data/data-inventory.csv`, `data/risk-register.csv` |
+| Yousel Zangmo | Completed the legal and ethical review, documented privacy and data protection practices, prepared the user consent statement, and contributed to the security risk review. | `docs/legal-ethical-checklist.md`, `docs/privacy-and-data-protection.md`, `docs/user-consent-statement.md`, `docs/security-risk-check.md` |
+| Khaing Zin Thet | Completed the IP and third-party asset review, prepared the third-party asset register, created the privacy and security review diagram, captured supporting screenshots, and updated the weekly logbook. | `docs/ip-and-third-party-assets.md`, `data/third-party-assets-register.csv`, `diagrams/privacy-security-review.png`, `screenshots/privacy-security-review.png`, `docs/weekly-logbook.md` |
+
+---
+
+## Decisions Made Today
+
+### 1. Data Inventory and Privacy Review
+
+The team reviewed all data collected by the HallPass prototype and identified which fields were necessary for the MVP. Personal information such as student name, student ID, and email address was limited to authentication purposes, while unnecessary sensitive data was excluded from the prototype.
+
+### 2. Legal, Ethical, and Consent Review
+
+The project was reviewed to ensure that it does not make misleading claims, unfairly exclude users, or collect unnecessary personal information. A privacy and data protection document, legal and ethical checklist, and user consent statement were prepared to support responsible system development.
+
+### 3. IP and Third-Party Asset Review
+
+All third-party resources used in the project, including Google Fonts, Unsplash images, GitHub, Power BI, browser Local Storage, and ChatGPT, were documented together with their sources, licenses, and usage. The team also created a Privacy and Security Review workflow diagram to summarize the responsible design review process.
+
+### 4. Security Risk Assessment
+
+The team reviewed authentication, form validation, Local Storage usage, review submission, and administrator access. Security risks were documented together with mitigation strategies in the security risk register. The current MVP uses sample data and Local Storage only, reducing the risk of exposing real user information during testing.
+
+---
+
+## Problems or Risks Found
+
+- Authentication currently relies on Local Storage instead of a secure backend database.
+- User passwords are not encrypted because the prototype is frontend-only.
+- Administrator authentication is simulated and requires backend implementation in future versions.
+- Review content moderation is manually simulated and should be strengthened in future development.
+- Additional security measures will be required before deploying the system in a production environment.
+
+---
+
+## Files Added or Updated
+
+| File | Purpose |
+|---|---|
+| `docs/legal-ethical-checklist.md` | Documents the legal and ethical review of the HallPass prototype. |
+| `docs/privacy-and-data-protection.md` | Explains how user data is collected, stored, and protected. |
+| `docs/user-consent-statement.md` | Provides a sample user consent statement for data collection. |
+| `docs/ip-and-third-party-assets.md` | Records all external assets, licenses, and intellectual property information. |
+| `docs/security-risk-check.md` | Reviews privacy and security risks within the prototype. |
+| `docs/risk-register.md` | Documents identified project risks and mitigation strategies. |
+| `docs/data-handling-policy.md` | Defines how project data should be managed and protected. |
+| `data/data-inventory.csv` | Lists all data fields collected or displayed by the prototype. |
+| `data/risk-register.csv` | CSV version of the project risk register. |
+| `data/third-party-assets-register.csv` | Lists third-party assets, licenses, and usage information. |
+| `diagrams/privacy-security-review.png` | Workflow diagram illustrating the privacy and security review process. |
+| `screenshots/privacy-security-review.png` | Screenshot evidence of the privacy and security review diagram. |
+| `docs/weekly-logbook.md` | Updated with Lab 09 activities and member contributions. |
+| `README.md` | Updated with the Lab 09 summary and project progress. |
+
+---
+
+## Next Actions Before Lab 10
+
+- Review all responsible design recommendations before continuing prototype implementation.
+- Improve authentication and administrator access using a backend database in future versions.
+- Continue monitoring privacy, security, and legal compliance throughout development.
+- Resolve GitHub issues created from the security and risk review.
+- Ensure future prototype updates remain aligned with `system-requirements.md` and responsible design principles.
+
+---
+
 ## Lecturer / TA Notes
 
 *To be completed during the laboratory session after feedback from the lecturer or teaching assistant.*
