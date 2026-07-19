@@ -1,0 +1,12 @@
+Asset_Name,Type,Source_URL,License_or_Permission,Used_In,Credit_Required,Risk_Level,Action
+Google Fonts (Inter),Font Family,https://fonts.google.com/specimen/Inter,SIL Open Font License 1.1,Typography across all HallPass prototype pages,No,Low,Continue using under the SIL Open Font License.
+Unsplash Campus Background Image,Image Asset,https://unsplash.com,Unsplash License,index.html homepage hero background,No,Low,Keep for the MVP prototype; replace with an original campus image for production if preferred.
+HTML5,Web Technology,https://html.spec.whatwg.org,Open Web Standard,Structure of all prototype web pages,No,Low,Continue using as the core web technology.
+CSS3,Web Technology,https://www.w3.org/Style/CSS,Open Web Standard,Responsive layouts and user interface styling across all pages,No,Low,Continue using as the core styling technology.
+JavaScript (ES6),Programming Language,https://developer.mozilla.org/docs/Web/JavaScript,ECMAScript Standard,"Interactive functions including login simulation, review management, navigation, and Local Storage",No,Low,Continue using for client-side functionality.
+Browser Local Storage API,Web API,https://developer.mozilla.org/docs/Web/API/Window/localStorage,Web Standard API,Simulated user authentication and review storage within the MVP prototype,No,Low,Replace with a backend database in future production versions.
+GitHub,Version Control Platform,https://github.com,GitHub Terms of Service,Project source code repository and team collaboration,No,Low,Continue using for version control and project documentation.
+Microsoft Power BI Desktop,Analytics Software,https://powerbi.microsoft.com,Microsoft License,Lab 08 customer validation dashboard and analytics visualization,No,Low,Continue using for customer validation reporting and analytics.
+ChatGPT (OpenAI),AI-Generated Content Assistance,https://chatgpt.com,OpenAI Terms of Use,"Project planning, documentation, prototype refinement, code suggestions, and report writing",No,Low,Review and verify all AI-generated content before submission.
+Student-Created Validation Dataset,Dataset,Created by TriByte Team,Team-Owned,Customer validation analysis and Power BI dashboard,No,Low,Maintain as original project evidence and update throughout validation.
+HallPass Prototype Design,Original UI Design,Created by TriByte Team,Team-Owned,"Website interface, layouts, review pages, dashboard, and documentation",No,Low,Continue development as original intellectual property.
