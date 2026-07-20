@@ -1,45 +1,35 @@
 # Experiment Script
 
-## 1. Opening Script
+## Opening Script
 
-Thank you for helping us test our HallPass prototype. This is not a test of you—we are testing whether our product idea and interface are clear and easy to use. Please complete each task as naturally as possible and think aloud while interacting with the prototype. If anything is confusing, please let us know. Your feedback will help us improve the final version of HallPass.
+Thank you for helping us test HallPass. We are testing whether the current interface is clear and easy to use, not testing you. Please complete each task naturally and think aloud.
 
----
+## Scenario
 
-## 2. Test Scenario
+You are a first-year, international, or exchange student looking for dormitory, cafeteria, and campus-survival information at Rangsit University.
 
-You are a **first-year, international, or exchange student** who is new to the university. You have heard about **HallPass**, a campus survival guide where students can explore dormitory and cafeteria reviews, learn useful campus information, and share their own experiences. Your goal is to use HallPass to find information that will help you adjust to campus life.
+## Five Current-Prototype Tasks
 
----
+| Task | Instruction | Requirements | Expected result |
+|---|---|---|---|
+| T1 | Open the homepage and explain what HallPass helps students do. | FR-01, FR-02 | User understands the purpose and identifies the main features. |
+| T2 | Open Dorm Reviews or Cafeteria Reviews and use title search or the minimum-rating filter. | FR-04, FR-05, FR-06 | User finds a relevant review using the controls currently implemented. |
+| T3 | Open one review and explain its main details. | FR-07 | User sees category, rating, text, price, and location. |
+| T4 | Sign in with a demonstration account or complete the simulated signup flow. | FR-03 | User completes the browser-based authentication simulation. |
+| T5 | Submit a review with all required fields and identify the confirmation message. | FR-08, FR-10 | Review is stored locally with Pending status and a confirmation toast appears. |
 
-## 3. Tasks for Tester
+## Observation Notes
 
-| Task No. | Task Instruction                                                                                                     | Related Requirement | Expected Result                                                                  |
-| -------- | -------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------- |
-| **T1**   | Open the homepage and explain what HallPass is designed to help students with.                                       | FR-01, FR-02        | User understands the purpose of HallPass and identifies the main features.       |
-| **T2**   | Browse the dormitory or cafeteria reviews and open one review to read its details.                                   | FR-05, FR-06        | User successfully finds and reads a review without assistance.                   |
-| **T3**   | Use the search or category filter to find reviews related to a specific campus topic (e.g., dormitory or cafeteria). | FR-05, FR-06        | User successfully locates relevant reviews using the available navigation tools. |
-| **T4**   | Create an account or sign in to HallPass using the prototype.                                                        | FR-03, FR-04        | User completes the authentication process successfully.                          |
-| **T5**   | Submit a new review by completing the review form and confirm that the submission is successful.                     | FR-08, FR-09        | User successfully submits a review and receives a confirmation message.          |
+- Hesitation or wrong navigation
+- Difficulty noticing title search or rating filtering
+- Confusion about demonstration login/signup
+- Form-validation problems
+- Whether the confirmation message is noticed
 
----
+## Closing Questions
 
-## 4. Observation Notes
-
-Record any points where the tester:
-
-* Hesitates before completing a task.
-* Clicks the wrong button or navigates to the wrong page.
-* Requires assistance from the facilitator.
-* Appears confused by the interface or wording.
-* Provides useful comments or suggestions during the test.
-
----
-
-## 5. Closing Questions
-
-* What was the easiest task to complete?
-* Was there anything confusing while using HallPass?
-* Which feature did you find most useful?
-* Is there any feature you expected but could not find?
-* What improvements would you recommend before the final prototype?
+1. Which task was easiest?
+2. Was anything confusing?
+3. Which current feature was most useful?
+4. Did any visible control appear not to work?
+5. What should be improved in the next prototype version?
