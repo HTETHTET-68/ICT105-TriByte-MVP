@@ -14,21 +14,21 @@ The following features will be implemented or improved during Lab 10. The requir
 
 | Feature | Requirement ID | User Story ID | Screen/Module | Sprint 1 Status |
 |---|---|---|---|---|
-| Homepage / landing screen | FR-01 | US-01 | `prototype/index.html` | Working Draft |
-| User registration and login | FR-03 | US-07, US-08 | `prototype/signup.html`, `prototype/login.html` | Working Draft |
-| Dormitory review list | FR-04 | US-02 | `prototype/dorms.html` | Working Draft |
-| Cafeteria review list | FR-05 | US-03 | `prototype/cafeteria.html` | Working Draft |
-| Search and filtering | FR-06 | US-02, US-03 | Dorm and cafeteria list/search modules | Working Draft |
-| Review detail view | FR-07 | US-04 | `prototype/review-details.html` | Needs Fix |
-| Review input/submission form | FR-08, FR-10 | US-05 | `prototype/write-review.html` | Needs Fix |
-| Campus survival guide | FR-09 | US-06 | `prototype/guide.html` | Working Draft |
-| Administrator-only dashboard | FR-11 | US-09 | `prototype/dashboard.html` | Needs Fix |
-| Review moderation and status handling | FR-16, FR-21 | US-05, US-09 | Dashboard, My Reviews, and local-storage modules | Needs Fix |
-| Privacy notice and user consent | FR-17 | New user story required | `prototype/privacy-consent.html` | Not Started |
-| Record ownership and My Reviews | FR-18 | New user story required | `prototype/my-reviews.html` | Not Started |
-| Inappropriate-content reporting | FR-19 | New user story required | `prototype/report-review.html` | Not Started |
-| Responsible content confirmation | FR-20 | US-05 must be updated | Write Review form | Not Started |
-| Submission confirmation feedback | FR-22 | US-05 | Review/report submission messages | Working Draft |
+| Homepage / landing screen | FR-01 | US-01 | `prototype/index.html` | Implemented |
+| User registration and login | FR-03 | US-07, US-08 | `prototype/signup.html`, `prototype/login.html` | Implemented |
+| Dormitory review list | FR-04 | US-02 | `prototype/dorms.html` | Implemented |
+| Cafeteria review list | FR-05 | US-03 | `prototype/cafeteria.html` | Implemented |
+| Search and filtering | FR-06 | US-02, US-03 | Dorm and cafeteria list/search modules | Implemented |
+| Review detail view | FR-07 | US-04 | `prototype/review-details.html` | Implemented |
+| Review input/submission form | FR-08, FR-10 | US-05 | `prototype/write-review.html` | Implemented |
+| Campus survival guide | FR-09 | US-06 | `prototype/guide.html` | Implemented |
+| Administrator-only dashboard | FR-11 | US-09 | `prototype/dashboard.html` | Implemented |
+| Review moderation and status handling | FR-16, FR-21 | US-09, US-12 | Dashboard, My Reviews, and local-storage modules | Implemented |
+| Privacy notice and user consent | FR-17 | US-10 | `prototype/privacy-consent.html` | Implemented |
+| Record ownership and My Reviews | FR-18 | US-11, US-12 | `prototype/my-reviews.html` | Implemented |
+| Inappropriate-content reporting | FR-19 | US-13 | `prototype/report-review.html` | Implemented |
+| Responsible content confirmation | FR-20 | US-05 | Write Review form | Implemented |
+| Submission confirmation feedback | FR-22 | US-05, US-13 | Review/report submission messages | Implemented |
 
 ## 3. Implementation Approach
 
@@ -43,8 +43,8 @@ The following features will be implemented or improved during Lab 10. The requir
 
 | Member | Responsibility | Evidence of Contribution |
 |---|---|---|
-| Htet Htet Myint Zaw (Member 1) | Develop the HallPass frontend and core screens: create the main HTML and CSS, build the Homepage, Review Submission Form, Record List, and Detail View, connect navigation, and make the interface responsive and user-friendly. | [GitHub Issue #55 – Member 1: Frontend Development & Core Screens](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/55); deliverables: `prototype/index.html` and `prototype/style.css` |
-| Khaing Zin Thet (Member 2) | Implement prototype functionality and screenshot evidence: create JavaScript, add sample review data, implement form validation, search/filter, review details, simulated admin status updates, and `localStorage`; capture Homepage, Input Form, Record List, Detail View, and Admin View screenshots. | [GitHub Issue #56 – Member 2: Functionality & Screenshots](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/56); deliverables: `prototype/script.js` and required files in `screenshots/` |
+| Htet Htet Myint Zaw (Member 1) | Develop the HallPass frontend and core screens: create the main HTML and CSS, build the Homepage, Review Submission Form, Record List, and Detail View, connect navigation, and make the interface responsive and user-friendly. | [GitHub Issue #55 – Member 1: Frontend Development & Core Screens](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/55); deliverables: `prototype/index.html`, `prototype/css/style.css`, and core HTML screens |
+| Khaing Zin Thet (Member 2) | Implement prototype functionality and screenshot evidence: add sample data, validation, search/filter/sort, review details, saved moderation/status actions, and `localStorage`; capture required screen evidence. | [GitHub Issue #56 – Member 2: Functionality & Screenshots](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/56); deliverables: files in `prototype/js/` and `screenshots/` |
 | Yousel Zangmo (Member 3) | Complete Sprint 1 documentation and repository updates: create the prototype link, implementation plan, and feature implementation status; update the weekly logbook and README; verify all required files and review the repository structure before submission. | [GitHub Issue #57 – Member 3: Documentation & GitHub Management](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/57); deliverables: `prototype/prototype-link.md`, `docs/implementation-plan.md`, `docs/feature-implementation-status.md`, `docs/weekly-logbook.md`, and `README.md` |
 
 ## 5. Risks or Blockers
@@ -52,7 +52,7 @@ The following features will be implemented or improved during Lab 10. The requir
 | Risk or Blocker | Impact | Planned Solution |
 |---|---|---|
 | No real backend or production database | Authentication, permissions, and moderation are simulations and data remains only in one browser. | Use clearly labelled `localStorage` simulation with fictional data for Lab 10; document that a secure backend is required before production. |
-| Updated requirements and old documents use different scopes | The prototype and traceability files may refer only to FR-01–FR-15 instead of FR-01–FR-22. | Replace the older requirement list in `docs/system-requirements.md` and update user stories, feature mapping, screen inventory, implementation status, issues, and commits. |
+| Requirements could become inconsistent across files | Traceability may use outdated IDs or page names. | Maintain FR-01–FR-22 consistently across system requirements, stories, mapping, screen inventory, status, issues, and commits. |
 | Missing Privacy Consent, My Reviews, and Report Review pages | FR-17, FR-18, FR-19, and FR-21 cannot be demonstrated. | Create the three pages, connect them to navigation and storage logic, and capture screenshots. |
 | Dashboard is not protected | A normal user can open the dashboard URL and access simulated admin actions. | Add a JavaScript role guard for the prototype and explain that production requires server-side role-based authorization. |
 | Approve and Reject buttons do not change stored status | Review moderation cannot be demonstrated accurately. | Implement saved status updates, rejection reasons, public-list filtering, and dashboard re-rendering. |
@@ -62,4 +62,4 @@ The following features will be implemented or improved during Lab 10. The requir
 
 ## Sprint 1 Completion Target
 
-Sprint 1 will be considered complete when the primary student pathway and administrator pathway are clickable, the revised FR-01–FR-22 requirements are traceable to prototype evidence, missing responsible-IT screens are implemented, and every required screen has a corresponding screenshot and GitHub contribution record.
+Sprint 1 implementation is complete when the final student and administrator pathways pass manual QA, FR-01–FR-22 remain traceable, updated screenshots are captured, and GitHub contribution evidence is confirmed.
