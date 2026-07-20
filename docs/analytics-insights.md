@@ -53,13 +53,13 @@ Overall, the analytics provide strong evidence that the MVP is moving in the cor
 | FR-01 | High task completion indicates users understand the homepage. | Maintain current design with minor visual improvements. |
 | FR-02 | Navigation labels were a common confusion point. | Improve menu labels and page organization. |
 | FR-03 | Login and signup workflow generated repeated user confusion. | Simplify authentication flow and provide clearer guidance. |
-| FR-04 | Campus guide received positive usefulness feedback. | Expand campus guidance content. |
-| FR-05 | Dormitory reviews were frequently accessed and valued. | Increase review coverage and filtering options. |
-| FR-06 | Cafeteria reviews were considered useful by participants. | Add additional reviews and improve search functionality. |
+| FR-09 | Campus guide received positive usefulness feedback. | Expand campus guidance content. |
+| FR-04 | Dormitory reviews were frequently accessed and valued. | Increase review coverage and filtering options. |
+| FR-05 | Cafeteria reviews were considered useful by participants. | Add additional reviews and improve search functionality. |
 | FR-07 | Some users required clearer review detail presentation. | Improve ratings, layout, and review summaries. |
 | FR-08 | Review submission was generally successful. | Enhance form guidance and validation messages. |
 | FR-10 | Validation worked but additional hints would improve usability. | Add clearer field instructions and validation feedback. |
-| FR-14 | Local storage successfully simulated review persistence. | Continue using local storage until backend implementation. |
+| FR-16 | Local storage successfully simulated review persistence and moderation status. | Continue using fictional local prototype data until backend implementation. |
 
 ---
 
