@@ -17,15 +17,19 @@ The prototype focuses on student-generated reviews, practical campus survival in
 | **F03** | Signup | New users need a way to create an account. | US-07 | Must | 2 | 4 | 4 | Yes |
 | **F04** | Dormitory Reviews | Students need trustworthy accommodation information. | US-02 | Must | 2 | 5 | 5 | Yes |
 | **F05** | Cafeteria Reviews | Students need reliable information about campus dining options. | US-03 | Must | 2 | 5 | 5 | Yes |
-| **F06** | Title Search and Rating Filter | Students should quickly locate relevant reviews. | US-02, US-03 | Must | 2 | 5 | 5 | Yes |
+| **F06** | Search and Filter Reviews | Students should quickly locate relevant reviews. | US-02, US-03 | Must | 2 | 5 | 5 | Yes |
 | **F07** | Review Details | Students need complete information before making decisions. | US-04 | Must | 2 | 5 | 5 | Yes |
 | **F08** | Write Review | Students should be able to contribute their own experiences. | US-05 | Must | 3 | 5 | 5 | Yes |
 | **F09** | Campus Survival Guide | New students need essential campus information in one place. | US-06 | Should | 2 | 5 | 4 | Yes |
-| **F10** | Dashboard Demonstration | Displays statistics and review rows; moderation buttons provide messages but do not save decisions. | US-09 | Should | 2 | 4 | 4 | Yes |
-| **F11** | Save/Favorite Reviews | Students may wish to bookmark useful reviews. | Future | Could | 3 | 3 | 3 | No |
-| **F12** | Interactive Campus Map | Students may want building and service locations. | Future | Could | 4 | 3 | 3 | No |
-| **F13** | AI Recommendation System | Personalized recommendations for dormitories and cafeterias. | Future | Won't | 5 | 3 | 2 | No |
-| **F14** | Real-Time Student Chat | Students communicate directly through the platform. | Future | Won't | 5 | 2 | 2 | No |
+| **F10** | Protected Dashboard and Moderation | Administrators need statistics and saved moderation controls. | US-09 | Must | 3 | 4 | 4 | Yes |
+| **F11** | Privacy Notice and Consent | Users need transparent information about prototype data use. | US-10 | Must | 2 | 5 | 5 | Yes |
+| **F12** | My Reviews and Ownership | Students need to manage only their own reviews and see status. | US-11, US-12 | Must | 3 | 5 | 5 | Yes |
+| **F13** | Report Review | Users need a responsible way to flag unsafe content. | US-13 | Must | 3 | 5 | 4 | Yes |
+| **F14** | Moderation and Status Feedback | Pending, Approved, Rejected, and Reported states must be understandable. | US-09, US-12, US-13 | Must | 3 | 5 | 5 | Yes |
+| **F15** | Save/Favorite Reviews | Students may wish to bookmark useful reviews. | Future | Could | 3 | 3 | 3 | No |
+| **F16** | Interactive Campus Map | Students may want building and service locations. | Future | Could | 4 | 3 | 3 | No |
+| **F17** | AI Recommendation System | Personalized recommendations for dormitories and cafeterias. | Future | Won't | 5 | 3 | 2 | No |
+| **F18** | Real-Time Student Chat | Students communicate directly through the platform. | Future | Won't | 5 | 2 | 2 | No |
 
 ---
 
@@ -52,6 +56,10 @@ The following features improve the overall usefulness of the MVP:
 
 - Campus Survival Guide
 - Dashboard
+- Privacy Notice and Consent
+- My Reviews and Ownership
+- Report Review
+- Moderation and Status Feedback
 
 These features provide additional campus information and demonstrate administrative monitoring while remaining within the project's scope.
 
@@ -94,11 +102,15 @@ The final HallPass prototype includes the following pages:
 | **F03** | Signup | `prototype/signup.html` |
 | **F04** | Dormitory Reviews | `prototype/dorms.html` |
 | **F05** | Cafeteria Reviews | `prototype/cafeteria.html` |
-| **F06** | Title Search and Rating Filter | `prototype/dorms.html`, `prototype/cafeteria.html` |
+| **F06** | Search and Filter Reviews | `prototype/dorms.html`, `prototype/cafeteria.html` |
 | **F07** | Review Details | `prototype/review-details.html` |
 | **F08** | Write Review | `prototype/write-review.html` |
 | **F09** | Campus Survival Guide | `prototype/guide.html` |
 | **F10** | Dashboard | `prototype/dashboard.html` |
+| **F11** | Privacy Notice and Consent | `prototype/privacy-consent.html`, `prototype/signup.html` |
+| **F12** | My Reviews and Ownership | `prototype/my-reviews.html` |
+| **F13** | Report Review | `prototype/report-review.html` |
+| **F14** | Moderation and Status Feedback | `prototype/dashboard.html`, `prototype/my-reviews.html` |
 
 ---
 
