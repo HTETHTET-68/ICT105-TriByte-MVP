@@ -70,7 +70,7 @@ A web-based platform that helps students settle into campus life by providing:
 | Lab 6 | Business model development, feature-value mapping, technical architecture design, data structure definition, and system/data flow planning | Business Model Canvas, Feature-Value Mapping, Technical Architecture, Data Structure, System Architecture Diagram, Data Flow Diagram, sample dataset, README update, and weekly logbook | Completed |
 | Lab 7 | MVP experiment planning, critical assumption analysis, test user definition, success metrics design, experiment script preparation, and GitHub documentation | MVP Experiment Plan, Critical Assumptions, Experiment Script, Success Metrics, Feedback Form, Sample Test Users, README update, GitHub Issues, and Weekly Logbook | Completed |
 | Lab 8 |Customer validation, MVP experiment, analytics reporting, and product evaluation | Validation Results, Customer Validation Summary, Analytics Insights, Feedback Forms, MVP Decision, Validation Screenshots, README Update, and Weekly Logbook | Completed |
-| Lab 9 | | | |
+| Lab 9 | Responsible IT review covering privacy, ethics, intellectual property, data protection, and basic security | Legal and Ethical Checklist, Privacy and Data Protection Review, IP and Third-Party Assets Register, Security Risk Check, Risk Register, Updated System Requirements Note, README Update, and Weekly Logbook | Completed |
 | Lab 10 | | | |
 | Lab 11 | | | |
 | Lab 12 | | | |
@@ -271,3 +271,86 @@ The validation results indicate that users successfully completed most tasks and
 - `/docs/mvp-decision.md`
 - '/data/Lab08_GroupName_Validation_Analytics.pbix'
 -  `/screenshots/lab08-powerbi-dashboard.png`
+
+
+
+## Lab 09 - Responsible IT Check
+
+### Responsible Design Summary
+Explain the main privacy, ethical, IP, and basic security risks identified.
+
+### Files Added
+- docs/legal-ethical-checklist.md
+- docs/privacy-and-data-protection.md
+- docs/ip-and-third-party-assets.md
+- docs/security-risk-check.md
+- docs/risk-register.md
+- docs/updated-requirements-note.md
+- docs/weekly-logbook.md
+
+### Requirement Update
+State whether system-requirements.md changed after Lab 09.
+
+### Team Contributions
+List what each member contributed to the GitHub repository.
+## Lab 09 - Responsible IT Check
+
+### Responsible Design Summary
+
+The TriByte team reviewed the HallPass MVP to identify its main privacy, ethical, intellectual property, and basic security risks.
+
+- **Privacy risks:** HallPass uses usernames, email addresses, passwords, user roles, ratings, and review content. Unnecessary personal or sensitive information should not be collected or publicly displayed. Users must be informed about data collection and warned not to include personal information in reviews.
+- **Ethical risks:** User reviews may contain false, misleading, discriminatory, offensive, retaliatory, or harmful content. Reviews should be moderated before publication, and the interface should clearly state that reviews represent individual opinions rather than official university recommendations.
+- **Intellectual property risks:** Images, fonts, icons, written content, datasets, and AI-assisted materials may belong to third parties. All project assets must be original, appropriately licensed, or properly attributed. Users must also submit only content they own or have permission to share.
+- **Security risks:** The current frontend prototype uses simulated authentication and browser `localStorage`. The administrator dashboard can be reached without production-level role verification, and input validation and review ownership controls are limited. A real implementation would require secure authentication, password hashing, protected sessions, role-based authorization, server-side input validation, and secure data storage.
+
+The overall decision is to **continue with mitigation for classroom prototyping**. HallPass is not ready for production deployment or the collection of real sensitive personal data.
+
+### Files Added
+
+- `docs/legal-ethical-checklist.md`
+- `docs/privacy-and-data-protection.md`
+- `docs/ip-and-third-party-assets.md`
+- `docs/security-risk-check.md`
+- `docs/risk-register.md`
+- `docs/updated-requirements-note.md`
+- `docs/weekly-logbook.md`
+
+### Requirement Update
+
+Yes, `docs/system-requirements.md` changed after the Lab 09 responsible IT review.
+
+The following existing requirements were clarified:
+
+- **FR-10:** Strengthened review-input validation.
+- **FR-11:** Restricted the administrative dashboard to authorized administrators.
+- **FR-14:** Expanded student privacy protection.
+- **NFR-08:** Expanded privacy and data-protection requirements.
+- **NFR-09:** Included reliable review and moderation-status handling.
+
+New requirements were added to address:
+
+- Review moderation
+- Privacy notices and user consent
+- Review ownership
+- Inappropriate-content reporting
+- Responsible content submission
+- Review-status information
+- Secure authentication and authorization
+- Ethical content moderation
+- Intellectual-property protection
+- Data minimization and retention
+- Transparency about student opinions
+- Classroom prototype limitations
+
+Every requirement change is documented in `docs/updated-requirements-note.md` with its reason, supporting evidence, GitHub issue or commit, and team-approval status.
+
+### Team Contributions
+
+| Team Member | Lab 09 Contribution | GitHub Evidence |
+|---|---|---|
+| **Htet Htet Myint Zaw** | Conducted the security review, prepared the risk register, documented the data-handling policy, and created the data inventory and risk-register datasets. | `docs/security-risk-check.md`, `docs/risk-register.md`, `docs/data-handling-policy.md`, `data/data-inventory.csv`, `data/risk-register.csv` |
+| **Yousel Zangmo** | Completed the legal and ethical review, documented privacy and data-protection practices, prepared the user-consent statement, contributed to the security-risk review, and documented the updated system requirements. | `docs/legal-ethical-checklist.md`, `docs/privacy-and-data-protection.md`, `docs/user-consent-statement.md`, `docs/security-risk-check.md`, `docs/updated-requirements-note.md` |
+| **Khaing Zin Thet** | Completed the IP and third-party asset review, prepared the asset register, created the privacy and security review diagram, captured supporting screenshots, and updated the weekly logbook. | `docs/ip-and-third-party-assets.md`, `data/third-party-assets-register.csv`, `diagrams/privacy-security-review.png`, `screenshots/privacy-security-review.png`, `docs/weekly-logbook.md` |
+
+All team members reviewed the identified risks, proposed mitigation actions, and changes to the HallPass system requirements.
