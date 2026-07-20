@@ -32,11 +32,18 @@ The MVP experiment focuses on the core features that provide the greatest value 
 | FR-08 | Submit Reviews | Write Review Form | Yes |
 | FR-09 | Campus Guidance | Campus Guide | Yes |
 | FR-10 | Review Form Validation | Write Review Form | Yes |
-| FR-11 | Student Dashboard | Dashboard | Yes |
+| FR-11 | Administrator-Only Dashboard | Dashboard | Yes |
 | FR-12 | Consistent User Interface | All Pages | Yes |
 | FR-13 | Responsive Design | All Pages | No (Observed Only) |
 | FR-14 | Student Privacy | Review Submission | No (Observed Only) |
 | FR-15 | Documentation Traceability | GitHub Documentation | No (Internal Only) |
+| FR-16 | Review Moderation | Dashboard/Public Lists | Yes |
+| FR-17 | Privacy Notice and Consent | Privacy/Signup | Yes |
+| FR-18 | Record Ownership | My Reviews | Yes |
+| FR-19 | Content Reporting | Report Review | Yes |
+| FR-20 | Responsible Content Confirmation | Write Review | Yes |
+| FR-21 | Review Status Information | My Reviews | Yes |
+| FR-22 | Submission Feedback | Review/Report Messages | Yes |
 
 ### Screens Included in the MVP Experiment
 
@@ -122,4 +129,3 @@ After conducting the MVP experiment, the team expects to determine:
 - Whether the MVP successfully addresses the needs of first-year, international, and exchange students.
 
 The experiment results will help the team prioritize usability improvements and validate the core features before proceeding with deeper implementation.
-
