@@ -354,3 +354,41 @@ Every requirement change is documented in `docs/updated-requirements-note.md` wi
 | **Khaing Zin Thet** | Completed the IP and third-party asset review, prepared the asset register, created the privacy and security review diagram, captured supporting screenshots, and updated the weekly logbook. | `docs/ip-and-third-party-assets.md`, `data/third-party-assets-register.csv`, `diagrams/privacy-security-review.png`, `screenshots/privacy-security-review.png`, `docs/weekly-logbook.md` |
 
 All team members reviewed the identified risks, proposed mitigation actions, and changes to the HallPass system requirements.
+# README Update Template - Lab 10
+
+Add this section to your main README.md.
+
+## Lab 10 - MVP Implementation Sprint 1
+
+### Sprint Goal
+Our goal in Lab 10 is to begin building the first working version of the prototype based on the approved requirements, wireframes, architecture, and responsible-design checks.
+
+### Implementation Approach
+- Platform/tools:
+- Backend status:
+- Data storage/simulation:
+- Prototype link or folder:
+
+### Features Implemented in Sprint 1
+
+| Feature | Requirement ID | Status | Evidence |
+|---|---|---|---|
+| Homepage | FR-01 | | |
+| Input form | FR-03 | | |
+| Record list | FR-05 | | |
+| Search/filter | FR-06 | | |
+| Detail view | FR-07 | | |
+| Status tracking | FR-08 | | |
+| Admin view | FR-09 | | |
+| Dashboard | FR-12 | | |
+
+### Screenshots
+- Homepage:
+- Input form:
+- Record list:
+- Detail view:
+- Admin/status view:
+
+### Team Contribution
+All group members contributed to the same GitHub repository/page.
+
