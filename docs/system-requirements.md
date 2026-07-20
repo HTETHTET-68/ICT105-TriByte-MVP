@@ -2,109 +2,58 @@
 
 ## Project Scope
 
-HallPass is a student-developed campus survival guide designed for first-year, international, and exchange students. The system helps students quickly find useful campus information through dormitory reviews, cafeteria reviews, campus survival guides, and student-contributed experiences.
+HallPass is a responsive campus-survival prototype for first-year, international, and exchange students at Rangsit University. It supports dormitory and cafeteria reviews, campus guidance, simulated accounts, responsible review submission, ownership, moderation, status tracking, privacy consent, and content reporting. HTML, CSS, JavaScript, fictional seed data, and browser `localStorage` simulate the MVP; production authentication and security are out of scope.
 
-The final prototype is implemented as a clickable web prototype using HTML, CSS, and JavaScript.
+## Functional Requirements
 
-The prototype files are located in:
-
-`prototype/`
-
-Prototype pages included in the current scope:
-
-- `index.html`
-- `login.html`
-- `signup.html`
-- `guide.html`
-- `dorms.html`
-- `cafeteria.html`
-- `review-details.html`
-- `write-review.html`
-- `dashboard.html`
-
-HallPass does not include real-time chat, AI recommendations, online booking, payment systems, or a production database in the current MVP.
-
----
-
-# Functional Requirements
-
-| Req ID | Functional Requirement | HallPass Implementation / Final Prototype Must Show |
+| ID | Requirement | Prototype evidence |
 |---|---|---|
-| **FR-01** | The system shall provide a clear homepage or landing screen. | The homepage introduces **HallPass – Your Campus Survival Guide**, explains the purpose of the platform, and provides navigation to the main features. Prototype file: `prototype/index.html` |
-| **FR-02** | The system shall provide intuitive navigation. | Students can navigate between the Homepage, Dorm Reviews, Cafeteria Reviews, Survival Guide, Write Review, Login, and Signup pages. |
-| **FR-03** | The system shall support user registration and login. | Users can access simulated Login and Signup pages. Prototype files: `prototype/login.html`, `prototype/signup.html` |
-| **FR-04** | The system shall allow students to browse dormitory reviews. | Students can browse available dormitory review cards. Prototype file: `prototype/dorms.html` |
-| **FR-05** | The system shall allow students to browse cafeteria reviews. | Students can browse available cafeteria review cards. Prototype file: `prototype/cafeteria.html` |
-| **FR-06** | The system shall provide search and filtering. | Students use separate dormitory/cafeteria pages, search review titles by keyword, and filter by minimum rating. The visible sorting control is not functional in the current version. |
-| **FR-07** | The system shall provide a review detail page. | Students can view detailed information about a selected review. Prototype file: `prototype/review-details.html` |
-| **FR-08** | The system shall allow students to submit reviews. | Students can submit dormitory or cafeteria reviews through the review form. Prototype file: `prototype/write-review.html` |
-| **FR-09** | The system shall provide campus survival guide information. | Students can browse helpful campus survival topics. Prototype file: `prototype/guide.html` |
-| **FR-10** | The system shall validate review submission fields. | The review form includes required fields such as category, title, rating, and review content. |
-| **FR-11** | The system shall provide a dashboard demonstration. | The dashboard displays review statistics and review rows. Approve and Reject currently show demonstration messages without saving status changes. Prototype file: `prototype/dashboard.html` |
-| **FR-12** | The system shall maintain a consistent user interface. | All pages use consistent navigation, typography, layout, buttons, cards, and color palette. |
-| **FR-13** | The system shall support responsive layouts. | Pages are designed to display appropriately on desktop and smaller screen sizes. |
-| **FR-14** | The current review form shall limit requested personal information. | The form does not request student ID, email address, phone number, or home address; secure production privacy controls remain future work. |
-| **FR-15** | The prototype shall maintain traceability. | Prototype screens correspond directly to documented user stories, MVP features, and documentation. |
+| FR-01 | Provide a clear HallPass homepage, purpose, audience, main actions, and student-opinion disclaimer. | `prototype/index.html` |
+| FR-02 | Provide intuitive and consistent navigation among all relevant screens. | Shared navigation |
+| FR-03 | Support simulated student registration and student/admin login. | `login.html`, `signup.html`, `js/auth.js` |
+| FR-04 | Allow users to browse approved dormitory reviews. | `dorms.html` |
+| FR-05 | Allow users to browse approved cafeteria reviews. | `cafeteria.html` |
+| FR-06 | Search review titles, text, tags, and locations; filter by rating; sort results. | Review list controls, `js/main.js` |
+| FR-07 | Display a selected review's complete details, author label, date, disclaimer, and report action. | `review-details.html` |
+| FR-08 | Allow an authenticated student to submit a dormitory or cafeteria review. | `write-review.html`, `js/reviews.js` |
+| FR-09 | Provide organized campus-survival information. | `guide.html` |
+| FR-10 | Validate required fields, allowed values, text lengths, image type/size, privacy, and ownership confirmation. | Review form and JavaScript validation |
+| FR-11 | Provide an administrator-only moderation dashboard. | `dashboard.html`, role guard |
+| FR-12 | Maintain consistent layout, colors, typography, navigation, cards, controls, and feedback. | Shared CSS/components |
+| FR-13 | Adapt the interface to desktop, tablet, and mobile layouts. | Responsive CSS and mobile menu |
+| FR-14 | Limit personal information and prevent public display of credentials/contact details. | Privacy notice and safe rendering |
+| FR-15 | Maintain traceability from requirements to user stories, features, screens, tests, and evidence. | Documentation set |
+| FR-16 | Assign new reviews Pending status; allow admins to approve, reject with a reason, or remove; publish only Approved reviews. | `js/data.js`, `js/dashboard.js` |
+| FR-17 | Explain data use and obtain consent before registration or responsible submission. | `privacy-consent.html`, signup consent |
+| FR-18 | Store record ownership and allow students to view, edit, or delete only their own reviews; admins manage all submitted reviews. | `my-reviews.html` and owner IDs |
+| FR-19 | Allow users to report inaccurate, offensive, discriminatory, harmful, copyrighted, private, or misleading content. | `report-review.html` |
+| FR-20 | Require confirmation that submitted content is original or shared with permission. | Ownership checkbox on review form |
+| FR-21 | Show owners Pending, Approved, or Rejected status and any rejection reason. | `my-reviews.html` |
+| FR-22 | Confirm review/report submission and explain the next moderation step. | Accessible toast/status messages |
 
----
+## Non-Functional Requirements
 
-# Non-Functional Requirements
-
-| Req ID | Non-Functional Requirement | Description |
+| ID | Category | Requirement |
 |---|---|---|
-| **NFR-01** | Usability | The interface should be simple and easy for first-year, international, and exchange students to use. |
-| **NFR-02** | Performance | Prototype pages should load quickly under normal browser conditions. |
-| **NFR-03** | Responsiveness | The interface should adapt to desktop, tablet, and mobile screen sizes. |
-| **NFR-04** | Consistency | All pages should use the same navigation, layout, typography, button styles, and color palette. |
-| **NFR-05** | Accessibility | The interface should use readable fonts, clear labels, and appropriate spacing. |
-| **NFR-06** | Compatibility | The prototype should function correctly on Chrome, Edge, Firefox, and Safari. |
-| **NFR-07** | Maintainability | The prototype should be easy for the development team to update and extend. |
-| **NFR-08** | Privacy | The system should avoid collecting unnecessary personal or sensitive information. |
-| **NFR-09** | Reliability | Navigation, review cards, dashboard information, and guide content should display consistently. |
-| **NFR-10** | Scalability | The design should support future expansion such as additional review categories, guide topics, and administrative functions. |
+| NFR-01 | Usability | Tasks and wording should be understandable to new and international students. |
+| NFR-02 | Performance | Static prototype pages and interactions should respond quickly in a normal browser. |
+| NFR-03 | Responsiveness | Pages must remain usable on desktop, tablet, and mobile screens. |
+| NFR-04 | Consistency | Shared visual and interaction patterns must be used across all screens. |
+| NFR-05 | Accessibility | Use semantic labels, keyboard-operable controls, readable contrast, focus states, and announced feedback. |
+| NFR-06 | Compatibility | Support current Chrome, Edge, Firefox, and Safari. |
+| NFR-07 | Maintainability | Separate shared data, authentication, review, dashboard, and presentation logic. |
+| NFR-08 | Privacy | Collect only data needed for the demonstration and never publicly display sensitive details. |
+| NFR-09 | Reliability | Navigation, records, statuses, and feedback must remain consistent during a browser session. |
+| NFR-10 | Scalability | The structure should permit more review categories, guide topics, and moderation functions. |
+| NFR-11 | Security | Client-side access controls are demonstrations only; production requires server-side authentication and authorization. |
+| NFR-12 | Validation | Client input must be constrained and safely rendered; production must also validate server-side. |
+| NFR-13 | Accountability | Moderation and reporting statuses must be visible to relevant users. |
+| NFR-14 | Transparency | Clearly identify student opinions, moderation, and prototype limitations. |
+| NFR-15 | Intellectual Property | Users confirm ownership or permission for submitted content. |
+| NFR-16 | Data Retention | Prototype data should be removable and retained only as necessary. |
+| NFR-17 | Content Safety | Public reviews must not reveal email, password, student ID, phone, address, or private information. |
+| NFR-18 | Prototype Limitation | Use fictional/masked data and clearly distinguish simulations from production security. |
 
----
+## Out of Scope
 
-# Minimum Technical Requirement
-
-HallPass is an interactive clickable web prototype where users can:
-
-- navigate between pages;
-- create an account through the signup page;
-- log in through the login page;
-- browse dormitory reviews;
-- browse cafeteria reviews;
-- search and filter reviews;
-- view detailed review information;
-- submit reviews using a review form;
-- browse campus survival guides;
-- view an administrative dashboard.
-
-The prototype is implemented using:
-
-| Platform Type | HallPass Prototype Form |
-|---|---|
-| Web Application Prototype | HTML, CSS, and JavaScript |
-| Prototype Location | `prototype/` |
-| Main Files | `index.html`, `login.html`, `signup.html`, `guide.html`, `dorms.html`, `cafeteria.html`, `review-details.html`, `write-review.html`, `dashboard.html` |
-
----
-
-# Out of Scope for MVP
-
-The current version does not include a protected admin route, persistent approval/rejection, public approval filtering, record ownership, My Reviews, Privacy Consent, Report Review, or production authentication/security.
-
-The following features are intentionally excluded from the current HallPass MVP:
-
-- Real-time chat or messaging
-- AI-powered recommendations
-- Online dormitory booking
-- Online payment system
-- Live database integration
-- Production authentication
-- Mobile application (Android/iOS)
-- Multi-language translation
-- Interactive GPS or live campus navigation
-- Gamification and reward system
-
-These features may be considered in future versions after validating the core HallPass concept.
+Production accounts, server databases, real university integration, live email verification, cloud image storage, AI recommendations, real-time chat, payments, and a production moderation service are outside the classroom MVP.
