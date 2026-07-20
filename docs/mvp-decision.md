@@ -29,12 +29,12 @@ The following requirements were successfully validated during customer testing.
 | Requirement ID | Validation Evidence |
 |---|---|
 | FR-01 | Users understood the purpose of HallPass from the homepage. |
-| FR-04 | The Campus Survival Guide was considered useful by new students. |
-| FR-05 | Dormitory reviews helped users compare accommodation options. |
-| FR-06 | Cafeteria reviews provided useful dining information for students. |
+| FR-09 | The Campus Survival Guide was considered useful by new students. |
+| FR-04 | Dormitory reviews helped users compare accommodation options. |
+| FR-05 | Cafeteria reviews provided useful dining information for students. |
 | FR-08 | Most users successfully completed the review submission process. |
 | FR-10 | Form validation supported successful review submission. |
-| FR-14 | Local Storage successfully simulated review persistence throughout testing. |
+| FR-16 | Local Storage successfully simulated review persistence and status handling throughout testing. |
 
 ---
 
