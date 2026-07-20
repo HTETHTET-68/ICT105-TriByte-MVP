@@ -35,15 +35,15 @@ HallPass does not include real-time chat, AI recommendations, online booking, pa
 | **FR-03** | The system shall support user registration and login. | Users can access simulated Login and Signup pages. Prototype files: `prototype/login.html`, `prototype/signup.html` |
 | **FR-04** | The system shall allow students to browse dormitory reviews. | Students can browse available dormitory review cards. Prototype file: `prototype/dorms.html` |
 | **FR-05** | The system shall allow students to browse cafeteria reviews. | Students can browse available cafeteria review cards. Prototype file: `prototype/cafeteria.html` |
-| **FR-06** | The system shall provide search and filtering. | Students can search and filter reviews by category or keyword. |
+| **FR-06** | The system shall provide search and filtering. | Students use separate dormitory/cafeteria pages, search review titles by keyword, and filter by minimum rating. The visible sorting control is not functional in the current version. |
 | **FR-07** | The system shall provide a review detail page. | Students can view detailed information about a selected review. Prototype file: `prototype/review-details.html` |
 | **FR-08** | The system shall allow students to submit reviews. | Students can submit dormitory or cafeteria reviews through the review form. Prototype file: `prototype/write-review.html` |
 | **FR-09** | The system shall provide campus survival guide information. | Students can browse helpful campus survival topics. Prototype file: `prototype/guide.html` |
 | **FR-10** | The system shall validate review submission fields. | The review form includes required fields such as category, title, rating, and review content. |
-| **FR-11** | The system shall provide an administrative dashboard. | The dashboard displays review statistics and moderation-related information. Prototype file: `prototype/dashboard.html` |
+| **FR-11** | The system shall provide a dashboard demonstration. | The dashboard displays review statistics and review rows. Approve and Reject currently show demonstration messages without saving status changes. Prototype file: `prototype/dashboard.html` |
 | **FR-12** | The system shall maintain a consistent user interface. | All pages use consistent navigation, typography, layout, buttons, cards, and color palette. |
 | **FR-13** | The system shall support responsive layouts. | Pages are designed to display appropriately on desktop and smaller screen sizes. |
-| **FR-14** | The system shall support student privacy. | Review submission collects only limited user information and avoids displaying sensitive personal data publicly. |
+| **FR-14** | The current review form shall limit requested personal information. | The form does not request student ID, email address, phone number, or home address; secure production privacy controls remain future work. |
 | **FR-15** | The prototype shall maintain traceability. | Prototype screens correspond directly to documented user stories, MVP features, and documentation. |
 
 ---
@@ -91,6 +91,8 @@ The prototype is implemented using:
 ---
 
 # Out of Scope for MVP
+
+The current version does not include a protected admin route, persistent approval/rejection, public approval filtering, record ownership, My Reviews, Privacy Consent, Report Review, or production authentication/security.
 
 The following features are intentionally excluded from the current HallPass MVP:
 
