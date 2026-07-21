@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | HallPass</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html">
+        <div class="logo">
+            <i class="fa-solid fa-school"></i>
+        </div>
+        HallPass
+      </a>
+
+      <button class="menu">☰</button>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dorms.html">Dorm Reviews</a>
+        <a href="cafeteria.html">Cafeteria Reviews</a>
+        <a href="guide.html">Survival Guide</a>
+        <a href="write-review.html">Write Review</a>
+        <a href="login.html" class="btn-nav">Login</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Signup Section -->
+  <main class="auth-wrap">
+
+    <div class="auth-card">
+
+      <span class="badge">Student Account</span>
+
+      <h2>Create Account</h2>
+
+      <form id="signupForm">
+
+        <label for="signupName">Name</label>
+        <input class="input" id="signupName" type="text" required>
+
+        <br><br>
+
+        <label for="signupStudentId">Student ID</label>
+        <input class="input" id="signupStudentId" type="text" required>
+
+        <br><br>
+
+        <label for="signupEmail">Email</label>
+        <input class="input" id="signupEmail" type="email" required>
+
+        <br><br>
+
+        <label for="signupPassword">Password</label>
+        <input class="input" id="signupPassword" type="password" required>
+
+        <br><br>
+
+        <div class="consent-box">
+          <input id="signupPrivacyConsent" type="checkbox" required>
+          <label for="signupPrivacyConsent">I have read the privacy notice and consent to HallPass using my information for this prototype.</label>
+        </div>
+        <button class="privacy-notice-button" type="button" data-privacy-notice>View Privacy Notice</button>
+
+        <br><br>
+
+        <button class="btn primary" style="width: 100%;">
+          Register
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>HallPass</h3>
+        <p>
+          Student reviews and campus survival guide for
+          Rangsit University students.
+        </p>
+      </div>
+
+      <div>
+        <h4>Features</h4>
+        <p>
+          Dorms<br>
+          Cafeterias<br>
+          Guides
+        </p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+          <p>
+            Email:hello@hallpass.com<br>
+            Phone: +66 123 456 789<br>
+            Address: Rangsit University, Thailand
+          </p>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/privacy-notice.js"></script>
+
+</body>
+
+</html>
