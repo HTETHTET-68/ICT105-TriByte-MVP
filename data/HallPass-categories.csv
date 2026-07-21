@@ -1,0 +1,4 @@
+category,examples,allowed_statuses
+Dormitory Review,"Room quality, rent, Wi-Fi, security, cleanliness, facilities","Pending, Approved, Rejected"
+Cafeteria Review,"Food quality, price, hygiene, menu variety, service, dietary options","Pending, Approved, Rejected"
+Campus Guide,"Registration, transport, campus services, student activities, emergency contacts","Pending, Approved, Rejected"
