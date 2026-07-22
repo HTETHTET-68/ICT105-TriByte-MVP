@@ -634,39 +634,110 @@ The team reviewed authentication, form validation, Local Storage usage, review s
 ---
 
 
-# Weekly Logbook - Lab 10
+# Weekly Logbook – Lab 10
 
 ## Lab Topic
-MVP Implementation Sprint 1
+
+**MVP Implementation Sprint 1**
 
 ## What We Built Today
-- 
-- 
-- 
+
+During Lab 10, our team implemented and updated the HallPass MVP Prototype  using HTML, CSS, JavaScript, and browser localStorage.
+
+The main prototype pages and features completed during the sprint include:
+
+* Homepage and shared navigation
+* Student signup and login pages
+* Dormitory review list
+* Cafeteria review list
+* Keyword search and minimum-rating filters
+* Review detail page
+* Review submission form
+* Required-field validation
+* Privacy notice and consent confirmation
+* Campus survival guide
+* Student dashboard
+* Review submission status tracking
+* Removal of pending submissions
+* Administrator dashboard
+* Review approval and rejection actions
+* Reported-content examples
+* User-management examples
+* Administrator audit log
+* Toast and action-feedback messages
+* Responsive styling for desktop, tablet, and mobile screens
+* Browser localStorage for simulated data persistence
+
+The project documentation was also updated to match Prototype 15, including the system requirements, implementation plan, feature implementation status, weekly logbook, prototype link, and README.
 
 ## Requirement IDs Addressed
-- FR-__:
-- FR-__:
-- FR-__:
+
+* **FR-01 to FR-03:** Homepage, shared navigation, signup, and login
+* **FR-04 to FR-07:** Dormitory and cafeteria lists, search and rating filters, and review details
+* **FR-08 to FR-10:** Authenticated review submission, campus guide, and form validation
+* **FR-11 to FR-14:** Student dashboard, administrator dashboard, moderation, and submission status tracking
+* **FR-15 to FR-18:** Privacy consent, review ownership, removal of pending submissions, and action feedback
+* **FR-19 to FR-22:** Report examples, user-management examples, administrator audit log, and responsive interface
 
 ## Contribution by Members
 
-| Member | Contribution | Evidence |
-|---|---|---|
-| | | |
-| | | |
-| | | |
+| Member                             | Contribution                                                                                                                                                                                                                                                               | Evidence                                                                                                                                                                                      |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Htet Htet Myint Zaw – Member 1** | Developed the HallPass frontend and core screens, including the homepage, review submission form, review lists, review details, page navigation, and responsive layout structure.                                                                                          | GitHub Issue #55, core HTML pages in `prototype/`, frontend commits, and interface screenshots                                                                                                |
+| **Khaing Zin Thet – Member 2**     | Implemented JavaScript functionality, sample data, form validation, search and rating filters, review details, moderation actions, submission statuses, localStorage persistence, and screenshot evidence.                                                                 | GitHub Issue #56, files in `prototype/js/`, functionality commits, and files in `screenshots/`                                                                                                |
+| **Yousel Zangmo – Member 3**       | Updated Sprint 1 documentation and repository structure, created and maintained the main stylesheet, updated the prototype link, implementation plan, feature implementation status, weekly logbook, and README, and checked that the required files matched Prototype 15. | GitHub Issue #57, `prototype/css/style.css`, `prototype/prototype-link.md`, `docs/implementation-plan.md`, `docs/feature-implementation-status.md`, `docs/weekly-logbook.md`, and `README.md` |
 
 ## Screenshots Added
-- /screenshots/homepage.png
-- /screenshots/input-form.png
-- /screenshots/record-list.png
-- /screenshots/detail-view.png
-- /screenshots/admin-view.png
+
+The following screenshots will be included as evidence of the implemented Prototype 15 features:
+
+* `/screenshots/homepage.png`
+* `/screenshots/login-signup.png`
+* `/screenshots/dormitory-list.png`
+* `/screenshots/cafeteria-list.png`
+* `/screenshots/search-filter.png`
+* `/screenshots/review-detail.png`
+* `/screenshots/input-form.png`
+* `/screenshots/privacy-consent.png`
+* `/screenshots/student-dashboard.png`
+* `/screenshots/status-tracking.png`
+* `/screenshots/admin-view.png`
+* `/screenshots/moderation-queue.png`
+* `/screenshots/report-management.png`
+* `/screenshots/user-management.png`
+* `/screenshots/audit-log.png`
+* `/screenshots/responsive-mobile-view.png`
+
 
 ## Problems Faced
-- 
+
+* The new Prototype 15 structure and filenames were different from the earlier prototype documentation.
+* Some requirement IDs in the previous implementation plan did not match the updated system requirements.
+* Several features, such as reports and user management, were visible in the administrator dashboard but were only partially simulated.
+* Browser localStorage was used instead of a real backend, so data was limited to the same browser and device.
+* Authentication and role checking were simulated through frontend JavaScript and were not secure.
+* Some prototype pages used different CSS and JavaScript files, which made consistency and maintenance more difficult.
+* The team needed to ensure that navigation links worked correctly across all Prototype 15 pages.
+* Responsive layouts required additional testing to prevent overlapping content on smaller screens.
+* Existing screenshots could become outdated after changes to the prototype.
+* Team contributions needed to be clearly connected to GitHub issues, commits, files, and screenshots.
+
+To address these problems, the team reviewed the actual Prototype 15 files, corrected the documentation, used shared styling and JavaScript where possible, tested the main workflows, and clearly marked simulated and partially completed features.
 
 ## Plan for Next Lab
--
 
+In the next lab, the team plans to:
+
+* Conduct usability and functional testing of Prototype 15
+* Test all navigation links and user workflows
+* Test the prototype on desktop, tablet, and mobile screen sizes
+* Check form validation and privacy-consent behaviour
+* Verify review submission and status tracking
+* Test administrator approval and rejection actions
+* Review reports, user-management examples, and audit-log records
+* Fix any interface, JavaScript, or responsive-design problems
+* Capture updated screenshots of all required features
+* Update GitHub issues with contribution evidence
+* Confirm that all files are placed in the correct repository folders
+* Complete final quality assurance before submission
+* Prepare the project for the next MVP testing and validation stage
