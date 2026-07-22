@@ -2,29 +2,50 @@
 
 ## Purpose
 
-This file shows how the current HallPass prototype implementation is connected to the revised functional requirements in `updated-requirements-note.md`.
+This document maps the updated Prototype 15 implementation to `docs/system-requirements.md`. Status labels are based on verified source files rather than visual appearance alone.
 
-| Req ID | Required Functionality | Prototype Screen/Module | Current Status | Evidence | Original Sprint Fix / Final Verification |
-|---|---|---|---|---|---|
-| FR-01 | Clear homepage or landing screen | Homepage | Implemented | `prototype/index.html`; `screenshots/home.png` | Add the required disclaimer that reviews represent student opinions. |
-| FR-02 | Intuitive navigation | Shared navigation menu | Implemented | Navigation in the existing prototype pages; mobile-menu logic in `prototype/js/main.js` | Add links to Privacy Consent, My Reviews, and Report Review after those pages are created; test every link. |
-| FR-03 | User registration and login | Login and Signup pages | Implemented | `prototype/login.html`; `prototype/signup.html`; `prototype/js/auth.js`; `screenshots/login page.png` | Add privacy links, registration consent, and a visible notice that authentication is simulated. |
-| FR-04 | Browse dormitory reviews | Dorm Reviews page | Implemented | `prototype/dorms.html`; `prototype/js/main.js`; `prototype/js/data.js`; `screenshots/dorm review.png` | Show review dates and ensure only Approved reviews appear publicly. |
-| FR-05 | Browse cafeteria reviews | Cafeteria Reviews page | Implemented | `prototype/cafeteria.html`; `prototype/js/main.js`; `prototype/js/data.js`; `screenshots/cafeteria reviews.png` | Show review dates and ensure only Approved reviews appear publicly. |
-| FR-06 | Search and filtering | Search field and minimum-rating filter | Implemented | `searchInput` and `ratingFilter` in `prototype/dorms.html` and `prototype/cafeteria.html`; filtering logic in `prototype/js/main.js` | Extend keyword search to review text and tags; add a category filter if required. |
-| FR-07 | Review detail page | Review Details page | Implemented | `prototype/review-details.html`; review links in `prototype/js/main.js`; `screenshots/review-details page.png` | Add username or anonymous author, date, personal-opinion disclaimer, and Report Review button. |
-| FR-08 | Submit dormitory or cafeteria reviews | Write Review page and review-saving script | Implemented | `prototype/write-review.html`; `prototype/js/reviews.js`; `prototype/js/data.js`; `screenshots/write review page.png` | Complete the revised validation, privacy, and content-ownership requirements. |
-| FR-09 | Campus survival guide information | Survival Guide page | Implemented | `prototype/guide.html`; `screenshots/new student survival guide.png` | Complete a final content, navigation, and responsive-layout check. |
-| FR-10 | Validate review submissions | Required form fields and fixed category/rating options | Implemented | HTML `required` attributes in `prototype/write-review.html`; form handling in `prototype/js/reviews.js` | Add text-length limits, unexpected-input rejection, sanitization, file size/type checks, and safe output rendering. |
-| FR-11 | Administrator-only dashboard | Admin Dashboard | Implemented | `prototype/dashboard.html`; `prototype/js/dashboard.js`; `screenshots/admin dashboard.png` | Add an admin-role route guard; implement saved Approve, Reject, Edit, and Remove actions with rejection reasons. |
-| FR-12 | Consistent user interface | Shared CSS and interface components | Implemented | `prototype/css/style.css`; shared navigation, cards, buttons, forms, typography, and colours across all pages | Complete a final cross-page visual check. |
-| FR-13 | Responsive layouts | Responsive CSS and mobile navigation | Implemented | Media queries at 900px and 560px in `prototype/css/style.css`; menu toggle in `prototype/js/main.js` | Test all screens on desktop, tablet, and mobile, especially the dashboard table and forms. |
-| FR-14 | Protect student privacy | Review form, simulated account storage, and privacy documentation | Implemented | `prototype/write-review.html`; `prototype/js/auth.js`; `docs/privacy-and-data-protection.md`; `docs/data-handling-policy.md` | Display usernames instead of emails; warn users not to share personal information; do not store real credentials in `localStorage`; sanitize public content. |
-| FR-15 | Prototype traceability | Requirements, feature mapping, screens, and project documentation | Implemented | `updated-requirements-note.md`; `docs/system-requirements.md`; `docs/feature-requirement-mapping.md`; `docs/screen-inventory-checklist.md`; this file | Confirm final GitHub paths and screenshots. |
-| FR-16 | Review moderation | Pending review status and Admin Dashboard | Implemented | `prototype/js/data.js` assigns status; `prototype/js/dashboard.js` persists moderation; public lists use Approved reviews | Test Pending, Approved, Rejected, Reported, and Resolved states. |
-| FR-17 | Privacy notice and user consent | Privacy Consent page | Implemented | `prototype/privacy-consent.html`; signup consent in `prototype/signup.html` | Verify the notice and consent links on desktop/mobile. |
-| FR-18 | Record ownership | My Reviews page and ownership logic | Implemented | `prototype/my-reviews.html`; owner stored in `prototype/js/data.js` | Test owner-only view, edit, and delete behavior. |
-| FR-19 | Report inappropriate content | Report Review page and report storage | Implemented | `prototype/report-review.html`; Report Review link in `prototype/review-details.html` | Test report submission and dashboard resolution. |
+| Req ID | Functionality | Prototype Evidence | Status | Verification / Remaining Work |
+|---|---|---|---|---|
+| FR-01 | Landing page | `prototype/index.html` | **Implemented** | Verify latest-review cards and calls to action on mobile. |
+| FR-02 | Shared navigation | All HTML pages; `prototype/js/main.js` | **Implemented** | Run a final broken-link check across all ten pages. |
+| FR-03 | Registration and login simulation | `login.html`, `signup.html`, `js/auth.js` | **Implemented (prototype)** | Fixed credentials and client-side sessions are not production security. |
+| FR-04 | Dormitory review browsing | `dorms.html`, `js/data.js`, `js/main.js` | **Implemented** | Confirm seeded and saved Dorm records render correctly. |
+| FR-05 | Cafeteria review browsing | `cafeteria.html`, `js/data.js`, `js/main.js` | **Implemented** | Confirm seeded and saved Cafeteria records render correctly. |
+| FR-06 | Search and rating filter | `searchInput`, `ratingFilter`, `renderCards()` | **Implemented** | Current keyword search matches titles only; text/tag search is future work. |
+| FR-07 | Review details | `review-details.html`, `js/dashboard.js` | **Implemented** | Verify every card opens the correct record. |
+| FR-08 | Authenticated review submission | `write-review.html`, `js/reviews.js`, `js/auth.js` | **Implemented** | Review is saved with author, timestamp, consent, and Pending status. |
+| FR-09 | Survival guide | `guide.html` | **Implemented** | Final content and responsive-layout review required. |
+| FR-10 | Required-field validation | Write Review form controls and fixed options | **Implemented (basic)** | Advanced length checks, file validation, and sanitization remain future work. |
+| FR-11 | Student dashboard | `student-dashboard.html`, `js/student-dashboard.js` | **Implemented** | Includes metrics, status filter, pending removal, profile, and settings. |
+| FR-12 | Administrator-only dashboard | `dashboard.html`, `js/admin-dashboard.js` | **Implemented (prototype)** | Non-admin users are redirected; production needs server-side authorization. |
+| FR-13 | Approve/reject moderation | Moderation Queue in `js/admin-dashboard.js` | **Implemented** | Status is saved to `hallpassReviews`; rejection reasons are not collected. |
+| FR-14 | Submission status display | Student metrics, badges, and status filter | **Implemented** | Pending, Approved, and Rejected states are visible. |
+| FR-15 | Privacy notice and consent | `signup.html`, `write-review.html`, `js/privacy-notice.js` | **Implemented** | Consent records are saved locally; no standalone privacy page is used. |
+| FR-16 | Review ownership association | `author` value in `js/reviews.js`; student filtering | **Implemented (basic)** | Ownership uses the logged-in email; fallback demo items may appear for empty accounts. |
+| FR-17 | Remove pending submission | `data-delete` action in `js/student-dashboard.js` | **Implemented** | Only Pending rows display the Remove control. |
+| FR-18 | User feedback messages | `toast()` in `js/data.js` and action handlers | **Implemented** | Consider adding an ARIA live region for stronger accessibility. |
+| FR-19 | Reported-content handling | Reports panel in `dashboard.html` | **Partially Implemented** | Items and Investigate buttons are demonstrations; users cannot submit reports end to end. |
+| FR-20 | User management | Users panel in `dashboard.html` | **Partially Implemented** | Sample accounts and View Account actions are present, but no account modification occurs. |
+| FR-21 | Administrator audit log | `hallpassAudit`, `renderAudit()` | **Implemented** | Moderation and prototype actions persist in the current browser. |
+| FR-22 | Consistent responsive UI | `prototype/css/style.css` | **Implemented** | Complete final testing at desktop, tablet, and mobile sizes. |
+
+## Prototype File Inventory
+
+### HTML
+`index.html`, `login.html`, `signup.html`, `dorms.html`, `cafeteria.html`, `review-details.html`, `write-review.html`, `guide.html`, `student-dashboard.html`, `dashboard.html`
+
+### CSS
+`css/style.css`
+
+### JavaScript
+`js/data.js`, `js/main.js`, `js/auth.js`, `js/reviews.js`, `js/dashboard.js`, `js/student-dashboard.js`, `js/admin-dashboard.js`, `js/privacy-notice.js`
+
+## Summary
+
+- **Implemented:** 19 requirements, including core browsing, authentication simulation, review submission, consent, student status tracking, moderation, audit history, and responsive interface.
+- **Partially implemented:** FR-19 reported-content handling and FR-20 user management.
+- **Important limitations:** no backend, title-only search, no rejection reason, no real report submission, no real account management, and client-side security only.
+- **Overall decision:** Prototype 15 is aligned with the revised documentation and is suitable for Lab 10 demonstration after final manual QA and screenshot refresh.
 | FR-20 | Responsible content submission | Write Review form | Implemented | Required ownership checkbox, privacy warning, and privacy link in `prototype/write-review.html` | Verify invalid submissions are blocked. |
 | FR-21 | Display review status information | My Reviews page and review status data | Implemented | `prototype/my-reviews.html` displays Pending, Approved, Rejected, and rejection reason | Test each status with the student demo account. |
 | FR-22 | Clear submission feedback | Toast feedback after review submission | Implemented | `prototype/js/reviews.js` displays: “Review submitted. It is now pending admin approval.”; `toast()` in `prototype/js/data.js` | Add equivalent report-submission confirmation and improve accessibility with an announced status region. |
@@ -35,6 +56,4 @@ This file shows how the current HallPass prototype implementation is connected t
 - **Final verification still required:** Test the full student/admin flows on desktop and mobile, refresh screenshots, and confirm GitHub evidence accurately reflects team contributions.
 - **Prototype limitation:** `localStorage` and client-side role checks are classroom simulations, not production security.
 
-## Overall Implementation Decision
 
-**Aligned and ready for final QA.** FR-01–FR-22 are connected to current prototype evidence while production security remains out of scope.
