@@ -354,41 +354,80 @@ Every requirement change is documented in `docs/updated-requirements-note.md` wi
 | **Khaing Zin Thet** | Completed the IP and third-party asset review, prepared the asset register, created the privacy and security review diagram, captured supporting screenshots, and updated the weekly logbook. | `docs/ip-and-third-party-assets.md`, `data/third-party-assets-register.csv`, `diagrams/privacy-security-review.png`, `screenshots/privacy-security-review.png`, `docs/weekly-logbook.md` |
 
 All team members reviewed the identified risks, proposed mitigation actions, and changes to the HallPass system requirements.
-# README Update Template - Lab 10
-
-Add this section to your main README.md.
-
 ## Lab 10 - MVP Implementation Sprint 1
 
 ### Sprint Goal
-Our goal in Lab 10 is to begin building the first working version of the prototype based on the approved requirements, wireframes, architecture, and responsible-design checks.
+
+Our goal in Lab 10 was to begin building the first working version of the HallPass prototype based on the approved system requirements, wireframes, technical architecture, user stories, and responsible-design checks.
+
+During Sprint 1, the team focused on implementing the main student and administrator workflows, connecting the prototype pages, adding interactive JavaScript functionality, simulating data storage with browser localStorage, and updating the project documentation to match Prototype 15.
 
 ### Implementation Approach
-- Platform/tools:
-- Backend status:
-- Data storage/simulation:
-- Prototype link or folder:
+
+* **Platform/tools:** HTML5, CSS3, JavaScript, Visual Studio Code, GitHub, and browser developer tools
+* **Backend status:** Simulated backend
+* **Data storage/simulation:** JavaScript sample data and browser localStorage
+* **Prototype link or folder:** `prototype/`
+
+The prototype uses separate HTML pages for the homepage, authentication, dormitory reviews, cafeteria reviews, review details, review submission, campus guide, student dashboard, and administrator dashboard.
+
+CSS is used for the visual design and responsive layout, while JavaScript controls search, filtering, form validation, review submission, status tracking, moderation actions, toast messages, and localStorage persistence.
 
 ### Features Implemented in Sprint 1
 
-| Feature | Requirement ID | Status | Evidence |
-|---|---|---|---|
-| Homepage | FR-01 | | |
-| Input form | FR-03 | | |
-| Record list | FR-05 | | |
-| Search/filter | FR-06 | | |
-| Detail view | FR-07 | | |
-| Status tracking | FR-08 | | |
-| Admin view | FR-09 | | |
-| Dashboard | FR-12 | | |
+| Feature                          | Requirement ID | Status                             | Evidence                                                                                     |
+| -------------------------------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------------- |
+| Homepage                         | FR-01          | Completed                          | `prototype/index.html` and `/screenshots/homepage.png`                                       |
+| Shared navigation                | FR-02          | Completed                          | Navigation links across the Prototype 15 HTML pages                                          |
+| Signup and login                 | FR-03          | Completed                          | `prototype/signup.html`, `prototype/login.html`, and `/screenshots/login-signup.png`         |
+| Dormitory record list            | FR-04          | Completed                          | `prototype/dorms.html` and `/screenshots/dormitory-list.png`                                 |
+| Cafeteria record list            | FR-05          | Completed                          | `prototype/cafeteria.html` and `/screenshots/cafeteria-list.png`                             |
+| Search and minimum-rating filter | FR-06          | Completed                          | JavaScript search/filter functions and `/screenshots/search-filter.png`                      |
+| Detail view                      | FR-07          | Completed                          | `prototype/review-details.html` and `/screenshots/detail-view.png`                           |
+| Input / review submission form   | FR-08, FR-10   | Completed                          | `prototype/write-review.html` and `/screenshots/input-form.png`                              |
+| Campus survival guide            | FR-09          | Completed                          | `prototype/guide.html` and `/screenshots/campus-guide.png`                                   |
+| Student dashboard                | FR-11          | Completed                          | `prototype/student-dashboard.html` and `/screenshots/student-dashboard.png`                  |
+| Administrator dashboard          | FR-12          | Completed                          | `prototype/dashboard.html` and `/screenshots/admin-view.png`                                 |
+| Review approval and rejection    | FR-13          | Completed as a frontend simulation | Moderation section in `prototype/dashboard.html` and `/screenshots/moderation-queue.png`     |
+| Status tracking                  | FR-14          | Completed                          | Status records in `prototype/student-dashboard.html` and `/screenshots/status-tracking.png`  |
+| Privacy notice and consent       | FR-15          | Completed                          | Signup and review-submission consent interfaces and `/screenshots/privacy-consent.png`       |
+| Review ownership                 | FR-16          | Completed                          | Student-specific submission records in the student dashboard                                 |
+| Remove pending submissions       | FR-17          | Completed                          | Pending-review removal action in `prototype/student-dashboard.html`                          |
+| Toast and action feedback        | FR-18          | Completed                          | Shared JavaScript feedback messages                                                          |
+| Reported-content examples        | FR-19          | Partially Completed                | Reports section in `prototype/dashboard.html` and `/screenshots/report-management.png`       |
+| User-management examples         | FR-20          | Partially Completed                | User-management section in `prototype/dashboard.html` and `/screenshots/user-management.png` |
+| Administrator audit log          | FR-21          | Completed                          | Audit-log section in `prototype/dashboard.html` and `/screenshots/audit-log.png`             |
+| Responsive interface             | FR-22          | Completed                          | `prototype/css/style.css` and `/screenshots/responsive-mobile-view.png`                      |
 
 ### Screenshots
-- Homepage:
-- Input form:
-- Record list:
-- Detail view:
-- Admin/status view:
+
+* **Homepage:** `/screenshots/homepage.png`
+* **Input form:** `/screenshots/input-form.png`
+* **Record list:** `/screenshots/record-list.png`
+* **Detail view:** `/screenshots/detail-view.png`
+* **Admin/status view:** `/screenshots/admin-view.png`
+
+Additional supporting screenshots include:
+
+* `/screenshots/login-signup.png`
+* `/screenshots/dormitory-list.png`
+* `/screenshots/cafeteria-list.png`
+* `/screenshots/search-filter.png`
+* `/screenshots/privacy-consent.png`
+* `/screenshots/student-dashboard.png`
+* `/screenshots/status-tracking.png`
+* `/screenshots/moderation-queue.png`
+* `/screenshots/report-management.png`
+* `/screenshots/user-management.png`
+* `/screenshots/audit-log.png`
+* `/screenshots/responsive-mobile-view.png`
 
 ### Team Contribution
-All group members contributed to the same GitHub repository/page.
 
+All group members contributed to the same GitHub repository and completed work through assigned GitHub issues, commits, prototype files, documentation, and screenshot evidence.
+
+| Member                             | Contribution                                                                                                                                                                                           | Evidence                                                                                                                                                                                      |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Htet Htet Myint Zaw – Member 1** | Developed the HallPass frontend and core screens, including the homepage, review submission form, record lists, review detail page, navigation, and responsive page structure.                         | GitHub Issue #55, core HTML pages in `prototype/`, commits, and interface screenshots                                                                                                         |
+| **Khaing Zin Thet – Member 2**     | Implemented JavaScript functionality, sample data, form validation, search and filtering, review details, moderation and status actions, localStorage persistence, and screenshot evidence.            | GitHub Issue #56, files in `prototype/js/`, commits, and files in `screenshots/`                                                                                                              |
+| **Yousel Zangmo – Member 3**       | Completed Sprint 1 documentation, styling, and repository updates. Updated the prototype link, implementation plan, feature implementation status, weekly logbook, README, and maintained `style.css`. | GitHub Issue #57, `prototype/prototype-link.md`, `prototype/css/style.css`, `docs/implementation-plan.md`, `docs/feature-implementation-status.md`, `docs/weekly-logbook.md`, and `README.md` |
