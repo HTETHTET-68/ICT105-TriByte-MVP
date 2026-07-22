@@ -48,7 +48,7 @@ The following features are included in the HallPass Prototype 15 implementation 
   HTML form validation is used for required fields, email input, password fields, rating selection, review category, review content, and consent confirmation. JavaScript performs additional checks before signup information or review submissions are stored. Because this is a frontend prototype, validation is client-side only and would need server-side validation and sanitization in a production system.
 
 * **Screenshots/evidence approach:**
-  Screenshots of Prototype 15 pages and completed workflows will be stored in the `screenshots/` folder. GitHub issues, commits, repository files, and screenshots will be used as evidence of each member’s contribution. Evidence should include the homepage, review lists, search and filtering, review detail page, submission form, student dashboard, privacy consent, admin dashboard, moderation actions, and status tracking.
+  Screenshots of Prototype  pages and completed workflows will be stored in the `screenshots/` folder. GitHub issues, commits, repository files, and screenshots will be used as evidence of each member’s contribution. Evidence should include the homepage, review lists, search and filtering, review detail page, submission form, student dashboard, privacy consent, admin dashboard, moderation actions, and status tracking.
 
 ## 4. Member Responsibilities
 
