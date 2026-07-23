@@ -741,3 +741,32 @@ In the next lab, the team plans to:
 * Confirm that all files are placed in the correct repository folders
 * Complete final quality assurance before submission
 * Prepare the project for the next MVP testing and validation stage
+
+# Weekly Logbook - Lab 11
+
+## Lab Topic
+MVP Implementation Sprint 2 and Startup Metrics
+
+## Group Case
+Write your group project title and selected case.
+
+## Work Completed Today
+- 
+
+## Member Contributions
+| Member Name | Contribution | File/Feature Updated | GitHub Evidence |
+|---|---|---|---|
+|  |  |  |  |
+
+## Requirements Addressed
+List requirement IDs improved today, such as FR-03, FR-06, FR-08, FR-12.
+
+## Metrics Added
+List metrics added or documented.
+
+## Problems Found
+Describe technical, UI/UX, data, or teamwork problems.
+
+## Next Action Before Lab 12
+Describe what must be finished next.
+
