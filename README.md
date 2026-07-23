@@ -431,3 +431,31 @@ All group members contributed to the same GitHub repository and completed work t
 | **Htet Htet Myint Zaw – Member 1** | Developed the HallPass frontend and core screens, including the homepage, review submission form, record lists, review detail page, navigation, and responsive page structure.                         | GitHub Issue #55, core HTML pages in `prototype/`, commits, and interface screenshots                                                                                                         |
 | **Khaing Zin Thet – Member 2**     | Implemented JavaScript functionality, sample data, form validation, search and filtering, review details, moderation and status actions, localStorage persistence, and screenshot evidence.            | GitHub Issue #56, files in `prototype/js/`, commits, and files in `screenshots/`                                                                                                              |
 | **Yousel Zangmo – Member 3**       | Completed Sprint 1 documentation, styling, and repository updates. Updated the prototype link, implementation plan, feature implementation status, weekly logbook, README, and maintained `style.css`. | GitHub Issue #57, `prototype/prototype-link.md`, `prototype/css/style.css`, `docs/implementation-plan.md`, `docs/feature-implementation-status.md`, `docs/weekly-logbook.md`, and `README.md` |
+# README Update Template - Lab 11
+
+Add this section to your main README.md.
+
+## Lab 11: MVP Implementation Sprint 2 and Startup Metrics
+
+### Prototype Progress
+Describe what improved from Lab 10 to Lab 11.
+
+### Implemented / Improved Features
+| Requirement ID | Feature | Status | Evidence |
+|---|---|---|---|
+| FR-03 |  |  |  |
+| FR-06 |  |  |  |
+| FR-08 |  |  |  |
+| FR-12 |  |  |  |
+
+### Startup/Product Metrics
+List the metrics implemented or documented.
+
+### Prototype Screenshots
+Add links to updated screenshots.
+
+### Member Contributions
+Summarize each member's contribution.
+
+### Remaining Work
+List what must still be completed before the final prototype.
