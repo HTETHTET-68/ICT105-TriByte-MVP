@@ -1,12 +1,15 @@
 
 flowchart TD
-    A[HallPass Lab 10 Basic Working Prototype] --> B[Review HallPass system requirements]
-    B --> C[Audit completed, partial, and pending HallPass features]
-    C --> D[Improve review data handling with localStorage]
-    D --> E[Improve dorm and cafeteria search, filters, and moderation status updates]
-    E --> F[Create HallPass dashboard metrics: total, pending, approved, and average rating]
-    F --> G[Test the full HallPass journey from review submission to admin moderation]
-    G --> H[Capture updated HallPass screenshots]
-    H --> I[Update the HallPass GitHub repository and README]
-    I --> J[HallPass Lab 11 Sprint 2 Evidence]
+    A["HallPass<br/>Lab 10 Prototype"]
+    B["Review HallPass<br/>system requirements"]
+    C["Audit completed, partial,<br/>and pending features"]
+    D["Improve review data handling<br/>using localStorage"]
+    E["Improve dorm and cafeteria<br/>search, filters, and moderation"]
+    F["Create dashboard metrics:<br/>total, pending, approved,<br/>and average rating"]
+    G["Test the HallPass journey:<br/>submission to moderation"]
+    H["Capture updated<br/>HallPass screenshots"]
+    I["Update HallPass<br/>GitHub repository and README"]
+    J["HallPass Lab 11<br/>Sprint 2 Evidence"]
 
+    A --> B --> C --> D --> E
+    E --> F --> G --> H --> I --> J
