@@ -407,8 +407,6 @@ CSS is used for the visual design and responsive layout, while JavaScript contro
 * **Detail view:** `/screenshots/detail-view.png`
 * **Admin/status view:** `/screenshots/admin-view.png`
 
-Additional supporting screenshots include:
-
 * `/screenshots/login-signup.png`
 * `/screenshots/dormitory-list.png`
 * `/screenshots/cafeteria-list.png`
@@ -420,7 +418,7 @@ Additional supporting screenshots include:
 * `/screenshots/report-management.png`
 * `/screenshots/user-management.png`
 * `/screenshots/audit-log.png`
-* `/screenshots/responsive-mobile-view.png`
+
 
 ### Team Contribution
 
@@ -438,24 +436,87 @@ Add this section to your main README.md.
 ## Lab 11: MVP Implementation Sprint 2 and Startup Metrics
 
 ### Prototype Progress
-Describe what improved from Lab 10 to Lab 11.
+
+Sprint 2 strengthens HallPass as a functional and measurable frontend prototype. The updated version keeps the original student and administrator journeys while improving the visual design, review content, images, list controls, survival-guide experience, review submission, moderation details, approved-review removal requests, dashboard metrics, and privacy explanations.
+
+The prototype remains a classroom simulation built with HTML, CSS, JavaScript, fictional seed records, and browser `localStorage`. It does not use production authentication, server-side authorization, or a shared database.
+
+### Run the Prototype
+
+1. Download or clone the repository.
+2. Open `prototype/index.html` in a current browser.
+3. Use the student demonstration account to submit and track a review:
+   - Email: `student@hallpass.com`
+   - Password: `Student123!`
+4. Use the administrator demonstration account to approve or reject submissions:
+   - Email: `admin@hallpass.com`
+   - Password: `Admin123!`
+5. Use fictional information only because data is stored in the current browser.
 
 ### Implemented / Improved Features
-| Requirement ID | Feature | Status | Evidence |
-|---|---|---|---|
-| FR-03 |  |  |  |
-| FR-06 |  |  |  |
-| FR-08 |  |  |  |
-| FR-12 |  |  |  |
 
-### Startup/Product Metrics
-List the metrics implemented or documented.
+| Requirement ID | Feature | Lab 11 Status | Evidence |
+|---|---|---|---|
+| FR-01–FR-02 | Updated homepage and shared navigation | Completed | `prototype/index.html`, `prototype/js/main.js` |
+| FR-04–FR-07 | Richer Dorm/Cafeteria records, search, rating filter, sorting, and detail view | Completed and improved | `prototype/dorms.html`, `prototype/cafeteria.html`, `prototype/review-details.html` |
+| FR-08, FR-10, FR-15–FR-18 | Authenticated submission, validation, consent, ownership, removal, and feedback | Completed and improved | `prototype/write-review.html`, `prototype/js/reviews.js`, `prototype/js/privacy-notice.js` |
+| FR-09 | Searchable Survival Guide and guide-detail pages | Completed and improved | `prototype/guide.html`, `prototype/guide-details.html` |
+| FR-11, FR-14 | Student metrics and submission-status tracking | Completed and improved | `prototype/student-dashboard.html`, `prototype/js/student-dashboard.js` |
+| FR-12–FR-13, FR-21 | Admin metrics, moderation details, removal requests, and audit log | Completed and improved as a prototype | `prototype/dashboard.html`, `prototype/js/admin-dashboard.js` |
+| FR-19–FR-20 | Reported-content and user-management examples | Partially completed | Admin Reports and Users panels |
+| FR-22 | Consistent responsive visual system | Completed and improved | `prototype/css/style.css`, `prototype/images/` |
+
+Full requirement-by-requirement evidence is available in [`docs/feature-implementation-status.md`](docs/feature-implementation-status.md).
+
+### Startup / Product Metrics
+
+HallPass now documents and demonstrates metrics that support product and operational decisions:
+
+- Total Reviews
+- Pending Moderation
+- Approved and Rejected Submissions
+- Dormitory and Cafeteria Review Counts
+- Open Reports and Registered Users (demonstration values)
+- Task Success Rate: **85%** from 170 completed tasks out of 200 validation records
+- Average Usefulness Score: **4.30/5**
+- Average Interest Level: **4.34/5**
+
+Live review, category, and status counts appear in the Student and Administrator dashboards. Definitions, formulas, sources, and limitations are documented in [`docs/startup-metrics.md`](docs/startup-metrics.md).
 
 ### Prototype Screenshots
-Add links to updated screenshots.
+
+Current evidence is stored in `/screenshots/`, including:
+
+- [`screenshots/homepage.png`](screenshots/homepage.png)
+- [`screenshots/input-form.png`](screenshots/input-form.png)
+- [`screenshots/dormitory-list.png`](screenshots/dormitory-list.png)
+- [`screenshots/cafeteria-list.png`](screenshots/cafeteria-list.png)
+- [`screenshots/review-detail.png`](screenshots/review-detail.png)
+- [`screenshots/student-dashboard.png`](screenshots/student-dashboard.png)
+- [`screenshots/admin-view.png`](screenshots/admin-view.png)
+- [`screenshots/moderation-queue.png`](screenshots/moderation-queue.png)
+
+
+Fresh screenshots should be captured after the final manual Sprint 2 walkthrough so the evidence exactly matches the updated prototype.
 
 ### Member Contributions
-Summarize each member's contribution.
+
+| Member | Lab 11 Contribution | Evidence |
+|---|---|---|
+| **Htet Htet Myint Zaw** | Updated the visual prototype, core pages, richer review content, and image assets. | `prototype/*.html`, `prototype/images/`; add Sprint 2 commit link |
+| **Khaing Zin Thet** | Improved JavaScript data handling, list controls, submission, dashboards, moderation, status, metrics, and audit actions. | `prototype/js/`; add Sprint 2 commit link |
+| **Yousel Zangmo** | Tailored the Lab 11 documents, verified requirement traceability and limitations, and updated the README and logbook. | Lab 11 files in `docs/` and `README.md`; add Sprint 2 commit link |
+
+### Testing
+
+The Lab 11 test matrix covers homepage navigation, student authentication, review submission, record lists, search/filter/sort, detail view, status/removal, administrator moderation, dashboard metrics, privacy/validation, and responsive presentation. Source and reference checks are documented in [`docs/prototype-testing-notes.md`](docs/prototype-testing-notes.md). A final manual browser and mobile pass remains required before submission.
 
 ### Remaining Work
-List what must still be completed before the final prototype.
+
+- Complete one final student/admin browser walkthrough and responsive test.
+- Capture a fresh Lab 11 screenshot set.
+- Replace member contribution placeholders with actual GitHub commit/issue/PR links.
+- Extend title-only search to review text, tags, and location.
+- Turn fixed report/user metrics into data-driven values.
+- Complete end-to-end reporting and administrator user management.
+- Replace localStorage and client-side role checks with a secure shared backend for any production release.
