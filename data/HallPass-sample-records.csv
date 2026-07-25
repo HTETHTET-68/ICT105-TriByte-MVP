@@ -1,9 +1,0 @@
-record_id,record_type,title,category,location,date_submitted,rating,description,status,submitted_by
-HP-001,Review,Green Residence Hall,Dormitory Review,Building 4,2026-07-10,4,"Quiet rooms, reliable Wi-Fi, and helpful security staff.",Approved,student01@example.com
-HP-002,Review,Central Cafeteria,Cafeteria Review,Student Center,2026-07-11,3,"Affordable meals, but the lunch queue is usually long.",Approved,student02@example.com
-HP-003,Guide,International Student Welcome Guide,Campus Guide,International Office,2026-07-12,,"Steps for registration, student ID collection, and campus orientation.",Approved,senior01@example.com
-HP-004,Review,River View Dormitory,Dormitory Review,North Campus,2026-07-13,5,"Clean shared areas, friendly staff, and a convenient shuttle stop.",Pending,student03@example.com
-HP-005,Review,Library Cafe,Cafeteria Review,Main Library,2026-07-14,4,"Good drinks and study-friendly seating, although tables fill quickly.",Pending,student04@example.com
-HP-006,Guide,Using the Campus Shuttle,Campus Guide,Main Gate,2026-07-15,,"Explains shuttle routes, operating times, and the main pickup points.",Approved,senior02@example.com
-HP-007,Review,Old Campus Residence,Dormitory Review,Building 2,2026-07-16,2,"Low rent, but the bathrooms and laundry area need maintenance.",Rejected,student05@example.com
-HP-008,Review,Halal Food Corner,Cafeteria Review,Food Court Zone B,2026-07-17,5,"Clear halal labels, generous portions, and friendly service.",Approved,student06@example.com
