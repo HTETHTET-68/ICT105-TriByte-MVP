@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  const normalizedUserEmail = String(user.email || "").trim().toLowerCase();
+  const profileStorageKey = `hallpassProfile:${normalizedUserEmail}`;
+
   const studentEmail = document.getElementById("studentEmail");
   const profileEmail = document.getElementById("profileEmail");
 
@@ -38,8 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ).toISOString(),
       text:
         "Quiet rooms, helpful staff, and convenient access to local shops.",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
     },
     {
       id: "demo-2",
@@ -51,8 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
         Date.now() - 86400000
       ).toISOString(),
       text: "Affordable lunch with many choices.",
-      image:
-        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
     }
   ];
 
@@ -63,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * Show demo entries only when the student has not
    * submitted any real reviews.
    */
-  if (!myReviews.length) {
+  if (!myReviews.length && normalizedUserEmail === "student@hallpass.com") {
     myReviews = samples;
   }
 
@@ -73,10 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getMyReviews() {
     return savedReviews.filter(review => {
-      return (
-        !review.author ||
-        review.author === user.email
-      );
+      const reviewOwner = String(
+        review.ownerEmail || review.author || ""
+      ).trim().toLowerCase();
+
+      return reviewOwner === normalizedUserEmail;
     });
   }
 
@@ -236,15 +236,44 @@ document.addEventListener("DOMContentLoaded", () => {
                 !String(review.id).startsWith("demo-")
                   ? `
                     <button
-                      class="text-button"
+                      class="remove-review-button"
                       type="button"
+                      aria-label="Remove pending review ${escapeHtml(
+                        review.title || "submission"
+                      )}"
                       data-delete="${escapeHtml(
                         String(review.id)
                       )}"
                     >
-                      Remove
+                      <i class="fa-solid fa-trash-can" aria-hidden="true"></i>
+                      <span>Remove</span>
                     </button>
                   `
+                  : ""
+              }
+
+              ${
+                status === "Approved" &&
+                !String(review.id).startsWith("demo-")
+                  ? review.removalRequest?.status === "Pending"
+                    ? `
+                      <span class="badge removal-requested">
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        Removal requested
+                      </span>
+                    `
+                    : `
+                      <button
+                        class="request-removal-button"
+                        type="button"
+                        data-request-removal="${escapeHtml(
+                          String(review.id)
+                        )}"
+                      >
+                        <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>
+                        <span>Request removal</span>
+                      </button>
+                    `
                   : ""
               }
             </div>
@@ -262,17 +291,25 @@ document.addEventListener("DOMContentLoaded", () => {
           );
         });
       });
+
+    document
+      .querySelectorAll("[data-request-removal]")
+      .forEach(button => {
+        button.addEventListener("click", () => {
+          openRemovalRequestModal(
+            button.dataset.requestRemoval
+          );
+        });
+      });
   }
 
   function renderSubmissionImage(review) {
-    if (hasReviewImage(review)) {
+    if (review.image) {
       return `
         <img
           class="submission-photo"
           src="${escapeHtml(review.image)}"
-          alt="${escapeHtml(
-            review.title || "Review photo"
-          )}"
+          alt="${escapeHtml(review.title || "Review photo")}"
         >
       `;
     }
@@ -323,6 +360,113 @@ document.addEventListener("DOMContentLoaded", () => {
 
     refreshStudentReviews();
     toast("Submission removed");
+  }
+
+  /* =====================================================
+     REQUEST REMOVAL OF AN APPROVED REVIEW
+  ===================================================== */
+
+  function openRemovalRequestModal(reviewId) {
+    const review = savedReviews.find(
+      item => String(item.id) === String(reviewId)
+    );
+
+    if (!review || review.status !== "Approved") {
+      toast("Only approved reviews can use a removal request");
+      return;
+    }
+
+    let modal = document.getElementById(
+      "studentRemovalRequestModal"
+    );
+
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.id = "studentRemovalRequestModal";
+      modal.className = "admin-review-modal";
+      modal.hidden = true;
+      document.body.appendChild(modal);
+    }
+
+    modal.innerHTML = `
+      <div class="admin-review-modal-backdrop" data-close-removal-request></div>
+      <div class="admin-review-dialog removal-request-dialog" role="dialog" aria-modal="true" aria-labelledby="removalRequestTitle">
+        <div class="admin-review-dialog-header">
+          <div>
+            <span class="badge">Approved review</span>
+            <h2 id="removalRequestTitle">Request review removal</h2>
+          </div>
+          <button class="modal-close" type="button" aria-label="Close removal request" data-close-removal-request>×</button>
+        </div>
+        <p class="muted">
+          The review will remain published until an administrator approves your request.
+        </p>
+        <form id="removalRequestForm" class="removal-request-form">
+          <div>
+            <label for="removalReason">Why should this review be removed?</label>
+            <select id="removalReason" required>
+              <option value="">Choose a reason</option>
+              <option>Uploaded by mistake</option>
+              <option>Outdated information</option>
+              <option>Privacy concern</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="removalDetails">Additional details <span class="optional-label">(optional)</span></label>
+            <textarea id="removalDetails" rows="4" placeholder="Give the administrator any helpful context."></textarea>
+          </div>
+          <div class="admin-review-modal-actions">
+            <button class="btn outline" type="button" data-close-removal-request>Cancel</button>
+            <button class="btn dark" type="submit">Send Request</button>
+          </div>
+        </form>
+      </div>
+    `;
+
+    const closeModal = () => {
+      modal.hidden = true;
+      document.body.classList.remove("modal-open");
+    };
+
+    modal
+      .querySelectorAll("[data-close-removal-request]")
+      .forEach(element => {
+        element.addEventListener("click", closeModal);
+      });
+
+    modal
+      .querySelector("#removalRequestForm")
+      .addEventListener("submit", event => {
+        event.preventDefault();
+
+        const reason = modal
+          .querySelector("#removalReason")
+          .value;
+        const details = modal
+          .querySelector("#removalDetails")
+          .value
+          .trim();
+
+        const requested = requestReviewRemoval(
+          reviewId,
+          reason,
+          details
+        );
+
+        if (!requested) {
+          toast("Removal request could not be submitted");
+          return;
+        }
+
+        closeModal();
+        refreshStudentReviews();
+        toast("Removal request sent to an administrator");
+      });
+
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    modal.querySelector("#removalReason").focus();
   }
 
   /* =====================================================
@@ -390,16 +534,12 @@ document.addEventListener("DOMContentLoaded", () => {
               ?.value.trim() || "",
           language:
             document.getElementById("language")
-              ?.value || "",
-          notifications:
-            document.getElementById(
-              "notifications"
-            )?.value || ""
+              ?.value || ""
         };
 
         try {
           localStorage.setItem(
-            "hallpassProfile",
+            profileStorageKey,
             JSON.stringify(profile)
           );
 
@@ -421,12 +561,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function loadProfileSettings() {
     try {
       const profile = JSON.parse(
-        localStorage.getItem(
-          "hallpassProfile"
-        ) || "null"
+        localStorage.getItem(profileStorageKey) || "null"
       );
-
-      if (!profile) return;
 
       const displayName =
         document.getElementById("displayName");
@@ -434,10 +570,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const language =
         document.getElementById("language");
 
-      const notifications =
-        document.getElementById(
-          "notifications"
-        );
+      if (!profile) {
+        if (displayName) {
+          displayName.value = user.name || "Student";
+        }
+        return;
+      }
 
       if (displayName) {
         displayName.value = profile.name || "";
@@ -448,10 +586,6 @@ document.addEventListener("DOMContentLoaded", () => {
           profile.language || "";
       }
 
-      if (notifications) {
-        notifications.value =
-          profile.notifications || "";
-      }
     } catch (error) {
       console.error(
         "Could not load profile settings:",
