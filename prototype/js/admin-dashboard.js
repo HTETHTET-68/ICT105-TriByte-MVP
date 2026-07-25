@@ -96,6 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
       review =>
         (review.status || "Pending") === "Pending"
     );
+    const removalRequests = submittedReviews.filter(
+      review =>
+        review.removalRequest?.status === "Pending"
+    );
 
     setText("totalReviews", allReviews.length);
 
@@ -114,7 +118,11 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     setText("pendingCount", pendingReviews.length);
-    setText("queueCount", pendingReviews.length);
+    setText(
+      "queueCount",
+      pendingReviews.length + removalRequests.length
+    );
+    setText("removalRequestCount", removalRequests.length);
   }
 
   /* =====================================================
@@ -218,6 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
       updateDashboardCounts();
+      renderRemovalRequests();
       renderRecentActivity();
       return;
     }
@@ -321,7 +330,151 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
     updateDashboardCounts();
+    renderRemovalRequests();
     renderRecentActivity();
+  }
+
+  function renderRemovalRequests() {
+    const body = document.getElementById(
+      "removalRequestsBody"
+    );
+
+    if (!body) return;
+
+    const requests = submittedReviews.filter(
+      review =>
+        review.removalRequest?.status === "Pending"
+    );
+
+    if (!requests.length) {
+      body.innerHTML = `
+        <tr>
+          <td colspan="4">
+            No approved-review removal requests.
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    body.innerHTML = requests
+      .map(review => `
+        <tr>
+          <td>
+            <div class="moderation-review-cell">
+              ${renderSmallReviewImage(review)}
+              <div>
+                <strong>${escapeHtml(
+                  review.title || "Untitled Review"
+                )}</strong>
+                <br>
+                <small class="muted">${escapeHtml(
+                  review.author || "Student contributor"
+                )}</small>
+              </div>
+            </div>
+          </td>
+          <td>
+            <strong>${escapeHtml(
+              review.removalRequest.reason
+            )}</strong>
+            ${
+              review.removalRequest.details
+                ? `<br><small class="muted">${escapeHtml(
+                    review.removalRequest.details
+                  )}</small>`
+                : ""
+            }
+          </td>
+          <td>${formatDate(
+            review.removalRequest.requestedAt
+          )}</td>
+          <td>
+            <div class="moderation-buttons">
+              <button
+                class="btn remove-photo-button removal-request-action"
+                type="button"
+                data-review-id="${escapeHtml(String(review.id))}"
+                data-removal-decision="approve"
+              >
+                Remove Review
+              </button>
+              <button
+                class="btn outline removal-request-action"
+                type="button"
+                data-review-id="${escapeHtml(String(review.id))}"
+                data-removal-decision="decline"
+              >
+                Keep Review
+              </button>
+            </div>
+          </td>
+        </tr>
+      `)
+      .join("");
+
+    body
+      .querySelectorAll(".removal-request-action")
+      .forEach(button => {
+        button.addEventListener("click", () => {
+          resolveRemovalRequest(
+            button.dataset.reviewId,
+            button.dataset.removalDecision
+          );
+        });
+      });
+  }
+
+  function resolveRemovalRequest(reviewId, decision) {
+    const review = submittedReviews.find(
+      item => String(item.id) === String(reviewId)
+    );
+
+    if (
+      !review ||
+      review.removalRequest?.status !== "Pending"
+    ) {
+      toast("Removal request could not be found");
+      return;
+    }
+
+    if (decision === "approve") {
+      const confirmed = window.confirm(
+        `Remove “${review.title}” from HallPass? This deletes the approved review.`
+      );
+
+      if (!confirmed) return;
+
+      if (!deleteReview(reviewId)) {
+        toast("Review could not be removed");
+        return;
+      }
+
+      recordAction(
+        "Approved review removal",
+        review.title || "Untitled Review"
+      );
+      toast("Approved review removed");
+    } else {
+      const declined = declineReviewRemoval(
+        reviewId,
+        user.email || "Admin"
+      );
+
+      if (!declined) {
+        toast("Removal request could not be declined");
+        return;
+      }
+
+      recordAction(
+        "Declined review removal",
+        review.title || "Untitled Review"
+      );
+      toast("Review kept published");
+    }
+
+    refreshData();
+    renderQueue();
   }
 
   function moderateReview(reviewId, newStatus) {
@@ -361,6 +514,8 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =====================================================
      REVIEW DETAILS MODAL
   ===================================================== */
+
+  let reviewModalReturnFocus = null;
 
   function createReviewModal() {
     if (document.getElementById("adminReviewModal")) {
@@ -442,6 +597,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    reviewModalReturnFocus = document.activeElement;
     createReviewModal();
 
     const modal = document.getElementById(
@@ -538,6 +694,17 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
 
       <div class="admin-review-modal-actions">
+        ${review.image ? `
+          <button
+            class="btn remove-photo-button"
+            type="button"
+            id="modalRemovePhoto"
+          >
+            <i class="fa-solid fa-image" aria-hidden="true"></i>
+            Remove Photo
+          </button>
+        ` : ""}
+
         <button
           class="btn dark"
           type="button"
@@ -564,6 +731,16 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `;
 
+    const removePhotoButton = content.querySelector(
+      "#modalRemovePhoto"
+    );
+
+    if (removePhotoButton) {
+      removePhotoButton.addEventListener("click", () => {
+        removePhotoFromReview(review.id);
+      });
+    }
+
     content
       .querySelector("#modalApproveReview")
       .addEventListener("click", () => {
@@ -587,6 +764,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
     modal.hidden = false;
     document.body.classList.add("modal-open");
+
+    const closeButton = modal.querySelector(
+      ".modal-close"
+    );
+
+    if (closeButton) {
+      closeButton.focus();
+    }
+  }
+
+  function removePhotoFromReview(reviewId) {
+    const review = submittedReviews.find(
+      item => String(item.id) === String(reviewId)
+    );
+
+    if (!review || !review.image) {
+      toast("This review does not have a photo");
+      return;
+    }
+
+    const confirmed = window.confirm(
+      "Remove this photo? The written review will remain and a category icon will be shown instead."
+    );
+
+    if (!confirmed) return;
+
+    const removed = removeReviewPhoto(
+      reviewId,
+      user.email || "Admin"
+    );
+
+    if (!removed) {
+      toast("The photo could not be removed");
+      return;
+    }
+
+    recordAction(
+      "Removed review photo",
+      review.title || "Untitled Review"
+    );
+
+    refreshData();
+    renderQueue();
+    openReviewDetails(reviewId);
+    toast("Photo removed; the written review was kept");
   }
 
   function closeReviewDetails() {
@@ -599,6 +821,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.body.classList.remove("modal-open");
+
+    if (
+      reviewModalReturnFocus &&
+      typeof reviewModalReturnFocus.focus === "function"
+    ) {
+      reviewModalReturnFocus.focus();
+    }
+
+    reviewModalReturnFocus = null;
   }
 
   /* =====================================================
@@ -661,14 +892,12 @@ document.addEventListener("DOMContentLoaded", () => {
   ===================================================== */
 
   function renderSmallReviewImage(review) {
-    if (hasReviewImage(review)) {
+    if (review.image) {
       return `
         <img
           class="moderation-thumbnail"
           src="${escapeHtml(review.image)}"
-          alt="${escapeHtml(
-            review.title || "Review photo"
-          )}"
+          alt="${escapeHtml(review.title || "Review photo")}"
         >
       `;
     }
@@ -681,14 +910,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderFullReviewImage(review) {
-    if (hasReviewImage(review)) {
+    if (review.image) {
       return `
         <img
           class="admin-review-full-image"
           src="${escapeHtml(review.image)}"
-          alt="${escapeHtml(
-            review.title || "Review photo"
-          )}"
+          alt="${escapeHtml(review.title || "Review photo")}"
         >
       `;
     }
@@ -698,8 +925,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <span>
           ${review.type === "Dorm" ? "🏢" : "🍽️"}
         </span>
-
-        <p>No photo was uploaded.</p>
       </div>
     `;
   }
