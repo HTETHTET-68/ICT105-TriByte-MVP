@@ -742,31 +742,77 @@ In the next lab, the team plans to:
 * Complete final quality assurance before submission
 * Prepare the project for the next MVP testing and validation stage
 
-# Weekly Logbook - Lab 11
+
+# Weekly Logbook — Lab 11
 
 ## Lab Topic
+
 MVP Implementation Sprint 2 and Startup Metrics
 
 ## Group Case
-Write your group project title and selected case.
+
+**HallPass — Student Reviews & Campus Survival Guide**
+
+HallPass supports first-year, international, and exchange students at Rangsit University by bringing dormitory reviews, cafeteria reviews, and practical campus guidance into one student-focused platform.
 
 ## Work Completed Today
-- 
+
+- Reviewed Sprint 1 against `docs/system-requirements.md`, `docs/mvp-feature-list.md`, the Lab 11 task sheet, and the updated prototype.
+- Replaced the Sprint 1 prototype with the team’s updated HallPass version and richer image assets.
+- Improved Dormitory and Cafeteria browsing with search, minimum-rating filters, and sorting.
+- Expanded the Survival Guide with topic search and guide-detail pages.
+- Improved review submission with existing/new place selection, optional image handling, consent, status, and ownership data.
+- Improved administrator moderation with review details, approve/reject actions, removal requests, live counts, and audit records.
+- Defined eleven startup/product metrics covering usage, status, category, operations, user activity, and validation.
+- Prepared feature status, testing notes, metrics documentation, weekly logbook, and README updates.
 
 ## Member Contributions
-| Member Name | Contribution | File/Feature Updated | GitHub Evidence |
+
+| Member Name | Contribution | File / Feature Updated | GitHub Evidence |
 |---|---|---|---|
-|  |  |  |  |
+| **Htet Htet Myint Zaw** | Updated the visual prototype, homepage, review lists, review detail presentation, guide content, and image assets. | `prototype/*.html`, `prototype/images/` | Add Sprint 2 commit/PR link after upload |
+| **Khaing Zin Thet** | Improved JavaScript data handling, search/filter/sort, submission, student status tracking, moderation, removal requests, metrics, and audit actions. | `prototype/js/` | Add Sprint 2 commit/PR link after upload |
+| **Yousel Zangmo** | Tailored the Lab 11 documentation, reviewed traceability and responsible-data language, and updated the repository README. | `docs/feature-implementation-status.md`, `docs/startup-metrics.md`, `docs/prototype-testing-notes.md`, `docs/weekly-logbook.md`, `README.md` | Add Sprint 2 commit/PR link after upload |
+
+> The owners above follow the team’s Lab 10 role split. Replace any row if the team’s actual Sprint 2 work assignment was different, and add real commit links after each member uploads their work.
 
 ## Requirements Addressed
-List requirement IDs improved today, such as FR-03, FR-06, FR-08, FR-12.
+
+- **FR-01–FR-07:** Improved homepage, navigation, record lists, search/filter/sort, and review details.
+- **FR-08–FR-10:** Improved authenticated review submission, guide content, consent, and validation.
+- **FR-11–FR-18:** Improved student/admin dashboards, moderation, status tracking, ownership, removal handling, and feedback.
+- **FR-21–FR-22:** Maintained persistent audit activity and consistent responsive styling.
+- **FR-19–FR-20:** Reviewed but remain partial because reports and user management are still demonstrations.
 
 ## Metrics Added
-List metrics added or documented.
+
+- Total reviews
+- Pending moderation
+- Approved submissions
+- Rejected submissions
+- Dormitory review count
+- Cafeteria review count
+- Open reports
+- Registered users
+- Task success rate: **85%**
+- Average usefulness: **4.30/5**
+- Average interest level: **4.34/5**
 
 ## Problems Found
-Describe technical, UI/UX, data, or teamwork problems.
+
+- Local browser data is limited to one device/profile and is not a shared database.
+- Authentication and administrator authorization are client-side simulations.
+- Report investigation and user management are not complete workflows.
+- Open Reports and Registered Users are fixed demonstration metrics.
+- Search is still mainly title-based.
+- Optional review images can consume browser storage quickly.
+- A final manual multi-browser/mobile test and refreshed screenshot set are still required.
 
 ## Next Action Before Lab 12
-Describe what must be finished next.
 
+1. Run the complete student and administrator journey in a current browser.
+2. Confirm dashboard counts before and after one approval and one rejection.
+3. Test desktop, tablet, and mobile layouts.
+4. Capture fresh Lab 11 screenshots for the homepage, input form, record lists, detail view, student dashboard, admin view, and mobile view.
+5. Replace contribution placeholders with each member’s real GitHub commit, issue, or pull-request evidence.
+6. Consider making report and user metrics data-driven and expanding full-text search
