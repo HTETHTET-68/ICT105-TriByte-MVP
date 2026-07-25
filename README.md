@@ -65,17 +65,17 @@ A web-based platform that helps students settle into campus life by providing:
 | Lab 1 | Lab setup and idea log | Repository setup, team profile, initial three-idea logbook | Completed |
 | Lab 2 | Opportunity scanning and NUF scoring | Six-idea opportunity discovery table, technology feasibility mapping, NUF scoring, selected project HallPass | Completed |
 | Lab 3 | Customer discovery and problem validation | Target respondents defined, survey distributed, 20 responses collected, assumption vs evidence analysis completed | Completed |
-| Lab 4 | User persona, system requirements, MVP feature prioritization, user stories, user flow, and use case diagrams | Completed user persona, functional requirements, MVP feature list (MoSCoW), user stories, user flow diagram, use case diagram| Completed |
+| Lab 4 | User persona, system requirements, MVP feature prioritization, user stories, user flow, and use case diagrams | Completed user persona, functional requirements, MVP feature list (MoSCoW), user stories, user flow diagram, and use case diagram | Completed |
 | Lab 5 | Product concept and UI/UX wireframes | Product concept, feature-requirement mapping, six required wireframes, user flow diagram, usability checklist, and clickable HTML/CSS wireframe draft | Completed |
 | Lab 6 | Business model development, feature-value mapping, technical architecture design, data structure definition, and system/data flow planning | Business Model Canvas, Feature-Value Mapping, Technical Architecture, Data Structure, System Architecture Diagram, Data Flow Diagram, sample dataset, README update, and weekly logbook | Completed |
 | Lab 7 | MVP experiment planning, critical assumption analysis, test user definition, success metrics design, experiment script preparation, and GitHub documentation | MVP Experiment Plan, Critical Assumptions, Experiment Script, Success Metrics, Feedback Form, Sample Test Users, README update, GitHub Issues, and Weekly Logbook | Completed |
-| Lab 8 |Customer validation, MVP experiment, analytics reporting, and product evaluation | Validation Results, Customer Validation Summary, Analytics Insights, Feedback Forms, MVP Decision, Validation Screenshots, README Update, and Weekly Logbook | Completed |
+| Lab 8 | Customer validation, MVP experiment, analytics reporting, and product evaluation | Validation Results, Customer Validation Summary, Analytics Insights, Feedback Forms, MVP Decision, Validation Screenshots, README Update, and Weekly Logbook | Completed |
 | Lab 9 | Responsible IT review covering privacy, ethics, intellectual property, data protection, and basic security | Legal and Ethical Checklist, Privacy and Data Protection Review, IP and Third-Party Assets Register, Security Risk Check, Risk Register, Updated System Requirements Note, README Update, and Weekly Logbook | Completed |
-| Lab 10 | | | |
-| Lab 11 | | | |
-| Lab 12 | | | |
-| Lab 13 | | | |
-| Lab 14 | | | |
+| Lab 10 | MVP Implementation Sprint 1 covering frontend development, workflow integration, interactive functionality, simulated data storage, responsive design, and implementation documentation | Working HallPass Prototype 15 with student and administrator workflows, authentication simulation, review lists and details, search and filtering, review submission, campus guide, dashboards, moderation and status tracking, privacy consent, localStorage persistence, responsive styling, screenshots, implementation plan, feature-status document, README update, and weekly logbook | Completed |
+| Lab 11 | MVP Implementation Sprint 2, prototype improvement, startup metrics development, requirement traceability, and prototype testing | Improved HallPass prototype, richer review content and images, enhanced search/filter/sort controls, guide-detail pages, improved student and administrator dashboards, moderation and removal-request features, startup metrics documentation, testing notes, README update, screenshots, and weekly logbook | In Progress |
+| Lab 12 |  |  |  |
+| Lab 13 |  |  |  |
+| Lab 14 |  |  |  |
 
 ## Customer Problem Discovery Summary
 In Lab 03, our team collected early problem evidence from target users. The purpose was to confirm whether our selected problem from Lab 02 is real and important. We distributed a survey via Google Forms and collected 20 responses from students at our university. Through this process, we validated that students face significant challenges in accessing reliable and centralized information about dormitories, cafeterias, and campus life. We also identified that users rely heavily on informal sources such as friends and social media, which leads to inconsistent and stressful decision-making.
