@@ -1,0 +1,7 @@
+field,allowed_values,notes
+record_type,Place Profile; Student Review,Place Profile is seeded demonstration content; Student Review is submitted by a logged-in user
+category,Dorm; Cafeteria,Matches the type values used by the HallPass prototype
+status,Pending; Approved; Rejected; Removal Requested; Removed,Pending reviews await moderation; Approved reviews are public; Rejected reviews remain private
+rating,1; 2; 3; 4; 5,Use a whole-number selection in the submission form; displayed place averages may include decimals
+author_role,First-year Student; International Student; Exchange Student; Second-year Student,Use a general student role and avoid storing unnecessary personal information
+moderation_priority,Low; Medium; High,"Priority helps the administrator review urgent, reported, or removal-request records"
