@@ -1,0 +1,13 @@
+review_id,record_type,place_name,category,location,submission_date,status,rating,author_role,moderation_priority
+HP001,Place Profile,RSU Residence,Dorm,5 min walk from campus,2026-07-12,Approved,4.7,Second-year Student,Low
+HP002,Place Profile,Muang Ake Apartment,Dorm,10 min walk from campus,2026-07-13,Approved,4.4,International Student,Low
+HP003,Place Profile,The Campus Place,Dorm,3 min walk from campus,2026-07-14,Approved,4.8,First-year Student,Low
+HP004,Place Profile,RSU Food Court,Cafeteria,Rangsit University main campus,2026-07-15,Approved,4.6,First-year Student,Low
+HP005,Place Profile,International Canteen,Cafeteria,Student Center,2026-07-16,Approved,4.5,Exchange Student,Low
+HP006,Student Review,Cafe Blue,Cafeteria,Library area,2026-07-20,Pending,4.3,International Student,Medium
+HP007,Student Review,Lak Hok Garden Residence,Dorm,12 min walk from campus,2026-07-21,Approved,4.2,Second-year Student,Low
+HP008,Student Review,Building 6 Food Court,Cafeteria,Building 6,2026-07-22,Pending,4.4,First-year Student,Medium
+HP009,Student Review,Rangsit Campus View Apartment,Dorm,8 min walk from campus,2026-07-22,Rejected,2,Exchange Student,High
+HP010,Student Review,Green Corner Café,Cafeteria,Near campus walkway,2026-07-23,Approved,4.6,Exchange Student,Low
+HP011,Student Review,RSU Residence,Dorm,5 min walk from campus,2026-07-24,Removal Requested,3.8,First-year Student,High
+HP012,Student Review,The Campus Place,Dorm,3 min walk from campus,2026-07-24,Pending,4.9,International Student,Medium
