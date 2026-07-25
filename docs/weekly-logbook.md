@@ -743,7 +743,7 @@ In the next lab, the team plans to:
 * Prepare the project for the next MVP testing and validation stage
 
 
-# Weekly Logbook — Lab 11
+# Weekly Logbook - Lab 11
 
 ## Lab Topic
 
@@ -751,68 +751,103 @@ MVP Implementation Sprint 2 and Startup Metrics
 
 ## Group Case
 
-**HallPass — Student Reviews & Campus Survival Guide**
+**HallPass - Student Reviews & Campus Survival Guide**
 
-HallPass supports first-year, international, and exchange students at Rangsit University by bringing dormitory reviews, cafeteria reviews, and practical campus guidance into one student-focused platform.
+HallPass is a student-focused platform for first-year, international, and exchange students at Rangsit University. It provides dormitory reviews, cafeteria reviews, student-written experiences, and practical campus survival information.
 
 ## Work Completed Today
 
-- Reviewed Sprint 1 against `docs/system-requirements.md`, `docs/mvp-feature-list.md`, the Lab 11 task sheet, and the updated prototype.
-- Replaced the Sprint 1 prototype with the team’s updated HallPass version and richer image assets.
-- Improved Dormitory and Cafeteria browsing with search, minimum-rating filters, and sorting.
-- Expanded the Survival Guide with topic search and guide-detail pages.
-- Improved review submission with existing/new place selection, optional image handling, consent, status, and ownership data.
-- Improved administrator moderation with review details, approve/reject actions, removal requests, live counts, and audit records.
-- Defined eleven startup/product metrics covering usage, status, category, operations, user activity, and validation.
-- Prepared feature status, testing notes, metrics documentation, weekly logbook, and README updates.
+* Reviewed the HallPass Sprint 1 prototype and Lab 11 requirements.
+* Updated the prototype HTML pages and improved the overall page structure.
+* Improved the homepage, Dormitory reviews, Cafeteria reviews, review details, Survival Guide, login, signup, review submission, Student Dashboard, and Admin Dashboard.
+* Added keyword search, minimum-rating filters, and sorting controls.
+* Improved the Survival Guide with topic search and detailed guide pages.
+* Improved review submission with existing or new place selection, optional image handling, consent, and status tracking.
+* Improved the Student Dashboard with submission counts, status filtering, profile settings, and removal-request controls.
+* Improved the Admin Dashboard with review moderation, removal requests, reports, user management, and audit records.
+* Prepared the genuine HallPass prototype-records CSV using the records from `js/data.js`.
+* Imported the HallPass data into Power BI and assigned the correct data types.
+* Created the HallPass Power BI dashboard and saved the completed PBIX file.
+* Added KPI cards, charts, tables, and slicers to the Power BI dashboard.
+* Documented HallPass startup and product metrics.
+* Updated the prototype-testing notes, feature implementation status, weekly logbook, and README.
 
 ## Member Contributions
 
-| Member Name | Contribution | File / Feature Updated | GitHub Evidence |
-|---|---|---|---|
-| **Htet Htet Myint Zaw** | Updated the visual prototype, homepage, review lists, review detail presentation, guide content, and image assets. | `prototype/*.html`, `prototype/images/` | Add Sprint 2 commit/PR link after upload |
-| **Khaing Zin Thet** | Improved JavaScript data handling, search/filter/sort, submission, student status tracking, moderation, removal requests, metrics, and audit actions. | `prototype/js/` | Add Sprint 2 commit/PR link after upload |
-| **Yousel Zangmo** | Tailored the Lab 11 documentation, reviewed traceability and responsible-data language, and updated the repository README. | `docs/feature-implementation-status.md`, `docs/startup-metrics.md`, `docs/prototype-testing-notes.md`, `docs/weekly-logbook.md`, `README.md` | Add Sprint 2 commit/PR link after upload |
-
-> The owners above follow the team’s Lab 10 role split. Replace any row if the team’s actual Sprint 2 work assignment was different, and add real commit links after each member uploads their work.
+| Member Name             | Contribution                                                                                                                                                                                                         | File/Feature Updated                                                                                                                         | GitHub Evidence                                  |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| **Htet Htet Myint Zaw** | Developed and updated the HallPass prototype HTML pages, improved the visual interface, added and organized image assets, prepared the Power BI data, created the Power BI dashboard, and completed the PBIX report. | `prototype/*.html`, `prototype/images/`, `data/*.csv`, `Lab11_HallPass_PowerBI/*.pbix`, Power BI dashboard screenshot                        | Add Sprint 2 commit, issue, or pull-request link |
+| **Khaing Zin Thet**     | Improved JavaScript functionality for search, filtering, sorting, authentication, review submission, Student Dashboard, moderation, removal requests, reports, user management, profiles, and audit actions.         | `prototype/js/`                                                                                                                              | Add Sprint 2 commit, issue, or pull-request link |
+| **Yousel Zangmo**       | Completed and updated the Lab 11 documentation, requirement traceability, startup metrics, prototype-testing notes, weekly logbook, and repository README.                                                           | `docs/feature-implementation-status.md`, `docs/startup-metrics.md`, `docs/prototype-testing-notes.md`, `docs/weekly-logbook.md`, `README.md` | Add Sprint 2 commit, issue, or pull-request link |
 
 ## Requirements Addressed
 
-- **FR-01–FR-07:** Improved homepage, navigation, record lists, search/filter/sort, and review details.
-- **FR-08–FR-10:** Improved authenticated review submission, guide content, consent, and validation.
-- **FR-11–FR-18:** Improved student/admin dashboards, moderation, status tracking, ownership, removal handling, and feedback.
-- **FR-21–FR-22:** Maintained persistent audit activity and consistent responsive styling.
-- **FR-19–FR-20:** Reviewed but remain partial because reports and user management are still demonstrations.
+* **FR-01:** Improved the HallPass homepage and introduction.
+* **FR-02:** Improved navigation between the main prototype pages.
+* **FR-03:** Maintained Student and Admin login and signup workflows.
+* **FR-04:** Improved Dormitory review browsing.
+* **FR-05:** Improved Cafeteria review browsing.
+* **FR-06:** Added and improved keyword search, minimum-rating filters, and sorting.
+* **FR-07:** Improved the place and review-detail presentation.
+* **FR-08:** Improved authenticated Student review submission.
+* **FR-09:** Expanded the Survival Guide with search and guide-detail pages.
+* **FR-10:** Improved required-field, image, and consent validation.
+* **FR-11:** Improved the Student Dashboard, submission counts, profile settings, and profile-picture controls.
+* **FR-12:** Improved the Admin Dashboard and its navigation panels.
+* **FR-13:** Improved review moderation, including review details, approval, rejection, and image removal.
+* **FR-14:** Improved Pending, Approved, and Rejected status tracking.
+* **FR-15:** Maintained privacy notices and consent controls.
+* **FR-16:** Maintained review ownership information.
+* **FR-17:** Improved Pending review removal and Approved review removal requests.
+* **FR-18:** Improved confirmation and feedback messages.
+* **FR-19:** Improved incorrect-information reporting and Admin investigation.
+* **FR-20:** Improved user search, behaviour reporting, suspension, restoration, and deletion controls.
+* **FR-21:** Maintained Admin moderation and audit records.
+* **FR-22:** Improved responsive styling across the prototype.
 
 ## Metrics Added
 
-- Total reviews
-- Pending moderation
-- Approved submissions
-- Rejected submissions
-- Dormitory review count
-- Cafeteria review count
-- Open reports
-- Registered users
-- Task success rate: **85%**
-- Average usefulness: **4.30/5**
-- Average interest level: **4.34/5**
+* Total prototype records
+* Total place profiles
+* Total student reviews
+* Dormitory review count
+* Cafeteria review count
+* Average review rating
+* Approved review count
+* Pending moderation count
+* Rejected review count
+* Removal-request count
+* Review category distribution
+* Review records by place
+* Review records by status
+* Student and Admin feature evidence
+* Power BI startup-metrics dashboard
 
 ## Problems Found
 
-- Local browser data is limited to one device/profile and is not a shared database.
-- Authentication and administrator authorization are client-side simulations.
-- Report investigation and user management are not complete workflows.
-- Open Reports and Registered Users are fixed demonstration metrics.
-- Search is still mainly title-based.
-- Optional review images can consume browser storage quickly.
-- A final manual multi-browser/mobile test and refreshed screenshot set are still required.
+* The prototype uses browser `localStorage` instead of a shared database.
+* Information saved in one browser is not automatically available on another device or browser.
+* Student and Admin authentication is simulated using frontend JavaScript.
+* Administrator authorization is not secure enough for production deployment.
+* The prototype does not contain a genuine analytics activity log.
+* Some prototype records do not include an author or submission date.
+* Power BI uses a static data snapshot and does not automatically update when browser data changes.
+* Search functionality mainly focuses on place titles and could be expanded to include review text, tags, and locations.
+* Optional review and profile images can consume browser-storage space.
+* Additional cross-browser and responsive testing is required.
+* Final GitHub contribution links still need to be added for each member.
 
 ## Next Action Before Lab 12
 
-1. Run the complete student and administrator journey in a current browser.
-2. Confirm dashboard counts before and after one approval and one rejection.
-3. Test desktop, tablet, and mobile layouts.
-4. Capture fresh Lab 11 screenshots for the homepage, input form, record lists, detail view, student dashboard, admin view, and mobile view.
-5. Replace contribution placeholders with each member’s real GitHub commit, issue, or pull-request evidence.
-6. Consider making report and user metrics data-driven and expanding full-text search
+* Complete a final Student and Admin workflow test.
+* Confirm that search, filtering, sorting, submission, moderation, reporting, and user-management functions work correctly.
+* Test the prototype on desktop, tablet, and mobile screen sizes.
+* Test the prototype in multiple browsers where available.
+* Check keyboard navigation and form accessibility.
+* Verify all Power BI KPI values and visualisations.
+* Save and upload the final PBIX file.
+* Capture and upload a clear screenshot of the completed Power BI dashboard.
+* Capture updated screenshots of the final HallPass prototype pages.
+* Replace the contribution placeholders with real GitHub commit, issue, or pull-request links.
+* Confirm that all required files are stored in the correct GitHub folders.
+* Complete final quality assurance before starting Lab 12.
