@@ -122,6 +122,50 @@ function updateNavbarAuth() {
   });
 }
 
+function normalizeAccountEmail(email) {
+  return String(email || "").trim().toLowerCase();
+}
+
+function createAccountId(email) {
+  return `user-${normalizeAccountEmail(email).replace(/[^a-z0-9]+/g, "-")}`;
+}
+
+function readAccounts() {
+  let accounts = [];
+
+  try {
+    accounts = JSON.parse(
+      localStorage.getItem("hallpassAccounts") || "[]"
+    );
+  } catch (error) {
+    console.error("Could not read HallPass accounts:", error);
+  }
+
+  if (!Array.isArray(accounts)) accounts = [];
+
+  let changed = false;
+  accounts = accounts.map(account => {
+    const normalizedEmail = normalizeAccountEmail(account.email);
+    const updated = {
+      ...account,
+      email: normalizedEmail,
+      id: account.id || createAccountId(normalizedEmail)
+    };
+
+    if (updated.id !== account.id || updated.email !== account.email) {
+      changed = true;
+    }
+
+    return updated;
+  });
+
+  if (changed) {
+    localStorage.setItem("hallpassAccounts", JSON.stringify(accounts));
+  }
+
+  return accounts;
+}
+
 /* =====================================================
    LOGIN
 ===================================================== */
@@ -130,6 +174,13 @@ function setupLoginForm() {
   const form = document.getElementById("loginForm");
 
   if (!form) return;
+
+  if (!localStorage.getItem("hallpassAccounts")) {
+    localStorage.setItem("hallpassAccounts", JSON.stringify([
+      { id: "user-admin-hallpass-com", name: "Primary Administrator", email: "admin@hallpass.com", password: "Admin123!", role: "super_admin", status: "Active", reports: [] },
+      { id: "user-student-hallpass-com", name: "Student", studentId: "DEMO001", email: "student@hallpass.com", password: "Student123!", role: "student", status: "Active", reports: [] }
+    ]));
+  }
 
   form.addEventListener("submit", event => {
     event.preventDefault();
@@ -143,23 +194,39 @@ function setupLoginForm() {
     let user = null;
     let destination = "";
 
+    const accounts = readAccounts();
+    const normalizedEmail = normalizeAccountEmail(email);
+    const savedAccount = accounts.find(
+      account =>
+        normalizeAccountEmail(account.email) === normalizedEmail &&
+        account.password === password
+    );
+
     if (
-      email === "admin@hallpass.com" &&
-      password === "Admin123!"
+      (savedAccount &&
+        savedAccount.role !== "student" &&
+        savedAccount.status !== "Suspended")
     ) {
       user = {
-        email,
-        role: "admin"
+        id: savedAccount.id,
+        email: savedAccount.email,
+        role: "admin",
+        adminRole: savedAccount.role || "super_admin",
+        name: savedAccount.name || "Primary Administrator"
       };
 
       destination = "dashboard.html";
     } else if (
-      email === "student@hallpass.com" &&
-      password === "Student123!"
+      (savedAccount &&
+        savedAccount.role === "student" &&
+        savedAccount.status !== "Suspended")
     ) {
       user = {
-        email,
-        role: "student"
+        id: savedAccount.id,
+        email: savedAccount.email,
+        role: "student",
+        name: savedAccount.name || "Student",
+        studentId: savedAccount.studentId || ""
       };
 
       destination =
@@ -261,10 +328,40 @@ function setupSignupForm() {
       return;
     }
 
+    const normalizedEmail = normalizeAccountEmail(email);
+    const accountId = createAccountId(normalizedEmail);
     const user = {
-      email,
-      role: "student"
+      id: accountId,
+      email: normalizedEmail,
+      role: "student",
+      name,
+      studentId
     };
+
+    const accounts = readAccounts();
+
+    if (accounts.some(account => normalizeAccountEmail(account.email) === normalizedEmail)) {
+      if (typeof toast === "function") {
+        toast("An account already uses this email");
+      }
+      return;
+    }
+
+    accounts.push({
+      id: accountId,
+      name,
+      studentId,
+      email: normalizedEmail,
+      password,
+      role: "student",
+      status: "Active",
+      reports: []
+    });
+
+    localStorage.setItem(
+      "hallpassAccounts",
+      JSON.stringify(accounts)
+    );
 
     const userSaved = saveStoredUser(user);
 
@@ -280,7 +377,7 @@ function setupSignupForm() {
 
     saveConsentRecord("hallpassSignupConsent", {
       accepted: true,
-      email,
+      email: normalizedEmail,
       noticeVersion: "prototype-1.0",
       acceptedAt: new Date().toISOString()
     });
