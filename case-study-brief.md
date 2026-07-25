@@ -1,45 +1,78 @@
-# Case Study Brief - HallPass: Dormitory and Cafeteria Reviews
+# Case Study Brief: HallPass Student Campus Guide
 
-## Case Context
+## Problem Context
 
-New university students, international students, and exchange students often struggle to find reliable information about dormitories, cafeterias, and campus life before making important decisions. Existing alternatives include asking friends, browsing unofficial social media posts, joining student chat groups, or relying on outdated information, which can be inconsistent and difficult to verify.
+New, international, and exchange students at Rangsit University often struggle to find reliable information about dormitories, cafeterias, transportation, and everyday campus life.
 
----
+Information is usually scattered across social media, chat groups, websites, and informal recommendations. This makes it difficult for students to compare options, determine whether information is trustworthy, and make confident decisions.
 
-## MVP Experiment
+## Practice Purpose
 
-The HallPass MVP experiment tests whether users can:
+This case is used to apply the Lab 07 process to the HallPass group project. The team will use it to define assumptions, create an MVP experiment, collect student feedback, and evaluate whether HallPass addresses a genuine student need.
 
-1. Browse dormitory reviews and ratings.
-2. Browse cafeteria reviews and ratings.
-3. Read campus guidance and survival tips.
-4. View detailed review information.
-5. Submit a new review through the review form.
-6. Navigate the website and complete tasks without assistance.
+## Example MVP Experiment Direction
 
----
+The team wants to test whether students can use a simple HallPass digital workflow to:
 
-## Validation Goal
+- Browse dormitory and cafeteria reviews
+- Search and compare campus options
+- View ratings, prices, locations, and student comments
+- Read practical campus survival guides
+- Create a student account
+- Submit a review
+- Understand how their submitted information will be used
 
-The goal is to determine whether HallPass provides a simple, useful, and trustworthy way for students to discover campus information and share their experiences. The validation also measures whether users can successfully complete the core tasks, understand the interface, and find value in the platform before further prototype development.
+The experiment can use a clickable prototype, form-based simulation, or simple web prototype.
 
----
+## Example Critical Assumption
 
-## Practice Data
+Students will use HallPass if it provides campus information that is more organized, relevant, and trustworthy than information found through informal chat groups and scattered social-media posts.
 
-Use the collected validation data:
+## Example Experiment Type
 
-- `/data/validation-results.csv`
-- `/data/validation-results.xlsx`
+A clickable prototype, form-based simulation, or simple web prototype tested with Rangsit University students.
 
-Supporting documentation:
+## Target Users
 
-- `/docs/customer-validation-summary.md`
-- `/docs/analytics-insights.md`
-- `/docs/mvp-decision.md`
+- First-year students
+- International and exchange students
+- Students searching for accommodation near the university
+- Students looking for affordable campus food
+- Current students willing to share reviews and practical advice
 
----
+## Experiment Goal
 
-## Student Group Task
+Determine whether students can complete HallPass's main tasks without assistance and whether they perceive the platform as faster, clearer, and more trustworthy than their current methods.
 
-Conduct customer validation using the HallPass MVP prototype by recruiting representative users, assigning realistic validation tasks, collecting structured feedback, recording validation results, analyzing usability and performance metrics, and documenting evidence-based recommendations for the next prototype iteration. Update the project documentation, GitHub repository, and README with the validation outcomes and MVP decision.
+## Example Participant Tasks
+
+1. Find a dormitory that matches a given budget and location preference.
+2. Compare two cafeteria options using their ratings and reviews.
+3. Find guidance for a common campus-life problem.
+4. Create a prototype student account.
+5. Read the privacy summary and explain how HallPass handles submitted information.
+6. Submit a review and identify its moderation status.
+
+## Success Criteria
+
+The experiment will be considered promising if:
+
+- At least 80% of participants complete the main tasks without assistance.
+- At least 70% say HallPass is clearer or faster than using chat groups.
+- At least 70% say the reviews and practical details help them make decisions.
+- At least 80% correctly understand how their information is stored and used.
+- Most participants say they would consider using HallPass during university life.
+
+## Evidence to Collect
+
+- Task-completion rate
+- Time required for each task
+- Navigation errors or points of confusion
+- Participant ratings of usefulness, clarity, and trust
+- Understanding of the privacy notice and review process
+- Comments about missing information or features
+- Willingness to use HallPass in the future
+
+## Key Learning Question
+
+Does HallPass provide a sufficiently clear, useful, and trustworthy campus-information experience for students to choose it over informal chat groups and scattered online sources?
