@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Guide | HallPass</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html">
+       <div class="logo">
+            <i class="fa-solid fa-school"></i>
+        </div>
+        HallPass
+      </a>
+
+      <button class="menu">☰</button>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dorms.html">Dorm Reviews</a>
+        <a href="cafeteria.html">Cafeteria Reviews</a>
+        <a href="guide.html">Survival Guide</a>
+        <a href="write-review.html">Write Review</a>
+        <a href="login.html" class="btn-nav">Login</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <main>
+    <section class="guide-hero">
+      <div class="container guide-hero-grid">
+        <div>
+          <span class="badge">New Student Help</span>
+          <h1>Your practical guide to settling in at RSU.</h1>
+          <p>
+            Clear, student-friendly answers for housing, transport, food,
+            money, campus services, and everyday life.
+          </p>
+          <label class="guide-search" for="guideSearch">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <span class="sr-only">Search the survival guide</span>
+            <input
+              id="guideSearch"
+              type="search"
+              placeholder="Search transport, food, banking..."
+            >
+          </label>
+        </div>
+
+        <aside class="guide-start-card" aria-label="First week checklist">
+          <span class="guide-kicker">Start here</span>
+          <h2>First-week checklist</h2>
+          <ul class="check-list">
+            <li>Confirm your accommodation and contract</li>
+            <li>Save university and emergency contacts</li>
+            <li>Learn your daily campus route</li>
+            <li>Locate student services and a nearby clinic</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section guide-content">
+      <div class="container">
+        <div class="section-head guide-section-head">
+          <div>
+            <h2>What do you need help with?</h2>
+            <p class="muted">Choose a guide for practical steps, checklists, and helpful links.</p>
+          </div>
+        </div>
+
+        <div class="guide-grid" id="guideGrid">
+          <article class="card guide-card" data-guide="accommodation dorm contract deposit safety housing">
+            <div class="guide-icon"><i class="fa-solid fa-building-user" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Housing</span>
+            <h3>Accommodation</h3>
+            <p class="muted">Compare contracts, deposits, facilities, and safety before moving in.</p>
+            <ul><li>Check what the rent includes</li><li>Photograph the room on arrival</li><li>Keep a copy of your contract</li></ul>
+            <a href="guide-details.html?topic=accommodation">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="transportation bus van taxi route travel">
+            <div class="guide-icon"><i class="fa-solid fa-bus-simple" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Getting around</span>
+            <h3>Transportation</h3>
+            <p class="muted">Plan reliable routes for classes, shopping, and trips into Bangkok.</p>
+            <ul><li>Allow extra time at rush hour</li><li>Save your destination in Thai</li><li>Confirm the fare before travel</li></ul>
+            <a href="guide-details.html?topic=transportation">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="bank account money documents budget payment">
+            <div class="guide-icon"><i class="fa-solid fa-wallet" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Money</span>
+            <h3>Banking & Budget</h3>
+            <p class="muted">Prepare documents, choose payment methods, and manage monthly costs.</p>
+            <ul><li>Bring passport and student documents</li><li>Ask about account requirements</li><li>Track rent, food, and transport</li></ul>
+            <a href="guide-details.html?topic=banking">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="emergency hospital clinic security health help">
+            <div class="guide-icon emergency-icon"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Safety</span>
+            <h3>Emergency & Health</h3>
+            <p class="muted">Know who to contact and what information to keep ready.</p>
+            <ul><li>Save official emergency contacts</li><li>Keep your address available in Thai</li><li>Carry insurance and ID details</li></ul>
+            <a href="guide-details.html?topic=emergency">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="printing assignments documents copy scan study">
+            <div class="guide-icon"><i class="fa-solid fa-print" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Study essentials</span>
+            <h3>Printing & Study</h3>
+            <p class="muted">Prepare assignments and find practical study services around campus.</p>
+            <ul><li>Export a PDF before printing</li><li>Carry a backup copy</li><li>Check library opening hours</li></ul>
+            <a href="guide-details.html?topic=printing">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="food cafeteria halal lunch meals budget cafe">
+            <div class="guide-icon"><i class="fa-solid fa-utensils" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Eating well</span>
+            <h3>Food & Cafeterias</h3>
+            <p class="muted">Find affordable meals, halal-friendly choices, and quiet cafés.</p>
+            <ul><li>Compare price and opening times</li><li>Ask about dietary needs</li><li>Keep a few cash options</li></ul>
+            <a href="guide-details.html?topic=food">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="laundry washing clothes cost machine daily life">
+            <div class="guide-icon"><i class="fa-solid fa-shirt" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Daily life</span>
+            <h3>Laundry & Essentials</h3>
+            <p class="muted">Understand self-service machines, local shops, and common costs.</p>
+            <ul><li>Check machine instructions</li><li>Label delicate clothing</li><li>Budget for weekly essentials</li></ul>
+            <a href="guide-details.html?topic=laundry">Read More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card guide-card" data-guide="campus map buildings classroom services office orientation">
+            <div class="guide-icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
+            <span class="guide-kicker">Campus</span>
+            <h3>Map & Student Services</h3>
+            <p class="muted">Locate classrooms, support offices, the library, and key services.</p>
+            <ul><li>Visit before your first class</li><li>Save building names and numbers</li><li>Ask student services when unsure</li></ul>
+            <a href="guide-details.html?topic=campus">Read More <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <div class="guide-empty" id="guideEmpty" hidden>
+          <span aria-hidden="true">🔎</span>
+          <h3>No guide topics found</h3>
+          <p class="muted">Try a broader search such as “food,” “money,” or “transport.”</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>HallPass</h3>
+        <p>
+          Student reviews and campus survival guide for
+          Rangsit University students.
+        </p>
+      </div>
+
+      <div>
+        <h4>Features</h4>
+        <p>
+          Dorms<br>
+          Cafeterias<br>
+          Guides
+        </p>
+      </div>
+      
+      <div>
+        <h4>Contact</h4>
+          <p>
+            Email:hello@hallpass.com<br>
+            Phone: +66 123 456 789<br>
+            Address: Rangsit University, Thailand
+          </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const search = document.getElementById("guideSearch");
+      const cards = [...document.querySelectorAll("[data-guide]")];
+      const empty = document.getElementById("guideEmpty");
+
+      search.addEventListener("input", () => {
+        const query = search.value.trim().toLowerCase();
+        let visible = 0;
+
+        cards.forEach(card => {
+          const matches = !query || card.dataset.guide.includes(query);
+          card.hidden = !matches;
+          if (matches) visible += 1;
+        });
+
+        empty.hidden = visible !== 0;
+      });
+    });
+  </script>
+
+</body>
+
+</html>

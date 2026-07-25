@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Review | HallPass</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html">
+        <div class="logo">
+            <i class="fa-solid fa-school"></i>
+        </div>
+        HallPass
+      </a>
+
+      <button class="menu">☰</button>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dorms.html">Dorm Reviews</a>
+        <a href="cafeteria.html">Cafeteria Reviews</a>
+        <a href="guide.html">Survival Guide</a>
+        <a href="write-review.html">Write Review</a>
+        <a href="login.html" class="btn-nav">Login</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Write Review Section -->
+  <main class="section">
+    <div class="container">
+
+      <div class="auth-card" style="width: min(760px, 100%); margin: auto;">
+
+        <span class="badge">Share Experience</span>
+
+        <h2>Write a Review</h2>
+
+        <form id="reviewForm">
+
+          <div class="form-grid">
+
+            <div>
+              <label for="type">Category</label>
+              <select id="type" required>
+                <option>Dorm</option>
+                <option>Cafeteria</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="rating">Rating</label>
+              <select id="rating" required>
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
+              </select>
+            </div>
+
+            <div class="full-row">
+              <label for="place">Place</label>
+              <select id="place" required>
+                <option value="">Choose an existing place</option>
+              </select>
+              <small class="field-help">Reviews for the same place are grouped on one shared listing.</small>
+            </div>
+
+            <div class="new-place-field" hidden>
+              <label for="title">New Place Name</label>
+              <input
+                class="input"
+                id="title"
+                type="text"
+                placeholder="e.g. Rangsit Campus View Apartment"
+              >
+            </div>
+
+            <div class="new-place-field" hidden>
+              <label for="price">Price Range</label>
+              <input
+                class="input"
+                id="price"
+                type="text"
+                placeholder="e.g. 6,500 THB/mo"
+              >
+            </div>
+
+            <div class="new-place-field" hidden>
+              <label for="location">Location / Distance</label>
+              <input
+                class="input"
+                id="location"
+                type="text"
+                placeholder="e.g. 5 min walk"
+              >
+            </div>
+
+            <div class="full-row">
+              <label for="photo">Photo <span class="optional-label">(optional)</span></label>
+              <label class="photo-upload" for="photo">
+                <span class="photo-upload-icon">
+                  <i class="fa-solid fa-camera" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <strong>Add a dormitory or cafeteria photo</strong>
+                  <small>JPG, PNG, or WebP. The image will be resized for this prototype.</small>
+                </span>
+                <span class="photo-upload-action">Choose photo</span>
+              </label>
+              <input
+                class="sr-only"
+                id="photo"
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+              >
+              <div class="photo-preview" id="photoPreview" hidden>
+                <img id="photoPreviewImage" alt="Selected review photo preview">
+                <div>
+                  <strong id="photoFileName"></strong>
+                  <button class="photo-remove" id="removePhoto" type="button">Remove photo</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <br>
+
+          <label for="comment">Review Comment</label>
+          <textarea
+            id="comment"
+            rows="5"
+            required
+            placeholder="Write your experience..."
+          ></textarea>
+
+          <br><br>
+
+          <div class="consent-box">
+            <input id="reviewPrivacyConsent" type="checkbox" required>
+            <label for="reviewPrivacyConsent">I consent to HallPass using this review and related submission information for moderation and display in this prototype.</label>
+          </div>
+          <button class="privacy-notice-button" type="button" data-privacy-notice>View Privacy Notice</button>
+
+          <br><br>
+
+          <button class="btn primary">
+            Submit Review
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>HallPass</h3>
+        <p>
+          Student reviews and campus survival guide for
+          Rangsit University students.
+        </p>
+      </div>
+
+      <div>
+        <h4>Features</h4>
+        <p>
+          Dorms<br>
+          Cafeterias<br>
+          Guides
+        </p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+          <p>
+            Email:hello@hallpass.com<br>
+            Phone: +66 123 456 789<br>
+            Address: Rangsit University, Thailand
+          </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/privacy-notice.js"></script>
+
+</body>
+
+</html>

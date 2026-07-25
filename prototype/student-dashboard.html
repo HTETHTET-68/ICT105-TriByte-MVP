@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Dashboard | HallPass</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head>
+<body><nav class="nav"><div class="container nav-inner"><a class="brand" href="index.html"><div class="logo"><i class="fa-solid fa-school"></i></div>HallPass</a><button class="menu">☰</button><div class="links"><a href="index.html">Home</a><a href="dorms.html">Dorm Reviews</a><a href="cafeteria.html">Cafeteria Reviews</a><a href="guide.html">Survival Guide</a><a href="write-review.html">Write Review</a><a href="login.html" class="btn-nav">Login</a></div></div></nav>
+<main class="section"><div class="container"><div class="profile-hero"><div class="avatar profile-avatar" id="profileAvatar">S</div><div><span class="badge">Student account</span><h1>Welcome back, <span id="profileWelcomeName">Student</span></h1><p class="muted" id="studentEmail">Manage your profile and track every review you submit.</p></div><a class="btn primary" href="write-review.html"><i class="fa-solid fa-pen"></i> Write a review</a></div>
+<div class="grid grid-4 student-metrics"><div class="card metric"><small>Total submissions</small><strong id="myTotal">0</strong></div><div class="card metric"><small>Pending</small><strong id="myPending">0</strong></div><div class="card metric"><small>Approved</small><strong id="myApproved">0</strong></div><div class="card metric"><small>Rejected</small><strong id="myRejected">0</strong></div></div>
+<div class="dashboard-tabs" role="tablist"><button class="tab-button active" data-student-tab="submissions">My Submissions</button><button class="tab-button" data-student-tab="profile">Profile & Settings</button></div>
+<section class="student-panel active" data-student-panel="submissions"><div class="card table-wrap"><div class="section-head"><div><h2>My Submissions</h2><p class="muted">Manage pending submissions or request removal of an approved review.</p></div><select id="submissionFilter" aria-label="Filter submissions"><option value="All">All statuses</option><option>Pending</option><option>Approved</option><option>Rejected</option></select></div><div id="mySubmissions"></div></div></section>
+<section class="student-panel" data-student-panel="profile">
+  <div class="settings-heading"><div><span class="badge">Your account</span><h2>Profile & Settings</h2><p class="muted">Keep your HallPass identity recognisable and your preferences up to date.</p></div><span class="save-status" id="profileSaveStatus"><i class="fa-solid fa-circle-check"></i> Saved</span></div>
+  <form id="profileForm" class="profile-settings-layout">
+    <aside class="card profile-picture-card">
+      <span class="settings-kicker">Profile picture</span>
+      <div class="avatar profile-avatar profile-avatar-large" id="profileAvatarPreview">S</div>
+      <h3 id="profileCardName">Student</h3>
+      <p class="muted">This photo appears beside your account and personalises your dashboard.</p>
+      <label class="btn primary profile-upload-button" for="profilePicture"><i class="fa-solid fa-camera"></i> Upload new photo</label>
+      <input id="profilePicture" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+      <button class="btn outline" id="removeProfilePicture" type="button"><i class="fa-solid fa-trash-can"></i> Remove photo</button>
+      <small class="field-help">JPG, PNG or WebP · Maximum 2 MB</small>
+    </aside>
+    <div class="card profile-details-card">
+      <div class="settings-section-title"><div class="settings-icon"><i class="fa-regular fa-user"></i></div><div><h3>Personal information</h3><p class="muted">Choose how your name is shown across HallPass.</p></div></div>
+      <div class="form-grid"><div><label for="displayName">Display name</label><input class="input" id="displayName" value="Student" maxlength="40" required><small class="field-help">Shown on your dashboard and future profile activity.</small></div><div><label for="profileEmail">Account email</label><div class="locked-input"><input class="input" id="profileEmail" disabled><i class="fa-solid fa-lock" aria-hidden="true"></i></div><small class="field-help">Your sign-in email cannot be changed here.</small></div></div>
+      <div class="settings-divider"></div>
+      <div class="settings-section-title"><div class="settings-icon"><i class="fa-solid fa-sliders"></i></div><div><h3>Preferences</h3><p class="muted">Set the language you prefer to use.</p></div></div>
+      <div class="form-grid"><div><label for="language">Preferred language</label><select id="language"><option>English</option><option>Thai</option></select></div></div>
+      <div class="profile-save-bar"><p><i class="fa-solid fa-shield-halved"></i> Your changes are saved to this account.</p><button class="btn primary" type="submit"><i class="fa-solid fa-floppy-disk"></i> Save profile</button></div>
+    </div>
+  </form>
+</section></div></main><div class="toast"></div><script src="js/data.js"></script><script src="js/main.js"></script><script src="js/auth.js"></script><script src="js/student-dashboard.js"></script><script src="js/profile-picture.js"></script></body></html>

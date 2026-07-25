@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Reviews | HallPass</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+
+            <a class="brand" href="index.html">
+              <div class="logo">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              HallPass
+            </a>
+
+            <button class="menu">☰</button>
+
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="dorms.html">Dorm Reviews</a>
+                <a href="cafeteria.html">Cafeteria Reviews</a>
+                <a href="guide.html">Survival Guide</a>
+                <a href="write-review.html">Write Review</a>
+                <a href="login.html" class="btn-nav">Login</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="section">
+
+        <div class="container">
+
+            <span class="badge">Food</span>
+
+            <h2>Cafeteria Reviews</h2>
+
+            <p class="muted">
+                Discover affordable meals, study cafés, and student food tips.
+            </p>
+
+            <!-- Filters -->
+            <div class="filters">
+                <label class="filter-field filter-search" for="searchInput">
+                    <span class="sr-only">Search cafeterias</span>
+                    <span class="filter-control">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input
+                            id="searchInput"
+                            type="search"
+                            placeholder="Search cafeteria..."
+                        >
+                    </span>
+                </label>
+
+                <label class="filter-field" for="ratingFilter">
+                    <span class="sr-only">Minimum rating</span>
+                    <span class="filter-control filter-select-control">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <select id="ratingFilter">
+                            <option value="0">All ratings</option>
+                            <option value="4.5">4.5+ stars</option>
+                            <option value="4">4+ stars</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down filter-chevron" aria-hidden="true"></i>
+                    </span>
+                </label>
+
+                <label class="filter-field" for="sortFilter">
+                    <span class="sr-only">Sort results</span>
+                    <span class="filter-control filter-select-control">
+                        <i class="fa-solid fa-arrow-down-wide-short" aria-hidden="true"></i>
+                        <select id="sortFilter">
+                            <option value="recommended">Recommended</option>
+                            <option value="price">Lowest price</option>
+                            <option value="popular">Highest rated</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down filter-chevron" aria-hidden="true"></i>
+                    </span>
+                </label>
+
+            </div>
+
+            <!-- Review Cards -->
+            <div class="grid" id="foodCards"></div>
+
+        </div>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+                <h3>HallPass</h3>
+                <p>
+                    Student reviews and campus survival guide for
+                    Rangsit University students.
+                </p>
+            </div>
+
+            <div>
+                <h4>Features</h4>
+                <p>
+                    Dorms<br>
+                    Cafeterias<br>
+                    Guides
+                </p>
+            </div>
+
+            <div>
+              <h4>Contact</h4>
+                <p>
+                Email:hello@hallpass.com<br>
+                Phone: +66 123 456 789<br>
+                Address: Rangsit University, Thailand
+              </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/dashboard.js"></script>
+
+    <!-- Page Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            renderCards("foodCards", "Cafeteria");
+        });
+    </script>
+
+</body>
+
+</html>

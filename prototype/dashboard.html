@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Dashboard | HallPass</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav"><div class="container nav-inner">
+    <a class="brand" href="index.html"><div class="logo"><i class="fa-solid fa-school"></i></div>HallPass</a>
+    <div class="admin-top-actions"><a class="btn outline" href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Website</a><button class="btn dark" data-panel-target="overview"><i class="fa-solid fa-gauge"></i> Admin Dashboard</button></div>
+  </div></nav>
+  <main class="admin-layout">
+    <aside class="sidebar">
+      <h2>HallPass Admin</h2><p class="sidebar-label">WORKSPACE</p>
+      <button class="side-link active" data-panel-target="overview"><i class="fa-solid fa-chart-pie"></i> Overview</button>
+      <button class="side-link" data-panel-target="moderation"><i class="fa-solid fa-list-check"></i> Moderation Queue <span class="nav-count" id="queueCount">0</span></button>
+      <button class="side-link" data-panel-target="reports"><i class="fa-solid fa-flag"></i> Reports</button>
+      <button class="side-link" data-panel-target="users"><i class="fa-solid fa-users"></i> Users</button>
+      <button class="side-link" data-panel-target="audit"><i class="fa-solid fa-clock-rotate-left"></i> Audit Log</button>
+      <button class="side-link" id="adminLogout"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </aside>
+    <section class="admin-main">
+      <div class="admin-heading"><div><span class="badge">Admin Panel</span><h1 id="panelTitle">Overview</h1><p class="muted" id="panelDescription">Monitor HallPass activity and moderation work.</p></div><span class="status-dot">● System online</span></div>
+      <section class="admin-panel active" data-panel="overview">
+        <div class="grid grid-4"><div class="card metric"><small>Total reviews</small><strong id="totalReviews">0</strong></div><div class="card metric"><small>Pending moderation</small><strong id="pendingCount">0</strong></div><div class="card metric"><small>Open reports</small><strong id="openReportCount">0</strong></div><div class="card metric"><small>Registered users</small><strong id="registeredUserCount">0</strong></div></div>
+        <div class="admin-two-col"><div class="card"><h2>Recent activity</h2><div id="recentActivity" class="activity-list"></div></div><div class="card"><h2>Review breakdown</h2><p>Dorm reviews <strong id="dormCount">0</strong></p><p>Cafeteria reviews <strong id="foodCount">0</strong></p><button class="btn primary" data-panel-target="moderation">Open moderation queue</button></div></div>
+      </section>
+      <section class="admin-panel" data-panel="moderation"><div class="card table-wrap"><h2>Moderation Queue</h2><p class="muted">Approve or reject student-submitted reviews.</p><table class="table"><thead><tr><th>Review</th><th>Category</th><th>Rating</th><th>Status</th><th>Action</th></tr></thead><tbody id="pendingBody"></tbody></table></div><div class="card table-wrap removal-requests-card"><div class="section-head"><div><span class="badge">Published content</span><h2>Removal Requests</h2><p class="muted">Review student requests before removing approved reviews.</p></div><span class="nav-count removal-count" id="removalRequestCount">0</span></div><table class="table"><thead><tr><th>Review</th><th>Reason</th><th>Requested</th><th>Action</th></tr></thead><tbody id="removalRequestsBody"></tbody></table></div></section>
+      <section class="admin-panel" data-panel="reports"><div class="card table-wrap"><div class="section-head"><div><h2>Reported information</h2><p class="muted">Investigate student reports and record whether each claim is correct.</p></div></div><table class="table"><thead><tr><th>Place / review</th><th>Reason</th><th>Reported by</th><th>Status</th><th>Action</th></tr></thead><tbody id="reportsBody"></tbody></table></div></section>
+      <section class="admin-panel" data-panel="users"><div class="card table-wrap"><div class="section-head"><div><span class="badge">Account safety</span><h2>User management</h2><p class="muted">Review student accounts, record inappropriate behaviour, suspend access, or permanently delete an account.</p></div></div><div class="user-search-bar"><div class="user-search-control"><label class="sr-only" for="userSearch">Search users</label><i class="fa-solid fa-magnifying-glass search-leading-icon" aria-hidden="true"></i><input class="input" id="userSearch" type="search" placeholder="Search by name, email, role, or status…" autocomplete="off"><button class="search-clear-button" id="clearUserSearch" type="button" aria-label="Clear user search" title="Clear search" hidden><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><span class="user-search-result" id="userSearchResult" aria-live="polite"></span></div><table class="table"><thead><tr><th>User</th><th>Role</th><th>Status</th><th>Reports</th><th>Action</th></tr></thead><tbody id="usersBody"></tbody></table></div></section>
+      <section class="admin-panel" data-panel="audit"><div class="card table-wrap"><h2>Audit log</h2><table class="table"><thead><tr><th>Time</th><th>Administrator</th><th>Action</th><th>Target</th></tr></thead><tbody id="auditBody"></tbody></table></div></section>
+    </section>
+  </main><div class="toast"></div>
+  <script src="js/data.js"></script><script src="js/main.js"></script><script src="js/admin-dashboard.js"></script><script src="js/platform-admin.js"></script>
+</body></html>
