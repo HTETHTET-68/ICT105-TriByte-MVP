@@ -1,0 +1,23 @@
+Column,Table,Meaning,Data Type,Example,Prototype Source
+RecordID,PrototypeRecords,Unique Power BI review record ID,Text,HP101,Mapped from seedReviews.id or a Lab 11 test ID
+SubmittedDate,PrototypeRecords,Date the place/review was submitted,Date,2026-07-19,seedReviews.submittedAt or test scenario
+LastUpdatedDate,PrototypeRecords,Latest moderation/removal update,Date,2026-07-25,Status workflow snapshot
+ItemCategory,PrototypeRecords,Dorm or Cafeteria,Text,Cafeteria,seedReviews.type
+Location,PrototypeRecords,Place title,Text,RSU Food Court,seedReviews.title
+Priority,PrototypeRecords,Moderation priority for the snapshot,Text,High,Lab 11 operational classification
+CurrentStatus,PrototypeRecords,"Approved, Pending, Rejected, or Removal Requested",Text,Pending,seedReviews.status and test workflow
+ResolutionDays,PrototypeRecords,Days from submission to latest/final update,Whole Number,2,Derived from snapshot dates
+RequirementID,PrototypeRecords,Primary HallPass requirement evidenced,Text,FR-08,Current HallPass requirement mapping
+OwnerRole,PrototypeRecords,System or author role/name,Text,International student,seedReviews.author
+RecordType,PrototypeRecords,"Place Profile, Student Review, or Test Submission",Text,Student Review,seedReviews.listingProfile and data provenance
+PlaceID,PrototypeRecords,Stable place identifier,Text,food-rsu-food-court,seedReviews.placeId
+Rating,PrototypeRecords,Review/place rating,Decimal Number,4.8,seedReviews.rating
+DataOrigin,PrototypeRecords,Actual seed or transparent test scenario,Text,Prototype seedReviews,Source transparency
+EventID,ActivityLog,Unique analytics event ID,Text,E037,Lab 11 event snapshot
+RecordID,ActivityLog,Review record connected to the event,Text,HP101,Relationship to PrototypeRecords
+EventDateTime,ActivityLog,Date and time of the action,Date/Time,2026-07-25 09:30,Lab 11 workflow test time
+UserRole,ActivityLog,Role performing the action,Text,Admin,Prototype authentication and dashboard roles
+ActionType,ActivityLog,Exact HallPass feature action,Text,ReportIncorrectInfo,Prototype page/handler action
+DeviceType,ActivityLog,"Mobile, Laptop, or Desktop",Text,Mobile,Responsive test context
+ProcessingTimeMinutes,ActivityLog,Approximate task duration,Whole Number,5,Lab 11 test observation
+RequirementID,ActivityLog,HallPass requirement evidenced by the action,Text,FR-19,Current HallPass requirement mapping

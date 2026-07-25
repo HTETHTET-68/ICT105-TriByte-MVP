@@ -1,0 +1,20 @@
+RecordID,SubmittedDate,LastUpdatedDate,ItemCategory,Location,Priority,CurrentStatus,ResolutionDays,RequirementID,OwnerRole,RecordType,PlaceID,Rating,DataOrigin
+HP001,2026-07-12,2026-07-12,Dorm,RSU Residence,Low,Approved,0,FR-04,System,Place Profile,dorm-rsu-residence,4.7,Prototype seedReviews
+HP002,2026-07-13,2026-07-13,Dorm,Muang Ake Apartment,Low,Approved,0,FR-04,System,Place Profile,dorm-muang-ake-apartment,4.4,Prototype seedReviews
+HP003,2026-07-14,2026-07-14,Dorm,The Campus Place,Low,Approved,0,FR-04,System,Place Profile,dorm-the-campus-place,4.8,Prototype seedReviews
+HP004,2026-07-15,2026-07-15,Cafeteria,RSU Food Court,Low,Approved,0,FR-05,System,Place Profile,food-rsu-food-court,4.6,Prototype seedReviews
+HP005,2026-07-16,2026-07-16,Cafeteria,International Canteen,Low,Approved,0,FR-05,System,Place Profile,food-international-canteen,4.5,Prototype seedReviews
+HP006,2026-07-17,2026-07-17,Cafeteria,Cafe Blue,Low,Approved,0,FR-05,System,Place Profile,food-cafe-blue,4.3,Prototype seedReviews
+HP007,2026-07-12,2026-07-12,Dorm,Lak Hok Garden Residence,Low,Approved,0,FR-04,Second-year student,Place Profile,dorm-lak-hok-garden-residence,4.2,Prototype seedReviews
+HP008,2026-07-15,2026-07-15,Dorm,Rangsit Campus View Apartment,Low,Approved,0,FR-04,International student,Place Profile,dorm-rangsit-campus-view-apartment,4.5,Prototype seedReviews
+HP009,2026-07-17,2026-07-17,Cafeteria,Building 6 Food Court,Low,Approved,0,FR-05,First-year student,Place Profile,food-building-6-food-court,4.4,Prototype seedReviews
+HP010,2026-07-18,2026-07-18,Cafeteria,Green Corner Café,Low,Approved,0,FR-05,Exchange student,Place Profile,food-green-corner-cafe,4.6,Prototype seedReviews
+HP101,2026-07-19,2026-07-19,Cafeteria,RSU Food Court,Low,Approved,0,FR-08,Business student,Student Review,food-rsu-food-court,4.2,Prototype seedReviews
+HP102,2026-07-21,2026-07-21,Cafeteria,RSU Food Court,Low,Approved,0,FR-08,International student,Student Review,food-rsu-food-court,4.8,Prototype seedReviews
+HP103,2026-07-20,2026-07-20,Cafeteria,International Canteen,Low,Approved,0,FR-08,Exchange student,Student Review,food-international-canteen,4.7,Prototype seedReviews
+HP104,2026-07-16,2026-07-16,Dorm,RSU Residence,Low,Approved,0,FR-08,First-year student,Student Review,dorm-rsu-residence,4.5,Prototype seedReviews
+HP105,2026-07-22,2026-07-22,Dorm,The Campus Place,Low,Approved,0,FR-08,Engineering student,Student Review,dorm-the-campus-place,4.6,Prototype seedReviews
+HPT201,2026-07-23,2026-07-25,Cafeteria,Cafe Blue,Medium,Pending,2,FR-08,student@hallpass.com,Test Submission,food-cafe-blue,4.3,Lab 11 test scenario
+HPT202,2026-07-23,2026-07-24,Cafeteria,Building 6 Food Court,Low,Approved,1,FR-13,student@hallpass.com,Test Submission,food-building-6-food-court,4.5,Lab 11 test scenario
+HPT203,2026-07-24,2026-07-25,Dorm,Rangsit Campus View Apartment,High,Rejected,1,FR-13,student@hallpass.com,Test Submission,dorm-rangsit-campus-view-apartment,2,Lab 11 test scenario
+HPT204,2026-07-24,2026-07-25,Dorm,RSU Residence,High,Removal Requested,1,FR-17,student@hallpass.com,Test Submission,dorm-rsu-residence,3.8,Lab 11 test scenario
