@@ -401,23 +401,26 @@ CSS is used for the visual design and responsive layout, while JavaScript contro
 
 ### Screenshots
 
-* **Homepage:** `/screenshots/homepage.png`
-* **Input form:** `/screenshots/input-form.png`
-* **Record list:** `/screenshots/record-list.png`
-* **Detail view:** `/screenshots/detail-view.png`
-* **Admin/status view:** `/screenshots/admin-view.png`
+ Prototype Area | Lab 10 Screenshot |
+|---|---|
+| Homepage | [`screenshots/homepage.png`](screenshots/homepage.png) |
+| Login and signup | [`screenshots/login-signup.png`](screenshots/login-signup.png) |
+| Login-required state | [`screenshots/login-required.png`](screenshots/login-required.png) |
+| Dormitory review list | [`screenshots/dormitory-list.png`](screenshots/dormitory-list.png) |
+| Cafeteria review list | [`screenshots/cafeteria-list.png`](screenshots/cafeteria-list.png) |
+| Search and rating filter | [`screenshots/search-filter.png`](screenshots/search-filter.png) |
+| Review detail | [`screenshots/review-detail.png`](screenshots/review-detail.png) |
+| Review input form | [`screenshots/input-form.png`](screenshots/input-form.png) |
+| Student dashboard | [`screenshots/student-dashboard.png`](screenshots/student-dashboard.png) |
+| Submission status tracking | [`screenshots/status-tracking.png`](screenshots/status-tracking.png) |
+| Privacy consent | [`screenshots/privacy-consent.png`](screenshots/privacy-consent.png) |
+| Responsive mobile view | [`screenshots/responsive-mobile-view.png`](screenshots/responsive-mobile-view.png) |
+| Administrator overview | [`screenshots/admin-view.png`](screenshots/admin-view.png) |
+| Moderation queue | [`screenshots/moderation-queue.png`](screenshots/moderation-queue.png) |
+| Report management | [`screenshots/report-management.png`](screenshots/report-management.png) |
+| User management | [`screenshots/user-management.png`](screenshots/user-management.png) |
+| Administrator audit log | [`screenshots/audit-log.png`](screenshots/audit-log.png) |
 
-* `/screenshots/login-signup.png`
-* `/screenshots/dormitory-list.png`
-* `/screenshots/cafeteria-list.png`
-* `/screenshots/search-filter.png`
-* `/screenshots/privacy-consent.png`
-* `/screenshots/student-dashboard.png`
-* `/screenshots/status-tracking.png`
-* `/screenshots/moderation-queue.png`
-* `/screenshots/report-management.png`
-* `/screenshots/user-management.png`
-* `/screenshots/audit-log.png`
 
 
 ### Team Contribution
