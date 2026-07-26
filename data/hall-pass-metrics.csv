@@ -1,0 +1,6 @@
+metric_id,metric_name,description,sample_value,how_to_collect
+M-01,Landing Page Visitors,Number of users who open the HallPass landing page,50,"Target value; count visitors using a manual log, browser analytics, or spreadsheet"
+M-02,CTA Click Rate,Percentage of landing-page visitors who click Try the HallPass demo or Open HallPass,0.40,"Target value; divide CTA clicks by landing-page visitors"
+M-03,Prototype Demo Views,Number of users who successfully open the HallPass prototype from the landing page,30,"Target value; count prototype page opens using navigation logs or manual tracking"
+M-04,Feedback Responses,Number of users who submit comments or suggestions after exploring HallPass,10,"Target value; count Google Form submissions or manual feedback records"
+M-05,Conversion Rate,Percentage of landing-page visitors who open and use the HallPass prototype,0.25,"Target value; divide prototype demo views by landing-page visitors"
