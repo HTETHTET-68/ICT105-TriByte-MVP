@@ -9,9 +9,10 @@ HallPass helps first-year, international, and exchange students find student dor
 | Channel | Message | CTA | Link/QR Placeholder |
 | --- | --- | --- | --- |
 | Class chat | New to RSU? Stop searching scattered chats for dormitory, food, and campus advice. Explore HallPass and tell us what would help you most. | Try HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=class-line) |
-| Email | Settling into Rangsit University? HallPass brings student dormitory reviews, cafeteria information, and practical campus guidance into one place. | Explore HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=email) |
+| International-student email/LINE | Settling into Rangsit University? HallPass brings student dormitory reviews, cafeteria information, and practical campus guidance into one place. | Explore HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=international-community) |
 | Poster/QR | Choosing where to live or eat near RSU? Scan to compare student experiences and explore practical campus information. | Scan QR | [QR destination](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=qr-poster) |
-| Social media | Dormitories, food, and first-week questions—explore one student-focused shortcut to campus life with HallPass. | Try HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=social-media) |
+| Instagram Story/Reel | Dormitories, food, and first-week questions—explore one student-focused shortcut to campus life with HallPass. | Try HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=instagram) |
+| Student club/orientation ambassador | Help new students settle in with better campus information. Explore HallPass and tell us what information or guidance is missing. | Give Feedback | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=student-ambassador) |
 
 ## Message Quality Check
 
