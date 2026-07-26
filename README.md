@@ -429,87 +429,92 @@ All group members contributed to the same GitHub repository and completed work t
 | **Htet Htet Myint Zaw – Member 1** | Developed the HallPass frontend and core screens, including the homepage, review submission form, record lists, review detail page, navigation, and responsive page structure.                         | GitHub Issue #55, core HTML pages in `prototype/`, commits, and interface screenshots                                                                                                         |
 | **Khaing Zin Thet – Member 2**     | Implemented JavaScript functionality, sample data, form validation, search and filtering, review details, moderation and status actions, localStorage persistence, and screenshot evidence.            | GitHub Issue #56, files in `prototype/js/`, commits, and files in `screenshots/`                                                                                                              |
 | **Yousel Zangmo – Member 3**       | Completed Sprint 1 documentation, styling, and repository updates. Updated the prototype link, implementation plan, feature implementation status, weekly logbook, README, and maintained `style.css`. | GitHub Issue #57, `prototype/prototype-link.md`, `prototype/css/style.css`, `docs/implementation-plan.md`, `docs/feature-implementation-status.md`, `docs/weekly-logbook.md`, and `README.md` |
-# README Update Template - Lab 11
 
-Add this section to your main README.md.
 
 ## Lab 11: MVP Implementation Sprint 2 and Startup Metrics
 
 ### Prototype Progress
 
-Sprint 2 strengthens HallPass as a functional and measurable frontend prototype. The updated version keeps the original student and administrator journeys while improving the visual design, review content, images, list controls, survival-guide experience, review submission, moderation details, approved-review removal requests, dashboard metrics, and privacy explanations.
+Lab 11 extends the Lab 10 HallPass frontend into a more complete and measurable student/admin workflow. Search now checks more than titles and includes sorting controls; the Survival Guide has detailed topic pages; student profiles and review-removal handling are richer; students can report incorrect information; and administrators can investigate reports, process removal requests, search/manage demonstration users, and review persisted audit activity. The project also includes a Power BI package with documented prototype records and activity events.
 
-The prototype remains a classroom simulation built with HTML, CSS, JavaScript, fictional seed records, and browser `localStorage`. It does not use production authentication, server-side authorization, or a shared database.
-
-### Run the Prototype
-
-1. Download or clone the repository.
-2. Open `prototype/index.html` in a current browser.
-3. Use the student demonstration account to submit and track a review:
-   - Email: `student@hallpass.com`
-   - Password: `Student123!`
-4. Use the administrator demonstration account to approve or reject submissions:
-   - Email: `admin@hallpass.com`
-   - Password: `Admin123!`
-5. Use fictional information only because data is stored in the current browser.
+The current MVP remains a classroom frontend simulation built with HTML5, CSS3, JavaScript, seed data, and browser `localStorage`. It does not claim production authentication, server-side authorization, or a live database.
 
 ### Implemented / Improved Features
 
-| Requirement ID | Feature | Lab 11 Status | Evidence |
+| Requirement ID | Feature | Status | Evidence |
 |---|---|---|---|
-| FR-01–FR-02 | Updated homepage and shared navigation | Completed | `prototype/index.html`, `prototype/js/main.js` |
-| FR-04–FR-07 | Richer Dorm/Cafeteria records, search, rating filter, sorting, and detail view | Completed and improved | `prototype/dorms.html`, `prototype/cafeteria.html`, `prototype/review-details.html` |
-| FR-08, FR-10, FR-15–FR-18 | Authenticated submission, validation, consent, ownership, removal, and feedback | Completed and improved | `prototype/write-review.html`, `prototype/js/reviews.js`, `prototype/js/privacy-notice.js` |
-| FR-09 | Searchable Survival Guide and guide-detail pages | Completed and improved | `prototype/guide.html`, `prototype/guide-details.html` |
-| FR-11, FR-14 | Student metrics and submission-status tracking | Completed and improved | `prototype/student-dashboard.html`, `prototype/js/student-dashboard.js` |
-| FR-12–FR-13, FR-21 | Admin metrics, moderation details, removal requests, and audit log | Completed and improved as a prototype | `prototype/dashboard.html`, `prototype/js/admin-dashboard.js` |
-| FR-19–FR-20 | Reported-content and user-management examples | Partially completed | Admin Reports and Users panels |
-| FR-22 | Consistent responsive visual system | Completed and improved | `prototype/css/style.css`, `prototype/images/` |
+| FR-06 | Expanded keyword search, minimum-rating filter, and sorting | Improved | `prototype/js/main.js`, `prototype/dorms.html`, `prototype/cafeteria.html` |
+| FR-07 | Place/review details, review sorting, and incorrect-information report entry | Improved | `prototype/review-details.html`, `prototype/js/report-review.js` |
+| FR-08 / FR-10 | Authenticated review submission, validation, ownership, and optional image processing | Improved | `prototype/write-review.html`, `prototype/js/reviews.js`, `prototype/js/data.js` |
+| FR-09 | Detailed Survival Guide topics | Improved | `prototype/guide-details.html`, `prototype/js/guide-details.js` |
+| FR-11 / FR-14 / FR-17 | Student profile, status tracking, pending removal, and approved-review removal request | Improved | `prototype/student-dashboard.html`, `prototype/js/student-dashboard.js`, `prototype/js/profile-picture.js` |
+| FR-12 / FR-13 | Admin dashboard, moderation, photo/removal decisions, and operational counts | Improved | `prototype/dashboard.html`, `prototype/js/admin-dashboard.js` |
+| FR-19 | Student report and administrator investigation/decision workflow | Completed as prototype | `prototype/js/report-review.js`, `prototype/js/platform-admin.js` |
+| FR-20 | User search, behavior report, suspend/restore, and delete demonstration | Completed as prototype | Users panel and `prototype/js/platform-admin.js` |
+| FR-21 | Persistent administrator audit activity | Improved | Audit Log panel and `prototype/js/admin-dashboard.js` |
+| FR-22 | Shared responsive treatment for new pages and dialogs | Improved | `prototype/css/style.css` |
 
-Full requirement-by-requirement evidence is available in [`docs/feature-implementation-status.md`](docs/feature-implementation-status.md).
+The complete FR-01–FR-22 mapping, limitations, owners, and next actions are documented in [`docs/feature-implementation-status.md`](docs/feature-implementation-status.md).
 
 ### Startup / Product Metrics
 
-HallPass now documents and demonstrates metrics that support product and operational decisions:
+The Lab 11 package defines 12 metrics covering usage, status, category, product value, user activity, operations, responsible design, and validation:
 
-- Total Reviews
-- Pending Moderation
-- Approved and Rejected Submissions
-- Dormitory and Cafeteria Review Counts
-- Open Reports and Registered Users (demonstration values)
-- Task Success Rate: **85%** from 170 completed tasks out of 200 validation records
-- Average Usefulness Score: **4.30/5**
-- Average Interest Level: **4.34/5**
+- Total records and submitted/test reviews
+- Pending review count and approval rate
+- Most active content category and average rating
+- Total activity events and mobile activity rate
+- Average task processing time and moderation decision count
+- Report submission count and task completion rate
 
-Live review, category, and status counts appear in the Student and Administrator dashboards. Definitions, formulas, sources, and limitations are documented in [`docs/startup-metrics.md`](docs/startup-metrics.md).
+The current demonstration snapshot contains **19 records** and **54 activity events**. It includes **9 submitted/test reviews**, **1 Pending**, **1 Rejected**, and **1 Removal Requested** record; the sample average rating is **4.34/5**, and **37.0%** of events are Mobile. These are transparent seed/test values, not live-user traction.
+
+See [`docs/startup-metrics.md`](docs/startup-metrics.md), `powerbi/Lab11_TriByte_Startup_Metrics.pbix`, and the CSV/data dictionary files in `powerbi/data/`.
 
 ### Prototype Screenshots
 
-Current evidence is stored in `/screenshots/`, including:
+The Lab 11 screenshot set was refreshed on **25 July 2026**. These links use the exact filenames currently stored in the repository.
 
-- [`screenshots/homepage.png`](screenshots/homepage.png)
-- [`screenshots/input-form.png`](screenshots/input-form.png)
-- [`screenshots/dormitory-list.png`](screenshots/dormitory-list.png)
-- [`screenshots/cafeteria-list.png`](screenshots/cafeteria-list.png)
-- [`screenshots/review-detail.png`](screenshots/review-detail.png)
-- [`screenshots/student-dashboard.png`](screenshots/student-dashboard.png)
-- [`screenshots/admin-view.png`](screenshots/admin-view.png)
-- [`screenshots/moderation-queue.png`](screenshots/moderation-queue.png)
+| Prototype Area | Updated Screenshot |
+|---|---|
+| Homepage | [`screenshots/home.png`](screenshots/home.png) |
+| Login | [`screenshots/login.png`](screenshots/login.png) |
+| Signup | [`screenshots/signup.png`](screenshots/signup.png) |
+| Dormitory review list | [`screenshots/dorm-reviews.png`](screenshots/dorm-reviews.png) |
+| Dormitory review details | [`screenshots/dorm-reveiw-details.png`](screenshots/dorm-reveiw-details.png) |
+| Cafeteria review list | [`screenshots/cafeteria-reviews.png`](screenshots/cafeteria-reviews.png) |
+| Cafeteria review details | [`screenshots/cafeteria-review-details.png`](screenshots/cafeteria-review-details.png) |
+| Write Review form | [`screenshots/write-review.png`](screenshots/write-review.png) |
+| Campus Survival Guide | [`screenshots/srrvival-guide.png`](screenshots/srrvival-guide.png) |
+| Student dashboard | [`screenshots/student-dashboard.png`](screenshots/student-dashboard.png) |
+| Student profile | [`screenshots/student-profile.png`](screenshots/student-profile.png) |
+| Student report-review flow | [`screenshots/report-review.png`](screenshots/report-review.png) |
+| Administrator overview | [`screenshots/admin-dashboard-overview.png`](screenshots/admin-dashboard-overview.png) |
+| Administrator moderation queue | [`screenshots/admin-dashboard-moderation-queue.png`](screenshots/admin-dashboard-moderation-queue.png) |
+| Administrator reports | [`screenshots/admin-dashboard-report.png`](screenshots/admin-dashboard-report.png) |
+| Administrator user management | [`screenshots/admin-dashboard-user-management.png`](screenshots/admin-dashboard-user-management.png) |
+| Administrator audit log | [`screenshots/admin-dashboard-audit-log.png`](screenshots/admin-dashboard-audit-log.png) |
+| Power BI startup-metrics dashboard | [`Lab11_TriByte_PowerBI/lab11-powerbi-dashboard.png`](Lab11_TriByte_PowerBI/lab11-powerbi-dashboard.png) |
 
 
-Fresh screenshots should be captured after the final manual Sprint 2 walkthrough so the evidence exactly matches the updated prototype.
 
 ### Member Contributions
 
-| Member | Lab 11 Contribution | Evidence |
+| Member | Lab 11 Contribution | Evidence to Add Before Submission |
 |---|---|---|
-| **Htet Htet Myint Zaw** | Updated the visual prototype, core pages, richer review content, and image assets. | `prototype/*.html`, `prototype/images/`; add Sprint 2 commit link |
-| **Khaing Zin Thet** | Improved JavaScript data handling, list controls, submission, dashboards, moderation, status, metrics, and audit actions. | `prototype/js/`; add Sprint 2 commit link |
-| **Yousel Zangmo** | Tailored the Lab 11 documents, verified requirement traceability and limitations, and updated the README and logbook. | Lab 11 files in `docs/` and `README.md`; add Sprint 2 commit link |
+| Htet Htet Myint Zaw | Product scope, requirement traceability, metrics/documentation review, and Sprint 2 coordination | Final commit/PR link |
+| Khaing Zin Thet | Prototype functionality and data/admin workflow integration | Final commit/PR link |
+| Yousel Zangmo | UX/UI review, guide/profile improvements, testing documentation, screenshots, and logbook/README updates | Final commit/PR link |
+| TriByte group | Power BI dataset/dashboard preparation and metric verification | Commit/PR link(s) for the actual contributors |
 
-### Testing
+The detailed contribution log is in [`docs/weekly-logbook.md`](docs/weekly-logbook.md). Replace the placeholders with real GitHub commit or pull-request links so every member’s contribution is visible.
 
-The Lab 11 test matrix covers homepage navigation, student authentication, review submission, record lists, search/filter/sort, detail view, status/removal, administrator moderation, dashboard metrics, privacy/validation, and responsive presentation. Source and reference checks are documented in [`docs/prototype-testing-notes.md`](docs/prototype-testing-notes.md). A final manual browser and mobile pass remains required before submission.
+### Testing Status
+
+Source and CSV checks confirm that the required pages, handlers, localStorage workflows, and metrics inputs are present. A complete live execution is still required before functional test cases are marked Passed. The test plan covers homepage, browse/search/filter/sort, details, submission, student status/removal, moderation, removal requests, reports, user administration, guide details, metrics, responsiveness, and accessibility.
+
+See [`docs/prototype-testing-notes.md`](docs/prototype-testing-notes.md).
+
 
 ### Remaining Work
 
