@@ -10,34 +10,38 @@
 
 ## Main Test Cases
 
-| Test ID | User Flow / Feature | Steps to Test | Expected Result | Actual Result | Status | Issue Found | Fix / Next Action |
+| Test ID | User Flow / Feature | Steps to Test | Expected Result | Actual Result / Evidence | Status | Issue Found | Fix / Next Action |
 |---|---|---|---|---|---|---|---|
-| T-01 | Open homepage | Open `prototype/index.html` and review the homepage | Homepage shows the HallPass title, target users, purpose, review categories, and main action buttons | The homepage displayed the HallPass introduction, Dormitory and Cafeteria categories, latest reviews, Survival Guide link, and calls to action | Passed | No major functional issue found; final appearance may vary slightly on different devices | Test the homepage on additional browsers and capture an updated Lab 11 screenshot |
-| T-02 | Submit record | Log in with the student demonstration account, open Write Review, complete all required fields, accept privacy consent, and submit | Review is saved in browser storage with Pending status and a confirmation message appears | The review was stored using `localStorage`, assigned to the logged-in student, marked Pending, and followed by a submission confirmation | Passed | Submitted data is stored only in the current browser and is not shared with other devices | Use a shared backend database in a future production version |
-| T-03 | View record list | Open the Dormitory and Cafeteria review pages and check the available records | Fictional sample records and approved student reviews are visible in the appropriate list | Dormitory and Cafeteria records displayed with images, ratings, prices, distances, and review information | Passed | Pending reviews do not appear publicly until administrator approval, which may confuse testers if the moderation step is skipped | Add clearer submission guidance explaining that new reviews require approval |
-| T-04 | Search/filter | Enter a keyword, choose a minimum rating, and change the sorting option on a review-list page | Only matching records are shown and records are arranged according to the selected option | Keyword search, minimum-rating filtering, and sorting updated the visible review cards | Passed | Keyword search mainly checks place titles and does not fully search review text, tags, or locations | Expand search to include descriptions, tags, and location information |
-| T-05 | Detail view | Select a Dormitory or Cafeteria record from the list | The selected record’s title, category, rating, location, price, and review information are shown clearly | The detail page displayed the selected place and its associated ratings, review content, location, and price information | Passed | Some places have more detailed sample information than others | Standardize the amount of information provided for every place record |
-| T-06 | Status update | Log in as the administrator, open the Moderation Queue, and approve or reject a Pending review | Review status changes, the student dashboard reflects the new status, dashboard counts update, and the action appears in the audit log | The review status changed to Approved or Rejected, stored data was updated, metric counts refreshed, and the administrator action was recorded | Passed | Administrator authorization is simulated through client-side JavaScript and is not secure for production use | Implement server-side authentication and role-based authorization in a future version |
-| T-07 | Dashboard metrics | Open the Student Dashboard and Administrator Dashboard and compare the displayed totals with the stored review data | Total, Pending, Approved, Rejected, Dormitory, and Cafeteria counts are visible and match the prototype records | Review and status metrics matched the seed records and locally stored submissions | Passed with limitation | Open Reports and Registered Users are fixed demonstration values rather than live calculated metrics | Label them clearly as demonstration values or connect them to real stored data in the next sprint |
+| T-01 | Open homepage | Open `prototype/index.html`; inspect navigation and calls to action | HallPass purpose, target content, latest reviews, and main navigation appear | Required page, shared scripts, review-card rendering, and navigation links are present in source | Source Verified; Live Test Pending | Lab 11 screenshot not yet captured | Open in Chrome/Edge and capture `screenshots/lab11-homepage.png`. |
+| T-02 | Browse, search, filter, and sort | Open Dorms and Cafeterias; search title/description/tag; change minimum rating and sort | Only matching records remain and order changes correctly | `js/main.js` filters title, text, type, price, distance, and tags and supports rating/price/distance sorting | Source Verified; Live Test Pending | No visible result-count text | Test several queries; consider adding a result count and no-results recovery link. |
+| T-03 | Open review details | Select a review card and sort its student reviews | Correct place details and review list appear | Stable place keys, `review-details.html`, and detail rendering functions are present | Source Verified; Live Test Pending | Every seeded/saved place route must be exercised | Test one Dorm, one Cafeteria, and one newly approved review. |
+| T-04 | Submit a review | Log in as student; open Write Review; complete fields, consent, optional photo; submit | Review is stored with current user and Pending status; confirmation appears | `js/reviews.js` validates fields, saves the record to `hallpassReviews`, and calls a confirmation toast | Source Verified; Live Test Pending | localStorage quota/image edge cases are browser-dependent | Test valid, missing-field, invalid-image, and new-place submissions. |
+| T-05 | Track and remove/request removal | Open student dashboard; filter statuses; remove Pending item; request removal of Approved item | Counts and rows update; Pending is removed; Approved changes to Removal Requested | `js/student-dashboard.js` and `js/data.js` implement both paths; HPT201–HPT204 cover status scenarios | Source/Data Verified; Live Test Pending | Wording must prevent confusion between deletion and request | Verify confirmation dialogs, counts after refresh, and all four statuses. |
+| T-06 | Moderate review | Log in as admin; open Moderation; view item; Approve/Reject | Status persists, public/student views update, and audit event is added | `js/admin-dashboard.js` updates status and audit storage; HPT202/HPT203 show approved/rejected outcomes | Source/Data Verified; Live Test Pending | Rejection reason is not structured | Add a reason field if required; test refresh persistence. |
+| T-07 | Process removal request | Admin opens Removal Requests and approves or declines | Approved request deletes the review; declined request returns it to Approved; audit updates | Both decision branches exist in `js/admin-dashboard.js` | Source Verified; Live Test Pending | Deletion is irreversible in the prototype | Confirm deletion warning; consider a recoverable archive state. |
+| T-08 | Report incorrect information | Student opens detail page, reports a review, then admin investigates and decides | Report is saved, visible to admin, and marked Confirmed or Incorrect | `js/report-review.js` creates `hallpassReports`; `js/platform-admin.js` saves decisions; three report events exist in the activity log | Source/Data Verified; Live Test Pending | Uses prompt-based decision note and client-only identity | Test login redirect, validation, cancellation, both decisions, and persistence. |
+| T-09 | User management | Admin searches a user, reports behavior, suspends/restores, and deletes a test user | Filtered result and account status change; confirmation/feedback appears | User search/report/suspend/restore/delete handlers persist in `hallpassAccounts` | Source Verified; Live Test Pending | Permanent delete and client-side roles are not production-safe | Use only a test account; verify suspended-login behavior and add recovery rules. |
+| T-10 | Guide details | Open Survival Guide; select each topic | Detail page shows overview, steps, tips, checklist, and related topic | Six topic objects and detail renderer are present in `js/guide-details.js` | Source Verified; Live Test Pending | Content has not been usability-tested | Check all topic links, readability, and mobile wrapping. |
+| T-11 | Dashboard metrics | Open student/admin dashboards and Power BI report; compare values with CSVs | Metrics are visible and formulas match source data | CSV check produced 19 records, 54 events, 1 Pending, 16 Approved overall, 1 Rejected, and 1 Removal Requested | Data Verified; PBIX Visual Test Pending | Supplied DAX text includes generic lost-and-found labels | Correct HallPass DAX labels and refresh Power BI before screenshots. |
+| T-12 | Responsive and accessibility check | Test keyboard, focus, labels, dialogs, 375 px mobile, tablet, and desktop | No clipping; controls remain usable; focus and announcements are clear | Responsive CSS and several accessibility attributes exist in source | Pending | Full visual/keyboard audit has not been completed | Run on Chrome/Edge plus one mobile device; record defects and screenshots. |
 
 ## Summary of Issues
 
-1. Review and account data is stored only in browser `localStorage`, so it is not shared across devices or users.
-2. Authentication and administrator access are frontend simulations rather than production security.
-3. Search mainly matches place titles and does not fully search descriptions, tags, or locations.
-4. Open Reports and Registered Users are fixed demonstration values.
-5. Report investigation and user-management features are not complete end-to-end workflows.
-6. Optional images can use a large amount of browser storage.
-7. Testing was completed with limited sample data and devices, so further cross-browser, mobile, and large-data testing is required.
+1. A complete live-browser execution is still required before marking the functional test cases Passed.
+2. Updated Lab 11 screenshots for the homepage, input form, list, detail view, student/admin dashboards, and Power BI metrics are not included in the uploaded Lab 11 archives.
+3. The supplied DAX measure text still uses some lost-and-found sample action/status names rather than HallPass names.
+4. Security remains a frontend simulation: credentials, roles, accounts, reviews, reports, profiles, and audit entries are stored in the browser.
+5. Accessibility needs a final keyboard, focus, ARIA-live, contrast, and mobile-layout audit.
+6. Rejection reasons, destructive account deletion, image/localStorage limits, and recovery behavior require stronger handling.
 
 ## Improvements Completed During Lab 11
 
-- Updated the homepage and review cards with a more consistent HallPass design and richer images.
-- Improved Dormitory and Cafeteria lists with keyword search, minimum-rating filtering, and sorting.
-- Expanded the Survival Guide with searchable topics and detailed guide pages.
-- Improved review submission with existing/new place selection, privacy consent, image validation, and Pending status tracking.
-- Improved the Student Dashboard with Total, Pending, Approved, and Rejected submission metrics.
-- Improved administrator moderation with detailed review information, approve/reject actions, removal requests, and audit records.
-- Added startup and product metrics for review activity, categories, moderation status, user validation, usefulness, and interest.
-- Updated `docs/feature-implementation-status.md`, `docs/startup-metrics.md`, `docs/prototype-testing-notes.md`, `docs/weekly-logbook.md`, and `README.md`.
-- GitHub commit references: Add the final Lab 11 commit links after each team member uploads their assigned files.
+- Expanded keyword search and added sorting by recommendation, rating, price, and distance.
+- Added detailed Survival Guide topics with steps, tips, and checklists.
+- Improved review submission and optional local image handling.
+- Expanded the student profile, profile-picture, submission-status, and removal-request experience.
+- Completed the student-to-admin incorrect-information reporting workflow.
+- Added administrator user search, behavior reporting, suspend/restore, and delete demonstrations.
+- Expanded review moderation, removal-request handling, and audit evidence.
+- Added a Power BI startup-metrics package with a documented 19-record dataset and 54-event activity log.
+
