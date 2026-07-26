@@ -26,7 +26,7 @@
 | FR-19 | Reported-content handling | `js/report-review.js`, Reports panel in `dashboard.html`, `js/platform-admin.js` | Partially Completed | Completed (prototype) | Htet Htet Myint Zaw | Logged-in students submit reports; admins inspect the original review and save Confirmed/Incorrect decisions | Add report categories and escalation rules for production. |
 | FR-20 | User-management examples | Users panel; `js/platform-admin.js` | Partially Completed | Completed (prototype) | Khaing Zin Thet | User search plus report, suspend/restore, and delete demonstrations persist locally | Add role-based permissions, confirmations, and recovery rules before production. |
 | FR-21 | Administrator audit activity | Audit Log; `js/admin-dashboard.js` | Completed | Improved | Yousel Zangmo | Moderation, removal, report, and prototype admin actions are written to localStorage | Export audit events or connect them to a backend later. |
-| FR-22 | Consistent responsive interface | `css/style.css` and all HTML pages | Completed | Improved | Htet Htet Myint Zaw | Shared responsive cards, forms, tables, dashboards, dialogs, and navigation | Complete desktop, tablet, and mobile visual QA. |
+| FR-22 | Consistent responsive interface | `css/style.css`  | Completed | Improved | Yousel Zangmo | Shared responsive cards, forms, tables, dashboards, dialogs, and navigation | Complete desktop, tablet, and mobile visual QA. |
 
 ## Non-Functional Requirement Check
 
