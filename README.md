@@ -528,3 +528,93 @@ See [`docs/prototype-testing-notes.md`](docs/prototype-testing-notes.md).
 - Turn fixed report/user metrics into data-driven values.
 - Complete end-to-end reporting and administrator user management.
 - Replace localStorage and client-side role checks with a secure shared backend for any production release.
+
+# Lab 12 - Landing Page and Digital Go-to-Market
+
+## Lab 12 Summary
+
+In Lab 12, the TriByte team developed a public-facing landing page for the HallPass prototype and prepared a digital go-to-market strategy to introduce the platform to potential users. The landing page clearly explains the user problem, HallPass solution, key features, target users, and provides a call-to-action (CTA) that connects visitors to the working prototype.
+
+In addition to the landing page, the team prepared a marketing strategy, acquisition metrics, and supporting documentation to measure early user interest and evaluate the effectiveness of the product promotion.
+
+---
+
+## Landing Page Features
+
+The HallPass landing page includes:
+
+- Product headline and value proposition
+- Problem and solution overview
+- Target user explanation
+- HallPass key features
+- Call-to-Action (CTA) button linking to the prototype
+- Privacy statement for users
+- Responsive design for desktop and mobile devices
+
+---
+
+## Digital Go-to-Market Strategy
+
+Our initial target users are:
+
+- First-year university students
+- International students
+- Exchange students
+
+The selected outreach channels include:
+
+- University class groups
+- Student clubs and organizations
+- Instagram and other social media platforms
+
+Each channel contains a tailored marketing message designed to encourage students to explore the HallPass prototype and provide feedback.
+
+---
+
+## Acquisition Metrics
+
+To evaluate the effectiveness of the landing page, the team defined five acquisition metrics:
+
+| Metric | Purpose |
+|---------|---------|
+| Landing Page Visitors | Measure awareness of HallPass |
+| CTA Click Rate | Measure visitor interest |
+| Prototype Demo Views | Measure product engagement |
+| Feedback Responses | Measure user participation |
+| Conversion Rate | Measure successful user acquisition |
+
+The metrics are tracked using manual spreadsheets, JavaScript click tracking, prototype navigation logs, and feedback forms.
+
+---
+
+## Files Added
+
+| File | Purpose |
+|------|---------|
+| `landing-page/index.html` | HallPass landing page |
+| `landing-page/style.css` | Landing page styling |
+| `landing-page/script.js` | CTA interaction and click tracking |
+| `docs/landing-page-content.md` | Landing page copy |
+| `docs/go-to-market-plan.md` | Digital marketing strategy |
+| `docs/marketing-message.md` | Marketing messages |
+| `docs/acquisition-metrics.md` | Acquisition metric definitions |
+| `data/acquisition-metrics-template.csv` | Acquisition tracking template |
+| `screenshots/landing-page.png` | Landing page screenshot |
+| `screenshots/call-to-action.png` | CTA screenshot |
+| `docs/weekly-logbook.md` | Weekly contribution log |
+
+---
+
+## Team Contributions
+
+| Team Member | Contribution |
+|--------------|-------------|
+| **Htet Htet Myint Zaw** | Developed the HallPass landing page (`landing-page/index.html`), prepared the landing page content (`docs/landing-page-content.md`), captured the landing page screenshot, and updated the weekly logbook. |
+| **Khaing Zin Thet** | Implemented JavaScript functionality for CTA interactions (`landing-page/script.js`), prepared the acquisition metrics (`docs/acquisition-metrics.md`), created the acquisition tracking template (`data/acquisition-metrics-template.csv`), and updated the project README. |
+| **Yousel Zangmo** | Designed the landing page styling (`landing-page/style.css`), prepared the go-to-market plan (`docs/go-to-market-plan.md`), created marketing messages (`docs/marketing-message.md`), and captured the CTA screenshot. |
+
+---
+
+## Lab 12 Outcome
+
+The HallPass landing page successfully communicates the project's value proposition, introduces the core features of the prototype, and provides a clear pathway for users to access the system. Combined with the digital go-to-market plan and acquisition metrics, Lab 12 prepares HallPass for early user promotion and future validation activities while remaining consistent with the implemented prototype.
