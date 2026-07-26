@@ -1,20 +1,22 @@
 # Marketing Message
 
 ## Short One-Sentence Message
-Write one sentence explaining the prototype.
+
+HallPass helps first-year, international, and exchange students find student dormitory reviews, cafeteria recommendations, and practical Rangsit University campus guidance in one place.
 
 ## Channel-Specific Messages
 
 | Channel | Message | CTA | Link/QR Placeholder |
 | --- | --- | --- | --- |
-| Class chat | Tired of searching chat groups for lost items? Try our campus lost-and-found demo. | Try Demo | [Insert link] |
-| Email | We are testing a student prototype to help report and search lost campus items. | Give Feedback | [Insert link] |
-| Poster/QR | Lost something on campus? Scan to report or search. | Scan QR | [Insert QR/link] |
-| Social media | A simple way to report, search, and track lost campus items. | Test it now | [Insert link] |
+| Class chat | New to RSU? Stop searching scattered chats for dormitory, food, and campus advice. Explore HallPass and tell us what would help you most. | Try HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=class-line) |
+| Email | Settling into Rangsit University? HallPass brings student dormitory reviews, cafeteria information, and practical campus guidance into one place. | Explore HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=email) |
+| Poster/QR | Choosing where to live or eat near RSU? Scan to compare student experiences and explore practical campus information. | Scan QR | [QR destination](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=qr-poster) |
+| Social media | Dormitories, food, and first-week questions—explore one student-focused shortcut to campus life with HallPass. | Try HallPass | [Open HallPass](https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page/?source=social-media) |
 
 ## Message Quality Check
-- Is the message clear within 5 seconds?
-- Does it identify the target user?
-- Does it explain the problem or benefit?
-- Does it include one action?
-- Does it avoid exaggerated claims?
+
+- Is the message clear within 5 seconds? **Yes.**
+- Does it identify the target user? **Yes—first-year, international, and exchange students at Rangsit University.**
+- Does it explain the problem or benefit? **Yes—it explains that HallPass organizes scattered dormitory, cafeteria, and campus information.**
+- Does it include one action? **Yes—each message asks the user to open or explore HallPass.**
+- Does it avoid exaggerated claims? **Yes—the messages describe only the information and functions available through HallPass.**
