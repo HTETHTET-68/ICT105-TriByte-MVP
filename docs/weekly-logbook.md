@@ -851,3 +851,76 @@ HallPass is a student-focused platform for first-year, international, and exchan
 * Replace the contribution placeholders with real GitHub commit, issue, or pull-request links.
 * Confirm that all required files are stored in the correct GitHub folders.
 * Complete final quality assurance before starting Lab 12.
+
+# Weekly Logbook - Lab 12
+
+## Lab Topic
+
+Landing Page and Digital Go-to-Market
+
+## Group Case
+
+**HallPass — Student Reviews & Campus Survival Guide**
+
+## Work Completed Today
+
+- Reviewed the validated problem, target users, value proposition, final MVP
+  requirements, and Lab 11 implementation status.
+- Wrote the HallPass landing-page message structure and requirement mapping.
+- Built a responsive HTML/CSS/JavaScript landing page with a working CTA linked
+  to the existing HallPass prototype.
+- Added direct feature links for dormitory reviews, cafeteria reviews, the
+  campus survival guide, review submission, and privacy consent.
+- Added a clear classroom-prototype and responsible-data statement.
+- Prepared channel-specific marketing messages and a five-channel outreach plan.
+- Defined ten acquisition indicators covering awareness, action, prototype use,
+  feedback, conversion, and completion quality.
+- Added a CSV template for channel-level metric tracking.
+- Captured landing-page and CTA screenshots.
+- Updated the repository README with Lab 12 progress, links, evidence, and
+  requirement alignment.
+
+## Member Contributions
+
+| Member | Lab 12 Responsibility | File / Evidence |
+|---|---|---|
+| Htet Htet Myint Zaw | Product value review, target-user definition, landing-page copy, and README/requirement alignment | `docs/landing-page-content.md`, `README.md` |
+| Khaing Zin Thet | Landing-page HTML/JavaScript, prototype links, CTA interaction, and metric-tracking template | `landing-page/index.html`, `landing-page/script.js`, `data/acquisition-metrics-template.csv` |
+| Yousel Zangmo | Responsive visual design, go-to-market plan, marketing messages, acquisition-metric definitions, screenshots, and logbook | `landing-page/style.css`, `docs/go-to-market-plan.md`, `docs/marketing-message.md`, `docs/acquisition-metrics.md`, `screenshots/landing-page.png`, `screenshots/call-to-action.png`, `docs/weekly-logbook.md` |
+
+
+
+## Main Decisions
+
+- Use the headline **“Your shortcut to campus life.”**
+- Lead with the needs of first-year, international, and exchange students.
+- Use **Try the HallPass Demo** as the primary CTA.
+- Promote only features represented in the current prototype.
+- Label validation results with their context and avoid presenting them as
+  current market traction.
+- Identify the page and prototype as classroom demonstrations using
+  fictional/sample data and browser-local storage.
+
+## Metrics Plan
+
+The group will measure landing-page views, channel visits, primary CTA clicks,
+CTA click rate, demo attempts, feature exploration, feedback responses,
+usefulness, feedback conversion, and assigned-task completion. Channel results
+will be recorded in `data/acquisition-metrics-template.csv`.
+
+## Problems Encountered
+
+- Browser `localStorage` counters do not provide reliable multi-user analytics.
+- The prototype is frontend-only, so messages must not imply production
+  security, live accounts, or cloud data.
+- Contribution links cannot be finalized until each member commits their work.
+
+## Next Action Before Lab 13
+
+- Upload the completed Lab 12 files to the shared repository.
+- Have each member commit their assigned contribution.
+- Replace contribution placeholders with actual commit/issue/PR links.
+- Publish or share the landing-page link.
+- Run the first early-user channel test and replace zero values in the metrics
+  CSV with observed counts.
+- Review feedback and revise the landing-page message or prototype workflow.
