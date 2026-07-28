@@ -1,0 +1,36 @@
+flowchart TD
+    A["RSU student has scattered dorm, food, and campus-life information"] --> B["Marketing landing page<br/>Value message + Try HallPass CTA<br/>FR-01, FR-02, FR-22"]
+    B --> C["HallPass homepage<br/>Latest reviews + shared navigation<br/>FR-01, FR-02"]
+    C --> D{"Choose an information path"}
+    D --> E["Dorm reviews<br/>Browse, keyword search, rating filter<br/>FR-04, FR-06"]
+    D --> F["Cafeteria reviews<br/>Browse, keyword search, rating filter<br/>FR-05, FR-06"]
+    D --> G["Survival Guide<br/>Search topic + open practical details<br/>FR-09"]
+    E --> H["Review detail<br/>Rating, description, price, location/distance<br/>FR-07"]
+    F --> H
+    H --> I{"Contribute a review?"}
+    G --> I
+    I -- "No" --> J["Useful student outcome<br/>Make a more informed campus decision"]
+    I -- "Yes" --> K{"Student logged in?"}
+    K -- "No" --> L["Simulated login / signup<br/>FR-03; NFR-09"]
+    L --> M["Review form<br/>Required fields + privacy notice + consent<br/>FR-08, FR-10, FR-15, FR-16"]
+    K -- "Yes" --> M
+    M --> N["Submission saved in browser<br/>Success feedback + Pending status<br/>FR-18; NFR-08, NFR-11"]
+    N --> O["Student dashboard<br/>Filter status or remove pending item<br/>FR-11, FR-14, FR-17"]
+    O --> P["Administrator demo login<br/>Client-side role simulation<br/>FR-03, FR-12; NFR-09"]
+    P --> Q["Admin Overview + Moderation Queue<br/>Approve or reject review<br/>FR-12, FR-13"]
+    Q --> R["Reports + Users + Audit Log<br/>Demonstration governance evidence<br/>FR-19, FR-20, FR-21"]
+    R --> S["Updated review status persists<br/>Student sees Approved or Rejected<br/>FR-14; NFR-11"]
+    S --> T["Collect Lab 13 feedback<br/>Prioritize fixes for Lab 14"]
+    J --> T
+
+    classDef problem fill:#fff4e5,stroke:#d97706,color:#7c2d12,stroke-width:2px;
+    classDef student fill:#eaf2ff,stroke:#2563eb,color:#163b73,stroke-width:2px;
+    classDef action fill:#ecfdf3,stroke:#16a34a,color:#14532d,stroke-width:2px;
+    classDef admin fill:#f3e8ff,stroke:#7e22ce,color:#581c87,stroke-width:2px;
+    classDef outcome fill:#0b3d91,stroke:#082f72,color:#ffffff,stroke-width:2px;
+
+    class A problem;
+    class B,C,D,E,F,G,H,I,K,L,M,N,O student;
+    class J,T outcome;
+    class P,Q,R admin;
+    class S action;
