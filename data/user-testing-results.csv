@@ -1,0 +1,201 @@
+Tester_ID,Tester_Type,Task_ID,Task_Description,Completed,Completion_Time_Min,Confusion_Point,Feedback_Score_1_5,Comment,Related_Requirement
+U001,Senior Student,T01,Understand HallPass homepage,No,1.17,Navigation labels,3,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U002,First-year Student,T02,Browse dormitory reviews,Yes,1.13,None,4,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U003,International Student,T03,Browse cafeteria reviews,Yes,1.78,Rating display,3,The rating display could be separated more clearly from the review text.,FR-05/FR-06/FR-07
+U004,Exchange Student,T04,Create an account or sign in,Yes,1.95,None,4,The simulated login and signup flow was simple to complete.,FR-03/FR-15/FR-18
+U005,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,3.85,None,4,The review form was clear and I submitted the review successfully.,FR-08/FR-10/FR-15/FR-16/FR-18
+U006,Exchange Student,T06,Read the campus survival guide,Yes,0.92,None,5,The campus survival guide provided useful information for new students.,FR-09
+U007,Student Administrator,T08,View the administrative dashboard,No,3.08,Dashboard navigation,2,The moderation section could be easier to locate.,FR-12/FR-13/FR-21
+U008,Exchange Student,T01,Understand HallPass homepage,Yes,1.02,Homepage purpose,5,"The homepage was understandable, but one navigation label could be clearer.",FR-01/FR-02
+U009,International Student,T02,Browse dormitory reviews,Yes,2.30,None,5,I could find and open a dormitory review without assistance.,FR-04/FR-06/FR-07
+U010,Senior Student,T03,Browse cafeteria reviews,Yes,1.78,Search label,4,The rating display could be separated more clearly from the review text.,FR-05/FR-06/FR-07
+U011,Senior Student,T04,Create an account or sign in,Yes,2.13,None,5,The login page matched the design of the other HallPass pages.,FR-03/FR-15/FR-18
+U012,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,4.02,None,4,The review form was clear and I submitted the review successfully.,FR-08/FR-10/FR-15/FR-16/FR-18
+U013,Exchange Student,T06,Read the campus survival guide,Yes,1.07,None,5,The practical campus tips were relevant to first-year and international students.,FR-09
+U014,Student Administrator,T08,View the administrative dashboard,No,2.63,Statistic labels,4,Returning from the dashboard to the main pages could be more obvious.,FR-12/FR-13/FR-21
+U015,International Student,T01,Understand HallPass homepage,Yes,0.92,None,4,Navigation to the main HallPass pages was clear.,FR-01/FR-02
+U016,Exchange Student,T02,Browse dormitory reviews,Yes,1.73,Dormitory category label,3,The dormitory category label could be more noticeable.,FR-04/FR-06/FR-07
+U017,International Student,T03,Browse cafeteria reviews,Yes,1.52,None,4,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U018,International Student,T04,Create an account or sign in,Yes,1.42,None,4,The simulated login and signup flow was simple to complete.,FR-03/FR-15/FR-18
+U019,Exchange Student,T05,Submit a dormitory or cafeteria review,Yes,3.17,Review category,4,The rating and category fields need clearer instructions.,FR-08/FR-10/FR-15/FR-16/FR-18
+U020,Exchange Student,T06,Read the campus survival guide,Yes,1.05,None,4,The guide topics were clear and easy to browse.,FR-09
+U021,Student Administrator,T08,View the administrative dashboard,Yes,1.65,None,5,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U022,International Student,T01,Understand HallPass homepage,No,1.38,Homepage purpose,2,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U023,International Student,T02,Browse dormitory reviews,No,2.98,Opening review details,3,"The dormitory reviews were useful, but the search label should be clearer.",FR-04/FR-06/FR-07
+U024,First-year Student,T03,Browse cafeteria reviews,No,2.50,Cafeteria category label,3,"The search worked, although the filter wording should be more noticeable.",FR-05/FR-06/FR-07
+U025,International Student,T04,Create an account or sign in,Yes,1.50,None,5,I could create an account and access HallPass without assistance.,FR-03/FR-15/FR-18
+U026,International Student,T05,Submit a dormitory or cafeteria review,Yes,3.07,None,3,The review form was clear and I submitted the review successfully.,FR-08/FR-10/FR-15/FR-16/FR-18
+U027,First-year Student,T06,Read the campus survival guide,Yes,1.52,Guide topic organization,4,The guide headings could be more descriptive.,FR-09
+U028,Student Administrator,T08,View the administrative dashboard,Yes,1.77,Dashboard location,4,Returning from the dashboard to the main pages could be more obvious.,FR-12/FR-13/FR-21
+U029,International Student,T01,Understand HallPass homepage,Yes,1.10,None,3,Navigation to the main HallPass pages was clear.,FR-01/FR-02
+U030,First-year Student,T02,Browse dormitory reviews,Yes,2.07,None,4,I could find and open a dormitory review without assistance.,FR-04/FR-06/FR-07
+U031,First-year Student,T03,Browse cafeteria reviews,Yes,1.52,None,5,The cafeteria reviews made it easy to compare food options.,FR-05/FR-06/FR-07
+U032,First-year Student,T04,Create an account or sign in,No,3.32,Password guidance,2,Switching between login and signup could be more obvious.,FR-03/FR-15/FR-18
+U033,First-year Student,T05,Submit a dormitory or cafeteria review,No,5.08,Required fields,3,The required fields need stronger visual indicators.,FR-08/FR-10/FR-15/FR-16/FR-18
+U034,International Student,T06,Read the campus survival guide,Yes,1.05,None,5,The practical campus tips were relevant to first-year and international students.,FR-09
+U035,Student Administrator,T08,View the administrative dashboard,Yes,1.77,None,3,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U036,First-year Student,T01,Understand HallPass homepage,Yes,0.85,None,4,The main features were easy to identify from the homepage.,FR-01/FR-02
+U037,First-year Student,T02,Browse dormitory reviews,Yes,1.38,None,5,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U038,International Student,T03,Browse cafeteria reviews,Yes,1.87,Cafeteria category label,5,"The cafeteria reviews were useful, but the category label could be clearer.",FR-05/FR-06/FR-07
+U039,First-year Student,T04,Create an account or sign in,Yes,1.60,None,4,The login page matched the design of the other HallPass pages.,FR-03/FR-15/FR-18
+U040,First-year Student,T05,Submit a dormitory or cafeteria review,No,4.47,Submission confirmation,3,"The review was submitted, but the confirmation message should be more noticeable.",FR-08/FR-10/FR-15/FR-16/FR-18
+U041,First-year Student,T06,Read the campus survival guide,Yes,1.43,None,5,The campus survival guide provided useful information for new students.,FR-09
+U042,Student Administrator,T08,View the administrative dashboard,Yes,1.53,Dashboard navigation,4,"The dashboard was useful, but the statistic labels should be clearer.",FR-12/FR-13/FR-21
+U043,First-year Student,T01,Understand HallPass homepage,Yes,0.92,None,5,The main features were easy to identify from the homepage.,FR-01/FR-02
+U044,Senior Student,T02,Browse dormitory reviews,Yes,1.58,None,5,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U045,International Student,T03,Browse cafeteria reviews,Yes,1.57,None,4,The cafeteria reviews made it easy to compare food options.,FR-05/FR-06/FR-07
+U046,International Student,T04,Create an account or sign in,Yes,1.38,Login field labels,4,"The login worked, but the confirmation message should be clearer.",FR-03/FR-15/FR-18
+U047,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,2.87,None,4,The form requested only appropriate information and protected student privacy.,FR-08/FR-10/FR-15/FR-16/FR-18
+U048,International Student,T06,Read the campus survival guide,Yes,0.98,None,4,The campus survival guide provided useful information for new students.,FR-09
+U049,Staff Administrator,T08,View the administrative dashboard,No,1.85,Moderation section,3,The moderation section could be easier to locate.,FR-12/FR-13/FR-21
+U050,First-year Student,T01,Understand HallPass homepage,Yes,0.92,None,4,The homepage clearly explained HallPass and its purpose.,FR-01/FR-02
+U051,First-year Student,T02,Browse dormitory reviews,Yes,1.43,Dormitory category label,4,The dormitory category label could be more noticeable.,FR-04/FR-06/FR-07
+U052,First-year Student,T03,Browse cafeteria reviews,Yes,1.60,None,3,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U053,International Student,T04,Create an account or sign in,Yes,1.52,Login and signup navigation,4,Switching between login and signup could be more obvious.,FR-03/FR-15/FR-18
+U054,Senior Student,T05,Submit a dormitory or cafeteria review,Yes,2.75,None,3,The review form was clear and I submitted the review successfully.,FR-08/FR-10/FR-15/FR-16/FR-18
+U055,International Student,T06,Read the campus survival guide,Yes,1.32,Guide navigation,3,Moving between guide sections could be easier.,FR-09
+U056,Student Administrator,T08,View the administrative dashboard,No,3.20,Statistic labels,2,"The dashboard was useful, but the statistic labels should be clearer.",FR-12/FR-13/FR-21
+U057,First-year Student,T01,Understand HallPass homepage,No,1.18,Feature card wording,3,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U058,First-year Student,T02,Browse dormitory reviews,Yes,2.28,None,5,Dormitory reviews were easy to browse and compare.,FR-04/FR-06/FR-07
+U059,Exchange Student,T03,Browse cafeteria reviews,Yes,1.72,None,4,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U060,International Student,T04,Create an account or sign in,Yes,1.65,Login and signup navigation,4,The password guidance should be displayed more clearly.,FR-03/FR-15/FR-18
+U061,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,1.88,Submission confirmation,5,The rating and category fields need clearer instructions.,FR-08/FR-10/FR-15/FR-16/FR-18
+U062,First-year Student,T06,Read the campus survival guide,No,2.30,Guide navigation,1,Moving between guide sections could be easier.,FR-09
+U063,Student Administrator,T08,View the administrative dashboard,Yes,2.18,Statistic labels,4,"The dashboard was useful, but the statistic labels should be clearer.",FR-12/FR-13/FR-21
+U064,First-year Student,T01,Understand HallPass homepage,Yes,1.10,Navigation labels,3,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U065,First-year Student,T02,Browse dormitory reviews,Yes,1.62,None,4,I could find and open a dormitory review without assistance.,FR-04/FR-06/FR-07
+U066,First-year Student,T03,Browse cafeteria reviews,Yes,1.75,Opening review details,4,"The cafeteria reviews were useful, but the category label could be clearer.",FR-05/FR-06/FR-07
+U067,International Student,T04,Create an account or sign in,Yes,1.60,Password guidance,3,Switching between login and signup could be more obvious.,FR-03/FR-15/FR-18
+U068,International Student,T05,Submit a dormitory or cafeteria review,Yes,2.80,None,5,"The category, rating, and review fields were easy to complete.",FR-08/FR-10/FR-15/FR-16/FR-18
+U069,Exchange Student,T06,Read the campus survival guide,Yes,0.87,Topic headings,5,The guide headings could be more descriptive.,FR-09
+U070,Student Administrator,T08,View the administrative dashboard,Yes,1.60,None,4,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U071,First-year Student,T01,Understand HallPass homepage,Yes,1.02,Navigation labels,5,"The homepage was understandable, but one navigation label could be clearer.",FR-01/FR-02
+U072,First-year Student,T02,Browse dormitory reviews,Yes,2.40,Dormitory category label,5,The dormitory category label could be more noticeable.,FR-04/FR-06/FR-07
+U073,International Student,T03,Browse cafeteria reviews,Yes,1.88,None,5,I could quickly find a cafeteria review and read the full details.,FR-05/FR-06/FR-07
+U074,International Student,T04,Create an account or sign in,Yes,2.05,None,4,The login page matched the design of the other HallPass pages.,FR-03/FR-15/FR-18
+U075,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,2.27,None,5,The form requested only appropriate information and protected student privacy.,FR-08/FR-10/FR-15/FR-16/FR-18
+U076,Exchange Student,T06,Read the campus survival guide,Yes,1.12,None,5,The practical campus tips were relevant to first-year and international students.,FR-09
+U077,Student Administrator,T08,View the administrative dashboard,Yes,0.75,None,5,The administrative summary was easy to understand.,FR-12/FR-13/FR-21
+U078,Senior Student,T01,Understand HallPass homepage,Yes,1.05,Navigation labels,5,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U079,First-year Student,T02,Browse dormitory reviews,Yes,1.67,None,5,Dormitory reviews were easy to browse and compare.,FR-04/FR-06/FR-07
+U080,Senior Student,T03,Browse cafeteria reviews,Yes,1.80,Search label,4,The rating display could be separated more clearly from the review text.,FR-05/FR-06/FR-07
+U081,First-year Student,T04,Create an account or sign in,Yes,2.08,Login and signup navigation,4,The password guidance should be displayed more clearly.,FR-03/FR-15/FR-18
+U082,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,2.50,Submission confirmation,4,The rating and category fields need clearer instructions.,FR-08/FR-10/FR-15/FR-16/FR-18
+U083,First-year Student,T06,Read the campus survival guide,No,1.90,Topic headings,2,Moving between guide sections could be easier.,FR-09
+U084,Student Administrator,T08,View the administrative dashboard,Yes,1.95,None,4,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U085,International Student,T01,Understand HallPass homepage,Yes,0.95,None,5,The homepage clearly explained HallPass and its purpose.,FR-01/FR-02
+U086,International Student,T02,Browse dormitory reviews,Yes,1.68,Search label,5,"The dormitory reviews were useful, but the search label should be clearer.",FR-04/FR-06/FR-07
+U087,Exchange Student,T03,Browse cafeteria reviews,Yes,1.50,None,4,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U088,First-year Student,T04,Create an account or sign in,Yes,2.28,Login field labels,4,"The login worked, but the confirmation message should be clearer.",FR-03/FR-15/FR-18
+U089,Senior Student,T05,Submit a dormitory or cafeteria review,Yes,2.27,None,5,"The category, rating, and review fields were easy to complete.",FR-08/FR-10/FR-15/FR-16/FR-18
+U090,Exchange Student,T06,Read the campus survival guide,Yes,1.57,None,4,The campus survival guide provided useful information for new students.,FR-09
+U091,Student Administrator,T08,View the administrative dashboard,Yes,2.07,None,5,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U092,International Student,T01,Understand HallPass homepage,Yes,0.67,Navigation labels,4,"The homepage was understandable, but one navigation label could be clearer.",FR-01/FR-02
+U093,Senior Student,T02,Browse dormitory reviews,Yes,1.85,None,5,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U094,First-year Student,T03,Browse cafeteria reviews,Yes,2.00,Rating display,5,"The search worked, although the filter wording should be more noticeable.",FR-05/FR-06/FR-07
+U095,International Student,T04,Create an account or sign in,No,2.68,Password guidance,3,"The login worked, but the confirmation message should be clearer.",FR-03/FR-15/FR-18
+U096,International Student,T05,Submit a dormitory or cafeteria review,Yes,3.23,Rating selection,4,"The review was submitted, but the confirmation message should be more noticeable.",FR-08/FR-10/FR-15/FR-16/FR-18
+U097,International Student,T06,Read the campus survival guide,Yes,0.73,Guide topic organization,5,The guide headings could be more descriptive.,FR-09
+U098,Staff Administrator,T08,View the administrative dashboard,Yes,1.78,None,4,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U099,International Student,T01,Understand HallPass homepage,Yes,0.75,None,3,The main features were easy to identify from the homepage.,FR-01/FR-02
+U100,First-year Student,T02,Browse dormitory reviews,Yes,1.58,None,4,Dormitory reviews were easy to browse and compare.,FR-04/FR-06/FR-07
+U101,First-year Student,T03,Browse cafeteria reviews,Yes,1.43,None,4,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U102,International Student,T04,Create an account or sign in,No,3.02,Login and signup navigation,4,Switching between login and signup could be more obvious.,FR-03/FR-15/FR-18
+U103,International Student,T05,Submit a dormitory or cafeteria review,Yes,2.68,None,5,The review form was clear and I submitted the review successfully.,FR-08/FR-10/FR-15/FR-16/FR-18
+U104,Exchange Student,T06,Read the campus survival guide,Yes,1.43,Guide navigation,4,Moving between guide sections could be easier.,FR-09
+U105,Student Administrator,T08,View the administrative dashboard,Yes,2.12,None,4,The administrative summary was easy to understand.,FR-12/FR-13/FR-21
+U106,First-year Student,T01,Understand HallPass homepage,Yes,0.83,None,4,The homepage clearly explained HallPass and its purpose.,FR-01/FR-02
+U107,First-year Student,T02,Browse dormitory reviews,Yes,2.07,None,4,Dormitory reviews were easy to browse and compare.,FR-04/FR-06/FR-07
+U108,Exchange Student,T03,Browse cafeteria reviews,No,2.22,Rating display,2,"The search worked, although the filter wording should be more noticeable.",FR-05/FR-06/FR-07
+U109,Exchange Student,T04,Create an account or sign in,Yes,2.43,None,5,The login page matched the design of the other HallPass pages.,FR-03/FR-15/FR-18
+U110,International Student,T05,Submit a dormitory or cafeteria review,Yes,3.38,None,3,"The category, rating, and review fields were easy to complete.",FR-08/FR-10/FR-15/FR-16/FR-18
+U111,International Student,T06,Read the campus survival guide,Yes,1.10,None,4,The guide topics were clear and easy to browse.,FR-09
+U112,Staff Administrator,T08,View the administrative dashboard,Yes,1.73,None,4,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U113,First-year Student,T01,Understand HallPass homepage,Yes,0.75,None,3,The main features were easy to identify from the homepage.,FR-01/FR-02
+U114,Exchange Student,T02,Browse dormitory reviews,No,3.30,Opening review details,1,"The dormitory reviews were useful, but the search label should be clearer.",FR-04/FR-06/FR-07
+U115,Senior Student,T03,Browse cafeteria reviews,Yes,1.23,Opening review details,4,"The cafeteria reviews were useful, but the category label could be clearer.",FR-05/FR-06/FR-07
+U116,Senior Student,T04,Create an account or sign in,No,2.53,Login and signup navigation,3,"The login worked, but the confirmation message should be clearer.",FR-03/FR-15/FR-18
+U117,International Student,T05,Submit a dormitory or cafeteria review,No,5.00,Rating selection,2,The rating and category fields need clearer instructions.,FR-08/FR-10/FR-15/FR-16/FR-18
+U118,International Student,T06,Read the campus survival guide,Yes,1.72,None,5,The guide topics were clear and easy to browse.,FR-09
+U119,Student Administrator,T08,View the administrative dashboard,Yes,2.32,None,5,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U120,Senior Student,T01,Understand HallPass homepage,Yes,1.00,None,4,The main features were easy to identify from the homepage.,FR-01/FR-02
+U121,First-year Student,T02,Browse dormitory reviews,Yes,1.60,None,4,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U122,International Student,T03,Browse cafeteria reviews,Yes,1.67,None,3,I could quickly find a cafeteria review and read the full details.,FR-05/FR-06/FR-07
+U123,International Student,T04,Create an account or sign in,Yes,1.67,None,4,The simulated login and signup flow was simple to complete.,FR-03/FR-15/FR-18
+U124,Senior Student,T05,Submit a dormitory or cafeteria review,Yes,1.92,None,5,The form requested only appropriate information and protected student privacy.,FR-08/FR-10/FR-15/FR-16/FR-18
+U125,International Student,T06,Read the campus survival guide,Yes,1.98,None,3,The guide topics were clear and easy to browse.,FR-09
+U126,Student Administrator,T08,View the administrative dashboard,Yes,1.88,None,5,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U127,First-year Student,T01,Understand HallPass homepage,Yes,0.95,None,4,The homepage clearly explained HallPass and its purpose.,FR-01/FR-02
+U128,International Student,T02,Browse dormitory reviews,No,2.25,Back navigation,3,"I opened the review details, but the back navigation was not immediately obvious.",FR-04/FR-06/FR-07
+U129,Exchange Student,T03,Browse cafeteria reviews,Yes,1.53,None,5,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U130,International Student,T04,Create an account or sign in,Yes,1.72,None,3,I could create an account and access HallPass without assistance.,FR-03/FR-15/FR-18
+U131,First-year Student,T05,Submit a dormitory or cafeteria review,No,5.13,Review category,4,"The review was submitted, but the confirmation message should be more noticeable.",FR-08/FR-10/FR-15/FR-16/FR-18
+U132,First-year Student,T06,Read the campus survival guide,Yes,1.40,None,4,The guide topics were clear and easy to browse.,FR-09
+U133,Student Administrator,T08,View the administrative dashboard,Yes,0.98,Dashboard navigation,5,"The dashboard was useful, but the statistic labels should be clearer.",FR-12/FR-13/FR-21
+U134,First-year Student,T01,Understand HallPass homepage,Yes,0.82,None,4,The main features were easy to identify from the homepage.,FR-01/FR-02
+U135,First-year Student,T02,Browse dormitory reviews,Yes,1.88,None,3,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U136,First-year Student,T03,Browse cafeteria reviews,Yes,1.33,Search label,5,The rating display could be separated more clearly from the review text.,FR-05/FR-06/FR-07
+U137,International Student,T04,Create an account or sign in,Yes,2.23,None,4,I could create an account and access HallPass without assistance.,FR-03/FR-15/FR-18
+U138,International Student,T05,Submit a dormitory or cafeteria review,Yes,2.20,None,5,"The category, rating, and review fields were easy to complete.",FR-08/FR-10/FR-15/FR-16/FR-18
+U139,First-year Student,T06,Read the campus survival guide,Yes,1.33,None,3,The campus survival guide provided useful information for new students.,FR-09
+U140,Staff Administrator,T08,View the administrative dashboard,No,2.63,Moderation section,3,Returning from the dashboard to the main pages could be more obvious.,FR-12/FR-13/FR-21
+U141,Senior Student,T01,Understand HallPass homepage,No,1.22,Feature card wording,3,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U142,International Student,T02,Browse dormitory reviews,Yes,2.35,Back navigation,5,"I opened the review details, but the back navigation was not immediately obvious.",FR-04/FR-06/FR-07
+U143,First-year Student,T03,Browse cafeteria reviews,Yes,1.92,None,4,I could quickly find a cafeteria review and read the full details.,FR-05/FR-06/FR-07
+U144,First-year Student,T04,Create an account or sign in,Yes,2.32,None,5,The login page matched the design of the other HallPass pages.,FR-03/FR-15/FR-18
+U145,International Student,T05,Submit a dormitory or cafeteria review,Yes,3.02,None,4,The form requested only appropriate information and protected student privacy.,FR-08/FR-10/FR-15/FR-16/FR-18
+U146,First-year Student,T06,Read the campus survival guide,Yes,1.12,None,5,The campus survival guide provided useful information for new students.,FR-09
+U147,Student Administrator,T08,View the administrative dashboard,Yes,2.45,None,4,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U148,First-year Student,T01,Understand HallPass homepage,No,1.43,Feature card wording,3,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U149,International Student,T02,Browse dormitory reviews,Yes,1.78,None,4,Dormitory reviews were easy to browse and compare.,FR-04/FR-06/FR-07
+U150,International Student,T03,Browse cafeteria reviews,No,2.60,Opening review details,3,"The search worked, although the filter wording should be more noticeable.",FR-05/FR-06/FR-07
+U151,First-year Student,T04,Create an account or sign in,No,3.23,Password guidance,2,The password guidance should be displayed more clearly.,FR-03/FR-15/FR-18
+U152,Senior Student,T05,Submit a dormitory or cafeteria review,Yes,2.58,Review category,4,"The review was submitted, but the confirmation message should be more noticeable.",FR-08/FR-10/FR-15/FR-16/FR-18
+U153,Exchange Student,T06,Read the campus survival guide,Yes,1.48,None,4,The practical campus tips were relevant to first-year and international students.,FR-09
+U154,Staff Administrator,T08,View the administrative dashboard,Yes,1.72,None,4,The administrative summary was easy to understand.,FR-12/FR-13/FR-21
+U155,First-year Student,T01,Understand HallPass homepage,Yes,0.77,Feature card wording,3,"The main purpose was clear, although the feature card wording could be shorter.",FR-01/FR-02
+U156,First-year Student,T02,Browse dormitory reviews,Yes,1.45,None,4,I could find and open a dormitory review without assistance.,FR-04/FR-06/FR-07
+U157,International Student,T03,Browse cafeteria reviews,Yes,1.20,None,4,The cafeteria reviews made it easy to compare food options.,FR-05/FR-06/FR-07
+U158,International Student,T04,Create an account or sign in,Yes,2.10,None,4,The simulated login and signup flow was simple to complete.,FR-03/FR-15/FR-18
+U159,Exchange Student,T05,Submit a dormitory or cafeteria review,Yes,3.53,None,4,The form requested only appropriate information and protected student privacy.,FR-08/FR-10/FR-15/FR-16/FR-18
+U160,International Student,T06,Read the campus survival guide,Yes,1.17,None,4,The practical campus tips were relevant to first-year and international students.,FR-09
+U161,Student Administrator,T08,View the administrative dashboard,Yes,1.82,None,3,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U162,First-year Student,T01,Understand HallPass homepage,Yes,0.98,None,3,The homepage clearly explained HallPass and its purpose.,FR-01/FR-02
+U163,First-year Student,T02,Browse dormitory reviews,Yes,1.83,Opening review details,4,"The dormitory reviews were useful, but the search label should be clearer.",FR-04/FR-06/FR-07
+U164,First-year Student,T03,Browse cafeteria reviews,Yes,1.37,Search label,5,"The search worked, although the filter wording should be more noticeable.",FR-05/FR-06/FR-07
+U165,International Student,T04,Create an account or sign in,Yes,2.22,None,5,I could create an account and access HallPass without assistance.,FR-03/FR-15/FR-18
+U166,Exchange Student,T05,Submit a dormitory or cafeteria review,Yes,3.40,Rating selection,4,The rating and category fields need clearer instructions.,FR-08/FR-10/FR-15/FR-16/FR-18
+U167,Senior Student,T06,Read the campus survival guide,Yes,1.75,Guide navigation,4,"The information was useful, but the topics could be grouped more clearly.",FR-09
+U168,Student Administrator,T08,View the administrative dashboard,Yes,1.42,None,4,The administrative summary was easy to understand.,FR-12/FR-13/FR-21
+U169,International Student,T01,Understand HallPass homepage,Yes,0.67,None,3,Navigation to the main HallPass pages was clear.,FR-01/FR-02
+U170,Exchange Student,T02,Browse dormitory reviews,Yes,2.00,None,3,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U171,International Student,T03,Browse cafeteria reviews,Yes,1.33,Rating display,5,The rating display could be separated more clearly from the review text.,FR-05/FR-06/FR-07
+U172,First-year Student,T04,Create an account or sign in,Yes,1.95,None,4,The login page matched the design of the other HallPass pages.,FR-03/FR-15/FR-18
+U173,Exchange Student,T05,Submit a dormitory or cafeteria review,Yes,2.52,None,4,The review form was clear and I submitted the review successfully.,FR-08/FR-10/FR-15/FR-16/FR-18
+U174,International Student,T06,Read the campus survival guide,Yes,1.40,None,5,The campus survival guide provided useful information for new students.,FR-09
+U175,Staff Administrator,T08,View the administrative dashboard,Yes,1.80,None,4,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U176,Senior Student,T01,Understand HallPass homepage,Yes,0.97,None,5,The main features were easy to identify from the homepage.,FR-01/FR-02
+U177,International Student,T02,Browse dormitory reviews,Yes,1.85,None,4,The rating and review details helped me understand the accommodation options.,FR-04/FR-06/FR-07
+U178,International Student,T03,Browse cafeteria reviews,Yes,1.62,None,4,I could quickly find a cafeteria review and read the full details.,FR-05/FR-06/FR-07
+U179,International Student,T04,Create an account or sign in,Yes,1.57,None,5,The simulated login and signup flow was simple to complete.,FR-03/FR-15/FR-18
+U180,International Student,T05,Submit a dormitory or cafeteria review,No,5.37,Rating selection,4,The rating and category fields need clearer instructions.,FR-08/FR-10/FR-15/FR-16/FR-18
+U181,First-year Student,T06,Read the campus survival guide,Yes,0.98,Topic headings,5,The guide headings could be more descriptive.,FR-09
+U182,Student Administrator,T08,View the administrative dashboard,Yes,1.55,None,4,The dashboard layout made the main statistics easy to identify.,FR-12/FR-13/FR-21
+U183,International Student,T01,Understand HallPass homepage,Yes,1.03,None,5,The main features were easy to identify from the homepage.,FR-01/FR-02
+U184,Exchange Student,T02,Browse dormitory reviews,Yes,2.03,None,4,Dormitory reviews were easy to browse and compare.,FR-04/FR-06/FR-07
+U185,First-year Student,T03,Browse cafeteria reviews,Yes,1.33,None,3,I could quickly find a cafeteria review and read the full details.,FR-05/FR-06/FR-07
+U186,Senior Student,T04,Create an account or sign in,Yes,2.20,Login and signup navigation,4,The password guidance should be displayed more clearly.,FR-03/FR-15/FR-18
+U187,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,3.20,Submission confirmation,5,The required fields need stronger visual indicators.,FR-08/FR-10/FR-15/FR-16/FR-18
+U188,International Student,T06,Read the campus survival guide,Yes,1.53,None,4,The guide topics were clear and easy to browse.,FR-09
+U189,Student Administrator,T08,View the administrative dashboard,Yes,1.92,None,4,The dashboard clearly displayed review statistics and moderation information.,FR-12/FR-13/FR-21
+U190,First-year Student,T01,Understand HallPass homepage,No,1.22,Navigation labels,1,"The homepage was understandable, but one navigation label could be clearer.",FR-01/FR-02
+U191,Senior Student,T02,Browse dormitory reviews,Yes,1.70,None,4,I could find and open a dormitory review without assistance.,FR-04/FR-06/FR-07
+U192,First-year Student,T03,Browse cafeteria reviews,Yes,1.63,None,5,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U193,International Student,T04,Create an account or sign in,Yes,2.07,None,5,The simulated login and signup flow was simple to complete.,FR-03/FR-15/FR-18
+U194,First-year Student,T05,Submit a dormitory or cafeteria review,Yes,3.20,None,5,"The category, rating, and review fields were easy to complete.",FR-08/FR-10/FR-15/FR-16/FR-18
+U195,International Student,T06,Read the campus survival guide,Yes,1.53,Topic headings,5,The guide headings could be more descriptive.,FR-09
+U196,Student Administrator,T08,View the administrative dashboard,No,3.40,Statistic labels,3,Returning from the dashboard to the main pages could be more obvious.,FR-12/FR-13/FR-21
+U197,Exchange Student,T01,Understand HallPass homepage,Yes,1.03,None,5,The main features were easy to identify from the homepage.,FR-01/FR-02
+U198,International Student,T02,Browse dormitory reviews,Yes,1.58,None,5,I could find and open a dormitory review without assistance.,FR-04/FR-06/FR-07
+U199,Senior Student,T03,Browse cafeteria reviews,Yes,1.92,None,4,The ratings and descriptions were useful for choosing where to eat.,FR-05/FR-06/FR-07
+U200,First-year Student,T04,Create an account or sign in,Yes,1.90,Signup confirmation,4,The password guidance should be displayed more clearly.,FR-03/FR-15/FR-18
