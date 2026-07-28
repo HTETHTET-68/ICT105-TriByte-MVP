@@ -1,0 +1,17 @@
+flowchart LR
+    A["Requirements baseline<br/>FR-01–FR-22"] --> B["Prepare role-based tasks<br/>T01–T08"]
+    B --> C["Recruit HallPass users<br/>Students + moderator"]
+    C --> D["Run Prototype 15<br/>Desktop + mobile"]
+    D --> E["Record completion, time,<br/>scores & confusion"]
+    E --> F["Map issues back<br/>to requirements"]
+    F --> G["Prioritize clarity,<br/>form & navigation fixes"]
+    G --> H["Re-test changes<br/>& update shared GitHub"]
+
+    classDef plan fill:#dceaf7,stroke:#285780,color:#18212a;
+    classDef test fill:#e4f0dc,stroke:#496348,color:#18212a;
+    classDef evidence fill:#fff1c9,stroke:#6b5a2d,color:#18212a;
+    classDef improve fill:#f8dfd1,stroke:#76503d,color:#18212a;
+    class A,B,C plan;
+    class D test;
+    class E,F evidence;
+    class G,H improve;
