@@ -29,46 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     profileEmail.value = user.email;
   }
 
-  /* =====================================================
-     DEMO SUBMISSIONS
-  ===================================================== */
-
-  const samples = [
-    {
-      id: "demo-1",
-      title: "Lak Hok Garden Residence",
-      type: "Dorm",
-      rating: 4,
-      status: "Approved",
-      submittedAt: new Date(
-        Date.now() - 86400000 * 5
-      ).toISOString(),
-      text:
-        "Quiet rooms, helpful staff, and convenient access to local shops.",
-    },
-    {
-      id: "demo-2",
-      title: "Building 6 Food Court",
-      type: "Cafeteria",
-      rating: 4.5,
-      status: "Pending",
-      submittedAt: new Date(
-        Date.now() - 86400000
-      ).toISOString(),
-      text: "Affordable lunch with many choices.",
-    }
-  ];
-
   let savedReviews = getSubmittedReviews();
   let myReviews = getMyReviews();
-
-  /*
-   * Show demo entries only when the student has not
-   * submitted any real reviews.
-   */
-  if (!myReviews.length && normalizedUserEmail === "student@hallpass.com") {
-    myReviews = samples;
-  }
 
   /* =====================================================
      REVIEW HELPERS
@@ -259,9 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("notificationList");
     const section = document.getElementById("dashboardNotifications");
     if (!container || !section) return;
-    const meaningful = getMyReviews()
-      .filter(review => !String(review.id).startsWith("demo-"))
-      .slice(0, 3);
+    const meaningful = getMyReviews().slice(0, 3);
     if (!meaningful.length) {
       section.hidden = true;
       return;
@@ -418,8 +378,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </span>
 
               ${
-                status === "Pending" &&
-                !String(review.id).startsWith("demo-")
+                status === "Pending"
                   ? `
                     <button
                       class="remove-review-button"
@@ -439,8 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }
 
               ${
-                status === "Approved" &&
-                !String(review.id).startsWith("demo-")
+                status === "Approved"
                   ? review.removalRequest?.status === "Pending"
                     ? `
                       <span class="badge removal-requested">
@@ -716,7 +674,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const saveStatus = document.getElementById("profileSaveStatus");
     const setProfileDirty = () => {
       profileForm.classList.add("profile-dirty");
-      if (saveProfileHint) saveProfileHint.textContent = "You have unsaved changes";
+      if (saveProfileHint) saveProfileHint.textContent = "Ready to save";
       if (saveStatus) saveStatus.innerHTML = `<i class="fa-solid fa-circle"></i> Unsaved changes`;
     };
     profileForm.querySelectorAll("input:not([disabled]), select").forEach(control => {
@@ -746,7 +704,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           profileForm.classList.remove("profile-dirty");
           saveProfileButton?.classList.add("saved");
-          if (saveProfileHint) saveProfileHint.textContent = "Saved successfully";
+          if (saveProfileHint) saveProfileHint.textContent = "All changes saved";
           if (saveStatus) saveStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i> Saved`;
           toast("Profile settings saved");
           setTimeout(() => saveProfileButton?.classList.remove("saved"), 1200);
