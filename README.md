@@ -618,3 +618,52 @@ The metrics are tracked using manual spreadsheets, JavaScript click tracking, pr
 ## Lab 12 Outcome
 
 The HallPass landing page successfully communicates the project's value proposition, introduces the core features of the prototype, and provides a clear pathway for users to access the system. Combined with the digital go-to-market plan and acquisition metrics, Lab 12 prepares HallPass for early user promotion and future validation activities while remaining consistent with the implemented prototype.
+
+# Lab 13 – Sales Scenario, Demo Script, and User Testing
+
+## Lab 13 Summary
+
+In Lab 13, the TriByte team prepared HallPass for the final MVP demonstration by developing a realistic sales scenario, creating a screen-by-screen demo script, conducting user testing, and analysing the testing results. Based on the findings, the team identified and prioritised prototype improvements before the final Lab 14 presentation. The team also prepared the final demo documentation and GitHub Pages hosting information.
+
+---
+
+## User Testing Summary
+
+- **Testing records analysed:** 200
+- **Overall task completion rate:** 85.0%
+- **Average completion time:** 1.89 minutes
+- **Average feedback score:** 3.99 / 5
+
+The testing identified usability improvements related to homepage navigation, administrator dashboard navigation, login and signup guidance, review submission, search labels, and review presentation.
+
+---
+
+## Files Added
+
+| File | Purpose |
+|------|---------|
+| `docs/sales-scenario.md` | Sales scenario for HallPass |
+| `docs/demo-script.md` | Screen-by-screen demonstration script |
+| `docs/user-testing-plan.md` | User testing plan |
+| `docs/user-testing-results.md` | User testing summary and analysis |
+| `docs/final-improvement-list.md` | Prioritised improvement list before Lab 14 |
+| `data/user-testing-results.csv` | User testing dataset |
+| `data/final-improvement-list.csv` | Improvement tracking dataset |
+| `prototype/final-demo-link.md` | Live prototype and hosting information |
+| `docs/weekly-logbook.md` | Weekly project logbook |
+
+---
+
+## Team Contributions
+
+| Team Member | Contribution |
+|---|---|
+| **Htet Htet Myint Zaw** | Prepared the user testing plan, user testing results, testing dataset, user testing workflow diagram, and testing evidence screenshots. |
+| **Khaing Zin Thet** | Analysed the user testing results, prepared the final improvement list and tracking CSV, updated the weekly logbook and README, and created the final demo link documentation. |
+| **Yousel Zangmo** | Prepared the sales scenario, demonstration script, demo workflow diagram, demo screenshots, and presentation outline. |
+
+---
+
+## Lab 13 Outcome
+
+The HallPass prototype is now supported by a complete demonstration scenario, validated user-testing evidence, and a prioritised improvement plan. These deliverables prepare the project for the Lab 14 final MVP presentation and venture pitch.
