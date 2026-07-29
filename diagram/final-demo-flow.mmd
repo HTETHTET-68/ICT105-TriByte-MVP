@@ -1,0 +1,37 @@
+flowchart TD
+    A["Start final HallPass demo"] --> B["Introduce the problem<br/>Scattered dorm, food, and campus-life information"]
+    B --> C["Open HallPass landing page<br/>Target users + value proposition + Try HallPass CTA<br/>FR-01, FR-02"]
+    C --> D["Open prototype homepage<br/>Latest reviews + main navigation<br/>FR-01, FR-02"]
+    D --> E{"Choose a student pathway"}
+    E --> F["Dormitory or cafeteria record list<br/>Browse + search + filter + sort<br/>FR-05, FR-06"]
+    E --> G["Campus Survival Guide<br/>Search topic + open practical guidance"]
+    F --> H["Open record detail<br/>Rating + description + price + location + experiences<br/>FR-07"]
+    G --> I["Student receives a practical campus-life outcome"]
+    H --> J{"Submit a review?"}
+    J -- "No" --> I
+    J -- "Yes" --> K{"Student signed in?"}
+    K -- "No" --> L["Sign in with student demo account<br/>Client-side classroom simulation"]
+    K -- "Yes" --> M["Complete review form"]
+    L --> M
+    M --> N["Validate required fields<br/>Read privacy notice + give consent<br/>FR-03, FR-10"]
+    N --> O["Save review in browser localStorage<br/>Show success feedback + Pending status<br/>FR-04, FR-08"]
+    O --> P["Open student dashboard<br/>View totals + filter submission status<br/>FR-05, FR-08, FR-11"]
+    P --> Q["Sign in with administrator demo account"]
+    Q --> R["Open admin dashboard<br/>Metrics + moderation queue<br/>FR-09, FR-11"]
+    R --> S["Approve or reject pending review<br/>Record action in audit log<br/>FR-08, FR-09"]
+    S --> T["Return to student dashboard<br/>Confirm updated review status"]
+    T --> U["Connect screens to requirements,<br/>validation evidence, limitations, and business value<br/>FR-12"]
+    I --> U
+    U --> V["Close final HallPass venture pitch"]
+
+    classDef problem fill:#fff4e5,stroke:#d97706,color:#7c2d12,stroke-width:2px;
+    classDef student fill:#eaf2ff,stroke:#2563eb,color:#163b73,stroke-width:2px;
+    classDef action fill:#ecfdf3,stroke:#16a34a,color:#14532d,stroke-width:2px;
+    classDef admin fill:#f3e8ff,stroke:#7e22ce,color:#581c87,stroke-width:2px;
+    classDef outcome fill:#0b3d91,stroke:#082f72,color:#ffffff,stroke-width:2px;
+
+    class A,B problem;
+    class C,D,E,F,G,H,J,K,L,M,N,O,P student;
+    class Q,R,S admin;
+    class T action;
+    class I,U,V outcome;
