@@ -228,6 +228,7 @@
       };
       favoriteButton.addEventListener("click", () => {
         const saved = toggleFavorite(r.placeId);
+        if (saved === null) return;
         paintFavorite();
         toast(saved ? "Place saved to your dashboard" : "Place removed from saved items");
       });
