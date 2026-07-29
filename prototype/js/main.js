@@ -215,6 +215,7 @@ function renderCards(containerId, type) {
     const button = event.target.closest("[data-favorite-place]");
     if (!button) return;
     const saved = toggleFavorite(button.dataset.favoritePlace);
+    if (saved === null) return;
     toast(saved ? "Place saved to your dashboard" : "Place removed from saved items");
     draw();
   });
