@@ -2,9 +2,9 @@
   "use strict";
 
   const keys = {
-    views: "hallpassLab12PageViews",
-    primaryClicks: "hallpassLab12PrimaryCtaClicks",
-    featureClicks: "hallpassLab12FeatureClicks"
+    views: "hallpassLab14PageViews",
+    primaryClicks: "hallpassLab14PrimaryCtaClicks",
+    featureClicks: "hallpassLab14FeatureClicks"
   };
 
   function increment(key) {
@@ -22,4 +22,3 @@
     link.addEventListener("click", () => increment(keys.featureClicks));
   });
 })();
-
