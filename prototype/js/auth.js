@@ -215,6 +215,13 @@ function setupLoginForm() {
 
   if (!form) return;
 
+  if (sessionStorage.getItem("hallpassPendingFavorite")) {
+    const notice = document.createElement("div");
+    notice.className = "login-save-notice";
+    notice.innerHTML = `<i class="fa-solid fa-bookmark" aria-hidden="true"></i><div><strong>Log in to save this place</strong><span>After login, it will be added automatically to your Saved Places.</span></div>`;
+    form.before(notice);
+  }
+
   if (!localStorage.getItem("hallpassAccounts")) {
     localStorage.setItem("hallpassAccounts", JSON.stringify([
       { id: "user-admin-hallpass-com", name: "Primary Administrator", email: "admin@hallpass.com", password: "Admin123!", role: "super_admin", status: "Active", reports: [] },
@@ -290,6 +297,14 @@ function setupLoginForm() {
       }
 
       return;
+    }
+
+    if (user.role === "student") {
+      const pendingFavorite = sessionStorage.getItem("hallpassPendingFavorite");
+      if (pendingFavorite && !isFavorite(pendingFavorite)) {
+        toggleFavorite(pendingFavorite);
+      }
+      sessionStorage.removeItem("hallpassPendingFavorite");
     }
 
     localStorage.removeItem("hallpassRedirectAfterLogin");
