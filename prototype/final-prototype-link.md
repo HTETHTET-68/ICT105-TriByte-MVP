@@ -3,7 +3,7 @@
 - **Prototype platform/tool:** Static HTML, CSS, and JavaScript hosted with GitHub Pages
 - **Final prototype URL:** <https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/index.html>
 - **GitHub repository source:** <https://github.com/HTETHTET-68/ICT105-TriByte-MVP/tree/main/prototype>
-- **Landing page:** <https://htethtet-68.github.io/ICT105-TriByte-MVP/landing-page>
+- **Landing page:** 
 
 ## Login and access instructions
 
