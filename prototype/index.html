@@ -262,6 +262,7 @@
         const button = event.target.closest("[data-home-favorite]");
         if (!button) return;
         const saved = toggleFavorite(button.dataset.homeFavorite);
+        if (saved === null) return;
         toast(saved ? "Place saved to your dashboard" : "Place removed from saved items");
         renderHomeCards();
       });
