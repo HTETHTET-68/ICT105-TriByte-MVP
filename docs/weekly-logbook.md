@@ -924,3 +924,105 @@ will be recorded in `data/acquisition-metrics-template.csv`.
 - Run the first early-user channel test and replace zero values in the metrics
   CSV with observed counts.
 - Review feedback and revise the landing-page message or prototype workflow.
+
+# Weekly Logbook - Lab 13
+
+## Lab Topic
+
+Sales Scenario, Demo Script, and User Testing
+
+## Group Case
+
+**HallPass – Student Reviews & Campus Survival Guide**
+
+## Work Completed Today
+
+- Reviewed the HallPass prototype and confirmed that all major features remained aligned with the system requirements, user stories, and MVP feature list.
+- Prepared a realistic sales scenario explaining how first-year, international, and exchange students would use HallPass.
+- Created a screen-by-screen demonstration script covering the complete student and administrator workflows.
+- Conducted final user testing using representative users and recorded task completion, usability issues, completion times, and user feedback.
+- Analysed the user-testing results to identify usability problems and prioritize improvements before the final MVP release.
+- Prepared the final improvement list with Critical, Important, Useful, and Future priorities.
+- Created a CSV version of the improvement list for tracking implementation progress.
+- Updated the repository documentation, README, weekly logbook, and final demonstration links.
+- Prepared the final demo documentation for GitHub Pages deployment.
+
+---
+
+## Member Contributions
+
+| Member | Lab 13 Responsibility | File / Evidence |
+|---|---|---|
+| **Htet Htet Myint Zaw** | Prepared the user testing plan, documented the user testing results, organised the testing dataset, created the user testing workflow diagram, and captured testing evidence screenshots. | `docs/user-testing-plan.md`, `docs/user-testing-results.md`, `data/user-testing-results.csv`, `diagrams/user-testing-flow.mmd`, `screenshots/user-testing-evidence.png` |
+| **Khaing Zin Thet** | Analysed user testing results, prepared the final improvement list, created the improvement tracking CSV, updated the weekly logbook, updated the README, and prepared the final demo link documentation. | `docs/final-improvement-list.md`, `data/final-improvement-list.csv`, `docs/weekly-logbook.md`, `README.md`, `prototype/final-demo-link.md` |
+| **Yousel Zangmo** | Prepared the sales scenario, created the demonstration script, designed the demo workflow diagram, captured the demo flow screenshots, and prepared the demo presentation outline. | `docs/sales-scenario.md`, `docs/demo-script.md`, `diagrams/demo-flow.mmd`, `screenshots/demo-flow.png`, `pitch/demo-outline.md` |
+
+---
+
+## Main Decisions
+
+- The final HallPass demonstration will follow the complete user journey from the landing page to the student and administrator workflows.
+- All demo steps will remain traceable to the documented system requirements and MVP features.
+- User-testing findings will guide the final improvements before Lab 14.
+- Critical usability issues identified during testing will be addressed before the final presentation.
+- The HallPass prototype will continue to be presented as a frontend classroom prototype using HTML, CSS, JavaScript, and browser `localStorage`.
+
+---
+
+## User Testing Summary
+
+- Total testing records analysed: **200**
+- Overall task completion rate: **85.0%**
+- Average completion time: **1.89 minutes**
+- Average feedback score: **3.99 / 5**
+
+### Main usability issues identified
+
+- Homepage navigation could be clearer.
+- Administrator dashboard navigation required improvement.
+- Login and signup instructions were not sufficiently clear.
+- Review submission required better guidance and confirmation messages.
+- Rating displays and review details could be easier to understand.
+- Search labels and category labels needed improvement.
+
+---
+
+## Final Improvement Priorities
+
+### Critical
+- Improve homepage navigation.
+- Improve administrator dashboard navigation.
+- Improve review submission workflow.
+- Complete final end-to-end prototype testing.
+
+### Important
+- Improve login and signup guidance.
+- Improve review detail presentation.
+- Improve search and category labels.
+- Improve dashboard statistic labels.
+
+### Useful
+- Improve Campus Survival Guide navigation and organization.
+
+### Future
+- Replace browser `localStorage` with a secure backend database and authentication system.
+
+---
+
+## Problems Encountered
+
+- The prototype still relies on browser `localStorage`, so testing data cannot be shared across devices.
+- Some usability issues were identified only after analysing the complete user-testing dataset.
+- GitHub Pages deployment and live prototype links must be verified before the final presentation.
+- Final GitHub commit links will be added after every member uploads their assigned work.
+
+---
+
+## Next Action Before Lab 14
+
+- Complete all Critical and Important improvements.
+- Re-test both student and administrator workflows.
+- Capture updated screenshots for the final demonstration.
+- Verify GitHub Pages deployment and live prototype links.
+- Replace placeholder GitHub evidence with actual commit, issue, or pull request links.
+- Perform one final quality assurance review before the venture pitch.
