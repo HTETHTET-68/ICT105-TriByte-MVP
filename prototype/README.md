@@ -59,3 +59,16 @@ A production release requires server-side authentication, password hashing, auth
 
 Use the browser’s site-data controls to clear local storage for the prototype origin, then reload the page. Demo accounts will be recreated.
 
+# HallPass Final Prototype
+
+HallPass is TriByte's browser-based ICT105 MVP for Rangsit University students, especially first-year, international, and exchange students. It replaces scattered dormitory, cafeteria, and campus-life information with one searchable guide where students can compare places, read practical advice, submit reviews, and track moderation status.
+
+## Open the prototype
+
+- **Live prototype:** <https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/index.html>
+- **Repository source:** <https://github.com/HTETHTET-68/ICT105-TriByte-MVP/tree/main/prototype>
+- **Local use:** Open `index.html` in a modern browser. For the most reliable result, serve the `prototype` folder with a local static server.
+
+
+
+
