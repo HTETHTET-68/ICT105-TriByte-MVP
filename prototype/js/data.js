@@ -314,6 +314,40 @@ function isFavorite(placeId) {
 
 function toggleFavorite(placeId) {
   const key = String(placeId);
+  let user = null;
+
+  try {
+    user = JSON.parse(
+      localStorage.getItem("hallpassUser") ||
+      sessionStorage.getItem("hallpassUser") ||
+      "null"
+    );
+  } catch {
+    user = null;
+  }
+
+  if (!user || user.role !== "student") {
+    const returnTo =
+      `${window.location.pathname.split("/").pop() || "index.html"}${window.location.search}`;
+
+    try {
+      sessionStorage.setItem("hallpassRedirectAfterLogin", returnTo);
+      sessionStorage.setItem("hallpassPendingFavorite", key);
+    } catch {
+      /* Continue to login even when browser storage is unavailable. */
+    }
+
+    if (typeof toast === "function") {
+      toast("Log in with a student account to save places");
+    }
+
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 650);
+
+    return null;
+  }
+
   const email = getCurrentUserEmail();
   const all = readJsonStorage(FAVORITES_STORAGE_KEY, {});
   const current = Array.isArray(all[email]) ? all[email] : [];
