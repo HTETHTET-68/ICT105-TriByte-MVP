@@ -1,40 +1,328 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Dashboard | HallPass</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head>
-<body><nav class="nav"><div class="container nav-inner"><a class="brand" href="index.html"><div class="logo"><i class="fa-solid fa-school"></i></div>HallPass</a><button class="menu">☰</button><div class="links"><a href="index.html">Home</a><a href="dorms.html">Dorm Reviews</a><a href="cafeteria.html">Cafeteria Reviews</a><a href="guide.html">Survival Guide</a><a href="write-review.html">Write Review</a><a href="login.html" class="btn-nav">Login</a></div></div></nav>
-<main class="section"><div class="container"><div class="profile-hero"><div class="avatar profile-avatar" id="profileAvatar">S</div><div><span class="badge">Student account</span><h1>Welcome back, <span id="profileWelcomeName">Student</span></h1><p class="muted" id="studentEmail">Manage your profile and track every review you submit.</p></div><a class="btn primary" href="write-review.html"><i class="fa-solid fa-pen"></i> Write a review</a></div>
-<section class="dashboard-notifications" id="dashboardNotifications" aria-labelledby="notificationTitle"><div><span class="badge">Updates</span><h2 id="notificationTitle">Your HallPass activity</h2></div><div id="notificationList" aria-live="polite"></div></section>
-<div class="grid grid-4 student-metrics"><div class="card metric"><small>Total submissions</small><strong id="myTotal">0</strong></div><div class="card metric"><small>Pending</small><strong id="myPending">0</strong></div><div class="card metric"><small>Approved</small><strong id="myApproved">0</strong></div><div class="card metric"><small>Rejected</small><strong id="myRejected">0</strong></div></div>
-<div class="dashboard-tabs" role="tablist"><button class="tab-button active" data-student-tab="submissions">My Submissions</button><button class="tab-button" data-student-tab="saved">Saved Places <span id="savedPlaceCount">0</span></button><button class="tab-button" data-student-tab="profile">Profile & Settings</button></div>
-<section class="student-panel active" data-student-panel="submissions"><div class="card table-wrap"><div class="section-head"><div><h2>My Submissions</h2><p class="muted">Manage pending submissions or request removal of an approved review.</p></div><select id="submissionFilter" aria-label="Filter submissions"><option value="All">All statuses</option><option>Pending</option><option>Approved</option><option>Rejected</option></select></div><div id="mySubmissions"></div></div></section>
-<section class="student-panel" data-student-panel="saved">
-  <div class="card">
-    <div class="section-head"><div><span class="badge">My shortlist</span><h2>Saved Places</h2><p class="muted">Dormitories and cafeterias each have their own saved table and feature comparison.</p></div></div>
-    <div id="savedPlaces"></div>
-  </div>
-  <section class="recently-viewed-section"><div class="section-head"><div><span class="badge">Continue exploring</span><h2>Recently Viewed</h2></div></div><div class="grid grid-4" id="recentlyViewed"></div></section>
-</section>
-<section class="student-panel" data-student-panel="profile">
-  <div class="settings-heading"><div><span class="badge">Your account</span><h2>Profile & Settings</h2><p class="muted">Keep your HallPass identity recognisable and your preferences up to date.</p></div><span class="save-status" id="profileSaveStatus"><i class="fa-solid fa-circle-check"></i> Saved</span></div>
-  <form id="profileForm" class="profile-settings-layout">
-    <aside class="card profile-picture-card">
-      <span class="settings-kicker">Profile picture</span>
-      <div class="profile-avatar-shell">
-        <div class="avatar profile-avatar profile-avatar-large" id="profileAvatarPreview">S</div>
-        <span class="profile-camera-badge" aria-hidden="true"><i class="fa-solid fa-camera"></i></span>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Details | HallPass</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html">
+        <div class="logo">
+            <i class="fa-solid fa-school"></i>
+        </div>
+        HallPass
+      </a>
+
+      <button class="menu">☰</button>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dorms.html">Dorm Reviews</a>
+        <a href="cafeteria.html">Cafeteria Reviews</a>
+        <a href="guide.html">Survival Guide</a>
+        <a href="write-review.html">Write Review</a>
+        <a href="login.html" class="btn-nav">Login</a>
       </div>
-      <h3 id="profileCardName">Student</h3>
-      <p class="muted">Add a clear photo or keep your initial as your profile image.</p>
-      <label class="btn primary profile-upload-button" for="profilePicture"><i class="fa-solid fa-arrow-up-from-bracket" aria-hidden="true"></i><span>Choose photo</span></label>
-      <input id="profilePicture" type="file" accept="image/png,image/jpeg,image/webp" hidden>
-      <button class="btn outline profile-remove-button" id="removeProfilePicture" type="button"><i class="fa-regular fa-trash-can" aria-hidden="true"></i><span>Remove photo</span></button>
-      <small class="field-help">JPG, PNG or WebP · Maximum 2 MB</small>
-    </aside>
-    <div class="card profile-details-card">
-      <div class="settings-section-title"><div class="settings-icon"><i class="fa-regular fa-user"></i></div><div><h3>Personal information</h3><p class="muted">Choose how your name is shown across HallPass.</p></div></div>
-      <div class="form-grid"><div><label for="displayName">Display name</label><input class="input" id="displayName" value="Student" maxlength="40" required><small class="field-help">Shown on your dashboard and future profile activity.</small></div><div><label for="profileEmail">Account email</label><div class="locked-input"><input class="input" id="profileEmail" disabled><i class="fa-solid fa-lock" aria-hidden="true"></i></div><small class="field-help">Your sign-in email cannot be changed here.</small></div></div>
-      <div class="settings-divider"></div>
-      <div class="settings-section-title"><div class="settings-icon"><i class="fa-solid fa-sliders"></i></div><div><h3>Preferences</h3><p class="muted">Set the language you prefer to use.</p></div></div>
-      <div class="form-grid"><div><label for="language">Preferred language</label><select id="language"><option>English</option><option>Thai</option></select></div></div>
-      <div class="profile-save-bar"><p><i class="fa-solid fa-shield-halved"></i> Your profile is stored securely on this device.</p><button class="btn primary profile-save-button" id="saveProfileButton" type="submit"><span class="profile-save-icon"><i class="fa-solid fa-check"></i></span><span><strong>Save profile changes</strong><small id="profileSaveButtonHint">Everything is up to date</small></span><i class="fa-solid fa-arrow-right profile-save-arrow" aria-hidden="true"></i></button></div>
+
     </div>
-  </form>
-</section></div></main><div class="toast"></div><script src="js/data.js"></script><script src="js/main.js"></script><script src="js/auth.js"></script><script src="js/student-dashboard.js"></script><script src="js/profile-picture.js"></script></body></html>
+  </nav>
+
+  <!-- Detail Hero -->
+  <header class="detail-hero">
+    <div class="container detail-hero-content">
+      <a class="back-link detail-back-link" id="detailBackLink" href="dorms.html">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        <span>Back to reviews</span>
+      </a>
+      <div class="review-labels">
+        <span class="badge" id="detailCategoryBadge">Review</span>
+        <span class="detail-tag" id="detailTag"></span>
+      </div>
+      <h1 id="detailTitle">Review Details</h1>
+      <div class="detail-hero-meta">
+        <span class="detail-rating" id="detailRating"></span>
+        <span id="detailMeta"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section review-detail-page">
+    <div class="container review-detail-layout">
+      <article class="review-detail-main">
+        <div class="review-detail-visual" id="detailEmoji">🏢</div>
+
+        <section class="review-detail-copy">
+          <span class="eyebrow">Student experience</span>
+          <h2>What you should know</h2>
+          <p id="detailText"></p>
+          <div class="review-author-line">
+            <span class="review-author-avatar" aria-hidden="true">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <div>
+              <strong id="detailAuthor">Student contributor</strong>
+              <small id="detailDate">Community review</small>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <aside class="review-quick-info" aria-label="Review quick information">
+        <h2>At a glance</h2>
+        <div class="quick-info-list">
+          <div class="quick-info-item">
+            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            <div><small>Category</small><strong id="detailType"></strong></div>
+          </div>
+          <div class="quick-info-item">
+            <i class="fa-solid fa-wallet" aria-hidden="true"></i>
+            <div><small>Price</small><strong id="detailPrice"></strong></div>
+          </div>
+          <div class="quick-info-item">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div><small>Location</small><strong id="detailDistance"></strong></div>
+          </div>
+          <div class="quick-info-item">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <div><small>Information status</small><strong id="detailVerified"></strong></div>
+          </div>
+        </div>
+        <div class="detail-action-stack">
+          <button class="btn primary" id="detailFavoriteButton" type="button"></button>
+          <a class="btn outline" id="detailMapLink" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+        <a class="btn outline detail-return-button" id="detailReturnButton" href="dorms.html">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>View more reviews</span>
+        </a>
+      </aside>
+    </div>
+
+    <div class="container">
+      <section class="place-reviews-section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Community feedback</span>
+            <h2>Student reviews</h2>
+            <p class="muted" id="placeReviewSummary"></p>
+          </div>
+          <select id="placeReviewSort" aria-label="Sort student reviews">
+            <option value="newest">Newest first</option>
+            <option value="highest">Highest rated</option>
+            <option value="lowest">Lowest rated</option>
+          </select>
+        </div>
+        <div class="place-review-list" id="placeReviewList"></div>
+      </section>
+
+      <section class="review-contribution-card">
+        <div class="contribution-icon" aria-hidden="true">
+          <i class="fa-regular fa-message"></i>
+        </div>
+        <div>
+          <h2>Visited this place?</h2>
+          <p>Help other students by sharing an honest experience when you’re ready.</p>
+        </div>
+        <a class="btn outline" id="reviewThisPlaceButton" href="write-review.html">
+          Review This Place
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>HallPass</h3>
+        <p>
+          Student reviews and campus survival guide for
+          Rangsit University students.
+        </p>
+      </div>
+
+      <div>
+        <h4>Features</h4>
+        <p>
+          Dorms<br>
+          Cafeterias<br>
+          Guides
+        </p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+          <p>
+            ICT105 student prototype<br>Rangsit University, Thailand
+          </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/report-review.js"></script>
+
+  <!-- Page Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(location.search);
+      const placeId = params.get("place");
+      const legacyId = params.get("id");
+      const legacyReview = legacyId
+        ? getReviews().find(x => String(x.id) === String(legacyId))
+        : null;
+
+      const r =
+        getPlaceByKey(placeId) ||
+        (legacyReview
+          ? getPlaceByKey(getReviewPlaceKey(legacyReview))
+          : null) ||
+        getPlaceListings()[0];
+      recordRecentlyViewed(r.placeId);
+
+      const isDorm = r.type === "Dorm";
+      const listingUrl = isDorm ? "dorms.html" : "cafeteria.html";
+      const listingLabel = isDorm ? "Dorm Reviews" : "Cafeteria Reviews";
+
+      document.title = `${r.title} | HallPass`;
+      document.getElementById("detailTitle").textContent = r.title;
+      document.getElementById("detailRating").innerHTML =
+        `<span aria-label="${escapeHtml(String(r.rating))} out of 5 stars">★★★★★</span> <strong>${escapeHtml(String(r.rating))}</strong> <small>${escapeHtml(String(r.reviewCount))} ${r.reviewCount === 1 ? "review" : "reviews"}</small>`;
+      document.getElementById("detailText").textContent = r.text;
+      document.getElementById("detailType").textContent = r.type;
+      document.getElementById("detailPrice").textContent = r.price;
+      document.getElementById("detailDistance").textContent = r.distance;
+      document.getElementById("detailVerified").textContent =
+        `${getVerificationLabel(r)} · Updated ${getLastUpdatedLabel(r)}`;
+      document.getElementById("detailMapLink").href = getMapUrl(r);
+      const favoriteButton = document.getElementById("detailFavoriteButton");
+      const paintFavorite = () => {
+        const saved = isFavorite(r.placeId);
+        favoriteButton.innerHTML = `<i class="${saved ? "fa-solid" : "fa-regular"} fa-bookmark" aria-hidden="true"></i><span>${saved ? "Saved to My Places" : "Save this place"}</span>`;
+        favoriteButton.setAttribute("aria-pressed", String(saved));
+      };
+      favoriteButton.addEventListener("click", () => {
+        const saved = toggleFavorite(r.placeId);
+        if (saved === null) return;
+        paintFavorite();
+        toast(saved ? "Place saved to your dashboard" : "Place removed from saved items");
+      });
+      paintFavorite();
+      document.getElementById("detailCategoryBadge").textContent =
+        isDorm ? "Dormitory" : "Cafeteria";
+      document.getElementById("detailTag").textContent = r.tag || "Student review";
+      document.getElementById("detailAuthor").textContent =
+        r.author || "Student contributor";
+      document.getElementById("detailDate").textContent = r.submittedAt
+        ? `Shared ${new Date(r.submittedAt).toLocaleDateString()}`
+        : "HallPass community review";
+
+      const backLink = document.getElementById("detailBackLink");
+      backLink.href = listingUrl;
+      backLink.querySelector("span").textContent = `Back to ${listingLabel}`;
+
+      const returnButton = document.getElementById("detailReturnButton");
+      returnButton.href = listingUrl;
+      returnButton.querySelector("span").textContent = `View more ${listingLabel}`;
+
+      const detailVisual = document.getElementById("detailEmoji");
+      detailVisual.innerHTML = r.image
+        ? `<img src="${escapeHtml(r.image)}" alt="${escapeHtml(r.title)}">`
+        : `<span class="review-emoji">${escapeHtml(r.emoji || "⭐")}</span>`;
+      document.getElementById("detailMeta").textContent =
+        isDorm ? "Student-reviewed accommodation" : "Student-reviewed dining";
+
+      document.getElementById("reviewThisPlaceButton").href =
+        `write-review.html?place=${encodeURIComponent(r.placeId)}`;
+
+      const reviewList = document.getElementById("placeReviewList");
+      const reviewSort = document.getElementById("placeReviewSort");
+      document.getElementById("placeReviewSummary").textContent =
+        `${r.reviewCount} student ${r.reviewCount === 1 ? "experience" : "experiences"} combined into one place listing.`;
+
+      const renderStudentReviews = () => {
+        const reviews = [...r.studentReviews];
+
+        reviews.sort((a, b) => {
+          if (reviewSort.value === "highest") {
+            return Number(b.rating) - Number(a.rating);
+          }
+          if (reviewSort.value === "lowest") {
+            return Number(a.rating) - Number(b.rating);
+          }
+          return new Date(b.submittedAt || 0) -
+            new Date(a.submittedAt || 0);
+        });
+
+        reviewList.innerHTML = reviews.map(review => `
+          <article class="place-review-item" data-review-id="${escapeHtml(String(review.id))}">
+            <div class="place-review-top">
+              <div class="review-author-line">
+                <span class="review-author-avatar" aria-hidden="true">
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <div>
+                  <strong>${escapeHtml(review.author || "Student contributor")}</strong>
+                  <small>${review.submittedAt ? new Date(review.submittedAt).toLocaleDateString() : "Community review"}</small>
+                </div>
+              </div>
+              <span class="place-review-rating">★ ${escapeHtml(String(review.rating))}</span>
+            </div>
+            <p>${escapeHtml(review.text || "No written comment was provided.")}</p>
+            <div class="review-feedback-actions">
+              <button class="helpful-button ${hasVotedHelpful(review.id) ? "active" : ""}" type="button"
+                data-helpful-review="${escapeHtml(String(review.id))}" aria-pressed="${hasVotedHelpful(review.id)}">
+                <i class="fa-regular fa-thumbs-up"></i> Helpful
+                <span>${getHelpfulCount(review.id)}</span>
+              </button>
+              <button class="report-link" type="button" data-report-review="${escapeHtml(String(review.id))}"><i class="fa-regular fa-flag"></i> Report incorrect information</button>
+            </div>
+            ${review.image && !review.listingProfile ? `
+              <img class="place-review-photo" src="${escapeHtml(review.image)}" alt="Photo shared with this review">
+            ` : ""}
+          </article>
+        `).join("");
+      };
+
+      reviewSort.addEventListener("change", renderStudentReviews);
+      reviewList.addEventListener("click", event => {
+        const button = event.target.closest("[data-helpful-review]");
+        if (!button) return;
+        const result = toggleHelpfulVote(button.dataset.helpfulReview);
+        button.classList.toggle("active", result.active);
+        button.setAttribute("aria-pressed", String(result.active));
+        button.querySelector("span").textContent = result.count;
+        toast(result.active ? "Marked as helpful" : "Helpful vote removed");
+      });
+      renderStudentReviews();
+    });
+  </script>
+
+</body>
+
+</html>
