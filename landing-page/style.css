@@ -77,6 +77,11 @@ h1 span { color: var(--gold); }
 .hero-lead { max-width: 660px; color: #dcecff; font-size: 1.17rem; line-height: 1.75; }
 .actions { display: flex; align-items: center; gap: 1.4rem; margin-top: 2rem; }
 .text-link { color: white; font-weight: 800; text-underline-offset: 5px; }
+.button-ghost { border: 1px solid rgba(255,255,255,.38); background: rgba(255,255,255,.08); box-shadow: none; }
+.button-ghost:hover, .button-ghost:focus-visible { background: rgba(255,255,255,.16); }
+.live-dot { display: inline-block; width: 8px; height: 8px; margin-right: .45rem; border-radius: 50%; background: #6de3b8; box-shadow: 0 0 0 5px rgba(109,227,184,.12); }
+.prototype-note { display: flex; align-items: center; gap: .5rem; margin: 1rem 0 0; color: #b9dcff; font-size: .82rem; font-weight: 700; }
+.prototype-note i { color: #6de3b8; }
 
 .product-preview { position: relative; padding: 1.25rem; border: 1px solid rgba(255,255,255,.22); border-radius: 28px; background: rgba(255,255,255,.96); color: var(--ink); box-shadow: 0 38px 80px rgba(1,12,36,.35); transform: rotate(1.3deg); }
 .product-preview::before { content: ""; position: absolute; inset: -18px 24px 18px -18px; z-index: -1; border: 1px solid rgba(255,255,255,.16); border-radius: 30px; background: rgba(255,255,255,.06); transform: rotate(-3deg); }
@@ -129,6 +134,8 @@ h2 { font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.05; letter-spacing: -
 .final-inner h2 { margin-bottom: .8rem; }
 .final-inner p:last-child { margin-bottom: 0; color: #dcecff; }
 .button-gold { flex: 0 0 auto; background: var(--gold); color: var(--navy); }
+.final-actions { display: flex; flex: 0 0 auto; align-items: center; gap: 1rem; }
+.final-login-link { color: white; font-size: .85rem; font-weight: 800; text-underline-offset: 4px; }
 
 footer { padding: 2rem 0; color: #8d98a9; background: #041633; font-size: .82rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 2rem; align-items: center; }
@@ -152,7 +159,7 @@ footer { padding: 2rem 0; color: #8d98a9; background: #041633; font-size: .82rem
   .nav { min-height: 66px; }
   .hero-grid { min-height: auto; padding-block: 3.5rem; }
   h1 { font-size: clamp(2.7rem, 14vw, 4rem); }
-  .actions, .final-inner, .footer-inner { align-items: flex-start; flex-direction: column; }
+  .actions, .final-inner, .final-actions, .footer-inner { align-items: flex-start; flex-direction: column; }
   .actions .button { width: 100%; }
   .section { padding: 5rem 0; }
   .feature-grid { grid-template-columns: 1fr; }
