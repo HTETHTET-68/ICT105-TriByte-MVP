@@ -1160,7 +1160,7 @@ The changes were made after the Lab 13 user-testing analysis and Lab 14 final im
 ### Approval
 
 - **Decision:** Approved for inclusion in the Lab 14 final prototype
-- **Approved by:** **Yousel Zangmo **
+- **Approved by:** **Yousel Zangmo**
 - **Approval date:** 31 July 2026
 - **Approval evidence:** **https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/70**
 - **Scope condition:** The approved changes remain frontend demonstration features using browser `localStorage`. They do not represent production authentication, cloud synchronization, an embedded live map, GPS tracking, or an AI recommendation service.
