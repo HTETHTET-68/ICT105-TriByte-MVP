@@ -1026,3 +1026,69 @@ Sales Scenario, Demo Script, and User Testing
 - Verify GitHub Pages deployment and live prototype links.
 - Replace placeholder GitHub evidence with actual commit, issue, or pull request links.
 - Perform one final quality assurance review before the venture pitch.
+
+
+# Weekly Logbook — Lab 14
+
+## Group Name
+
+TriByte
+
+## Project Title
+
+HallPass — Student Reviews & Campus Survival Guide
+
+## Date
+
+31 July 2026
+
+## Members Present
+
+- Htet Htet Myint Zaw
+- Khaing Zin Thet
+- Yousel Zangmo
+
+## What We Completed Today
+
+- Reviewed the final HallPass frontend prototype and confirmed the connected student and administrator demonstration flow.
+- Consolidated final evidence across the prototype, screenshots, requirements, traceability, testing, metrics, demo script, pitch outline, and repository documentation.
+- Checked that the final prototype remains aligned with the project’s stated frontend-only classroom-MVP scope, using sample data and browser `localStorage`.
+- Prepared the final submission materials and recorded each member’s GitHub issue evidence.
+
+## Final Prototype Updates
+
+- Confirmed final student functionality: browsing dormitory and cafeteria reviews, searching, filtering, sorting, viewing details, submitting reviews, saving places, comparison, helpful voting, recently viewed places, profile controls, and submission-status tracking.
+- Confirmed final administrator functionality: review moderation, removal requests, reported-content handling, demonstration-user management, audit activity, and dashboard summaries.
+- Confirmed privacy consent, form validation, responsive styling, keyboard-focus support, reduced-motion support, and optimized WebP image assets.
+- Confirmed the final prototype flow and final screenshots are available as evidence for the demonstration.
+
+## Final Documentation Updates
+
+- Updated/checked `docs/feature-implementation-status.md`.
+- Updated/checked `docs/requirement-traceability-matrix.md` and `data/final-requirement-traceability.csv`.
+- Updated/checked `data/final-testing-results.csv`, `docs/final-prototype-report.md`, and `docs/final-reflection.md`.
+- Updated/checked `docs/final-demo-script.md`, `pitch/final-pitch-outline.md`, `README.md`, `data/member-contribution.csv`, and `docs/final-submission-checklist.md`.
+- Confirmed final prototype packaging, final demo flow, sample data, and final screenshots.
+
+## GitHub Contributions Today
+
+| Member | File/Issue/Commit Updated | Evidence Link |
+|---|---|---|
+| Htet Htet Myint Zaw | Final demo script, venture-pitch outline, README, member-contribution record, weekly logbook, final submission checklist, and repository cleanup. | [Issue #69](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/69) |
+| Khaing Zin Thet | Feature implementation status, requirement traceability matrix, final traceability CSV, final testing results, final prototype report, and reflection. | [Issue #68](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/68) |
+| Yousel Zangmo | Final prototype packaging, final prototype link, final sample data, final demo-flow diagram, screenshot index, and six required final UI screenshots. | [Issue #67](https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/67) |
+
+## Problems Found Before Submission
+
+- The prototype uses browser `localStorage`, so data does not synchronize across browsers or devices.
+- Authentication, authorization, and administrator controls are simulated and are not suitable for production use.
+- The final prototype must be tested in the presentation browser before delivery, especially the student/admin workflow, links, responsive layout, and screenshot paths.
+- The GitHub Pages URL and any external Google Maps links must be checked before presenting.
+
+## Action Before Final Presentation
+
+- Run one final student and administrator end-to-end walkthrough.
+- Open and verify the prototype link, final demo flow, screenshots, README links, and pitch materials.
+- Confirm all Lab 14 checklist items are marked after the final verification.
+- Present HallPass as a classroom frontend prototype with fictional data, simulated authentication, and browser-local storage.
+
