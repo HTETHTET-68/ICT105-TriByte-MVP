@@ -1,90 +1,135 @@
-# HallPass Final Submission Checklist
+# HallPass Final Venture Pitch Outline
 
-**Repository:** <https://github.com/HTETHTET-68/ICT105-TriByte-MVP>  
-**Prototype:** <https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/index.html>
+**Recommended length:** 7–10 minutes  
+**Core message:** HallPass gives new Rangsit University students one student-focused place to compare dormitories and cafeterias, learn campus essentials, and contribute moderated experiences.
 
-Status reflects the supplied repository archive and Lab 14 package as reviewed on 30 July 2026. Checked items have file evidence; unchecked items require copying, manual browser verification, or team confirmation.
+## Slide 1 — HallPass: Your Campus, Decoded
 
-## Repository and contribution evidence
+- Team: **TriByte**
+- Htet Htet Myint Zaw — Product and Documentation Lead
+- Khaing Zin Thet — Technical Lead
+- Yousel Zangmo — UX/UI and Validation Lead
+- One-line pitch: “A student reviews and campus survival guide for faster, more confident campus decisions.”
+- Visual: final homepage screenshot.
 
-- [x] One shared GitHub repository is used by TriByte.
-- [x] The repository is public and contains the semester project folders.
-- [x] Team names, roles, and student IDs are documented.
-- [ ] Copy `data/member-contribution-template.csv` into the repository.
-- [ ] Replace every contribution placeholder with a direct personal commit, issue, PR, or screenshot URL.
-- [ ] Confirm that all three members have visible contribution evidence.
-- [ ] Make a final integrated commit after the group review.
+**Speaker point:** Introduce the team and state that HallPass is a working browser-based MVP, not only an idea.
 
-## README and navigation
+## Slide 2 — The problem and target users
 
-- [ ] Integrate `README-update-template.md` into the root `README.md`.
-- [x] Project problem, target users, and venture direction are documented.
-- [x] Prototype and landing-page URLs are documented.
-- [x] Repository folders and major evidence types are described.
-- [ ] Confirm every README link and filename after integrating the final files.
-- [ ] Consolidate the duplicated opening/final sections in `prototype/README.md`.
+- Target users: first-year, international, and exchange students at Rangsit University.
+- Campus information is scattered across university pages, social media, group chats, friends, and word of mouth.
+- This creates wasted search time, inconsistent advice, language barriers, and uncertainty about where to live or eat.
+- Early discovery evidence:
+  - 13 of 20 respondents spent more than 30 minutes searching for basic campus information.
+  - 8 of 20 named scattered information as the largest problem.
+  - 16 of 20 said they would use HallPass.
 
-## Prototype and requirements
+**Speaker point:** Frame the problem as a decision-confidence and information-access gap.
 
-- [x] Final prototype source is present in `prototype/`.
-- [x] `prototype/final-prototype-link.md` and `prototype/final-demo-link.md` are present.
-- [x] Student and administrator demo accounts are documented.
-- [x] `docs/system-requirements.md` is present and updated.
-- [x] `docs/feature-implementation-status.md` maps the Lab 14 baseline requirements to screens/evidence.
-- [x] Homepage, input, record list, search/filter, detail, status, admin, validation, and metrics functions are implemented in source.
-- [x] The main student-to-administrator workflow is documented.
-- [ ] Run the full workflow in a clean browser: browse → submit → Pending → moderate → updated status.
-- [ ] Confirm browser refresh persistence and the presentation reset.
-- [ ] Confirm the prototype URL works in a signed-out/incognito browser.
-- [ ] Confirm the local fallback works by serving the `prototype/` folder.
+## Slide 3 — Validation evidence
 
-## Final documentation
+- Method: task-based prototype usability testing.
+- Dataset: 200 validation records.
+- Results:
+  - **85%** task-success rate, above the 80% target;
+  - **3.99/5** average ease of use;
+  - **4.30/5** average usefulness;
+  - **4.34/5** average interest.
+- Most frequent issue: login/signup navigation.
+- Other repeated requests: clearer filters and ratings, more categories, and stronger form guidance.
 
-- [x] `docs/final-prototype-report.md` is present.
-- [x] `docs/final-reflection.md` is present.
-- [ ] Copy the completed `docs/final-demo-script.md` into the repository.
-- [ ] Copy the completed `docs/weekly-logbook.md` into the repository.
-- [ ] Copy the completed `docs/final-submission-checklist.md` into the repository.
-- [x] Requirements, user stories, MVP features, testing, privacy, architecture, and metrics documents are present.
-- [ ] Check that the requirement IDs used in the demo, report, and traceability files are consistent.
-- [ ] Run a final spelling and duplicate-heading review.
+**Speaker point:** These figures validate the direction and identify usability priorities; they are prototype evidence, not commercial traction.
 
-## Pitch
+## Slide 4 — Solution and value proposition
 
-- [ ] Copy `pitch/final-pitch-outline.md` into the repository or replace it with final slides.
-- [ ] Add final screenshots/visuals and a prototype QR code if slides are created.
-- [ ] Assign speakers and rehearse the pitch to 7–10 minutes.
-- [ ] Rehearse the prototype demonstration to 5–7 minutes.
-- [ ] Ensure validation results are described as prototype evidence and GTM figures as future targets.
+- Searchable dormitory and cafeteria listings with ratings, filters, sorting, and details.
+- Practical campus survival guides for unfamiliar situations.
+- Saved places, recent history, Google Maps links, and side-by-side comparison.
+- Student registration, profiles, review submission, privacy consent, and status tracking.
+- Moderated content with verification labels, helpful votes, misinformation reports, and administrator review.
 
-## Data, diagrams, and screenshots
+**Value proposition:** “HallPass reduces uncertainty by bringing student experiences, reviewed place information, and practical campus advice into one accessible platform.”
 
-- [x] Final/sample data and testing/validation data are present in `data/`.
-- [x] Architecture, data-flow, privacy, validation, and demo-flow diagrams are present.
-- [x] Final homepage, listings, details, student dashboard, and administrator screenshots are present.
-- [x] Responsive/mobile evidence is present.
-- [ ] Verify that documentation links use the actual folder name `diagram/` rather than `diagrams/`.
-- [ ] Check screenshots and CSV/XLSX files for accidental names, emails, IDs, or other sensitive data.
-- [ ] Confirm all presentation records are fictional.
+## Slide 5 — Final prototype demonstration
 
-## Responsible design and technical limitations
+Show this closed-loop story:
 
-- [x] Privacy consent is included in review submission.
-- [x] Prototype limitations and `localStorage` use are documented.
-- [x] Demo accounts are clearly classroom accounts.
-- [x] Accessibility/responsive improvements are documented.
-- [ ] During the presentation, state that client-side authentication, roles, and passwords are not production security.
-- [ ] Do not enter real personal, sensitive, or harmful content during the demo.
-- [ ] If deploying beyond the classroom, complete backend authentication, authorization, hashing, secure uploads, rate limits, monitoring, and privacy/security review.
+1. Student lands on HallPass and browses dormitories or cafeterias.
+2. Student searches, filters, opens details, saves places, and compares options.
+3. Student logs in and submits a fictional review with consent.
+4. The review appears as **Pending** in the student dashboard.
+5. An administrator reviews and approves or rejects it.
+6. The student sees the updated status; the action is recorded in the audit log.
+7. Optional: student reports incorrect information and the administrator resolves it.
 
-## Final release sign-off
+**Requirements covered:** FR-01 through FR-12, including storage, validation, status, admin functions, metrics, and traceability.
 
-- [ ] Product/documentation lead confirms all required files are committed.
-- [ ] Technical lead confirms hosted and local prototype paths work.
-- [ ] UX/validation lead confirms final screenshots and evidence claims.
-- [ ] All members review the same final repository link.
-- [ ] Submit the repository URL only after the checks above are complete.
+## Slide 6 — Business model and sustainability
 
-## Final note
+- **Beneficiaries:** new students, international/exchange students, senior student contributors, and campus administrators.
+- **Key partners:** Student Affairs, university IT, International College, orientation teams, student council, dormitory managers, and cafeteria operators.
+- **Channels:** class LINE groups, international-student communities, orientation ambassadors, QR posters, Instagram, and university pages.
+- **Sustainability:** university-supported service that improves onboarding, reduces repeated staff questions, and maintains shared student knowledge.
+- **Future options:** approved university sponsorships or clearly labelled campus-service partnerships—without compromising review trust.
 
-The archive provides strong evidence that HallPass meets the Lab 14 baseline and includes additional student-decision and moderation features. The remaining unchecked items are important release actions that cannot be proven from files alone: integrating these six outputs, adding exact personal GitHub evidence, testing the live links/workflow, and obtaining team sign-off.
+## Slide 7 — Metrics and what changed
+
+**Product evidence**
+
+- Validation: 85% task success; 4.30/5 usefulness; 4.34/5 interest.
+- Prototype dashboard: review counts, moderation workload, reports, users, helpful votes, and audit activity.
+- Demonstration dataset supports Approved, Pending, Rejected, and removal-request states.
+
+**Improvements driven by evidence**
+
+- clearer authentication and password guidance;
+- more visible search/filter/sort controls and ratings;
+- stronger submission confirmation and privacy consent;
+- saved places, comparison, recently viewed, and notifications;
+- responsive and accessible interaction, reduced motion, and optimized images;
+- expanded administrator moderation, reports, user management, reset, and audit evidence.
+
+## Slide 8 — Technical architecture and responsible data use
+
+- Frontend: HTML5, CSS3, and JavaScript.
+- Hosting: GitHub Pages; no installation required for the hosted demo.
+- Prototype storage: browser `localStorage`.
+- Stored/simulated data: accounts, profiles, reviews, favourites, votes, reports, status changes, and audit events.
+- Current safeguards: client-side validation, consent notice, data-minimization prompts, fictional demo data, duplicate-report prevention, and administrator moderation.
+- Transparent limits: no shared backend, password hashing, secure authorization, cross-device synchronization, or production-grade upload protection.
+
+**Production path:** server/API, database, hashed credentials, role-based authorization, secure media storage, rate limiting, backups, privacy review, and monitoring.
+
+## Slide 9 — Go-to-market and next development
+
+**Initial launch experiment**
+
+- Share tagged links through class LINE groups, International College communities, QR posters, Instagram, and orientation ambassadors.
+- Targets: 50 landing-page visitors, 40% CTA click rate, 30 prototype views, 10 feedback responses, and 25% landing-page-to-demo conversion.
+- Measure each channel separately and improve the message or route based on evidence.
+
+**Next product priorities**
+
+1. secure shared backend and university-managed accounts;
+2. verified, regularly updated campus information;
+3. Thai/English or broader multilingual support;
+4. larger live tests across devices and student groups;
+5. production moderation, privacy, accessibility, and security controls.
+
+Clarify that outreach figures are targets, not achieved results.
+
+## Slide 10 — Closing and Q&A
+
+- Restate the problem: scattered campus information creates uncertainty and wasted time.
+- Restate the proof: users completed most tasks and rated HallPass useful and interesting.
+- Restate the product: one guided journey from discovery and comparison to contribution and moderation.
+- Closing line: **“HallPass turns scattered campus knowledge into one clearer starting point for every new student.”**
+- Show the QR code or URL for the live prototype and invite questions.
+
+## Suggested Q&A preparation
+
+- **Why not use social media?** HallPass structures campus information around searchable places, details, status, and moderation instead of an unstructured feed.
+- **Can the current login protect real data?** No. It is a classroom frontend demonstration; production requires server-side security.
+- **How will information remain trustworthy?** Use verified university data, clear source labels, moderation, report handling, audit records, and review recency.
+- **How will HallPass be sustained?** Through university partnership, student contributors, and defined content/moderation ownership.
+- **What is the strongest evidence?** The discovery results and the documented 200-record validation dataset, especially the 85% task-success and 4.30/5 usefulness results.
