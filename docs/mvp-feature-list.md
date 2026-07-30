@@ -1,119 +1,84 @@
-# Lab 04 - MVP Feature List
+# HallPass — Updated MVP Feature List
 
-## MVP Decision Rule
+## Scope and decision rule
 
-The HallPass MVP includes the minimum set of features required to validate that first-year, international, and exchange students can quickly find trustworthy dormitory reviews, cafeteria reviews, and campus survival information from a single platform instead of relying on scattered sources such as social media, group chats, or word of mouth.
+HallPass is a frontend classroom MVP for first-year, international, and exchange students. It helps them find, compare, and contribute trustworthy dormitory, cafeteria, and campus-survival information. The final prototype uses HTML5, CSS3, JavaScript, seed data, and browser `localStorage`; it is not a production system.
 
-The prototype focuses on student-generated reviews, practical campus survival information, and a simple, intuitive user experience.
+## Updated MoSCoW prioritization
 
----
+| ID | Feature | Priority | Final status | Main prototype evidence |
+|---|---|---|---|---|
+| F01 | Homepage and recent activity | Must | Completed | `prototype/index.html`, `js/main.js` |
+| F02 | Connected student and administrator workflow | Must | Completed | `diagram/final-demo-flow.mmd` |
+| F03 | Signup, login, profile, and review submission | Must | Completed | `signup.html`, `login.html`, `write-review.html`, student profile |
+| F04 | Simulated persistent data storage | Must | Completed | `js/data.js`, `js/reviews.js`, browser `localStorage` |
+| F05 | Dormitory and cafeteria review lists | Must | Completed | `dorms.html`, `cafeteria.html` |
+| F06 | Search, filters, categories, and sorting | Must | Completed | `js/main.js`, review-list controls |
+| F07 | Review and guide detail views | Must | Completed | `review-details.html`, `guide-details.html` |
+| F08 | Campus Survival Guide | Should | Completed | `guide.html`, `guide-details.html` |
+| F09 | Student dashboard, status tracking, and removal workflow | Must | Completed | `student-dashboard.html`, `js/student-dashboard.js` |
+| F10 | Admin moderation, reports, user management, and audit activity | Must | Completed | `dashboard.html`, `js/admin-dashboard.js`, `js/platform-admin.js` |
+| F11 | Validation, privacy consent, and action feedback | Must | Completed | `js/auth.js`, `js/reviews.js`, `js/privacy-notice.js`, `js/report-review.js` |
+| F12 | Dashboard summaries and prototype metrics | Should | Completed | Student/Admin dashboards; Lab 11 Power BI package |
+| F13 | Saved Places / favourites | Should | Completed | Homepage and Student Dashboard |
+| F14 | Place comparison and quick recommendations | Should | Completed | Saved Places comparison workflow |
+| F15 | Recently viewed places | Could | Completed | Student experience / browser storage |
+| F16 | Helpful voting and verification labels | Should | Completed | Review detail views |
+| F17 | Google Maps location links | Could | Completed | Place detail views |
+| F18 | Mobile responsiveness and accessibility support | Must | Completed | `prototype/css/style.css` |
+| F19 | Image optimisation using WebP | Could | Completed | `prototype/images/` |
+| F20 | Live backend database and production authentication | Won't | Not included | Future scope |
+| F21 | Real-time chat, payment, booking, native mobile app, and AI recommendations | Won't | Not included | Future scope |
 
-# MoSCoW Prioritization
+## Final MVP functionality
 
-| Feature ID | Feature Name | Problem Solved | Related User Story | Priority | Technical Complexity (1-5) | User Value (1-5) | Evidence Strength (1-5) | Include in Final Prototype? |
-|---|---|---|---|---|---:|---:|---:|---|
-| **F01** | Homepage | New students need a clear introduction to HallPass and its purpose. | US-01 | Must | 1 | 5 | 5 | Yes |
-| **F02** | Login | Returning users need access to the platform. | US-08 | Must | 2 | 4 | 4 | Yes |
-| **F03** | Signup | New users need a way to create an account. | US-07 | Must | 2 | 4 | 4 | Yes |
-| **F04** | Dormitory Reviews | Students need trustworthy accommodation information. | US-02 | Must | 2 | 5 | 5 | Yes |
-| **F05** | Cafeteria Reviews | Students need reliable information about campus dining options. | US-03 | Must | 2 | 5 | 5 | Yes |
-| **F06** | Search and Filter Reviews | Students should quickly locate relevant reviews. | US-02, US-03 | Must | 2 | 5 | 5 | Yes |
-| **F07** | Review Details | Students need complete information before making decisions. | US-04 | Must | 2 | 5 | 5 | Yes |
-| **F08** | Write Review | Students should be able to contribute their own experiences. | US-05 | Must | 3 | 5 | 5 | Yes |
-| **F09** | Campus Survival Guide | New students need essential campus information in one place. | US-06 | Should | 2 | 5 | 4 | Yes |
-| **F10** | Protected Dashboard and Moderation | Administrators need statistics and saved moderation controls. | US-09 | Must | 3 | 4 | 4 | Yes |
-| **F11** | Privacy Notice and Consent | Users need transparent information about prototype data use. | US-10 | Must | 2 | 5 | 5 | Yes |
-| **F12** | My Reviews and Ownership | Students need to manage only their own reviews and see status. | US-11, US-12 | Must | 3 | 5 | 5 | Yes |
-| **F13** | Report Review | Users need a responsible way to flag unsafe content. | US-13 | Must | 3 | 5 | 4 | Yes |
-| **F14** | Moderation and Status Feedback | Pending, Approved, Rejected, and Reported states must be understandable. | US-09, US-12, US-13 | Must | 3 | 5 | 5 | Yes |
-| **F15** | Save/Favorite Reviews | Students may wish to bookmark useful reviews. | Future | Could | 3 | 3 | 3 | No |
-| **F16** | Interactive Campus Map | Students may want building and service locations. | Future | Could | 4 | 3 | 3 | No |
-| **F17** | AI Recommendation System | Personalized recommendations for dormitories and cafeterias. | Future | Won't | 5 | 3 | 2 | No |
-| **F18** | Real-Time Student Chat | Students communicate directly through the platform. | Future | Won't | 5 | 2 | 2 | No |
+### Student experience
 
----
+- Browse dormitory and cafeteria reviews.
+- Search by keyword and filter by category and minimum rating.
+- Sort by recommendation, rating, price, or distance.
+- Open detailed place and guide pages.
+- Register, log in, update a profile, and submit reviews with consent.
+- View submission statuses: Pending, Approved, Rejected, and Removal Requested.
+- Remove pending reviews or request removal of approved reviews.
+- Save places, compare two or three options, and view quick recommendations.
+- View recently opened places, helpful-vote reviews, and see verification labels.
+- Open place locations in Google Maps.
 
-# Must-Have Features
+### Administrator experience
 
-The following features are required in the final prototype:
+- Moderate reviews and process removal requests.
+- Investigate reported content and prevent duplicate open reports.
+- Manage demonstration users and inspect audit activity.
+- View operational, moderation, and activity summaries.
 
-- Homepage
-- Login
-- Signup
-- Dormitory Reviews
-- Cafeteria Reviews
-- Search and Filter Reviews
-- Review Details
-- Write Review
+### Responsible-design and quality features
 
-These features directly support HallPass's primary goal of helping new students quickly find trustworthy campus information.
+- Password confirmation, minimum length, complexity rules, show/hide control, and email validation.
+- Privacy notice and consent, including the use of browser `localStorage` and classroom-prototype limitations.
+- Required-field validation, optional-image rules, error/confirmation messages, and toast feedback.
+- Keyboard-focus indicators, reduced-motion support, and responsive layout.
 
----
+## Final prototype pages and modules
 
-# Should-Have Features
+| Area | Primary files |
+|---|---|
+| Home and browsing | `prototype/index.html`, `dorms.html`, `cafeteria.html`, `js/main.js` |
+| Authentication and profile | `login.html`, `signup.html`, `js/auth.js`, `js/profile-picture.js` |
+| Reviews and details | `write-review.html`, `review-details.html`, `js/reviews.js`, `js/data.js` |
+| Guide | `guide.html`, `guide-details.html`, `js/guide-details.js` |
+| Student operations | `student-dashboard.html`, `js/student-dashboard.js` |
+| Administrator operations | `dashboard.html`, `js/admin-dashboard.js`, `js/platform-admin.js` |
+| Reporting and privacy | `js/report-review.js`, `js/privacy-notice.js` |
+| Styling and assets | `css/style.css`, `images/` |
 
-The following features improve the overall usefulness of the MVP:
+## Explicit limitations
 
-- Campus Survival Guide
-- Dashboard
-- Privacy Notice and Consent
-- My Reviews and Ownership
-- Report Review
-- Moderation and Status Feedback
+- Data persists only in the current browser through `localStorage`; it is not synchronized across devices.
+- Authentication and authorization are simulated for demonstration purposes.
+- Accounts, reviews, metrics, and activity data are fictional classroom data.
+- A secure backend, server-side validation, real role-based access control, and live database are required before production release.
 
-These features provide additional campus information and demonstrate administrative monitoring while remaining within the project's scope.
+## MVP conclusion
 
----
-
-# Could-Have Features
-
-The following features may be considered for future versions:
-
-- Save/Favorite Reviews
-- Interactive Campus Map
-
-These features enhance convenience but are not required to validate the MVP.
-
----
-
-# Won't-Have Features for MVP
-
-The following features are outside the scope of the current HallPass prototype:
-
-- AI Recommendation System
-- Real-Time Student Chat
-- Online Dormitory Booking
-- Payment System
-- Live Database Integration
-- Mobile Application
-
-These features require additional backend development and are reserved for future versions.
-
----
-
-# Final MVP Scope
-
-The final HallPass prototype includes the following pages:
-
-| Feature ID | Feature | Prototype File |
-|---|---|---|
-| **F01** | Homepage | `prototype/index.html` |
-| **F02** | Login | `prototype/login.html` |
-| **F03** | Signup | `prototype/signup.html` |
-| **F04** | Dormitory Reviews | `prototype/dorms.html` |
-| **F05** | Cafeteria Reviews | `prototype/cafeteria.html` |
-| **F06** | Search and Filter Reviews | `prototype/dorms.html`, `prototype/cafeteria.html` |
-| **F07** | Review Details | `prototype/review-details.html` |
-| **F08** | Write Review | `prototype/write-review.html` |
-| **F09** | Campus Survival Guide | `prototype/guide.html` |
-| **F10** | Dashboard | `prototype/dashboard.html` |
-| **F11** | Privacy Notice and Consent | `prototype/privacy-consent.html`, `prototype/signup.html` |
-| **F12** | My Reviews and Ownership | `prototype/my-reviews.html` |
-| **F13** | Report Review | `prototype/report-review.html` |
-| **F14** | Moderation and Status Feedback | `prototype/dashboard.html`, `prototype/my-reviews.html` |
-
----
-
-# MVP Summary
-
-The HallPass MVP focuses on solving the most important challenges faced by new university students. It provides a centralized platform where students can browse dormitory reviews, cafeteria reviews, campus survival guides, and contribute their own experiences. By concentrating on these core features, the prototype demonstrates the value of HallPass while remaining realistic for the current project scope and allowing future expansion in later versions.
+The final HallPass MVP completes the original core review, submission, guide, dashboard, privacy, and moderation scope. It also adds saved places, comparison, recently viewed places, helpful voting, verification labels, Google Maps links, stronger validation, accessibility improvements, and optimized images. These additions improve the prototype without changing its stated frontend-only classroom-MVP boundary.
