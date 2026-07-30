@@ -13,12 +13,14 @@
 | **US-07** | Student | As a new user, I want to create an account, so that I can access the HallPass platform. | FR-03 | Must | Given I open the Signup page, when I complete the form, then I can create a simulated account. | `prototype/signup.html` |
 | **US-08** | Student | As a returning user, I want to log into HallPass, so that I can access the platform. | FR-03 | Must | Given I open the Login page, when I enter my account information, then I can access the simulated login flow. | `prototype/login.html` |
 | **US-09** | Admin | As an administrator, I want protected moderation controls, so that I can manage submitted reviews and reports. | FR-11, FR-16 | Must | Given I sign in as admin, when the dashboard loads, then I can approve, reject with a reason, remove reviews, and resolve reports. | `prototype/dashboard.html` |
-| **US-10** | Student | As a user, I want to understand and consent to prototype data use, so that I can make an informed choice. | FR-14, FR-17 | Must | Given I open the privacy page or signup, when I review the notice, then I can record consent. | `prototype/privacy-consent.html`, `prototype/signup.html` |
-| **US-11** | Student | As a student, I want to manage only my own reviews, so that my records remain under my control. | FR-18 | Must | Given I am logged in, when I open My Reviews, then I can view, edit, or delete only reviews owned by my account. | `prototype/my-reviews.html` |
-| **US-12** | Student | As a student, I want to see my review status, so that I understand the moderation outcome. | FR-21 | Must | Given I open My Reviews, then Pending, Approved, or Rejected status and rejection reason are visible. | `prototype/my-reviews.html` |
-| **US-13** | User | As a user, I want to report inappropriate review content, so that harmful information can be reviewed. | FR-19, FR-22 | Must | Given I open an approved review, when I submit a valid report, then it is stored and confirmation explains the next step. | `prototype/report-review.html` |
-| **US-14** | Student | As a student, I want to save useful reviews, so that I can revisit them later. | Future Feature | Could | This feature is not included in the current MVP. | Not included |
-| **US-15** | Student | As a student, I want an interactive campus map, so that I can locate campus buildings and services. | Future Feature | Could | This feature is not included in the current MVP. | Not included |
+| **US-10** | Student | As a user, I want to understand and consent to prototype data use, so that I can make an informed choice. | FR-15 | Must | Given I open Signup or Write Review, when I open the privacy notice, then I can understand the data use and record consent. | Privacy modal in `prototype/signup.html` and `prototype/write-review.html` |
+| **US-11** | Student | As a student, I want to manage only my own reviews, so that my records remain under my control. | FR-11, FR-16, FR-17 | Must | Given I am logged in, when I open My Submissions, then I see only my reviews and can remove a pending item or request removal of an approved item. | My Submissions in `prototype/student-dashboard.html` |
+| **US-12** | Student | As a student, I want to see my review status, so that I understand the moderation outcome. | FR-14 | Must | Given I open My Submissions, then Pending, Approved, Rejected, or Removal Requested status is visible. | `prototype/student-dashboard.html` |
+| **US-13** | User | As a user, I want to report inappropriate review content, so that harmful information can be reviewed. | FR-19 | Must | Given I open review details, when I submit a valid report, then it is stored, duplicate open reports are prevented, and confirmation explains the next step. | Report modal in `prototype/review-details.html` |
+| **US-14** | Student | As a student, I want to save useful places, so that I can revisit and compare them later. | FR-23, FR-24 | Should | Given I am logged in, when I save places, then they appear in Saved Places and I can compare two or three places from the same category. | Save controls and `prototype/student-dashboard.html` |
+| **US-15** | Student | As a student, I want to open a place location, so that I can find it with a familiar mapping service. | FR-27 | Could | Given I open place details, when I choose the location link, then Google Maps opens for that place. | `prototype/review-details.html` |
+| **US-18** | Student | As a student, I want to revisit recently opened places, so that I can continue my research. | FR-25 | Could | Given I have opened place details, when I return to the student experience, then my recent places are shown. | Recently Viewed and `prototype/js/data.js` |
+| **US-19** | Student | As a student, I want to mark reviews as helpful and see verification labels, so that useful and trusted contributions are clearer. | FR-26 | Should | Given I open review details, when I select Helpful, then my vote is stored once and the count updates. | `prototype/review-details.html` |
 | **US-16** | Student | As a student, I want AI-powered recommendations, so that I can receive personalized suggestions. | Future Feature | Won't | This feature is not included in the current MVP. | Not included |
 | **US-17** | Student | As a student, I want real-time chat with other students, so that I can ask questions directly. | Future Feature | Won't | This feature is not included in the current MVP. | Not included |
 
@@ -40,8 +42,6 @@ Every acceptance criterion should be:
 
 | Story ID | Reason for Postponing | Future Condition |
 |---|---|---|
-| **US-14** | Saving reviews is useful but not essential for validating the core HallPass concept. | Add after the review system is fully implemented. |
-| **US-15** | Interactive maps require additional location data and mapping services. | Add in a future version with mapping integration. |
 | **US-16** | AI recommendations require sufficient user and review data, as well as backend processing. | Add after collecting enough real user data. |
 | **US-17** | Real-time chat requires backend infrastructure, moderation, and authentication. | Add after the platform becomes fully operational. |
 
@@ -63,9 +63,9 @@ The primary HallPass user flow is:
 5. Students open `review-details.html` to view detailed information.
 6. Students submit reviews using `write-review.html`.
 7. Administrators view platform statistics through `dashboard.html`.
-8. Students review privacy information through `privacy-consent.html`.
-9. Students track and manage their own submissions through `my-reviews.html`.
-10. Users report inappropriate content through `report-review.html`.
+8. Students review privacy information in the Signup or Write Review modal.
+9. Students track submissions, Saved Places, comparisons, recent places, and profile information through `student-dashboard.html`.
+10. Users vote on helpful reviews or report inappropriate content through `review-details.html`.
 
 ---
 
@@ -89,6 +89,10 @@ The implemented prototype includes:
 - My Reviews and status tracking
 - Report Review
 - Persistent moderation decisions
+- Saved Places and comparison
+- Recently viewed places
+- Helpful voting and verification labels
+- External Google Maps links
 
 The current MVP does **not** include:
 
@@ -98,6 +102,6 @@ The current MVP does **not** include:
 - Real-time chat
 - Live database integration
 - Mobile application
-- Interactive campus navigation
+- Embedded campus navigation or GPS tracking
 
 These features are planned for future development after validating the core HallPass concept.
