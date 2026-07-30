@@ -1,37 +1,56 @@
 flowchart TD
-    A["Start final HallPass demo"] --> B["Introduce the problem<br/>Scattered dorm, food, and campus-life information"]
-    B --> C["Open HallPass landing page<br/>Target users + value proposition + Try HallPass CTA<br/>FR-01, FR-02"]
-    C --> D["Open prototype homepage<br/>Latest reviews + main navigation<br/>FR-01, FR-02"]
-    D --> E{"Choose a student pathway"}
-    E --> F["Dormitory or cafeteria record list<br/>Browse + search + filter + sort<br/>FR-05, FR-06"]
-    E --> G["Campus Survival Guide<br/>Search topic + open practical guidance"]
-    F --> H["Open record detail<br/>Rating + description + price + location + experiences<br/>FR-07"]
-    G --> I["Student receives a practical campus-life outcome"]
-    H --> J{"Submit a review?"}
-    J -- "No" --> I
-    J -- "Yes" --> K{"Student signed in?"}
-    K -- "No" --> L["Sign in with student demo account<br/>Client-side classroom simulation"]
-    K -- "Yes" --> M["Complete review form"]
-    L --> M
-    M --> N["Validate required fields<br/>Read privacy notice + give consent<br/>FR-03, FR-10"]
-    N --> O["Save review in browser localStorage<br/>Show success feedback + Pending status<br/>FR-04, FR-08"]
-    O --> P["Open student dashboard<br/>View totals + filter submission status<br/>FR-05, FR-08, FR-11"]
-    P --> Q["Sign in with administrator demo account"]
-    Q --> R["Open admin dashboard<br/>Metrics + moderation queue<br/>FR-09, FR-11"]
-    R --> S["Approve or reject pending review<br/>Record action in audit log<br/>FR-08, FR-09"]
-    S --> T["Return to student dashboard<br/>Confirm updated review status"]
-    T --> U["Connect screens to requirements,<br/>validation evidence, limitations, and business value<br/>FR-12"]
-    I --> U
-    U --> V["Close final HallPass venture pitch"]
+    A([Start HallPass final demo]) --> B["Problem: campus information is scattered<br/>Target users: first-year, international, and exchange students"]
+    B --> C["Landing page<br/>Value proposition + Try HallPass CTA"]
+    C --> D["Homepage<br/>Recent activity, categories, search, saved-place access"]
 
-    classDef problem fill:#fff4e5,stroke:#d97706,color:#7c2d12,stroke-width:2px;
+    D --> E{"Choose a student pathway"}
+    E --> F["Browse dormitory or cafeteria reviews<br/>Keyword search, category/minimum-rating filters, sort"]
+    E --> G["Open Campus Survival Guide<br/>Browse and search practical topics"]
+    E --> H["Sign up / log in<br/>Email and password validation"]
+
+    F --> I["Place detail view<br/>Reviews, verification labels, helpful votes, price/distance, Google Maps link"]
+    I --> J{"Save or compare a place?"}
+    J -- "Save" --> K["Saved Places<br/>Compare 2–3 places + quick recommendations"]
+    J -- "Continue" --> L{"Write a review?"}
+    K --> L
+    G --> M["Guide detail view<br/>Useful campus-life guidance"]
+
+    H --> N["Review form<br/>Dormitory/cafeteria selection, rating, comment, consent"]
+    L -- "Yes" --> N
+    L -- "No" --> O["Student Dashboard<br/>Saved places, recently viewed, profile, notifications"]
+    N --> P["Validate form and privacy consent<br/>Store review in browser localStorage"]
+    P --> Q["Submission feedback<br/>New review starts as Pending"]
+    Q --> O
+    M --> O
+
+    O --> R["Status and ownership controls<br/>Filter Pending/Approved/Rejected/Removal Requested;<br/>remove a pending item or request removal"]
+    R --> S{"Report incorrect or unsafe content?"}
+    S -- "Yes" --> T["Submit report<br/>Prevent duplicate open reports"]
+    S -- "No" --> U["View student activity and dashboard summary"]
+    T --> U
+
+    U --> V["Administrator demonstration login"]
+    V --> W["Admin Dashboard<br/>Moderation queue, operational metrics, reports, users, audit log"]
+    W --> X{"Select an admin action"}
+    X --> Y["Approve or reject review<br/>Process removal request"]
+    X --> Z["Investigate report and record a decision"]
+    X --> AA["Manage demonstration users<br/>Search, suspend/restore, delete"]
+    Y --> AB["Persist moderation/status and audit action in localStorage"]
+    Z --> AB
+    AA --> AB
+    AB --> AC["Return to Student Dashboard<br/>Show notification and updated status"]
+
+    AC --> AD["Explain evidence<br/>Requirements, testing, metrics, responsible data handling,<br/>business value, limitations, and future secure-backend work"]
+    AD --> AE([Close final venture pitch])
+
+    classDef context fill:#fff4e5,stroke:#d97706,color:#7c2d12,stroke-width:2px;
     classDef student fill:#eaf2ff,stroke:#2563eb,color:#163b73,stroke-width:2px;
     classDef action fill:#ecfdf3,stroke:#16a34a,color:#14532d,stroke-width:2px;
     classDef admin fill:#f3e8ff,stroke:#7e22ce,color:#581c87,stroke-width:2px;
     classDef outcome fill:#0b3d91,stroke:#082f72,color:#ffffff,stroke-width:2px;
 
-    class A,B problem;
-    class C,D,E,F,G,H,J,K,L,M,N,O,P student;
-    class Q,R,S admin;
-    class T action;
-    class I,U,V outcome;
+    class A,B,C context;
+    class D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U student;
+    class V,W,X,Y,Z,AA admin;
+    class AB,AC action;
+    class AD,AE outcome;
