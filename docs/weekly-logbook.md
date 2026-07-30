@@ -1091,7 +1091,6 @@ HallPass — Student Reviews & Campus Survival Guide
 - Open and verify the prototype link, final demo flow, screenshots, README links, and pitch materials.
 - Confirm all Lab 14 checklist items are marked after the final verification.
 - Present HallPass as a classroom frontend prototype with fictional data, simulated authentication, and browser-local storage.
-
 # Weekly Logbook — Lab 14
 
 ## Group Name
@@ -1126,8 +1125,50 @@ HallPass — Student Reviews & Campus Survival Guide
 - Confirmed privacy consent, form validation, responsive styling, keyboard-focus support, reduced-motion support, and optimized WebP image assets.
 - Confirmed the final prototype flow and final screenshots are available as evidence for the demonstration.
 
+## Requirement Change Record
+
+### Change Summary
+
+During Lab 14, the team added or formally included the following final prototype requirements:
+
+| Requirement ID | Requirement change | Final implementation |
+|---|---|---|
+| FR-23 | Add Saved Places for student-specific favourites | `prototype/js/data.js`, `prototype/index.html`, `prototype/student-dashboard.html` |
+| FR-24 | Add comparison of two or three saved places from the same category, with a quick recommendation | `prototype/js/student-dashboard.js`, `prototype/student-dashboard.html` |
+| FR-25 | Add Recently Viewed places | `prototype/js/data.js`, Student Dashboard |
+| FR-26 | Add helpful voting and verification labels | `prototype/js/data.js`, `prototype/review-details.html` |
+| FR-27 | Add external Google Maps place links | `prototype/review-details.html` |
+| NFR-05 | Extend the performance requirement to include WebP image optimization | `prototype/images/hero/`, `prototype/images/reviews/` |
+
+### Reason for the Changes
+
+The changes were made after the Lab 13 user-testing analysis and Lab 14 final improvement review. Students needed clearer ways to save and compare choices, return to previously viewed places, identify useful or verified content, and locate places through a familiar map service. WebP optimization was included to reduce the size of the main visual assets. These additions improve decision support and usability without changing HallPass from a frontend-only classroom prototype.
+
+### Evidence
+
+- Lab 13 user-testing results: `data/user-testing-results.csv`
+- Final testing results, including the Lab 14 feature checks: `data/final-testing-results.csv`
+- Requirement traceability: `docs/requirement-traceability-matrix.md`
+- Feature implementation status: `docs/feature-implementation-status.md`
+- Final prototype report: `docs/final-prototype-report.md`
+- Saved Places and comparison screen: `screenshots/final-student-saved-places.png`
+- Recently Viewed and student workflow screen: `screenshots/final-student-dashboard.png`
+- Helpful voting, verification and map-link screen: `screenshots/final-dorm-reviews-details.png`
+- Administrator workflow screen: `screenshots/final-admin-dashboard.png`
+- GitHub Issue: **Add the final requirement-change issue number and link here**
+
+### Approval
+
+- **Decision:** Approved for inclusion in the Lab 14 final prototype
+- **Approved by:** **Yousel Zangmo **
+- **Approval date:** 31 July 2026
+- **Approval evidence:** **https://github.com/HTETHTET-68/ICT105-TriByte-MVP/issues/70**
+- **Scope condition:** The approved changes remain frontend demonstration features using browser `localStorage`. They do not represent production authentication, cloud synchronization, an embedded live map, GPS tracking, or an AI recommendation service.
+
 ## Final Documentation Updates
 
+- Created the Lab 14 requirement-change GitHub Issue and recorded the reason, implementation evidence, decision, and approval in `docs/lab14-requirement-change-record.md`.
+- Added the Lab 14 feature checks to `data/final-testing-results.csv`.
 - Updated/checked `docs/feature-implementation-status.md`.
 - Updated/checked `docs/requirement-traceability-matrix.md` and `data/final-requirement-traceability.csv`.
 - Updated/checked `data/final-testing-results.csv`, `docs/final-prototype-report.md`, and `docs/final-reflection.md`.
