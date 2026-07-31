@@ -29,14 +29,13 @@
 ## 3. Prototype Walkthrough
 
 | Step | Screen / Feature | What to Demonstrate | Requirement ID |
-|------|-----------------|---------------------|---------------|
-| **1** | **Homepage (`index.html`)** | Introduce HallPass. Highlight the hero section, navigation bar, featured dormitories, cafeterias, and Campus Survival Guide. Explain HallPass's value proposition for first-year students. | `FR-01` |
-| **2** | **Browse Dormitories (`dorms.html`)** | May searches for nearby dormitories. Demonstrate search, filters, ratings, comparison, Google Maps links, and detailed dormitory information before selecting a dorm. | `FR-05`, `FR-06`, `FR-07` |
-| **3** | **Browse Cafeterias & Survival Guide (`cafeteria.html` / `guide.html`)** | Show how May explores cafeteria reviews and reads the Campus Survival Guide to prepare for university life. | `FR-05`, `FR-07` |
-| **4** | **Student Account & Review Submission (`signup.html`, `login.html`, `write-review.html`)** | Create a simulated student account. Show validation, privacy consent, then submit a dormitory review describing May's experience. Highlight the confirmation message after submission. | `FR-03`, `FR-04`, `FR-10` |
-| **5** | **Student Dashboard (`student-dashboard.html`)** | Show May tracking her submitted review. Demonstrate Pending Review status, Saved Places, Recently Viewed, Notifications, and Profile Settings. | `FR-08`, `FR-12` |
-| **6** | **Administrator Dashboard (`dashboard.html`)** | Switch to the administrator dashboard. Demonstrate reviewing May's submission, approving the review, handling reports, updating statistics, and showing the audit log. Explain responsible moderation. | `FR-09`, `FR-12` |
-
+|------|------------------|---------------------|----------------|
+| **1** | **[Homepage](../prototype/index.html)** | Introduce HallPass and highlight the main navigation and featured content. | `FR-01` |
+| **2** | **[Browse Dormitories](../prototype/dorms.html)** | Demonstrate search, filters, ratings, comparison, and Google Maps links. | `FR-05`, `FR-06`, `FR-07` |
+| **3** | **[Browse Cafeterias](../prototype/cafeteria.html)** / **[Campus Survival Guide](../prototype/guide.html)** | Show cafeteria reviews and practical campus guidance. | `FR-05`, `FR-07` |
+| **4** | **[Sign Up](../prototype/signup.html)** / **[Login](../prototype/login.html)** / **[Write Review](../prototype/write-review.html)** | Create May’s account and submit a dormitory review. | `FR-03`, `FR-04`, `FR-10` |
+| **5** | **[Student Dashboard](../prototype/student-dashboard.html)** | Show review status, saved places, notifications, and recently viewed items. | `FR-08`, `FR-12` |
+| **6** | **[Administrator Dashboard](../prototype/dashboard.html)** | Review and approve May’s submission and show reports and audit activity. | `FR-09`, `FR-12` |
 ---
 
 ## 4. Evidence and Validation
