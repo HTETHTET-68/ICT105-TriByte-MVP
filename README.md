@@ -670,7 +670,119 @@ The testing identified usability improvements related to homepage navigation, ad
 The HallPass prototype is now supported by a complete demonstration scenario, validated user-testing evidence, and a prioritised improvement plan. These deliverables prepare the project for the Lab 14 final MVP presentation and venture pitch.
 
 ## Lab 14 
-## Final Prototype Screenshots
+# Lab 14 – Final MVP Release and Reflection
+
+## Summary
+
+In Lab 14, Team TriByte completed the final release of **HallPass – Student Reviews and Campus Survival Guide**. The team reviewed the prototype, verified requirement traceability, organised testing evidence, prepared the final demonstration and pitch, and documented the project reflection.
+
+HallPass helps first-year, international, and exchange students browse dormitory and cafeteria reviews, read campus guides, submit reviews, save places, and track submission status. It also includes an administrator dashboard for moderation, reports, user management, and audit logs.
+
+## Final Prototype Features
+
+### Student Features
+
+* Browse dormitory and cafeteria reviews
+* Search, filter, sort, and compare places
+* View review details and Google Maps links
+* Read Campus Survival Guides
+* Sign up and log in
+* Submit reviews with validation and privacy consent
+* Save places and view recently visited content
+* Track review status and notifications
+* Report incorrect information
+
+### Administrator Features
+
+* Moderate submitted reviews
+* Approve or reject reviews
+* Manage reports and removal requests
+* Manage users
+* View statistics and audit logs
+
+## Technology Used
+
+* HTML
+* CSS
+* JavaScript
+* Browser `localStorage`
+* GitHub and GitHub Pages
+
+The prototype uses simulated browser storage and does not include a live backend or production database.
+
+## Final Testing Results
+
+| Metric                 |   Result |
+| ---------------------- | -------: |
+| Total task attempts    |      200 |
+| Successful attempts    |      170 |
+| Task completion rate   |      85% |
+| Average feedback score | 3.99 / 5 |
+
+Testing showed that users could successfully browse reviews, use the survival guide, submit reviews, and access the dashboards. Improvements were made to navigation, search, form validation, confirmation messages, dashboards, moderation, and responsive design.
+
+## Requirement Traceability
+
+| Requirement | Feature                              | Status    |
+| ----------- | ------------------------------------ | --------- |
+| FR-01       | Homepage and navigation              | Completed |
+| FR-03       | Signup, login, and review submission | Completed |
+| FR-05       | Review lists and saved places        | Completed |
+| FR-06       | Search, filtering, and sorting       | Completed |
+| FR-07       | Review and guide details             | Completed |
+| FR-08       | Review-status tracking               | Completed |
+| FR-09       | Administrator moderation             | Completed |
+| FR-10       | Validation and privacy consent       | Completed |
+| FR-12       | Dashboards and documentation         | Completed |
+| NFR-01      | Responsive design                    | Completed |
+
+Full traceability is available in:
+
+* [`docs/requirement-traceability-matrix.md`](docs/requirement-traceability-matrix.md)
+* [`data/final-requirement-traceability.csv`](data/final-requirement-traceability.csv)
+
+## Lab 14 Outputs
+
+| Output                 | Location                                  |
+| ---------------------- | ----------------------------------------- |
+| Final prototype        | `prototype/`                              |
+| Final prototype report | `docs/final-prototype-report.md`          |
+| Traceability matrix    | `docs/requirement-traceability-matrix.md` |
+| Final testing results  | `data/final-testing-results.csv`          |
+| Improvement list       | `docs/final-improvement-list.md`          |
+| Final reflection       | `docs/final-reflection.md`                |
+| Final demo script      | `docs/final-demo-script.md`               |
+| Final pitch outline    | `pitch/final-pitch-outline.md`            |
+| Final screenshots      | `screenshots/`                            |
+| Weekly logbook         | `docs/weekly-logbook.md`                  |
+
+## Limitations
+
+The current HallPass prototype:
+
+* Has no secure backend or shared database
+* Uses simulated authentication
+* Stores data only in the current browser
+* Does not support cross-device synchronization
+* Is intended for classroom demonstration only
+
+## Future Development
+
+Future versions could include:
+
+* A secure backend and database
+* University email authentication
+* Cloud image storage
+* Multilingual support
+* Real-time notifications
+* Improved accessibility
+* Verified reviews
+* Advanced analytics
+
+## Final Outcome
+
+HallPass successfully completed all fourteen ICT105 labs and is ready for final demonstration, venture pitch, and academic evaluation.
+
 
 ## Final Prototype Screenshots
 
