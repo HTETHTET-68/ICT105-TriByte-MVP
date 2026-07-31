@@ -637,6 +637,27 @@ In Lab 13, the TriByte team prepared HallPass for the final MVP demonstration by
 The testing identified usability improvements related to homepage navigation, administrator dashboard navigation, login and signup guidance, review submission, search labels, and review presentation.
 
 ---
+## Final Prototype Screenshots
+
+| Prototype Area | Final Screenshot |
+|---|---|
+| Homepage | ![Final homepage](screenshots/final-homepage.png) |
+| Login and signup | ![Final login and signup](screenshots/final-login-signup.png) |
+| Login-required state | ![Final login-required state](screenshots/final-login-required.png) |
+| Dormitory review list | ![Final dormitory review list](screenshots/final-dormitory-list.png) |
+| Cafeteria review list | ![Final cafeteria review list](screenshots/final-cafeteria-list.png) |
+| Search and rating filter | ![Final search and rating filter](screenshots/final-search-filter.png) |
+| Review detail | ![Final review detail](screenshots/final-review-detail.png) |
+| Review input form | ![Final review input form](screenshots/final-input-form.png) |
+| Student dashboard | ![Final student dashboard](screenshots/final-student-dashboard.png) |
+| Submission status tracking | ![Final submission status tracking](screenshots/final-status-tracking.png) |
+| Privacy consent | ![Final privacy consent](screenshots/final-privacy-consent.png) |
+| Responsive mobile view | ![Final responsive mobile view](screenshots/final-responsive-mobile-view.png) |
+| Administrator overview | ![Final administrator overview](screenshots/final-admin-view.png) |
+| Moderation queue | ![Final moderation queue](screenshots/final-moderation-queue.png) |
+| Report management | ![Final report management](screenshots/final-report-management.png) |
+| User management | ![Final user management](screenshots/final-user-management.png) |
+| Administrator audit log | ![Final administrator audit log](screenshots/final-audit-log.png) |
 
 ## Files Added
 
