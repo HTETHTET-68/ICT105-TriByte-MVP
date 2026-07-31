@@ -637,29 +637,7 @@ In Lab 13, the TriByte team prepared HallPass for the final MVP demonstration by
 The testing identified usability improvements related to homepage navigation, administrator dashboard navigation, login and signup guidance, review submission, search labels, and review presentation.
 
 ---
-## Final Prototype Screenshots
 
-## Final Prototype Screenshots
-
-| Prototype Area | Final Screenshot |
-|---|---|
-| Homepage | [View Screenshot](screenshots/final-home.png) |
-| Login | [View Screenshot](screenshots/final-login.png) |
-| Signup | [View Screenshot](screenshots/final-signup.png) |
-| Dormitory review list | [View Screenshot](screenshots/final-dorm-reviews.png) |
-| Dormitory review details | [View Screenshot](screenshots/final-dorm-reviews-details.png) |
-| Cafeteria review list | [View Screenshot](screenshots/final-cafeteria-reviews.png) |
-| Cafeteria review details | [View Screenshot](screenshots/final-cafeteria-reviews-details.png) |
-| Survival guide | [View Screenshot](screenshots/final-survival-guide.png) |
-| Write review | [View Screenshot](screenshots/final-write-review.png) |
-| Student dashboard | [View Screenshot](screenshots/final-student-dashboard.png) |
-| Student profile | [View Screenshot](screenshots/final-student-profile.png) |
-| Student saved places | [View Screenshot](screenshots/final-student-saved-places.png) |
-| Administrator dashboard | [View Screenshot](screenshots/final-admin-dashboard.png) |
-| Moderation queue | [View Screenshot](screenshots/final-admin-dashboard-moderation-queue.png) |
-| Report management | [View Screenshot](screenshots/final-admin-dashboard-report.png) |
-| User management | [View Screenshot](screenshots/final-admin-dashboard-user-management.png) |
-| Administrator audit log | [View Screenshot](screenshots/final-admin-dashboard-audit-log.png) |
 
 ## Files Added
 
@@ -691,4 +669,28 @@ The testing identified usability improvements related to homepage navigation, ad
 
 The HallPass prototype is now supported by a complete demonstration scenario, validated user-testing evidence, and a prioritised improvement plan. These deliverables prepare the project for the Lab 14 final MVP presentation and venture pitch.
 
+## Lab 14 
+## Final Prototype Screenshots
+
+## Final Prototype Screenshots
+
+| Prototype Area | Final Screenshot |
+|---|---|
+| Homepage | [View Screenshot](screenshots/final-home.png) |
+| Login | [View Screenshot](screenshots/final-login.png) |
+| Signup | [View Screenshot](screenshots/final-signup.png) |
+| Dormitory review list | [View Screenshot](screenshots/final-dorm-reviews.png) |
+| Dormitory review details | [View Screenshot](screenshots/final-dorm-reviews-details.png) |
+| Cafeteria review list | [View Screenshot](screenshots/final-cafeteria-reviews.png) |
+| Cafeteria review details | [View Screenshot](screenshots/final-cafeteria-reviews-details.png) |
+| Survival guide | [View Screenshot](screenshots/final-survival-guide.png) |
+| Write review | [View Screenshot](screenshots/final-write-review.png) |
+| Student dashboard | [View Screenshot](screenshots/final-student-dashboard.png) |
+| Student profile | [View Screenshot](screenshots/final-student-profile.png) |
+| Student saved places | [View Screenshot](screenshots/final-student-saved-places.png) |
+| Administrator dashboard | [View Screenshot](screenshots/final-admin-dashboard.png) |
+| Moderation queue | [View Screenshot](screenshots/final-admin-dashboard-moderation-queue.png) |
+| Report management | [View Screenshot](screenshots/final-admin-dashboard-report.png) |
+| User management | [View Screenshot](screenshots/final-admin-dashboard-user-management.png) |
+| Administrator audit log | [View Screenshot](screenshots/final-admin-dashboard-audit-log.png) |
  
