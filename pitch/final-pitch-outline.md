@@ -1,135 +1,228 @@
-# HallPass Final Venture Pitch Outline
+# Final Venture Pitch Outline: HallPass — Student Reviews & Campus Survival Guide
 
-**Recommended length:** 7–10 minutes  
-**Core message:** HallPass gives new Rangsit University students one student-focused place to compare dormitories and cafeterias, learn campus essentials, and contribute moderated experiences.
+**Course:** ICT105 Fundamental Technology Entrepreneurship  
+**Instructor:** Dr. Herison Surbakti  
+**Team Name:** TriByte  
+**GitHub Repository:** [HTETHTET-68/ICT105-TriByte-MVP](https://github.com/HTETHTET-68/ICT105-TriByte-MVP)  
+**Live Prototype URL:** [HallPass Final Prototype](https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/)
 
-## Slide 1 — HallPass: Your Campus, Decoded
+---
 
-- Team: **TriByte**
-- Htet Htet Myint Zaw — Product and Documentation Lead
-- Khaing Zin Thet — Technical Lead
-- Yousel Zangmo — UX/UI and Validation Lead
-- One-line pitch: “A student reviews and campus survival guide for faster, more confident campus decisions.”
-- Visual: final homepage screenshot.
+## Slide 1: Project Title and Team
 
-**Speaker point:** Introduce the team and state that HallPass is a working browser-based MVP, not only an idea.
+- **Slide Title:** HallPass — Student Reviews & Campus Survival Guide
+- **Subtitle:** Turning Scattered Campus Information into One Trusted Starting Point
+- **One-Line Pitch:** HallPass helps first-year, international, and exchange students compare dormitories and cafeterias, learn campus essentials, and share moderated student experiences through one accessible platform.
+- **Team Members & Responsibilities:**
+  - **Htet Htet Myint Zaw** — *Product & Documentation Lead*: Defined the problem, target users, value proposition, project direction, documentation, and final pitch coordination.
+  - **Khaing Zin Thet** — *Technical Lead*: Managed repository development, JavaScript functionality, data handling, authentication simulation, dashboards, and final prototype integration.
+  - **Yousel Zangmo** — *UX/UI & Validation Lead*: Designed interface screens, contributed CSS and interaction design, managed customer discovery, validation evidence, privacy documentation, and marketing communication.
+- **Visual / Layout Recommendation:** HallPass logo and final homepage screenshot with a simple three-member role strip at the bottom.
 
-## Slide 2 — The problem and target users
+---
 
-- Target users: first-year, international, and exchange students at Rangsit University.
-- Campus information is scattered across university pages, social media, group chats, friends, and word of mouth.
-- This creates wasted search time, inconsistent advice, language barriers, and uncertainty about where to live or eat.
-- Early discovery evidence:
-  - 13 of 20 respondents spent more than 30 minutes searching for basic campus information.
-  - 8 of 20 named scattered information as the largest problem.
-  - 16 of 20 said they would use HallPass.
+## Slide 2: Problem and Target Users
 
-**Speaker point:** Frame the problem as a decision-confidence and information-access gap.
+- **Slide Title:** New Students Face an Information Access Problem
+- **Core Problem:**
+  - Reliable information about dormitories, cafeterias, and daily campus life is scattered across university pages, social media, group chats, friends, and word of mouth.
+  - Students must compare incomplete or outdated information across several sources before making basic decisions about where to live, eat, and find campus services.
+  - International and exchange students face an additional language barrier that makes existing resources harder to understand.
+- **Customer Discovery Evidence:**
+  - **13 of 20 respondents** spent more than 30 minutes searching for basic campus information.
+  - **8 of 20 respondents** identified scattered information as their biggest problem.
+  - **16 of 20 respondents** said they would use HallPass if it existed.
+  - All international and exchange respondents identified language as a major barrier and selected multilingual content as useful.
+- **Target User Segments:**
+  1. **Primary Users:** First-year, international, and exchange students who need trustworthy campus information quickly.
+  2. **Content Contributors:** Senior students who can share experience-based dormitory, cafeteria, and campus advice.
+  3. **Administrators:** Student or staff administrators who moderate submissions, investigate reports, and maintain content quality.
+- **Visual / Layout Recommendation:** “Before HallPass” scattered-source graphic on the left and three user personas on the right.
 
-## Slide 3 — Validation evidence
+---
 
-- Method: task-based prototype usability testing.
-- Dataset: 200 validation records.
-- Results:
-  - **85%** task-success rate, above the 80% target;
-  - **3.99/5** average ease of use;
-  - **4.30/5** average usefulness;
-  - **4.34/5** average interest.
-- Most frequent issue: login/signup navigation.
-- Other repeated requests: clearer filters and ratings, more categories, and stronger form guidance.
+## Slide 3: Evidence from Customer Discovery and Validation
 
-**Speaker point:** These figures validate the direction and identify usability priorities; they are prototype evidence, not commercial traction.
+- **Slide Title:** Evidence Shows the Problem and Solution Direction Are Valid
+- **Customer Discovery (Lab 03):**
+  - Collected **20 survey responses** from first-year, international, exchange, and other students.
+  - The strongest repeated need was one reliable location for honest dormitory, cafeteria, and first-week information.
+  - Discovery led the team to treat the **Campus Survival Guide as a core feature**, not a secondary feature.
+- **Customer Validation & Usability Testing:**
+  - Conducted task-based usability testing using **200 validation records**.
+  - **Overall Task Completion Rate:** **85.0%**, exceeding the 80% success target.
+  - **Average Ease of Use:** **3.99 / 5**.
+  - **Average Usefulness:** **4.30 / 5**.
+  - **Average Interest:** **4.34 / 5**.
+- **Task-Level Findings:**
+  - Strongest flow: **Campus Survival Guide — 92.9% completion**.
+  - Dormitory browsing: **89.7% completion**.
+  - Cafeteria browsing: **89.7% completion**.
+  - Main improvement areas: homepage clarity, login/signup guidance, review-form guidance, search labels, rating visibility, and administrator-dashboard navigation.
+- **Decision:** Continue the same venture direction with targeted usability improvements rather than a major redesign.
+- **Visual / Layout Recommendation:** Four metric cards with a small task-completion chart and two short user-feedback callouts.
 
-## Slide 4 — Solution and value proposition
+---
 
-- Searchable dormitory and cafeteria listings with ratings, filters, sorting, and details.
-- Practical campus survival guides for unfamiliar situations.
-- Saved places, recent history, Google Maps links, and side-by-side comparison.
-- Student registration, profiles, review submission, privacy consent, and status tracking.
-- Moderated content with verification labels, helpful votes, misinformation reports, and administrator review.
+## Slide 4: Solution and Value Proposition
 
-**Value proposition:** “HallPass reduces uncertainty by bringing student experiences, reviewed place information, and practical campus advice into one accessible platform.”
+- **Slide Title:** HallPass — One Guided Platform for Campus Decisions
+- **Product Overview:** HallPass is a browser-based student information platform that combines campus reviews, practical guides, contribution tools, status tracking, and moderated content.
+- **Core Value Propositions:**
+  1. **Centralized Campus Information:** Dormitory reviews, cafeteria reviews, and Campus Survival Guides are available in one structured platform.
+  2. **Faster, More Confident Decisions:** Search, category filters, ratings, sorting, details, Saved Places, comparison, and Google Maps links help students evaluate options.
+  3. **Student-Driven Knowledge:** Senior and current students can contribute experience-based ratings and reviews.
+  4. **Trust and Transparency:** Review statuses, verification labels, helpful votes, misinformation reports, moderation decisions, and audit records support responsible content.
+  5. **Accessible Entry Point:** Responsive web access allows students to use the prototype without installing an application.
+- **Value Proposition Statement:**
+  > “HallPass reduces uncertainty by bringing student experiences, reviewed place information, and practical campus guidance into one accessible platform.”
+- **Visual / Layout Recommendation:** Desktop and mobile mockups highlighting reviews, guide topics, comparison, and moderation status.
 
-## Slide 5 — Final prototype demonstration
+---
 
-Show this closed-loop story:
+## Slide 5: Final Prototype Demonstration Flow
 
-1. Student lands on HallPass and browses dormitories or cafeterias.
-2. Student searches, filters, opens details, saves places, and compares options.
-3. Student logs in and submits a fictional review with consent.
-4. The review appears as **Pending** in the student dashboard.
-5. An administrator reviews and approves or rejects it.
-6. The student sees the updated status; the action is recorded in the audit log.
-7. Optional: student reports incorrect information and the administrator resolves it.
+- **Slide Title:** Live Prototype Demonstration — Student to Administrator Loop
+- **Step-by-Step Demo Journey:**
+  1. **Homepage (`index.html`):** Introduce HallPass and open the Dormitories, Cafeterias, or Campus Survival Guide pathways.
+  2. **Browse and Compare (`dorms.html` / `cafeteria.html`):** Search, filter, sort, open details, view ratings, save places, and compare selected options.
+  3. **Campus Guidance (`guide.html` / `guide-details.html`):** Explore practical first-week and campus-survival topics.
+  4. **Account and Review Submission (`signup.html`, `login.html`, `write-review.html`):** Create a simulated account and submit a validated fictional review with privacy consent.
+  5. **Student Status Tracking (`student-dashboard.html`):** View Pending, Approved, Rejected, and Removal Requested submissions, notifications, Saved Places, recently viewed items, and profile settings.
+  6. **Administrator Moderation (`dashboard.html`):** Approve or reject reviews, process removal requests, investigate reports, manage demonstration users, and inspect the audit log.
+- **Requirements Demonstrated:** Complete student and administrator pathway covering homepage, navigation, authentication, storage simulation, browsing, filtering, detail views, submissions, status tracking, validation, dashboards, reports, moderation, and traceability.
+- **Visual / Layout Recommendation:** Horizontal six-step flow using final screenshots from homepage to audit log.
 
-**Requirements covered:** FR-01 through FR-12, including storage, validation, status, admin functions, metrics, and traceability.
+---
 
-## Slide 6 — Business model and sustainability
+## Slide 6: Business Model Canvas Summary
 
-- **Beneficiaries:** new students, international/exchange students, senior student contributors, and campus administrators.
-- **Key partners:** Student Affairs, university IT, International College, orientation teams, student council, dormitory managers, and cafeteria operators.
-- **Channels:** class LINE groups, international-student communities, orientation ambassadors, QR posters, Instagram, and university pages.
-- **Sustainability:** university-supported service that improves onboarding, reduces repeated staff questions, and maintains shared student knowledge.
-- **Future options:** approved university sponsorships or clearly labelled campus-service partnerships—without compromising review trust.
+- **Slide Title:** Business Model and Sustainability
+- **BMC Key Components:**
+  - **Customer Segments:** First-year students, international and exchange students, senior contributors, and campus administrators.
+  - **Value Proposition:** A trusted, student-focused source for campus reviews, comparison, practical guidance, and moderated contributions.
+  - **Channels:** Mobile-friendly website, GitHub Pages, university pages, orientation events, QR posters, class LINE groups, student clubs, and social media.
+  - **Customer Relationships:** Self-service browsing, student accounts, review contributions, saved content, notifications, status tracking, reporting, and administrator moderation.
+  - **Key Activities:** Platform maintenance, content verification, moderation, campus-guide updates, user testing, and outreach.
+  - **Key Resources:** TriByte development team, HTML/CSS/JavaScript prototype, review and guide content, GitHub repository, testing evidence, and university relationships.
+  - **Key Partners:** Student Affairs, university IT, International College, orientation teams, student council, dormitory managers, and cafeteria operators.
+  - **Sustainability:** A university-supported service that improves onboarding and preserves shared student knowledge. Future options may include clearly labelled campus-service partnerships without influencing student review scores.
+- **Visual / Layout Recommendation:** Simplified nine-block Business Model Canvas with Customer Segments, Value Proposition, Channels, and Key Partners emphasized.
 
-## Slide 7 — Metrics and what changed
+---
 
-**Product evidence**
+## Slide 7: Product Metrics and User Testing Findings
 
-- Validation: 85% task success; 4.30/5 usefulness; 4.34/5 interest.
-- Prototype dashboard: review counts, moderation workload, reports, users, helpful votes, and audit activity.
-- Demonstration dataset supports Approved, Pending, Rejected, and removal-request states.
+- **Slide Title:** Product Evidence and Measurement Plan
+- **Validated Product Metrics:**
+  - **200 task attempts** across student and administrator user types.
+  - **170 successful attempts**, producing **85.0% overall completion**.
+  - **1.89 minutes** average task-completion time.
+  - **3.99 / 5** average feedback score.
+  - **4.30 / 5** usefulness and **4.34 / 5** interest from the validation summary.
+- **Prototype / Dashboard Metrics:**
+  - Student review submissions and status counts.
+  - Pending moderation workload and approval rate.
+  - Dormitory versus cafeteria activity.
+  - Average rating, helpful votes, reports, users, and audit activity.
+  - Mobile activity and task-processing time in the Lab 11 analytics demonstration.
+- **Go-to-Market Measurement Targets:**
+  - **50 landing-page visitors**.
+  - **40% CTA click rate**.
+  - **30 prototype demo views**.
+  - **10 feedback responses**.
+  - **25% landing-page-to-demo conversion rate**.
+- **Important Note:** The acquisition figures above are experiment targets, not achieved market traction. The strongest completed evidence is the customer-discovery and usability-testing data.
+- **Visual / Layout Recommendation:** Left side validation funnel; right side dashboard KPI cards; bottom strip showing acquisition targets.
 
-**Improvements driven by evidence**
+---
 
-- clearer authentication and password guidance;
-- more visible search/filter/sort controls and ratings;
-- stronger submission confirmation and privacy consent;
-- saved places, comparison, recently viewed, and notifications;
-- responsive and accessible interaction, reduced motion, and optimized images;
-- expanded administrator moderation, reports, user management, reset, and audit evidence.
+## Slide 8: Technical Architecture and Responsible Data Handling
 
-## Slide 8 — Technical architecture and responsible data use
+- **Slide Title:** Lightweight Architecture with Transparent Prototype Limits
+- **System Architecture & Tech Stack:**
+  - **Frontend:** HTML5, CSS3, and modular Vanilla JavaScript.
+  - **Hosting:** GitHub Pages for a no-install browser demonstration.
+  - **Prototype Data Layer:** Fictional seed records and browser `localStorage` for accounts, reviews, saved places, reports, moderation actions, status changes, and audit events.
+  - **Interface Design:** Responsive layouts, keyboard focus, reduced-motion support, optimized WebP images, and mobile-friendly controls.
+- **Responsible IT & Privacy Design:**
+  - Privacy notice and required consent during account and review workflows.
+  - Data-minimization prompts and fictional classroom demonstration records.
+  - Client-side validation, duplicate-report prevention, moderation controls, report handling, and audit evidence.
+  - Clear separation between student-facing and administrator-facing workflows.
+- **Transparent Current Limitations:**
+  - No shared backend or production database.
+  - No password hashing, secure server-side authorization, cross-device synchronization, or production-grade image protection.
+  - Client-side roles and `localStorage` are suitable for classroom demonstration only.
+- **Production Path:** Secure API, shared database, hashed credentials, server-side role authorization, sanitized uploads, backups, rate limiting, privacy review, monitoring, and university-managed accounts.
+- **Visual / Layout Recommendation:** Browser → HallPass frontend → localStorage/seed data architecture diagram, with a separate “Production Upgrade” lane.
 
-- Frontend: HTML5, CSS3, and JavaScript.
-- Hosting: GitHub Pages; no installation required for the hosted demo.
-- Prototype storage: browser `localStorage`.
-- Stored/simulated data: accounts, profiles, reviews, favourites, votes, reports, status changes, and audit events.
-- Current safeguards: client-side validation, consent notice, data-minimization prompts, fictional demo data, duplicate-report prevention, and administrator moderation.
-- Transparent limits: no shared backend, password hashing, secure authorization, cross-device synchronization, or production-grade upload protection.
+---
 
-**Production path:** server/API, database, hashed credentials, role-based authorization, secure media storage, rate limiting, backups, privacy review, and monitoring.
+## Slide 9: Final Improvements and Future Development
 
-## Slide 9 — Go-to-market and next development
+- **Slide Title:** Evidence-Driven Improvements and Roadmap
+- **Improvements Driven by Testing:**
+  - Clearer homepage navigation and shorter feature-card wording.
+  - More visible search, filter, sort, category, and rating controls.
+  - Stronger login/signup labels, password guidance, and account confirmation.
+  - Clearer required fields, category/rating instructions, privacy consent, and submission confirmation.
+  - Improved review-detail links, guide headings, dashboard statistics, and routes between public and administrator pages.
+  - Added Saved Places, comparison, recently viewed places, notifications, removal requests, report investigation, user management, and audit evidence.
+  - Final responsive and end-to-end student/administrator walkthrough.
+- **Future Development Priorities:**
+  1. Secure shared backend, database, authenticated sessions, and server-side authorization.
+  2. University-managed or verified accounts and regularly updated official campus information.
+  3. Thai/English and broader multilingual support.
+  4. Structured moderation reasons, recoverable deletion, and transparent appeals.
+  5. Larger live pilots across devices, browsers, and real student groups.
+  6. Production accessibility, privacy, security, performance, backup, and monitoring controls.
+- **Visual / Layout Recommendation:** Two-column roadmap: “Completed in MVP” versus “Next Production Stage.”
 
-**Initial launch experiment**
+---
 
-- Share tagged links through class LINE groups, International College communities, QR posters, Instagram, and orientation ambassadors.
-- Targets: 50 landing-page visitors, 40% CTA click rate, 30 prototype views, 10 feedback responses, and 25% landing-page-to-demo conversion.
-- Measure each channel separately and improve the message or route based on evidence.
+## Slide 10: Closing and Q&A
 
-**Next product priorities**
+- **Slide Title:** HallPass — Student Dormitory Reviews and Campus Survival Guide
+- **Core Summary Message:**
+  > “HallPass turns scattered campus knowledge into one clearer starting point for every new student.”
+- **Closing Highlights:**
+  - **Validated Problem:** Students spend time searching across scattered and inconsistent campus-information sources.
+  - **Validated Direction:** 16 of 20 discovery respondents said they would use HallPass.
+  - **Proven Prototype Usability:** 85.0% overall task completion across 200 validation records.
+  - **Strong Perceived Value:** 4.30/5 usefulness and 4.34/5 interest.
+  - **Complete Demonstration:** One closed loop from discovery and comparison to contribution, status tracking, reporting, and administrator moderation.
+- **Links:**
+  - **Live Prototype:** [https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/](https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/)
+  - **GitHub Repository:** [https://github.com/HTETHTET-68/ICT105-TriByte-MVP](https://github.com/HTETHTET-68/ICT105-TriByte-MVP)
+- **Q&A Invitation:**
+  > “Thank you, Dr. Herison Surbakti and evaluators, for your time and guidance. We welcome your questions, feedback, and suggestions.”
+- **Visual / Layout Recommendation:** Large HallPass closing statement, QR code to the prototype, and small repository link beneath it.
 
-1. secure shared backend and university-managed accounts;
-2. verified, regularly updated campus information;
-3. Thai/English or broader multilingual support;
-4. larger live tests across devices and student groups;
-5. production moderation, privacy, accessibility, and security controls.
+---
 
-Clarify that outreach figures are targets, not achieved results.
+## Suggested Q&A Preparation
 
-## Slide 10 — Closing and Q&A
+### Why not just use social media or group chats?
 
-- Restate the problem: scattered campus information creates uncertainty and wasted time.
-- Restate the proof: users completed most tasks and rated HallPass useful and interesting.
-- Restate the product: one guided journey from discovery and comparison to contribution and moderation.
-- Closing line: **“HallPass turns scattered campus knowledge into one clearer starting point for every new student.”**
-- Show the QR code or URL for the live prototype and invite questions.
+HallPass structures information around searchable places, ratings, details, comparison, guides, status, reporting, and moderation. Social feeds and chats are useful for conversation, but they are difficult to search, compare, verify, and maintain over time.
 
-## Suggested Q&A preparation
+### Is the current login secure enough for real users?
 
-- **Why not use social media?** HallPass structures campus information around searchable places, details, status, and moderation instead of an unstructured feed.
-- **Can the current login protect real data?** No. It is a classroom frontend demonstration; production requires server-side security.
-- **How will information remain trustworthy?** Use verified university data, clear source labels, moderation, report handling, audit records, and review recency.
-- **How will HallPass be sustained?** Through university partnership, student contributors, and defined content/moderation ownership.
-- **What is the strongest evidence?** The discovery results and the documented 200-record validation dataset, especially the 85% task-success and 4.30/5 usefulness results.
+No. The current login and roles are classroom simulations stored in the browser. A production version requires server-side authentication, hashed passwords, secure sessions, authorization, and a shared database.
+
+### How will HallPass keep reviews trustworthy?
+
+HallPass can combine verified place information, clear source labels, content moderation, misinformation reports, helpful votes, review recency, transparent status, and audit records. Sponsored content must remain clearly labelled and must never change review scores.
+
+### What is the strongest evidence for the project?
+
+The strongest evidence is the combination of discovery results and the 200-record validation dataset: 13 of 20 respondents spent over 30 minutes searching, 16 of 20 said they would use HallPass, and the prototype achieved 85.0% task completion with 4.30/5 usefulness.
+
+### How can HallPass be sustained?
+
+The strongest initial model is a university-supported service operated with Student Affairs, International College, orientation teams, student contributors, and defined moderation ownership. Clearly labelled partnerships may support future costs without compromising review independence.
+
+### What is the next most important technical improvement?
+
+A secure shared backend with university-managed authentication, a production database, server-side authorization, safe media storage, backups, and monitoring.
