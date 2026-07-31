@@ -42,12 +42,14 @@ The administrator demonstration covers:
 5. Review reports and removal requests.
 6. View user-management and audit-log examples.
 
-Add the final demonstration credentials here before submission:
+Use the fixed fictional demonstration accounts documented in `prototype/README.md`:
 
-- **Student email:** `____________________`
-- **Student password:** `____________________`
-- **Administrator email:** `____________________`
-- **Administrator password:** `____________________`
+- **Student email:** `student@hallpass.com`
+- **Student password:** `Student123!`
+- **Administrator email:** `admin@hallpass.com`
+- **Administrator password:** `Admin123!`
+
+These credentials are for the frontend classroom prototype only and must not be reused for real accounts.
 
 ### 4. Pre-Populated Demonstration Data
 
