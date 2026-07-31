@@ -639,25 +639,27 @@ The testing identified usability improvements related to homepage navigation, ad
 ---
 ## Final Prototype Screenshots
 
+## Final Prototype Screenshots
+
 | Prototype Area | Final Screenshot |
 |---|---|
-| Homepage | ![Final homepage](screenshots/final-homepage.png) |
-| Login and signup | ![Final login and signup](screenshots/final-login-signup.png) |
-| Login-required state | ![Final login-required state](screenshots/final-login-required.png) |
-| Dormitory review list | ![Final dormitory review list](screenshots/final-dormitory-list.png) |
-| Cafeteria review list | ![Final cafeteria review list](screenshots/final-cafeteria-list.png) |
-| Search and rating filter | ![Final search and rating filter](screenshots/final-search-filter.png) |
-| Review detail | ![Final review detail](screenshots/final-review-detail.png) |
-| Review input form | ![Final review input form](screenshots/final-input-form.png) |
-| Student dashboard | ![Final student dashboard](screenshots/final-student-dashboard.png) |
-| Submission status tracking | ![Final submission status tracking](screenshots/final-status-tracking.png) |
-| Privacy consent | ![Final privacy consent](screenshots/final-privacy-consent.png) |
-| Responsive mobile view | ![Final responsive mobile view](screenshots/final-responsive-mobile-view.png) |
-| Administrator overview | ![Final administrator overview](screenshots/final-admin-view.png) |
-| Moderation queue | ![Final moderation queue](screenshots/final-moderation-queue.png) |
-| Report management | ![Final report management](screenshots/final-report-management.png) |
-| User management | ![Final user management](screenshots/final-user-management.png) |
-| Administrator audit log | ![Final administrator audit log](screenshots/final-audit-log.png) |
+| Homepage | [View Screenshot](screenshots/final-home.png) |
+| Login | [View Screenshot](screenshots/final-login.png) |
+| Signup | [View Screenshot](screenshots/final-signup.png) |
+| Dormitory review list | [View Screenshot](screenshots/final-dorm-reviews.png) |
+| Dormitory review details | [View Screenshot](screenshots/final-dorm-reviews-details.png) |
+| Cafeteria review list | [View Screenshot](screenshots/final-cafeteria-reviews.png) |
+| Cafeteria review details | [View Screenshot](screenshots/final-cafeteria-reviews-details.png) |
+| Survival guide | [View Screenshot](screenshots/final-survival-guide.png) |
+| Write review | [View Screenshot](screenshots/final-write-review.png) |
+| Student dashboard | [View Screenshot](screenshots/final-student-dashboard.png) |
+| Student profile | [View Screenshot](screenshots/final-student-profile.png) |
+| Student saved places | [View Screenshot](screenshots/final-student-saved-places.png) |
+| Administrator dashboard | [View Screenshot](screenshots/final-admin-dashboard.png) |
+| Moderation queue | [View Screenshot](screenshots/final-admin-dashboard-moderation-queue.png) |
+| Report management | [View Screenshot](screenshots/final-admin-dashboard-report.png) |
+| User management | [View Screenshot](screenshots/final-admin-dashboard-user-management.png) |
+| Administrator audit log | [View Screenshot](screenshots/final-admin-dashboard-audit-log.png) |
 
 ## Files Added
 
