@@ -1,73 +1,64 @@
 # HallPass Final Demo Script
 
-**Recommended duration:** 5–7 minutes  
-**Prototype:** <https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/index.html>  
-**Demo accounts:** `student@hallpass.com` / `Student123!`; `admin@hallpass.com` / `Admin123!`
+# Final Demo Script
 
-## Before the presentation
+## 1. Opening
 
-- Open the prototype in a fresh browser window and confirm JavaScript and browser storage are enabled.
-- Keep the student and administrator credentials ready.
-- Use fictional information only. Do not enter real personal or sensitive data.
-- If earlier practice data could interrupt the flow, use the administrator presentation reset first.
-- Keep the repository, `docs/analytics-insights.md`, and final screenshots open as backup evidence.
+- **Presenter:** Technical Lead / Product Lead
 
-## 1. Opening — 0:00–0:40
+- **Script:**
 
-**Speaker:** “HallPass is TriByte’s student reviews and campus survival guide for Rangsit University. First-year, international, and exchange students often spend too long searching across social media, group chats, and word of mouth for trustworthy dormitory, cafeteria, and campus information. HallPass brings those decisions into one searchable, student-focused platform.”
+  *"Good morning/afternoon everyone. We are Team TriByte, presenting our ICT105 venture MVP: **HallPass – Student Dormitory Reviews and Campus Survival Guide**.*
 
-**Evidence to mention:** In early discovery, 13 of 20 respondents spent more than 30 minutes searching for basic campus information, and 16 of 20 said they would use HallPass.
+  *Many first-year, international, and exchange students spend valuable time searching through university websites, social media, and group chats just to find trustworthy information about dormitories, cafeterias, and campus life. Today, we will demonstrate how HallPass brings everything together into one student-friendly platform that helps students make informed decisions faster."*
 
-**Value proposition:** “HallPass helps new students make faster and more confident campus decisions by combining reviewed place information, practical guidance, and student experiences.”
+---
 
-## 2. User scenario — 0:40–1:00
+## 2. User Scenario
 
-**Speaker:** “Imagine an international first-year student who needs an affordable dormitory, a nearby cafeteria, and practical campus advice. The student wants to compare reliable options, save promising places, and contribute a review after visiting.”
+- **Scenario:**
 
-## 3. Prototype walkthrough — 1:00–4:55
+  *"Meet **May**, a first-year international student who has just arrived at Rangsit University.*
 
-| Time | Screen / action | What to demonstrate and say | Requirement |
-|---|---|---|---|
-| 1:00–1:25 | Homepage (`index.html`) | Show HallPass’s purpose, target content, recent review activity, main navigation, and calls to action. Explain that verified/admin-reviewed labels help users understand the information source. | FR-01, FR-02 |
-| 1:25–1:55 | Dormitories or cafeterias | Open a listing page. Search by keyword, apply a rating/category filter, and change the sort order. Save one place from the list. | FR-05, FR-06 |
-| 1:55–2:20 | Place detail | Open a result. Point out rating, review content, verification label, distance/price information, Google Maps link, helpful-review control, and report option. | FR-07, FR-10 |
-| 2:20–2:45 | Student login and dashboard | Sign in with the student demo account. Show Saved Places, Recently Viewed, notifications, and My Submissions. If two same-category places are saved, select two and show the side-by-side comparison and quick recommendation. | FR-02, FR-08, FR-11 |
-| 2:45–3:30 | Write Review | Open the review form. Enter clearly fictional data, select a category and rating, demonstrate required-field feedback, accept the privacy consent, and submit. Point out the confirmation that the review is pending administrator approval. | FR-03, FR-04, FR-10 |
-| 3:30–3:50 | Student submission status | Return to My Submissions and show the new review with **Pending** status and the activity notification. Explain that approved and rejected states are also supported. | FR-08 |
-| 3:50–4:35 | Administrator dashboard | Log out and sign in as administrator. Show Overview metrics, the Moderation Queue, Reports, User Management, and Audit Log. Open the new review and approve it. Explain that moderation actions persist in the browser and create audit evidence. | FR-09, FR-11 |
-| 4:35–4:55 | Closed-loop result | Return to the student view and show the updated **Approved** status. If time permits, report incorrect information on a public review, then show how the administrator resolves the open report. | FR-02, FR-08, FR-09 |
+  *She is looking for a dormitory near campus, wants to compare student reviews before choosing one, explore cafeteria recommendations, and read practical survival tips for her first week. After using HallPass, she also decides to share her own experience to help future students.*
 
-## 4. Data handling and technical explanation — 4:55–5:25
+  *Let's see how HallPass supports May from discovering information to contributing back to the community."*
 
-**Speaker:** “This final MVP uses HTML, CSS, and JavaScript. Prototype accounts, reviews, saved places, helpful votes, reports, notifications, and audit events are stored in browser `localStorage`. This makes the classroom workflow interactive without a backend, but it is not production security: data does not synchronize between devices, passwords are not hashed, and browser users can alter client-side roles or data.”
+---
 
-**Responsible-use statement:** “All demonstration records are fictional. A production version requires server-side authentication and authorization, password hashing, database storage, secure uploads, rate limiting, moderation controls, and a full privacy and security review.”
+## 3. Prototype Walkthrough
 
-## 5. Evidence and validation — 5:25–6:05
+| Step | Screen / Feature | What to Demonstrate | Requirement ID |
+|------|-----------------|---------------------|---------------|
+| **1** | **Homepage (`index.html`)** | Introduce HallPass. Highlight the hero section, navigation bar, featured dormitories, cafeterias, and Campus Survival Guide. Explain HallPass's value proposition for first-year students. | `FR-01` |
+| **2** | **Browse Dormitories (`dorms.html`)** | May searches for nearby dormitories. Demonstrate search, filters, ratings, comparison, Google Maps links, and detailed dormitory information before selecting a dorm. | `FR-05`, `FR-06`, `FR-07` |
+| **3** | **Browse Cafeterias & Survival Guide (`cafeteria.html` / `guide.html`)** | Show how May explores cafeteria reviews and reads the Campus Survival Guide to prepare for university life. | `FR-05`, `FR-07` |
+| **4** | **Student Account & Review Submission (`signup.html`, `login.html`, `write-review.html`)** | Create a simulated student account. Show validation, privacy consent, then submit a dormitory review describing May's experience. Highlight the confirmation message after submission. | `FR-03`, `FR-04`, `FR-10` |
+| **5** | **Student Dashboard (`student-dashboard.html`)** | Show May tracking her submitted review. Demonstrate Pending Review status, Saved Places, Recently Viewed, Notifications, and Profile Settings. | `FR-08`, `FR-12` |
+| **6** | **Administrator Dashboard (`dashboard.html`)** | Switch to the administrator dashboard. Demonstrate reviewing May's submission, approving the review, handling reports, updating statistics, and showing the audit log. Explain responsible moderation. | `FR-09`, `FR-12` |
 
-**Speaker:** “The product direction was tested with 200 validation records. The documented results show an 85% task-success rate, 3.99 out of 5 ease of use, 4.30 out of 5 usefulness, and 4.34 out of 5 interest. The main confusion point was login and signup navigation.”
+---
 
-**Show or summarize the response:**
+## 4. Evidence and Validation
 
-- clearer authentication guidance and stronger password validation;
-- more visible search, filtering, ratings, and submission feedback;
-- saved places, side-by-side comparison, recently viewed items, and status notifications;
-- stronger privacy consent, duplicate-report prevention, accessibility, responsive layouts, and optimized WebP images;
-- expanded administrator moderation, reporting, user-management, reset, and audit functions.
+- **Script:**
 
-Clarify that the validation figures are prototype evidence, not market traction.
+  *"Our solution is supported by customer discovery and usability testing.*
 
-## 6. Closing — 6:05–6:35
+  *During customer discovery, **16 out of 20 students** said they would use HallPass if it were available, while **13 out of 20 students** reported spending more than 30 minutes searching for campus information.*
 
-**Speaker:** “HallPass now demonstrates a complete path from discovering a place, comparing information, and submitting a review to administrator moderation and student status tracking. It addresses all Lab 14 baseline functions and adds practical student and administrator features.”
+  *For prototype validation, we collected **200 usability records**, achieving an **85% overall task completion rate**, with students rating HallPass **4.30 out of 5 for usefulness** and **4.34 out of 5 for interest**.*
 
-**Future work:** “The next release should add a secure shared backend, university-verified data, multilingual content, larger real-user testing, secure image storage, and production-grade privacy and moderation.”
+  *These results show that students value having one centralized platform for dormitory reviews and campus guidance."*
 
-**Final line:** “HallPass turns scattered campus knowledge into one clearer starting point for every new student. Thank you—we welcome your questions.”
+---
 
-## Contingency plan
+## 5. Closing
 
-- If GitHub Pages is unavailable, serve the local `prototype/` folder and open `index.html`.
-- If the new review is not visible, check that the same browser profile and origin are being used.
-- If time is short, demonstrate one listing, one detail page, one review submission, one moderation action, and the resulting status.
-- If browser data is inconsistent, use the administrator presentation reset and restart with the demo accounts.
+- **Script:**
+
+  *"HallPass transforms scattered campus information into one trusted platform for student dormitory reviews and campus survival guidance.*
+
+  *Instead of relying on multiple websites, social media pages, and word of mouth, students like May can confidently discover, compare, and contribute useful campus information in one place.*
+
+  *Thank you for your time. We welcome your questions and feedback."*
