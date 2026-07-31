@@ -10,7 +10,11 @@ https://htethtet-68.github.io/ICT105-TriByte-MVP/prototype/
 
 ## CTA Used
 
-Try Demo
+Explore HallPass
+Student login
+Open prototype
+View consent flow
+Open HallPass
 
 ## Notes
 
